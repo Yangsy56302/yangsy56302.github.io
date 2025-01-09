@@ -1,0 +1,94 @@
+*{
+    font-family: 'Consolas', monospace, sans-serif, serif;
+    font-size: 16px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.center {
+    text-align: center;
+}
+div {
+    margin: 0px;
+    padding: 0px;
+}
+div#up {
+    padding: 24px;
+    width: 100%;
+    height: 72px;
+    background-color: #EEDDFF;
+}
+div#middle {
+    top: 72px;
+    padding: 24px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+h1 {
+    font-size: 32px;
+    color: #8000FF;
+}
+h2 {
+    font-size: 24px;
+    color: #400080;
+}
+h3 {
+    font-size: 24px;
+    color: #200040;
+}
+h4 {
+    font-size: 18px;
+    color: #100020;
+}
+h5 {
+    font-size: 16px;
+    color: #000000;
+}
+h6 {
+    font-size: 16px;
+    color: #000000;
+}
+p {
+    font-size: 16px;
+    color: #000000;
+}
+b {
+    color: #400080;
+}
+i {
+    color: #404040;
+}
+a:link {
+    color: #800080;
+}
+a:visited {
+    color: #008000;
+}
+a:hover {
+    color: #FF00FF;
+}
+a:active {
+    color: #00FF00;
+}
+ul {
+    list-style-type: disc;
+}
+ul.filled {
+    list-style-type: disc;
+}
+ul.hollow {
+    list-style-type: circle;
+}
+ol {
+    list-style-type: decimal;
+}
+ol.zero {
+    list-style-type: decimal-leading-zero;
+}
+hr {
+    border: none;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #C080FF;
+}
