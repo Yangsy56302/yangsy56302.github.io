@@ -1,75 +1,99 @@
 *{
     font-family: 'Consolas', monospace, sans-serif, serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 body{
     padding: 0px;
     margin: 0px;
+    font-size: 18px;
 }
 .center {
     text-align: center;
 }
 div {
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
+    padding: 36px;
 }
 div#up {
-    padding: 24px;
-    width: 100%;
-    height: 72px;
-    background-color: #EEDDFF;
+    width: 75%;
+    margin: auto;
+    padding: 36px;
+    background-color: #EDF;
 }
 div#middle {
-    top: 72px;
-    padding: 24px;
-    width: 100%;
-    background-color: #FFFFFF;
+    width: 75%;
+    margin: auto;
+    padding: 36px;
+    background-color: #FFF;
+}
+hr {
+    border: none;
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: #C8F;
 }
 h1 {
-    font-size: 32px;
-    color: #8000FF;
+    font-size: 42px;
+    color: #80F;
 }
 h2 {
-    font-size: 24px;
-    color: #400080;
+    font-size: 36px;
+    color: #408;
 }
 h3 {
-    font-size: 24px;
-    color: #200040;
+    font-size: 30px;
+    color: #204;
 }
 h4 {
-    font-size: 18px;
-    color: #100020;
+    font-size: 24px;
+    color: #102;
 }
 h5 {
-    font-size: 16px;
-    color: #000000;
+    font-size: 22px;
+    color: #000;
 }
 h6 {
-    font-size: 16px;
-    color: #000000;
+    font-size: 20px;
+    color: #000;
 }
 p {
-    font-size: 16px;
-    color: #000000;
+    font-size: 18px;
+    color: #000;
 }
 b {
-    color: #400080;
+    color: #60C;
 }
 i {
-    color: #404040;
+    color: #888;
+}
+b.x, i.x, a.x {
+    color: unset;
 }
 a:link {
-    color: #800080;
+    color: #F08;
 }
 a:visited {
-    color: #008000;
+    color: #486;
 }
 a:hover {
-    color: #FF00FF;
+    color: #F4C;
 }
 a:active {
-    color: #00FF00;
+    color: #4C8;
+}
+abbr{
+    color: inherit;
+    font-size: inherit;
+}
+div.curstr {
+    width: 50%;
+    margin: auto;
+    padding: 12px 18px;
+    background-color: #336;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px #000F;
+    white-space: pre;
 }
 ul {
     list-style-type: disc;
@@ -85,10 +109,4 @@ ol {
 }
 ol.zero {
     list-style-type: decimal-leading-zero;
-}
-hr {
-    border: none;
-    border-top-style: solid;
-    border-top-width: 2px;
-    border-top-color: #C080FF;
 }
