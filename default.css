@@ -1,5 +1,5 @@
 *{
-    font-family: 'Consolas', monospace, sans-serif, serif;
+    font-family: 'Consolas', 'SimHei', 'Microsoft YaHei', monospace, sans-serif, serif;
     font-size: 18px;
 }
 body{
@@ -65,6 +65,9 @@ b {
 }
 i {
     color: #888;
+}
+a {
+    font-size: inherit;
 }
 b.x, i.x, a.x {
     color: unset;
