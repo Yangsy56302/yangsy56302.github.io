@@ -1,30 +1,29 @@
-*{
-    font-family: 'Consolas', 'SimHei', 'Microsoft YaHei', monospace, sans-serif, serif;
-    font-size: 18px;
-}
-body{
+body {
     padding: 0px;
     margin: 0px;
-    font-size: 18px;
+    font-family: 'Consolas', 'SimHei', 'Microsoft YaHei', monospace, sans-serif, serif;
+    font-size: 16px;
 }
-.center {
-    text-align: center;
+.indent2 {
+    text-indent: 2em;
+}
+.indent4 {
+    text-indent: 4em;
 }
 div {
     margin: auto;
-    padding: 36px;
+    padding: 2em;
 }
-div#up {
+div.content {
     width: 75%;
     margin: auto;
-    padding: 36px;
-    background-color: #EDF;
-}
-div#middle {
-    width: 75%;
-    margin: auto;
-    padding: 36px;
+    padding: 2em;
     background-color: #FFF;
+}
+div.title {
+    margin: auto;
+    padding: 2em;
+    background-color: #EDF;
 }
 hr {
     border: none;
@@ -33,31 +32,23 @@ hr {
     border-top-color: #C8F;
 }
 h1 {
-    font-size: 42px;
+    font-size: 3em;
     color: #80F;
 }
 h2 {
-    font-size: 36px;
+    font-size: 2em;
     color: #408;
 }
 h3 {
-    font-size: 30px;
+    font-size: 1.5em;
     color: #204;
 }
-h4 {
-    font-size: 24px;
+h4,h5,h6 {
+    font-size: 1.25em;
     color: #102;
 }
-h5 {
-    font-size: 22px;
-    color: #000;
-}
-h6 {
-    font-size: 20px;
-    color: #000;
-}
 p {
-    font-size: 18px;
+    font-size: 1em;
     color: #000;
 }
 b {
@@ -68,6 +59,9 @@ i {
 }
 a {
     font-size: inherit;
+}
+b i, i b {
+    color: #648;
 }
 b.x, i.x, a.x {
     color: unset;
@@ -87,16 +81,6 @@ a:active {
 abbr{
     color: inherit;
     font-size: inherit;
-}
-div.curstr {
-    width: 50%;
-    margin: auto;
-    padding: 12px 18px;
-    background-color: #336;
-    color: #FFF;
-    text-align: center;
-    text-shadow: 2px 2px #000F;
-    white-space: pre;
 }
 ul {
     list-style-type: disc;
