@@ -3,7 +3,7 @@ body {
     font-size: 16px;
     margin: auto;
     padding: 1em 2em;
-    background-color: #6FC;
+    background-color: #4C8;
 }
 div {
     margin: auto;
@@ -23,7 +23,7 @@ div.title {
     margin: auto;
     padding: 1em 2em;
     overflow: auto;
-    background-color: #C8F;
+    background-color: #84F;
 }
 div.index {
     position: relative;
@@ -31,7 +31,7 @@ div.index {
     left: 0%;
     margin: auto;
     padding: 1em 2em;
-    background-color: #EEE;
+    background-color: #BED;
 }
 div.top {
     z-index: 16;
@@ -42,7 +42,7 @@ div.top {
     margin: auto;
     padding: 1em 2em;
     overflow: auto;
-    background-color: #DBF;
+    background-color: #CAF;
 }
 div.bottom {
     z-index: 16;
@@ -53,31 +53,33 @@ div.bottom {
     padding: 1em 2em;
     background-color: #EDF;
 }
-hr {
-    border: none;
-    border-top-style: solid;
-    border-top-width: 4px;
-    border-top-color: #C8F;
-}
 h1 {
     font-size: 2.5em;
-    color: #80F;
+    color: #FFF;
 }
 div.index h1 {
     font-size: 2em;
-    color: #888;
+    color: #486;
 }
 h2 {
     font-size: 2em;
-    color: #408;
+    color: #80F;
 }
 h3 {
+    font-size: 1.75em;
+    color: #60C;
+}
+h4 {
     font-size: 1.5em;
+    color: #408;
+}
+h5 {
+    font-size: 1.25em;
     color: #204;
 }
-h4,h5,h6 {
-    font-size: 1.25em;
-    color: #102;
+h6 {
+    font-size: 1em;
+    color: #000;
 }
 p {
     font-size: 1em;
@@ -92,10 +94,10 @@ i {
 a {
     font-size: inherit;
 }
-b i, i b {
+b i,i b {
     color: #648;
 }
-b.x, i.x, a.x {
+b.x,i.x,a.x {
     color: unset;
 }
 a:link {
@@ -128,6 +130,9 @@ ol {
 }
 ol.zero {
     list-style-type: decimal-leading-zero;
+}
+ol,ul {
+    list-style-position: inside;
 }
 .nobr {
     word-wrap: nowrap;
