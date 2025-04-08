@@ -1,22 +1,56 @@
 body {
-    padding: 0px;
-    margin: 0px;
     font-family: 'Consolas', 'SimHei', 'Microsoft YaHei', monospace, sans-serif, serif;
     font-size: 16px;
+    margin: auto;
+    padding: 1em 2em;
+    background-color: #6FC;
 }
 div {
     margin: auto;
-    padding: 2em;
+    padding: 1em 2em;
 }
 div.content {
-    width: 75%;
+    width: 50%;
     margin: auto;
-    padding: 2em;
+    padding: 1em 2em;
     background-color: #FFF;
 }
 div.title {
+    z-index: 16;
+    position: relative;
+    top: 0%;
+    width: 60%;
     margin: auto;
-    padding: 2em;
+    padding: 1em 2em;
+    overflow: auto;
+    background-color: #C8F;
+}
+div.index {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin: auto;
+    padding: 1em 2em;
+    background-color: #EEE;
+}
+div.top {
+    z-index: 16;
+    position: sticky;
+    top: 0%;
+    width: 55%;
+    max-height: 8em;
+    margin: auto;
+    padding: 1em 2em;
+    overflow: auto;
+    background-color: #DBF;
+}
+div.bottom {
+    z-index: 16;
+    position: sticky;
+    bottom: 0%;
+    width: 55%;
+    margin: auto;
+    padding: 1em 2em;
     background-color: #EDF;
 }
 hr {
@@ -26,8 +60,12 @@ hr {
     border-top-color: #C8F;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #80F;
+}
+div.index h1 {
+    font-size: 2em;
+    color: #888;
 }
 h2 {
     font-size: 2em;
@@ -61,19 +99,16 @@ b.x, i.x, a.x {
     color: unset;
 }
 a:link {
-    color: #F08;
-}
-a:visited {
     color: #486;
 }
-a:hover {
-    color: #F4C;
+a:visited {
+    color: #C48;
 }
-a:active {
+a:hover {
     color: #4C8;
 }
-div.title a {
-    font-size: 1.5em;
+a:active {
+    color: #F8C;
 }
 abbr{
     color: inherit;
