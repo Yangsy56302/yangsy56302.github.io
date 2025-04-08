@@ -4,12 +4,6 @@ body {
     font-family: 'Consolas', 'SimHei', 'Microsoft YaHei', monospace, sans-serif, serif;
     font-size: 16px;
 }
-.indent2 {
-    text-indent: 2em;
-}
-.indent4 {
-    text-indent: 4em;
-}
 div {
     margin: auto;
     padding: 2em;
@@ -78,6 +72,9 @@ a:hover {
 a:active {
     color: #4C8;
 }
+div.title a {
+    font-size: 1.5em;
+}
 abbr{
     color: inherit;
     font-size: inherit;
@@ -85,10 +82,10 @@ abbr{
 ul {
     list-style-type: disc;
 }
-ul.filled {
+ul.checked {
     list-style-type: disc;
 }
-ul.hollow {
+ul.uncheck {
     list-style-type: circle;
 }
 ol {
@@ -96,4 +93,7 @@ ol {
 }
 ol.zero {
     list-style-type: decimal-leading-zero;
+}
+.nobr {
+    word-wrap: nowrap;
 }
