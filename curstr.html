@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="title">
-        <h1><abbr title="A Dance of Fire and Ice">ADOFAI</abbr> String Cursed Levels by Yangsy56302</h1>
+        <h1><a href="https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice/">ADOFAI</a> String Cursed Levels by Yangsy56302</h1>
     </div>
     <div class="top">
         In this website:
@@ -40,10 +40,10 @@
                 </ol></li>
             </ol></li>
             <li><a href="#List" target="_self">List of Curse Effects</a><ol>
-                <li><a href="#List.Main" target="_self">Main Game</a></li>
-                <li><a href="#List.Xtra" target="_self">Xtra/Challenge</a></li>
-                <li><a href="#List.Collab" target="_self">Collaboration</a></li>
-                <li><a href="#List.NeoCosmos" target="_self">Neo Cosmos</a></li>
+                <li><a href="#List.Main" target="_self">Main Game <i>(1-X ~ 12-X)</i></a></li>
+                <li><a href="#List.Xtra" target="_self">Xtra/Challenge <i>(B-X, X_-X)</i></a></li>
+                <li><a href="#List.Collab" target="_self">Collaboration <i>(PA-X, RJ-X, M_-X)</i></a></li>
+                <li><a href="#List.NeoCosmos" target="_self">Neo Cosmos <i>(T_-(E)X)</i></a></li>
                 <li><a href="#List.NonLevelEffects" target="_self">Non-level Effects</a></li>
             </ol></li>
         </ol></div>
@@ -55,10 +55,12 @@
         <h2 id="General">General</h2>
             <h3 id="General.Basics">Basics</h3>
                 <p>
-                    Each ADOFAI level may correspond to an curse effect <i>(theoretically)</i>. The IDs of the two are the same.<br/>
-                    Using a curse effect may produces many possibilities of results. Just choose a specific one to use.<br/>
+                    Each ADOFAI level may correspond to an curse effect <i>(theoretically)</i>.<br/>
+                    The IDs of the two are the same.
+                </p> <p>
+                    Using a curse effect may produces many possibilities of results.<br/>
+                    <b>Just choose a specific one to use.</b>
                 </p>
-                <p>In the following content, midspins will be considered as 0° angle.</p>
             <h3 id="General.Formats">Formats</h3>
             <p>
                 The curses should be hinted by using text decorations on the bottom of the interface:
@@ -66,9 +68,8 @@
                 <i>(and yes, that's why the name of this cursed levels series is <b><a href="https://docs.python.org/3/library/stdtypes.html#str">string</a></b>!)</i>
             </p>
                 <p>
-                    There will be a countdown before updating the current curse effects.<br/>
-                    The countdown starts with 3, decreases by 1 in equal interval time.<br/>
-                    The curse effects will be updated <b>at the exact same time</b> when the number <i>should be</i> counted down to -1.<br/>
+                    There will be a countdown before updating the current curse effects:<br/>
+                    The countdown starts with 3, decreases by 1 in equal interval time. The curse effects will be updated <b>at the exact same time</b> when the number <i>should be</i> counted down to -1.<br/>
                     <div class="curstr">Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (3)</div>
                     <div class="curstr">Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (2)</div>
                     <div class="curstr">Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (1)</div>
@@ -77,10 +78,9 @@
                 </p>
                 <h4 id="General.Formats.Keywords">Keywords</h4>
                     <p>
-                        <b><a href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></b> stands for "please wait", or "needs more info" occasionlly.
-                        <div class="curstr">Current curse by Yangsy56302: XC-X + ...<br/>Next curse by Yangsy56302: ...</div>
-                    </p>
-                    <p>
+                        <b><a href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></b> stands for "please wait" for nexts, and "needs more info" for currents.
+                        <div class="curstr">Current curse by Yangsy56302: ...<br/>Next curse by Yangsy56302: ...</div>
+                    </p> <p>
                         <b><a href="https://docs.python.org/3/library/constants.html#None">None</a></b> literally stands for "no effects".<br/>
                         <b><a href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></b> stands for "that was the last curse state change, you can take a break now".
                         <div class="curstr">Current curse by Yangsy56302: None<br/>Next curse by Yangsy56302: StopIteration</div>
@@ -89,35 +89,39 @@
                 <h4 id="General.Mechanisms.Basics">Basics</h4>
                     <p>Curse effects is usually regarded as a chart-to-chart <b>mapping</b> at here.</p>
                     <p>
-                        Curse effects can <b>stack</b>:
+                        Curse effects can <b>stack</b>, represents with a plus sign between:
                         <div class="curstr">Current curse by Yangsy56302: XR-X + 12-X<br/>Next curse by Yangsy56302: 12-X + XR-X</div><br/>
                     </p>
                 <h4 id="General.Mechanisms.Advanced">Advanced</h4>
                     <p>
-                        The affect order of stacked curse effects is from left to right. For example:
+                        The affect order of curse effects in hint text decorations is from left to right. For example:
                         <p>
                             <b>XR-X + 12-X</b> will first add triangles,<br/>
                             then try to change the angle of every tile,<br/>
                             including those tiles that is a part of these new triangle,<br/>
                             so now these triangles are probably not triangles anymore;<br/>
-                        </p>
-                        <p>
+                        </p> <p>
                             but <b>12-X + XR-X</b> will first try to change the angle of every tile,<br/>
                             then add triangles which will not be modified by the angle change process thats already finished.
                         </p>
                     </p>
                 <h4 id="General.Mechanisms.Meta">Meta</h4>
                     <p>
-                        Curse effects can also stack on themselves.
-                        <div class="curstr">Current curse by Yangsy56302: XS-X + XS-X + XS-X + XS-X<br/>Next curse by Yangsy56302: XS-X<span class="curstr*">*</span>6</div>
-                    </p>
-                    <p>
+                        The time order of curse effects <b>IS NOT</b> the affect order of curse effects.
+                    </p> <p>
+                        Curse effects can also stack on themselves, and there is a shorthand for this situation:<br/>
+                        <div class="curstr">Current curse by Yangsy56302: XS-X + XS-X + XS-X<br/>Next curse by Yangsy56302: XS-X<span class="curstr*">*</span>3</div>
+                    </p> <p>
                         <b>Anticurse</b> can be used to reverse the effect of a curse, as long as that part is possible to have an reversed version which is possible to form the current part if you use the original curse to it.<br/>
                         <div class="curstr">Current curse by Yangsy56302: 8<span class="curstr+">+</span>X<br/>Next curse by Yangsy56302: 9-X + 9<span class="curstr+">+</span>X</div><br/>
-                        <i>(when i said reverse, i didn't mean simply negate the values, although it may be equivalent; i mean <b>negate the whole process</b>)</i><br/>
-                        Using an anticurse may produces many possibilities of results which is totally different with the original chart, or does not match expectations at all. Just choose a specific one to use as I mentioned before.<br/>
+                        "Reverse" <b>DOES NOT</b> mean simply negate the values, although it may be equivalent;<br/>
+                        It means <b>REVERSE THE EFFECTIVE PROCESS</b> here!<br/>
+                    </p> <p>
+                        Using an anticurse may produces many possibilities of results which is totally different with the original chart, or does not match expectations at all.<br/>
+                        <b>Just choose a specific one to use as I mentioned before.</b>
                     </p>
         <h2 id="List">List of Curse Effects</h2>
+            <p>In the following content, midspins will be considered as 0° angle.</p>
             <h3 id="List.Main">Main Game</h3>
                 <h4>1-X</h4>
                 <p>
@@ -215,12 +219,15 @@
                 <h4>T4-X</h4> <p>Modify midspins to special variants.</p>
                 <h5>T4-EX</h5> <p>Add special midspins.</p>
                 <h4>T5-X</h4> <p><i>(wip)</i></p>
-            <h3 id="List.NonLevelEffects">Non-level Effects</h3> <p>
-                It is possible <i>(but not recommended due to copyright issues)</i> to have a crossover with other works:<br/>
-                <a href="https://ddlc.moe/">Doki Doki Literature Club!</a> can be also included in XH-X,<br/>
-                <a href="https://bluearchive.nexon.com/">Blue Archive</a> can be also included in XR-X.<br/>
-                For more informations, see <a href="bluearchived.html">Blue ArchiveD</a>.
-            </p>
+            <h3 id="List.NonLevelEffects">Non-level Effects</h3>
+                <p>
+                    It is possible <i>(but not recommended due to copyright issues)</i> to have a crossover with other works:
+                    <p>
+                        <a href="https://ddlc.moe/">Doki Doki Literature Club!</a> can be also included in XH-X,<br/>
+                        <a href="https://bluearchive.nexon.com/">Blue Archive</a> can be also included in XR-X.<br/>
+                    </p>
+                    For more informations, see <a href="bluearchived.html">Blue ArchiveD</a>.
+                </p>
     </div>
     <div class="bottom">
         For this page:
