@@ -97,20 +97,32 @@ a {
 b i,i b {
     color: #648;
 }
-b.x,i.x,a.x {
-    color: unset;
-}
 a:link {
-    color: #486;
+    color: #F48;
 }
 a:visited {
-    color: #C48;
+    color: #486;
 }
 a:hover {
-    color: #4C8;
+    color: #F8C;
 }
 a:active {
+    color: #4C8;
+}
+a b,a i {
+    color: unset;
+}
+h1 a:link {
     color: #F8C;
+}
+h1 a:visited {
+    color: #8FC;
+}
+h1 a:hover {
+    color: #FCE;
+}
+h1 a:active {
+    color: #CFE;
 }
 abbr{
     color: inherit;
