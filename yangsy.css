@@ -4,10 +4,10 @@ body {
     margin: auto;
     padding: 1em 2em;
     background-color: #4C8;
+    color: #000;
 }
 div {
-    margin: auto;
-    padding: 1em 2em;
+    margin: 0.5em 2em;
 }
 div.content {
     width: 50%;
@@ -61,10 +61,6 @@ div.index h1 {
     font-size: 2em;
     color: #486;
 }
-dt {
-    font-size: 1.25em;
-    color: #204;
-}
 h2, dl dt {
     color: #80F;
 }
@@ -96,7 +92,17 @@ h6 {
     font-size: 1.125em;
 }
 p {
-    color: #000;
+    font-size: 1em;
+}
+dl {
+    padding: 0em;
+}
+dt {
+    padding: 0em 2em;
+    color: #204;
+}
+dd {
+    padding: 0.5em 2em;
 }
 b {
     color: #80F;
@@ -116,20 +122,17 @@ b i, i b {
 q b, q i {
     color: unset;
 }
-a:link {
+a:link, a:link * {
     color: #F48;
 }
-a:visited {
+a:visited, a:visited * {
     color: #486;
 }
-a:hover {
+a:hover, a:hover * {
     color: #F8C;
 }
-a:active {
+a:active, a:active * {
     color: #4C8;
-}
-a b, a i, a q {
-    color: unset;
 }
 h1 a:link {
     color: #F8C;
@@ -142,6 +145,10 @@ h1 a:hover {
 }
 h1 a:active {
     color: #CFE;
+}
+del {
+    color: #444;
+    background-color: #444;
 }
 abbr{
     color: inherit;
