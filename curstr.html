@@ -36,7 +36,9 @@
                 <li><a href="#General.Mechanisms" target="_self">Mechanisms</a><ol>
                     <li><a href="#General.Mechanisms.Basics" target="_self">Basics</a></li>
                     <li><a href="#General.Mechanisms.Advanced" target="_self">Advanced</a></li>
-                    <li><a href="#General.Mechanisms.Meta" target="_self">Meta</a></li>
+                    <li><a href="#General.Mechanisms.Meta" target="_self">Meta</a><ol>
+                        <li><a href="#General.Mechanisms.Meta.Anticurses" target="_self">Anticurses</a></li>
+                    </ol></li>
                 </ol></li>
             </ol></li>
             <li><a href="#List" target="_self">List of Curse Effects</a><ol>
@@ -49,16 +51,19 @@
         </ol></div>
         <h2 id="Links">Links...</h2>
             <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3127510524">Collections on Steam Workshop <i>(not a full list)</i></a><br/>
-            <a href="https://www.youtube.com/playlist?list=PLrMA_5KNMXbBoINe5qqBRmrWCb93CxM00">ADOFAI Playlist on YouTube</a>
-            <a href="https://space.bilibili.com/430612354/lists?sid=2000240">冰与火之舞 Video Collections on Bilibili</a>
-            <a href="https://docs.google.com/document/d/18oEkYRD7uW-_8EwTp0inZFi8Qqf2AYAj7g7pJvC9mNs/">@Jack-O_hedgehog's emoji-translated charts</a>
+            <a href="https://www.youtube.com/playlist?list=PLrMA_5KNMXbBoINe5qqBRmrWCb93CxM00">ADOFAI Playlist on YouTube</a><br/>
+            <a href="https://space.bilibili.com/430612354/lists?sid=2000240">冰与火之舞 Video Collections on Bilibili</a><br/>
+            <a href="https://docs.google.com/document/d/18oEkYRD7uW-_8EwTp0inZFi8Qqf2AYAj7g7pJvC9mNs/">@Jack-O_hedgehog's emoji-translated charts</a><br/>
             <h3 id="Links.Downloads">Downloads...</h3>
-                <a href="https://www.dropbox.com/scl/fo/2x4q3a4bf29wks1z6rnve/AIMcFDGFORMJIQnrNUjd3N4?rlkey=u4gi4hg30l29xhvvl26gucwxk&st=qe8rl7ql&dl=0">Dropbox</a>
+                <a href="https://www.dropbox.com/scl/fo/2x4q3a4bf29wks1z6rnve/AIMcFDGFORMJIQnrNUjd3N4?rlkey=u4gi4hg30l29xhvvl26gucwxk&st=qe8rl7ql&dl=0">Dropbox</a><br/>
         <h2 id="General">General</h2>
             <h3 id="General.Basics">Basics</h3>
                 <p>
                     Each ADOFAI level may correspond to an curse effect <i>(theoretically)</i>.<br/>
                     The IDs of the two are the same.
+                </p> <p>
+                    If a part of the chart cannot match the pre-conditions of the curse effect it's using,
+                    nothing <i>(that does matters)></i> will happen.
                 </p> <p>
                     Using a curse effect may produces many possibilities of results.<br/>
                     <b>Just choose a specific one to use.</b>
@@ -80,7 +85,7 @@
                 </p>
                 <h4 id="General.Formats.Keywords">Keywords</h4>
                     <p>
-                        <b><a href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></b> stands for "please wait" for nexts, and "needs more info" for currents.
+                        <b><a href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></b> stands for "please wait" for nexts, and infrequently, "need more info" for currents .
                         <div class="curstr">Current curse by Yangsy56302: ...<br/>Next curse by Yangsy56302: ...</div>
                     </p> <p>
                         <b><a href="https://docs.python.org/3/library/constants.html#None">None</a></b> literally stands for "no effects".<br/>
@@ -112,12 +117,21 @@
                         The time order of curse effects <b>IS NOT</b> the affect order of curse effects.
                     </p> <p>
                         Curse effects can also stack on themselves, and there is a shorthand for this situation:<br/>
-                        <div class="curstr">Current curse by Yangsy56302: XS-X + XS-X + XS-X<br/>Next curse by Yangsy56302: XS-X<span class="curstr*">*</span>3</div>
+                        <div class="curstr">Current curse by Yangsy56302: XS-X + XS-X + XS-X<br/>Next curse by Yangsy56302: XS-X<span class="curstr*">*</span>3</div><br/>
+                        <i>(color isn't required but recommend for readability)</i>
+                    <h5 id="General.Mechanisms.Meta.Anticurses">Anticurses</h5>
                     </p> <p>
-                        <b>Anticurse</b> can be used to reverse the effect of a curse, as long as that part is possible to have an reversed version which is possible to form the current part if you use the original curse to it.<br/>
+                        <b>Anticurses</b> are basically the reversal of the curse process, 
+                        so they can be used to reverse the effect of a curse: <p>
+                            the precondition is that part is possible to have an reversed version 
+                            which is possible to form the current part if you use the original curse to it;<br/>
+                            Otherwise, you can still use them, but it won't do anything
+                            when the preconditions no longer mets, and until it mets again.
+                        </p>
+                    </p> <p>
+                        Anticurse are represented by changing the minus sign to a plus sign in the ID of the corresponding curse:
                         <div class="curstr">Current curse by Yangsy56302: 8<span class="curstr+">+</span>X<br/>Next curse by Yangsy56302: 9-X + 9<span class="curstr+">+</span>X</div><br/>
-                        "Reverse" <b>DOES NOT</b> mean simply negate the values, although it may be equivalent;<br/>
-                        It means <b>REVERSE THE EFFECTIVE PROCESS</b> here!<br/>
+                        <i>(color isn't required but recommend for readability)</i>
                     </p> <p>
                         Using an anticurse may produces many possibilities of results which is totally different with the original chart, or does not match expectations at all.<br/>
                         <b>Just choose a specific one to use as I mentioned before.</b>
@@ -225,7 +239,7 @@
         <a href="#" target="_self">Top</a>
         <a href="#Indexes" target="_self">Index</a>
         <a href>Link</a>
-        <a href download>Download</a> 
+        <a href download>Download</a>
     </div>
 </body>
 </html>
