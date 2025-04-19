@@ -46,7 +46,10 @@
                 <li><a href="#List.Xtra" target="_self">Xtra/Challenge <i>(B-X, X_-X)</i></a></li>
                 <li><a href="#List.Collab" target="_self">Collaboration <i>(PA-X, RJ-X, M_-X)</i></a></li>
                 <li><a href="#List.NeoCosmos" target="_self">Neo Cosmos <i>(T_-(E)X)</i></a></li>
-                <li><a href="#List.Multicursed" target="_self">Multicursed Levels</a></li>
+                <li><a href="#List.Multicursed" target="_self">Multicursed Levels</a><ol>
+                    <li><a href="#D_is_isinstance" target="_self">PA-X - D is isinstance</a></li>
+                    <li><a href="#14G10R" target="_self">XO-X - 1 4 Got 10 →</a></li>
+                </ol></li>
                 <li><a href="#List.NonLevelEffects" target="_self">Non-level Effects</a></li>
             </ol></li>
         </ol></div>
@@ -78,11 +81,13 @@
                 </p> <p>
                     There will be a countdown before updating the current curse effects:<br/>
                     The countdown starts with 3, decreases by 1 in equal interval time. The curse effects will be updated <b>at the exact same time</b> when the number <i>should be</i> counted down to -1.<br/>
-                    <div class="curstr">Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (3)</div>
-                    <div class="curstr">Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (2)</div>
-                    <div class="curstr">Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (1)</div>
-                    <div class="curstr">Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (0)</div>
-                    <div class="curstr">Current curse by Yangsy56302: 5-X<br/>Next curse by Yangsy56302: 2-X</div>
+                    <div class="curstr">
+                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (3)<br/><br/>
+                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (2)<br/><br/>
+                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (1)<br/><br/>
+                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (0)<br/><br/>
+                        Current curse by Yangsy56302: 5-X<br/>Next curse by Yangsy56302: 2-X
+                    </div>
                 </p>
                 <h4 id="General.Formats.Keywords">Keywords</h4>
                     <p>
@@ -123,7 +128,7 @@
                         <div class="curstr">Current curse by Yangsy56302: XS-X + XS-X + XS-X<br/>Next curse by Yangsy56302: XS-X<span class="curstr*">*</span>3</div><br/>
                         <i>(color isn't required but recommend for readability)</i>
                     </p> 
-                    <h5 id="General.Mechanisms.Meta.Anticurses">Anticurses</h5> 
+                    <h5 id="General.Mechanisms.Meta.Anticurses">Anticurses</h5>
                         <b>Anticurses</b> are basically the reversal of the curse process, 
                         so they can be used to reverse the effect of a curse: <div>
                             <p>
@@ -143,47 +148,47 @@
                     </p>
         <h2 id="List">List of Curses</h2>
             <h3 id="List.Main">Main Game <i>(1-X ~ 12-X)</i></h3> <dl>
-                <dt>1-X - A Dance of Fire and Ice but the judgement limits are changing</dt> <dd>
+                <dt id="1-X">1-X - A Dance of Fire and Ice but the judgement limits are changing</dt> <dd>
                     Green ones are allowed;<br/>
                     Yellow ones are allowed by the curse but you will be killed by judgement itself;<br/>
                     Red ones are NOT allowed and you will be killed instantly by the curse.
                 </dd>
-                <dt>2-X - Offbeats but it is in another type of rhythm</dt> <dd>
+                <dt id="2-X">2-X - Offbeats but it is in another type of rhythm</dt> <dd>
                     3/4, 7/8, 4/5, etc.
                 </dd>
-                <dt>3-X - THE WIND-UP but each straight line makes you more laggy</dt> <dd>
+                <dt id="3-X">3-X - THE WIND-UP but each straight line makes you more laggy</dt> <dd>
                     You starts with N = 0.<br/>
                     Every time you reached the end of a chain of 180° tiles,<br/>
                     the tile right after the chain needs to hit N extra times;<br/>
                     After that, N increased by 1.
                 </dd>
-                <dt>4-X - Love Letters but short</dt> <dd>
+                <dt id="4-X">4-X - Love Letters but short</dt> <dd>
                     Remove segments at any scale.
                 </dd>
-                <dt>5-X - The Midnight Train but the april fools has come true</dt> <dd>
+                <dt id="5-X">5-X - The Midnight Train but the april fools has come true</dt> <dd>
                     The planets are in the wrong orientation yet the chart plays the exact same as it did before.
                 </dd>
-                <dt>6-X - PULSE but there is a 1 beat PAUSE on every tile</dt> <dd>
+                <dt id="6-X">6-X - PULSE but there is a 1 beat PAUSE on every tile</dt> <dd>
                     Doubling the BPM and increasing paused beat counts by 1.
                 </dd>
-                <dt>7-X - Spin 2 Win but each reflex angled tile will speed you up, and vice versa</dt> <dd>
+                <dt id="7-X">7-X - Spin 2 Win but each reflex angled tile will speed you up, and vice versa</dt> <dd>
                     &lt;180° = Speed Down, &gt;180° = Speed Up.
                 </dd>
-                <dt>8-X - Jungle City but every successive same-angled tile segments has 1 additional tile</dt> <dd>
+                <dt id="8-X">8-X - Jungle City but every successive same-angled tile segments has 1 additional tile</dt> <dd>
                     <i>(0° and 360° may also counts, it depends)</i><br/>
                     <i>(this effect can also adding or removing twirls on a 180° tile without changing the rhythm for better readability)</i>
                 </dd>
-                <dt>9-X - Classic Pursuit but every tile that its angle isn't θτ/4 has a twirl on it (θ∈ℤ)</dt> <dd>
+                <dt id="9-X">9-X - Classic Pursuit but every tile that its angle isn't θτ/4 has a twirl on it (θ∈ℤ)</dt> <dd>
                     <i>(τ/4 = 90°)</i>
                 </dd>
-                <dt>10-X - Butterfly Planet but no more reflex angles for you</dt> <dd>
+                <dt id="10-X">10-X - Butterfly Planet but no more reflex angles for you</dt> <dd>
                     Twirls will be added on tiles thats its angle is &gt;180°.<br/>
                     <i>(this effect can also adding or removing twirls on a 180° tile without changing the rhythm for better readability)</i>
                 </dd>
-                <dt>11-X - Heracles but the twirls can change your current speed</dt> <dd>
+                <dt id="11-X">11-X - Heracles but the twirls can change your current speed</dt> <dd>
                     Red Twirl = Speed Up, Blue Twirl = Speed Down. Simple.
                 </dd>
-                <dt>12-X - Artificial Chariot but the acute angles and the obtuse angles are swapped</dt> <dd>
+                <dt id="12-X">12-X - Artificial Chariot but the acute angles and the obtuse angles are swapped</dt> <dd>
                     The angle of each tile is now its supplementary angle.<br/>
                     <i>(integer multiples of 180° will bypass this curse)</i>
                     <i>(angles &gt;180° will be moduled by 180° when processing)</i>
@@ -191,26 +196,26 @@
                 </dd>
             </dl>
             <h3 id="List.Xtra">Xtra/Challenge <i>(B-X, X_-X)</i></h3> <dl>
-                <dt>B-X - Thanks For Playing My Game but every tile is doubled</dt> <dd>
+                <dt id="B-X">B-X - Thanks For Playing My Game but every tile is doubled</dt> <dd>
                     <i>(except the end portal)</i>
                 </dd>
-                <dt>XF-X - Third Wave Flip-Flop but you found the shortcuts</dt> <dd>
+                <dt id="XF-X">XF-X - Third Wave Flip-Flop but you found the shortcuts</dt> <dd>
                     If the center of two <i>(or more)</i> tiles was overlapped with each other, The planet will choose the shortest path <i>(in time, not in tile count)</i> to walk on.<br/>
                     <i>(you can choose freely if there's a tie)</i>
                 </dd>
-                <dt>XC-X - Credits but it's tutorial exclusive</dt> <dd>
+                <dt id="XC-X">XC-X - Credits but it's tutorial exclusive</dt> <dd>
                     Replacing a segment to a tutorial level, or inserting one.
                 </dd>
-                <dt>XH-X - Final Hope but this is a DLC level</dt> <dd>
+                <dt id="XH-X">XH-X - Final Hope but this is a DLC level</dt> <dd>
                     Add DLC contents.<br/>Additionally, Hold can replace 180° tiles by extra loops, and midspins cannot be created out of nothing.
                 </dd>
-                <dt>XR-X - Rose Garden but each 90° tile should have a triangle</dt> <dd>
+                <dt id="XR-X">XR-X - Rose Garden but each 90° tile should have a triangle</dt> <dd>
                     If any 90° tile wasn't a part of a right triangle, give it one.
                 </dd>
-                <dt>XN-X - Trans-Neptunian Object but it's a three-body problem</dt> <dd>
+                <dt id="XN-X">XN-X - Trans-Neptunian Object but it's a three-body problem</dt> <dd>
                     Change the planet counts to 3, without changing the shape of the chart, and the duration for 180° tiles.
                 </dd>
-                <dt>XS-X - Party of spirits but each gameplay event is delayed by 1 tile</dt> <dd>
+                <dt id="XS-X">XS-X - Party of spirits but each gameplay event is delayed by 1 tile</dt> <dd>
                     This curse effect can only affects these type of events below.
                     <ul>
                         <li>Set Speed, Twirl, Checkpoint</li>
@@ -220,7 +225,7 @@
                         <li>Set Conditional Events, Set Input Event <i>(if as a part of gameplay)</i></li>
                     </ul>
                 </dd>
-                <dt>XT-X - Options but all the straight tiles are missing</dt> <dd>
+                <dt id="XT-X">XT-X - Options but all the straight tiles are missing</dt> <dd>
                     Planet will skip them, rather than waiting.
                 </dd>
                 <dt>XO-1 - U-turn Road but all the existence states of swirls on u-turns are inverted</dt> <dd>
@@ -229,32 +234,32 @@
                 <dt>XO-2 - Back-to-back Loops but all the existence states of swirls on 180° tiles are inverted</dt> <dd>
                     Same as XO-1, but it's for 180° <i>(instead of 360°)</i>.
                 </dd>
-                <dt>XO-X - One Forgotten Night but its curse effect is defined as the combination of XO-1 and XO-2</dt> <dd>
+                <dt id="XO-X">XO-X - One Forgotten Night but its curse effect is defined as the combination of XO-1 and XO-2</dt> <dd>
                     <i>(it can also be XO-2 + XO-1, since there's no difference between these 2 situations)</i>
                 </dd>
-                <dt>XI-X - It Go but the planet would pause for 2 extra beats for each tile with icon on it, iff possible</dt> <dd>
+                <dt id="XI-X">XI-X - It Go but the planet would pause for 2 extra beats for each tile with icon on it, iff possible</dt> <dd>
                     Add 2 extra paused beats to each tile with icon,
                     except hold starts <i>(the game refused to do that)</i>
                     and portal <i>(no perceptible changes for that)</i>.
                 </dd>
             </dl>
             <h3 id="List.Collab">Collaboration <i>(PA-X, RJ-X, M_-X)</i></h3> <dl>
-                <dt>PA-X - Distance but the midspins are taking over this level</dt> <dd>
+                <dt id="PA-X">PA-X - Distance but the midspins are taking over this level</dt> <dd>
                     Replace some non-midspin tiles to midspin, without changing the rhythm.
                 </dd>
-                <dt>RJ-X Fear Grows but the multitaps has been changed to midspins</dt> <dd>
+                <dt id="RJ-X">RJ-X Fear Grows but the multitaps has been changed to midspins</dt> <dd>
                     Replace multitaps to midspins.<br/>
                     <i>(any angle is acceptable, except for those that cause the planet to spin extra loops)</i>
                 </dd>
-                <dt>MN-X - Night Wander (cnsouka Remix) but it is in the "midspin not found" state</dt> <dd>
+                <dt id="MN-X">MN-X - Night Wander (cnsouka Remix) but it is in the "midspin not found" state</dt> <dd>
                     Replace each midspin to non-midspin tiles, without changing the rhythm.
                 </dd>
-                <dt>ML-X - La nuit de vif but the time of notes in each beat is <a href="https://www.youtube.com/watch?v=CsKYccn41Nw&lc=UgzBXrA3IIsdEPLUzZl4AaABAg">rounded</a></dt> <dd>
+                <dt id="ML-X">ML-X - La nuit de vif but the time of notes in each beat is <a href="https://www.youtube.com/watch?v=CsKYccn41Nw&lc=UgzBXrA3IIsdEPLUzZl4AaABAg">rounded</a></dt> <dd>
                     <i>(notes that span multiple parts belongs to the first part)</i><br/>
                     <i>(it's possible to have no notes in a part)</i>
                     <i>(beats can also be section, 2 beats, etc.)</i><br/>
                 </dd>
-                <dt>MO-X - EMOMOMO but after you meet a tile thats &gt;180° the speed should be doubled compared to tiles &lt;180°</dt> <dd>
+                <dt id="MO-X">MO-X - EMOMOMO but after you meet a tile thats &gt;180° the speed should be doubled compared to tiles &lt;180°</dt> <dd>
                     When you hit a tile which its angle is &gt;180°, your current speed will be doubled for once,<br/>
                     until you hit a tile which its angle is &lt;180°, which will halved your current speed for once,<br/>
                     until you hit a tile which its angle is &gt;180°, which will doubled your current speed for once,<br/>
@@ -263,17 +268,110 @@
                 </dd>
             </dl>
             <h3 id="List.NeoCosmos">Neo Cosmos <i>(T_-(E)X)</i></h3> <dl>
-                <dt>T1-X</dt> <dd>Add holds if there is no holds, then changes every hold to have 0 extra loops.</dd>
-                <dt>T1-EX</dt> <dd>Add holds if there is no holds, then add 1 extra loops to every hold.</dd>
-                <dt>T2-X</dt> <dd>Modify midspins to special variants in Neo Cosmos, then Fire Midspin = Speed Up, Ice Midspin = Speed Down.</dd>
-                <dt>T2-EX</dt> <dd>Add special midspins in Neo Cosmos, then Fire Midspin = Speed Up, Ice Midspin = Speed Down.</dd>
-                <dt>T3-X</dt> <dd>Remove uncertain factors, such as free roam.</dd>
-                <dt>T3-EX</dt> <dd><i>(wip)</i></dd>
-                <dt>T4-X</dt> <dd>Modify midspins to special variants.</dd>
-                <dt>T4-EX</dt> <dd>Add special midspins.</dd>
-                <dt>T5-X</dt> <dd><i>(wip)</i></dd>
+                <dt id="T1-X">T1-X - NEW LIFE but every hold is now with 0 extra loops</dt> <dd>
+                    Add holds if there is no holds, then changes every hold to have 0 extra loops.
+                </dd>
+                <dt id="T1-EX">T1-EX - NEW LIFE but every hold is now 1 loop longer</dt> <dd>
+                    Add holds if there is no holds, then add 1 extra loops to every hold.
+                </dd>
+                <dt id="T2-X">T2-X - sing sing <span style="color:#F00;">red</span> <span style="color:#00F;">indigo</span> but these special midspins changes the speed</dt> <dd>
+                    Change midspins to special variants in Neo Cosmos, then Fire Midspin = Speed Up, Ice Midspin = Speed Down.
+                </dd>
+                <dt id="T2-EX">T2-EX - sing sing <span style="color:#F00;">red</span> <span style="color:#00F;">indigo</span> but these special midspins changes the speed</dt> <dd>
+                    Add special midspins in Neo Cosmos, then Fire Midspin = Speed Up, Ice Midspin = Speed Down.
+                </dd>
+                <dt id="T3-X">T3-X - <i>(currently does not exist)</i></dt> <dd>
+                    Remove uncertain factors, such as free roam.
+                </dd>
+                <dt id="T3-EX">T3-EX - <i>(currently does not exist)</i></dt> <dd></dd>
+                <dt id="T4-X">T4-X - Third Sun but it's a midspin party</dt> <dd>
+                    Change midspins to special variants.
+                </dd>
+                <dt id="T4-EX">T4-EX - Third Sun but it's a bigger midspin party</dt> <dd>
+                    Add special midspins.
+                </dd>
+                <dt id="T5-X">T5-X - <i>(currently does not exist)</i></dt> <dd></dd>
             </dl>
-            <h3 id="List.Multicursed">Multi-cursed Levels</h3> <i>(wip)</i>
+            <h3 id="List.Multicursed">Multi-cursed Levels</h3> <dl>
+                <h4 id="D_is_isinstance">PA-X - D is isinstance</h4> <div class="bigger curstr">
+                    Current curse by Yangsy56302: None
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XR-X" target="_self">XR-X</a>
+                    + <a class="curstr" href="#10-X" target="_self">10-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#RJ-X" target="_self">RJ<span class="curstr+">+</span>X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#9-X" target="_self">9-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#8-X" target="_self">8<span class="curstr+">+</span>X</a>
+                    <br/>Next curse by Yangsy56302: None
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#12-X" target="_self">12-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#10-X" target="_self">10-X</a>
+                    + <a class="curstr" href="#12-X" target="_self">12-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#4-X" target="_self">4-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#11-X" target="_self">11-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XC-X" target="_self">XC-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XC-X" target="_self">XC-X</a>
+                    + <a class="curstr" href="#XN-X" target="_self">XN<span class="curstr+">+</span>X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XC-X" target="_self">XC-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XC-X" target="_self">XC-X</a>
+                    + <a class="curstr" href="#XN-X" target="_self">XN<span class="curstr+">+</span>X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XT-X" target="_self">XT-X</a>
+                    + <a class="curstr" href="#11-X" target="_self">11-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XC-X" target="_self">XC-X</a>
+                    + <a class="curstr" href="#11-X" target="_self">11-X</a>
+                    <br/><i>Next curse by Yangsy56302: ...deja vu?</i>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XC-X" target="_self">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#11-X" target="_self">11-X</a>
+                    <br/><i>Next curse by Yangsy56302: ...</i>
+                </div>
+                <h4 id="14G10R">XO-X - 1 4 Got 10 →</h4> <div class="bigger curstr">
+                    Current curse by Yangsy56302:
+                    <a class="curstr" href="#8-X" target="_self">8-X</a>
+                    + <a class="curstr" href="#PA-X" target="_self">PA-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#8-X" target="_self">8-X</a>
+                    + <a class="curstr" href="#PA-X" target="_self">PA-X</a>
+                    + <a class="curstr" href="#XF-X" target="_self">XF-X</a>
+                    + <a class="curstr" href="#XM-X" target="_self">XM-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XT-X" target="_self">XT-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XM-X" target="_self">XM-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XM-X" target="_self">XM-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#10-X" target="_self">10-X</a>
+                    + <a class="curstr" href="#XS-X" target="_self">XS-X</a><span class="curstr*">*</span>3
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#ML-X" target="_self">ML-X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XF-X" target="_self">XF-X</a>
+                    + <a class="curstr" href="#XF-X" target="_self">XF<span class="curstr+">+</span>X</a>
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#XF-X" target="_self">XF-X</a>
+                    + <a class="curstr" href="#XF-X" target="_self">XF<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#12-X" target="_self">12-X</a>
+                    <br/>Next curse by Yangsy56302: None
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#6-X" target="_self">6-X</a>
+                    <br/>Next curse by Yangsy56302: None
+                    <br/>Next curse by Yangsy56302:
+                    <a class="curstr" href="#6-X" target="_self">12-X</a>
+                    <br/><i>Next curse by Yangsy56302: ...</i>
+                </div>
+            </dl>
             <h3 id="List.NonLevelEffects">Non-level Effects</h3> <dl>
                 <p>
                     It is possible <i>(but not recommended due to copyright issues)</i> to have a crossover with other works:

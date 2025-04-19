@@ -6,8 +6,11 @@ div.curstr {
     color: #FFF;
     text-shadow: 0.1em 0.1em #000F;
     text-align: center;
-    white-space: pre;
+    text-wrap: nowrap;
     overflow: auto;
+}
+div.bigger {
+    width: 80%;
 }
 span.curstr\+ {
     color: #F66;
@@ -16,4 +19,11 @@ span.curstr\+ {
 span.curstr\* {
     color: #6F6;
     text-shadow: inherit inherit #0606;
+}
+a.curstr {
+    color: inherit;
+    text-decoration: none;
+}
+a.curstr:hover {
+    text-decoration: underline;
 }
