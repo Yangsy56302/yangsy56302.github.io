@@ -69,13 +69,14 @@
                 <a href="https://drive.google.com/drive/folders/1gqEsd2btUwlOujfVoDYs_DG0kXshkcVj?usp=sharing">(not all string cursed levels)</a><br/>
                 <a href="https://www.dropbox.com/scl/fo/2x4q3a4bf29wks1z6rnve/AIMcFDGFORMJIQnrNUjd3N4?rlkey=u4gi4hg30l29xhvvl26gucwxk&st=qe8rl7ql&dl=0">Dropbox</a><br/>
         <h2 id="General">General</h2>
+            <p><i><b>Curstr</b> is an abbreviation for <q>string cursed</q>.</i></p>
             <p>In the following content, midspins will be considered as 0° angle.</p>
             <h3 id="General.Basics">Basics</h3>
                 <p>
                     Each ADOFAI level may correspond to an curse effect <i>(theoretically)</i>.<br/>
                     The IDs of the two are the same.
                 </p> <p>
-                    If a part of the chart cannot match the pre-conditions of the curse effect it's using,
+                    If a part of the section cannot match the pre-conditions of the curse effect it's using,
                     nothing <i>(that does matters)></i> will happen.
                 </p> <p>
                     Using a curse effect may produces many possibilities of results.<br/>
@@ -108,7 +109,7 @@
                     </p>
             <h3 id="General.Mechanisms">Mechanisms</h3>
                 <h4 id="General.Mechanisms.Basics">Basics</h4>
-                    <p>Curse effects is usually regarded as a chart-to-chart <b>mapping</b> at here.</p>
+                    <p>Curse effects is usually regarded as a section-to-section <b>mapping</b> at here.</p>
                     <p>
                         Curse effects can <b>stack</b>, represents with a plus sign between:
                         <div class="curstr">Current curse by Yangsy56302: XR-X + 12-X<br/>Next curse by Yangsy56302: 12-X + XR-X</div><br/>
@@ -151,7 +152,7 @@
                         <div class="curstr">Current curse by Yangsy56302: 8<span class="curstr+">+</span>X<br/>Next curse by Yangsy56302: 9-X + 9<span class="curstr+">+</span>X</div><br/>
                         <i>(color isn't required but recommend for readability)</i>
                     </p> <p>
-                        Using an anticurse may produces many possibilities of results which is totally different with the original chart, or does not match expectations at all.<br/>
+                        Using an anticurse may produces many possibilities of results which is totally different with the original section, or does not match expectations at all.<br/>
                         <b>Just choose a specific one to use as I mentioned before.</b>
                     </p>
         <h2 id="List">List of Curses</h2>
@@ -240,10 +241,10 @@
                 <dt id="XT-X">XT-X - Options but all the straight tiles are missing</dt> <dd>
                     Planet will skip them, rather than waiting.
                 </dd>
-                <dt>XO-1 - U-turn Road but all the existence states of swirls on u-turns are inverted</dt> <dd>
+                <dt id="XO-1">XO-1 - U-turn Road but all the existence states of swirls on u-turns are inverted</dt> <dd>
                     For each 360° tiles, if there is no swirl on it, add one; otherwise remove the swirl.
                 </dd>
-                <dt>XO-2 - Back-to-back Loops but all the existence states of swirls on 180° tiles are inverted</dt> <dd>
+                <dt id="XO-2">XO-2 - Back-to-back Loops but all the existence states of swirls on 180° tiles are inverted</dt> <dd>
                     Same as XO-1, but it's for 180° <i>(instead of 360°)</i>.
                 </dd>
                 <dt id="XO-X">XO-X - One Forgotten Night but its curse effect is defined as the combination of XO-1 and XO-2</dt> <dd>
@@ -304,8 +305,23 @@
                 <dt id="T4-EX">T4-EX - Third Sun but it's a bigger midspin party</dt> <dd>
                     Add special midspins.
                 </dd>
-                <dt id="T5-X">T5-X - <i>(currently does not exist)</i></dt> <dd></dd>
+                <dt id="T5-X">T5-X - Divine Intervention but its curse can change the description of any curse effect <i>(wip)</i></dt> <dd>
+                    Remember when I said <a href="#General.Mechanisms.Basics"><q>Curse effects is a section-to-section mapping</q></a>?<br/>
+                    This one is special: It's a <b>curse-to-curse</b> mapping!<br/>
+                    As a result, T5-X curstr <b>cannot</b> be applied to level sections. It can only be applied to <b>curses</b>.<br/>
+                    More specifically, T5-X takes three parameters: <ol>
+                        <li>the curse effect that will be modified</li>
+                        <li>the old substring <i>(you can consider it as a snippet of text)</i> <i>(of the corresponding curse effect level)</i> to be replaced</li>
+                        <li>the new substring to be used for replacement</li>
+                    </ol><br/>
+                    and return a new <i>(and temporary)</i> curse effect, with the replaced curse effect introduction.<br/>
+                </dd>
             </dl>
+            <div class="bigger curstr">
+                Current curse by Yangsy56302: T5-X<sub>(<a class="curstr" href="#1-X" target="_self">1-X</a>,
+                    "judgement limits are", "title is")</sub><br/>
+                <i>(which is 1-X - A Dance of Fire and Ice but the <b>title is</b> changing)</i>
+            </div>
             <h3 id="List.Mult">Multi-affected Levels</h3> <dl>
                 <h4 id="MO-X.Meta">
                     <a class="curstr" href="#MO-X" target="_self">MO-X</a> - 

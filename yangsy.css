@@ -104,6 +104,9 @@ dt {
 dd {
     padding: 0.5em 2em;
 }
+sub, sup {
+    font-size: 0.75em;
+}
 b {
     color: #80F;
 }
