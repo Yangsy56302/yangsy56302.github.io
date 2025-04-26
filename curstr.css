@@ -25,5 +25,8 @@ a.curstr {
     text-decoration: none;
 }
 a.curstr:hover {
-    text-decoration: underline;
+    text-decoration: solid underline;
+}
+a.annotated {
+    text-decoration: dotted underline;
 }
