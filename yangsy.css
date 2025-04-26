@@ -157,6 +157,14 @@ abbr{
     color: inherit;
     font-size: inherit;
 }
+code {
+    font-family: 'Courier New', Courier, 'Consolas', monospace;
+    font-weight: bold;
+    background-color: #000;
+    color: #FFF;
+    font-size: inherit;
+    padding: 0.125em .5em;
+}
 ul {
     list-style-type: disc;
 }
