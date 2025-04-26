@@ -126,9 +126,13 @@
                 </p>
             <h3 id="General.Formats">Formats</h3>
                 <p>
-                    The curses should be hinted by using text decorations on the bottom of the interface:
+                    The curses the player would experience, including the currents and the nexts, should be tipped by using text decorations on the bottom of the interface:
                     <div class="curstr">Current curse by Yangsy56302: 12-X<br/>Next curse by Yangsy56302: XT-X</div><br/>
-                    <i>(and that's why the name of this cursed levels series is <b><a href="https://docs.python.org/3/library/stdtypes.html#str">string</a></b>!)</i>
+                    <i>(and that's why this cursed levels series is named <q><a href="https://docs.python.org/3/library/stdtypes.html#str">string</a></q>!)</i>
+                </p> <p>
+                    As I said, these texts are <b>HINTS, WHICH IS NOT CURSES ITSELF</b>.<br/>
+                    <i>(those curses is more similar to some abstract existences)</i><br/>
+                    And since they are tips, they shouldn't move or rotate with the camera, or they will not have a prompt effect.
                 </p> <p>
                     There will be a countdown before updating the current curse effects:<br/>
                     The countdown starts with 3, decreases by 1 in equal interval time. The curse effects will be updated <b>at the exact same time</b> when the number <i>should be</i> counted down to -1.<br/>
@@ -153,12 +157,12 @@
                 <h4 id="General.Mechanisms.Basics">Basics</h4>
                     <p>Curse effects is usually regarded as a section-to-section <b>mapping</b> at here.</p>
                     <p>
-                        Curse effects can <b>stack</b>, represents with a <code>&plus;</code> sign between:
+                        You can compose 2 curses by using a <code>+</code> sign between, similar to the <a href="https://en.wikipedia.org/wiki/Function_composition">function compositions</a> <i>(which use the </i><code>∘</code><i> sign)</i>.
                         <div class="curstr">Current curse by Yangsy56302: XR-X + 12-X<br/>Next curse by Yangsy56302: 12-X + XR-X</div><br/>
                     </p>
                 <h4 id="General.Mechanisms.Advanced">Advanced</h4>
                     <p>
-                        The affect order of curse effects in hint text decorations is from left to right.<br/>
+                        The affect order of curse effects in tips is from left to right.<br/>
                         For example: <div>
                             <p>
                                 <b>XR-X + 12-X</b> will first add triangles,<br/>
@@ -191,18 +195,18 @@
                             </p>
                         </div>
                     </p> <p>
-                        Anticurse are represented by changing the <code>&minus;</code> sign to the <code>&plus;</code> sign in the ID of the corresponding curse.
+                        Anticurse are represented by changing the <code>-</code> sign to the <code>+</code> sign in the ID of the corresponding curse.
                         <div class="curstr">Current curse by Yangsy56302: 8<span class="curstr+">+</span>X<br/>Next curse by Yangsy56302: 9-X + 9<span class="curstr+">+</span>X</div><br/>
                         <i>(color isn't required but recommended for readability)</i>
                     </p> <p>
                         Specifically, if the curse effect is not from an ADOFAI level,
-                        or there is no <code>&plus;</code> sign in the ID,
-                        insert the <code>&minus;</code> sign at the beginning instead.
-                        <div class="curstr">Current curse by Yangsy56302: <span class="curstr+">-</span>Novel Feature<br/>Next curse by Yangsy56302: <span class="curstr+">-</span>DDLC+!</div>
+                        or there is no <code>+</code> sign in the ID,
+                        insert the <code>-</code> sign at the beginning instead.
+                        <div class="curstr">Current curse by Yangsy56302: <span class="curstr+">-</span>Novel Feature<br/>Next curse by Team Salvato: <span class="curstr+">-</span>DDLC+!</div>
                     </p> <p>
                         <a href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">You can also abbreviate 2 opposite curses which are next to each other.</a>
-                        <div class="curstr">Current curse by Yangsy56302: XC-X + XC<span class="curstr+">+</span>X<br/>curse by Yangsy56302: XC<span class="curstr+">&mnplus;</span>X</div><br/>
-                        <div class="curstr">Current curse by Yangsy56302: XC<span class="curstr+">+</span>X + XC-X<br/>curse by Yangsy56302: XC<span class="curstr+">&plusmn;</span>X</div><br/>
+                        <div class="curstr">Current curse by Yangsy56302: XC-X + XC<span class="curstr+">+</span>X<br/>Next curse by Yangsy56302: XC<span class="curstr+">&mnplus;</span>X</div><br/>
+                        <div class="curstr">Current curse by Yangsy56302: XC<span class="curstr+">+</span>X + XC-X<br/>Next curse by Yangsy56302: XC<span class="curstr+">&plusmn;</span>X</div><br/>
                         <i>(color isn't yet confirmed)</i>
                     </p> <p>
                         Using an anticurse may produces many possibilities of results which is totally different with the original section, or does not match expectations at all.<br/>
