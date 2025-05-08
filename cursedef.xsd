@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xml:lang="en">
     <xs:annotation>
-        <xs:appinfo>ADOFAI String Curses</xs:appinfo>
+        <xs:appinfo>ADOFAI Curse Definition</xs:appinfo>
         <xs:documentation />
     </xs:annotation>
     <xs:element name="root">
