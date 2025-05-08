@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xml:lang="en">
+    <xs:annotation>
+        <xs:appinfo>ADOFAI String Curses</xs:appinfo>
+        <xs:documentation />
+    </xs:annotation>
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="curse" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="([0-9A-Z])+-([0-9A-Z])+" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="level" type="xs:string" />
+                            <xs:element name="but" type="xs:string" />
+                            <xs:element name="desc" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="curstr.xsd"?>
 <root>
     <curse>
         <id>1-X</id>
@@ -52,7 +53,7 @@
         <id>7-X</id>
         <level>Spin 2 Win</level>
         <but>each reflex angled tile will speed you up, and vice versa</but>
-        <desc/>
+        <desc />
     </curse>
     <curse>
         <id>8-X</id>
@@ -241,14 +242,14 @@
     <curse>
         <id>T3-X</id>
         <level>No Hints Here!</level>
-        <but/>
+        <but />
         <desc>Remove uncertain factors, such as free roam.</desc>
     </curse>
     <curse>
         <id>T3EX-X</id>
         <level>No Hints Here!</level>
-        <but/>
-        <desc/>
+        <but />
+        <desc />
     </curse>
     <curse>
         <id>T4-X</id>
