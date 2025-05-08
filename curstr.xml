@@ -5,124 +5,123 @@
         <id>1-X</id>
         <level>A Dance of Fire and Ice</level>
         <but>the judgement limits are changing</but>
-        <desc>Green ones are allowed;
+        <info>Green ones are allowed;
             Yellow ones are allowed by the curse but you will be killed by judgement itself;
-            Red ones are NOT allowed and you will be killed instantly by the curse.</desc>
+            Red ones are NOT allowed and you will be killed instantly by the curse.</info>
     </curse>
     <curse>
         <id>2-X</id>
         <level>Offbeats</level>
         <but>it is in another type of rhythm</but>
-        <desc>3/4, 7/8, 4/5, etc.</desc>
+        <info>3/4, 7/8, 4/5, etc.</info>
     </curse>
     <curse>
         <id>3-X</id>
         <level>THE WIND-UP</level>
         <but>each straight line makes you more laggy</but>
-        <desc>You starts with N = 0.
+        <info>You starts with N = 0.
             Every time you reached the end of a chain of 180° tiles,
             the tile right after the chain needs to hit N extra times;
-            After that, N increased by 1.</desc>
+            After that, N increased by 1.</info>
     </curse>
     <curse>
         <id>4-X</id>
         <level>Love Letters</level>
         <but>short</but>
-        <desc>Remove segments at any scale.</desc>
+        <info>Remove segments at any scale.</info>
     </curse>
     <curse>
         <id>5-X</id>
         <level>The Midnight Train</level>
         <but>the april fools has come true</but>
-        <desc>The planets are in the wrong orientation,
-            yet the chart plays the exact same as it did before.</desc>
+        <info>The planets are in the wrong orientation,
+            yet the chart plays the exact same as it did before.</info>
     </curse>
     <curse>
         <id>6-X</id>
         <level>PULSE</level>
         <but>there is a 1 beat PAUSE on every tile</but>
-        <desc>Doubling the BPM and increasing paused beat counts by 1.</desc>
+        <info>Doubling the BPM and increasing paused beat counts by 1.</info>
     </curse>
     <curse>
         <id>B-X</id>
         <level>Thanks For Playing My Game</level>
         <but>every tile is doubled</but>
-        <desc>Both ends of the track are excluded.</desc>
+        <info>Both ends of the track are excluded.</info>
     </curse>
     <curse>
         <id>7-X</id>
         <level>Spin 2 Win</level>
         <but>each reflex angled tile will speed you up, and vice versa</but>
-        <desc />
     </curse>
     <curse>
         <id>8-X</id>
         <level>Jungle City</level>
         <but>every successive same-angled tile segments has 1 additional tile</but>
-        <desc>0° and 360° may also counts, it depends.
-            This effect can also add or remove twirls without changing the rhythm for better readability.</desc>
+        <info>0° and 360° may also counts, it depends.
+            This effect can also add or remove twirls without changing the rhythm for better readability.</info>
     </curse>
     <curse>
         <id>9-X</id>
         <level>Classic Pursuit</level>
         <but>every tile that its angle isn't θτ/4 has a twirl on it (θ∈ℤ)</but>
-        <desc>In case you don't know, τ = 360°, and τ/4 = 90°.</desc>
+        <info>In case you don't know, τ = 360°, and τ/4 = 90°.</info>
     </curse>
     <curse>
         <id>10-X</id>
         <level>Butterfly Planet</level>
         <but>no more reflex angles for you</but>
-        <desc>Twirls will be added on tiles thats its angle is &gt;180°.
-            This effect can also add or remove twirls without changing the rhythm for better readability.</desc>
+        <info>Twirls will be added on tiles thats its angle is &gt;180°.
+            This effect can also add or remove twirls without changing the rhythm for better readability.</info>
     </curse>
     <curse>
         <id>11-X</id>
         <level>Heracles</level>
         <but>the twirls can change your current speed</but>
-        <desc>Red Twirl = Speed Up, Blue Twirl = Speed Down. Simple.</desc>
+        <info>Red Twirl = Speed Up, Blue Twirl = Speed Down. Simple.</info>
     </curse>
     <curse>
         <id>12-X</id>
         <level>Artificial Chariot</level>
         <but>the acute angles and the obtuse angles are swapped</but>
-        <desc>The angle of each tile is now its supplementary angle.
+        <info>The angle of each tile is now its supplementary angle.
             Integer multiples of 180° will bypass this curse.
             Angles &gt;180° will be moduled by 180° when processing.
-            This effect can also add or remove twirls without changing the rhythm for better readability.</desc>
+            This effect can also add or remove twirls without changing the rhythm for better readability.</info>
     </curse>
     <curse>
         <id>XF-X</id>
         <level>Third Wave Flip-Flop</level>
         <but>you found the shortcuts</but>
-        <desc>If the center of two (or more) tiles was overlapped with each other,
+        <info>If the center of two (or more) tiles was overlapped with each other,
             The planet will choose the shortest path in time (not in tile count) to walk on.
-            If these shortest choices end up in a tie, you can choose any of them.</desc>
+            If these shortest choices end up in a tie, you can choose any of them.</info>
     </curse>
     <curse>
         <id>XC-X</id>
         <level>Credits</level>
         <but>it's tutorial exclusive</but>
-        <desc>Replacing a segment to a tutorial level, or inserting one.</desc>
+        <info>Replacing a segment to a tutorial level, or inserting one.</info>
     </curse>
     <curse>
         <id>XH-X</id>
         <level>Final Hope</level>
         <but>this is a DLC level</but>
-        <desc>Add DLC contents.
+        <info>Add DLC contents.
             Additionally, Hold can replace 180° tiles by extra loops,
-            and midspins cannot be created out of nothing.</desc>
+            and midspins cannot be created out of nothing.</info>
     </curse>
     <curse>
         <id>PA-X</id>
         <level>Distance</level>
         <but>the midspins are taking over this level</but>
-        <desc>Replace some non-midspin tiles to midspin without changing the rhythm.</desc>
+        <info>Replace some non-midspin tiles to midspin without changing the rhythm.</info>
     </curse>
     <curse>
         <id>XS-X</id>
         <level>Party of spirits</level>
         <but>each gameplay event is delayed by 1 tile</but>
-        <desc>This curse effect can only affects these type of events below:
+        <info>This curse effect can only affects these type of events below:
             <ul>
                 <li>Set Speed</li>
                 <li>Twirl</li>
@@ -136,145 +135,144 @@
                 <li>Set Conditional Events (if as a part of gameplay)</li>
                 <li>Set Input Event (if as a part of gameplay)</li>
             </ul>
-        </desc>
+        </info>
     </curse>
     <curse>
         <id>XR-X</id>
         <level>Rose Garden</level>
         <but>each 90° tile should have a triangle</but>
-        <desc>If and only if, any 90° tile wasn't a part of a right triangle, give it one.</desc>
+        <info>If and only if, any 90° tile wasn't a part of a right triangle, give it one.</info>
     </curse>
     <curse>
         <id>RJ-X</id>
         <level>Fear Grows</level>
         <but>the multitaps has been changed to midspins</but>
-        <desc>Any angle is acceptable for the midspins,
-            except for those that cause the planet to spin extra loops.</desc>
+        <info>Any angle is acceptable for the midspins,
+            except for those that cause the planet to spin extra loops.</info>
     </curse>
     <curse>
         <id>XN-X</id>
         <level>Trans-Neptunian Object</level>
         <but>it's a three-body problem</but>
-        <desc>Change the planet counts to 3, without changing the shape of the chart, and the duration for 180° tiles.</desc>
+        <info>Change the planet counts to 3, without changing the shape of the chart, and the duration for 180° tiles.</info>
     </curse>
     <curse>
         <id>XM-X</id>
         <level>Miko Skip</level>
         <but>i swapped the u-turns and the midspins</but>
-        <desc>Continuously midspins is possible, and they will follow ADOFAI's default behavior.</desc>
+        <info>Continuously midspins is possible, and they will follow ADOFAI's default behavior.</info>
     </curse>
     <curse>
         <id>XO-1</id>
         <level>U-turn Road</level>
         <but>all the existence states of swirls on u-turns are inverted</but>
-        <desc>For each 360° tiles, if there is no swirl on it, add one; otherwise remove the swirl.</desc>
+        <info>For each 360° tiles, if there is no swirl on it, add one; otherwise remove the swirl.</info>
     </curse>
     <curse>
         <id>XO-2</id>
         <level>Back-to-back Loops</level>
         <but>all the existence states of swirls on 180° tiles are inverted</but>
-        <desc>For each 180° tiles, if there is no swirl on it, add one; otherwise remove the swirl.</desc>
+        <info>For each 180° tiles, if there is no swirl on it, add one; otherwise remove the swirl.</info>
     </curse>
     <curse>
         <id>XO-X</id>
         <level>One Forgotten Night</level>
         <but>its curse effect is defined as the combination of XO-1 and XO-2</but>
-        <desc></desc>
+        <info></info>
     </curse>
     <curse>
         <id>XI-X</id>
         <level>It Go</level>
         <but>the planet would pause for 2 extra beats for each tile with icon on it, iff possible</but>
-        <desc>Add 2 extra paused beats to each tile with icon,
+        <info>Add 2 extra paused beats to each tile with icon,
             except hold starts (the game refused to do that)
-            and portal (no perceptible changes for that).</desc>
+            and portal (no perceptible changes for that).</info>
     </curse>
     <curse>
         <id>XT-X</id>
         <level>Options</level>
         <but>all the straight tiles are missing</but>
-        <desc>Planet will skip them, rather than waiting.</desc>
+        <info>Planet will skip them, rather than waiting.</info>
     </curse>
     <curse>
         <id>MN-X</id>
         <level>Night Wander (cnsouka Remix)</level>
         <but>it is in the "midspin not found" state</but>
-        <desc>Replace every midspin to non-midspin tiles, without changing the rhythm.</desc>
+        <info>Replace every midspin to non-midspin tiles, without changing the rhythm.</info>
     </curse>
     <curse>
         <id>ML-X</id>
         <level>La nuit de vif</level>
         <but>the time of notes in each beat is rounded</but>
-        <desc>"beats" can also be section, 2 beats, etc.
+        <info>"beats" can also be section, 2 beats, etc.
             Notes that span multiple parts belongs to the first part,
-            and it's a normal phenomenon that some of the part has no notes in them.</desc>
+            and it's a normal phenomenon that some of the part has no notes in them.</info>
     </curse>
     <curse>
         <id>MO-X</id>
         <level>EMOMOMO</level>
         <but>after you meet a tile thats &gt;180° the speed should be doubled compared to tiles &lt;180°</but>
-        <desc>The speed can also be doubled or halved when curse effect starts for difficulty balancing.</desc>
+        <info>The speed can also be doubled or halved when curse effect starts for difficulty balancing.</info>
     </curse>
     <curse>
         <id>T1-X</id>
         <level>NEW LIFE</level>
         <but>every hold is now with 0 extra loops</but>
-        <desc>Add holds if there is no holds, then changes every hold to have 0 extra loops.</desc>
+        <info>Add holds if there is no holds, then changes every hold to have 0 extra loops.</info>
     </curse>
     <curse>
         <id>T1EX-X</id>
         <level>NEW LIFE</level>
         <but>every hold is now 1 loop longer</but>
-        <desc>Add holds if there is no holds, then add 1 extra loops to every hold.</desc>
+        <info>Add holds if there is no holds, then add 1 extra loops to every hold.</info>
     </curse>
     <curse>
         <id>T2-X</id>
         <level>sing sing red indigo</level>
         <but>the special midspins can change the speed</but>
-        <desc>Fire Midspin = Speed Up, Ice Midspin = Speed Down.</desc>
+        <info>Fire Midspin = Speed Up, Ice Midspin = Speed Down.</info>
     </curse>
     <curse>
         <id>T2EX-X</id>
         <level>sing sing red indigo</level>
         <but>the special midspins can change the planet count</but>
-        <desc>Fire Midspin = Triple Planets, Ice Midspin = Double Planets, "Yellow" Midspin = Swap To Another Count For Planets.</desc>
+        <info>Fire Midspin = Triple Planets, Ice Midspin = Double Planets, "Yellow" Midspin = Swap To Another Count For Planets.</info>
     </curse>
     <curse>
         <id>T3-X</id>
         <level>No Hints Here!</level>
         <but />
-        <desc>Remove uncertain factors, such as free roam.</desc>
+        <info>Remove uncertain factors, such as free roam.</info>
     </curse>
     <curse>
         <id>T3EX-X</id>
         <level>No Hints Here!</level>
         <but />
-        <desc />
     </curse>
     <curse>
         <id>T4-X</id>
         <level>Third Sun</level>
         <but>it's a midspin party</but>
-        <desc>Add some special midspins, and change the existing midspins to special variants.</desc>
+        <info>Add some special midspins, and change the existing midspins to special variants.</info>
     </curse>
     <curse>
         <id>T4EX-X</id>
         <level>Third Sun</level>
         <but>the midspins are from australia</but>
-        <desc>For every tile with midspins, flip the midspins to another side
+        <info>For every tile with midspins, flip the midspins to another side
             in the original (not reversed) order and the same ratio.
-            For example, a midspin that divided the angle equally, should also divide the angle equally on the other side.</desc>
+            For example, a midspin that divided the angle equally, should also divide the angle equally on the other side.</info>
     </curse>
     <curse>
         <id>T5-X</id>
         <level>Divine Intervention</level>
-        <but>its curse can change the description of any curse effect</but>
-        <desc>T5-X is a curse-to-curse mapping which takes three parameters:
+        <but>its curse can change the infoription of any curse effect</but>
+        <info>T5-X is a curse-to-curse mapping which takes three parameters:
             <ol>
                 <li>the curse effect that will be modified</li>
                 <li>the old substring to be replaced</li>
                 <li>the new substring to be used for replacement</li>
             </ol>
-            and return a new (and temporary) curse effect with the replaced curse effect introduction.</desc>
+            and return a new (and temporary) curse effect with the replaced curse effect introduction.</info>
     </curse>
 </root>
