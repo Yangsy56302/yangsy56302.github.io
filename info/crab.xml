@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="cursedef.xsd"?>
 <root>
-    <curse>
+    <cursed>
         <id>1-X</id>
         <level>A Dance of Fire and Ice</level>
         <but>the music is cursed</but>
         <desc>What's the deal with rhythm games? Like, what's the deal with it?</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>2-X</id>
         <level>Offbeats</level>
         <but>it's a little longer</but>
         <desc>It's only a little longer...</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>3-X</id>
         <level>THE WIND-UP</level>
         <but>it keeps rewinding</but>
         <desc>!eef etal ruoy yap ot tegrof t'noD</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>4-X</id>
         <level>Love Letters</level>
         <but>I keep having nightmares about Classic Pursuit</but>
         <desc>Don't you hate it when you're just trying to play your favorite level only to think back to your traumatic past? Therapy's going well btw...</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>5-X</id>
         <level>The Midnight Train</level>
         <but>something is wrong with the train</but>
         <desc>I'm no expert, but I don't think trains should sound like this...</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>6-X</id>
         <level>PULSE</level>
         <but>every time you go up or down it gets faster</but>
         <desc>Are you bored with normal ADOFAI? Are you one of the chosen few who can ace PULSE first try? Well, this level is for you!</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>7-X</id>
         <level>Spin 2 Win</level>
         <but>there's no fun allowed</but>
         <desc>This level is not fun. If you experience any fun at all while playing, please visit our office for an evaluation.</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>8-X</id>
         <level>Jungle City</level>
         <but>the angled sections have an extra beat</but>
         <desc>If you play the drums or are good at rhythm, this will make you want to die!</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>10-X</id>
         <level>Butterfly Planet</level>
         <but>I didn't chart the swing</but>
         <desc>I'm sorry...</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>11-X</id>
         <level>Heracles</level>
         <but>there's a twirl on every tile</but>
         <desc>You must fight The Midnight King in order to free the crabs from it's tyranny! But does the king seem... familiar?</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>12-X</id>
         <level>Artificial Chariot</level>
         <but>each unique loop repeats itself for every time it's been played before</but>
         <desc>haha funny song go du dudulu dudulu dudulu dudulu dudulu dudulu dudulu</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>XC-X</id>
         <level>Credits</level>
         <but>the twirls are missing</but>
         <desc>Funding for this funding was made possible by the funding of public funding and from annual funding funding from funding like you.</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>XF-X</id>
         <level>Third Wave Flip-Flop</level>
         <but>whoever made this level was drunk</but>
         <desc>I don't drink alcohol. Is this what being drunk is like?</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>PA-X</id>
         <level>Distance</level>
         <but>there's way too many midspins</but>
         <desc>h</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>XR-X</id>
         <level>Rose Garden</level>
         <but>each triangle makes you more tired</but>
         <desc>Made an easy level this time. Pay no attention to the fact that it's 7 gems. I don't know why it's like that and I can't change it.</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>XH-X</id>
         <level>Final Hope</level>
         <but>every enclosed shape has an additional side</but>
         <desc>It's "Final"-ly done! I "Hope" you enjoy it! I "Riya"-lly "Hope" these puns won't be my "Final" act! Kill me!</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>MN-X</id>
         <level>Night Wander (cnsouka Remix)</level>
         <but>it's a crossover</but>
         <desc>I hope you enjoy my level my level my level level my level my level</desc>
-    </curse>
-    <curse>
+    </cursed>
+    <cursed>
         <id>ML-X</id>
         <level>La nuit de vif</level>
         <but>the bpm drift is getting worse</but>
         <desc>I don't think this castle is up to code at all...</desc>
-    </curse>
+    </cursed>
     <cursed>
         <id>B-X</id>
         <level>Thanks For Playing My Game</level>
@@ -125,8 +125,8 @@
         <desc>The cursed ones take refuge here. They will fight tooth and claw to keep you from breaking through. Rid the world of these curses once and for all.</desc>
     </cursed>
     <cursed>
-        <author>Othinus</author>
-        <level>Forgor Magnum</level>
+        <id>FM-X</id>
+        <level>Othinus - Forgor Magnum</level>
         <desc>TeoC got bored and decided to install some mods into the game. Little did he know he just infested the computer with crabs! As if that wasn't enough, he is also messing with the settings of this world. On top of that, he is using my computer! Can you help me fix it please?</desc>
     </cursed>
 </root>

@@ -10,30 +10,74 @@
             <xs:pattern value="([0-9A-Z])+-([0-9A-Z])+" />
         </xs:restriction>
     </xs:simpleType>
+    <xs:group name="id_group">
+        <xs:choice>
+            <xs:element name="id" type="level_id" />
+            <xs:element name="literal" type="xs:string" />
+        </xs:choice>
+    </xs:group>
+    <xs:group name="title_group">
+        <xs:sequence>
+            <xs:element name="level" type="xs:string" />
+            <xs:element name="but" type="xs:string" minOccurs="0" />
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="curse_reference">
+        <xs:sequence>
+            <xs:group ref="id_group" />
+            <xs:element name="reversed" type="xs:boolean" minOccurs="0" default="true" />
+            <xs:element name="argument" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="curse_keyword">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="None" />
+            <xs:enumeration value="..." />
+            <xs:enumeration value="StopIteration" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:group name="general_curse_type_group">
+        <xs:choice>
+            <xs:element name="curse" type="curse_reference" />
+            <xs:element name="keyword" type="curse_keyword" />
+        </xs:choice>
+    </xs:group>
+    <xs:complexType name="curse_compose">
+        <xs:sequence>
+            <xs:group ref="general_curse_type_group" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="links">
+        <xs:sequence>
+            <xs:element name="workshop" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="download" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="showcase" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:group name="extra_group">
+        <xs:sequence>
+            <xs:element name="links" type="links" minOccurs="0" />
+            <xs:element name="desc" type="xs:string" minOccurs="0" />
+            <xs:element name="info" minOccurs="0" />
+            <xs:element name="effects" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="curses" type="curse_compose" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
     <xs:element name="root">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="curse" minOccurs="0" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:all>
-                            <xs:element name="id" type="level_id" minOccurs="0" />
-                            <xs:element name="author" type="xs:string" minOccurs="0" />
-                            <xs:element name="level" type="xs:string" />
-                            <xs:element name="but" type="xs:string" />
-                            <xs:element name="desc" type="xs:string" minOccurs="0" />
-                            <xs:element name="info" minOccurs="0" />
-                        </xs:all>
-                    </xs:complexType>
-                </xs:element>
                 <xs:element name="cursed" minOccurs="0" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:all>
-                            <xs:element name="id" type="level_id" minOccurs="0" />
-                            <xs:element name="author" type="xs:string" minOccurs="0" />
-                            <xs:element name="level" type="xs:string" />
-                            <xs:element name="desc" type="xs:string" minOccurs="0" />
-                            <xs:element name="info" minOccurs="0" />
-                        </xs:all>
+                        <xs:sequence>
+                            <xs:element name="id" type="level_id" />
+                            <xs:group ref="title_group" />
+                            <xs:group ref="extra_group" />
+                        </xs:sequence>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
