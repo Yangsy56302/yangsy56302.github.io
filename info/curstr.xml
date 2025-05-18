@@ -168,7 +168,7 @@
     <cursed>
         <id>XR-X</id>
         <level>Rose Garden</level>
-        <but>each 90° tile should belong to a triangle</but>
+        <but>each 90° tile belongs to a triangle</but>
         <info>If and only if, any 90° tile wasn't a part of a right triangle, give it one.</info>
     </cursed>
     <cursed>
