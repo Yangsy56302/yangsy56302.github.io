@@ -268,7 +268,7 @@
     </cursed>
     <cursed>
         <id>T3-X</id>
-        <level>No Hints Here!</level>
+        <level>Hints Here!</level>
         <but />
         <info>Remove uncertain factors, such as free roam.</info>
     </cursed>
@@ -294,7 +294,7 @@
     <cursed>
         <id>T5-X</id>
         <level>Divine Intervention</level>
-        <but>its curse can change the infoription of any curse effect</but>
+        <but>its curse can change the description of any curse effect</but>
         <info>T5-X is a curse-to-curse mapping which takes three parameters:
             <ol>
                 <li>the curse effect that will be modified</li>
