@@ -118,29 +118,13 @@ em {
 a {
     font-size: inherit;
 }
-a:link, a:link * {
-    color: #F48;
+a:link {
+    color: #448;
+    text-shadow: 0em 0em 0.0625em #AAF;
 }
-a:visited, a:visited * {
-    color: #486;
-}
-a:hover, a:hover * {
-    color: #F8C;
-}
-a:active, a:active * {
-    color: #4C8;
-}
-h1 a:link {
-    color: #F8C;
-}
-h1 a:visited {
-    color: #8FC;
-}
-h1 a:hover {
-    color: #FCE;
-}
-h1 a:active {
-    color: #CFE;
+a:hover {
+    color: #66C;
+    text-shadow: 0em 0em 0.0625em #AAF;
 }
 del.bc {
     color: #444;

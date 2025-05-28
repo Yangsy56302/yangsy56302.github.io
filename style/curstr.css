@@ -17,6 +17,7 @@ span.curstr\* {
 }
 a.curstr {
     color: inherit;
+    text-shadow: inherit;
     text-decoration: none;
 }
 a.curstr:hover {
