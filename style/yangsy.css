@@ -120,11 +120,11 @@ a {
 }
 a:link {
     color: #448;
-    text-shadow: 0em 0em 0.0625em #AAF;
+    text-shadow: 0em 0em 0.1em #CCF;
 }
 a:hover {
-    color: #66C;
-    text-shadow: 0em 0em 0.0625em #AAF;
+    color: #88F;
+    text-shadow: 0em 0em 0.1em #224;
 }
 del.bc {
     color: #444;
