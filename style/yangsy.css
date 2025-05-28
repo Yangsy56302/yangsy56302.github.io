@@ -107,23 +107,16 @@ dd {
 sub, sup {
     font-size: 0.75em;
 }
-b {
+strong {
     color: #80F;
+    font-weight: bold;
 }
-i {
+em {
     color: #888;
+    font-style: italic;
 }
 a {
     font-size: inherit;
-}
-q {
-    color: #648;
-}
-b i, i b {
-    color: #86A;
-}
-q b, q i {
-    color: unset;
 }
 a:link, a:link * {
     color: #F48;

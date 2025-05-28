@@ -20,7 +20,8 @@
         <a href="index.html">Main page</a>
         <a href="info.html">More informations</a>
         <a href="cursed.html">ADOFAI Cursed Levels</a>
-        <a href="curstr.html">ADOFAI curstr</a>
+        <a href="curstr.html">(ADOFAI curstr)</a>
+        <a href="multicursed.html">(Multi-cursed)</a>
         <a href="bluearchived.html">Blue ArchiveD</a>
         <a href="template.html">Template Page</a>
     </div>
@@ -107,27 +108,27 @@
             </a></p>
             <h3 id="General.Basics">Basics</h3>
                 <p>
-                    Each ADOFAI level may correspond to an curse effect <i>(theoretically)</i>.<br/>
+                    Each ADOFAI level may correspond to an curse effect <em>(theoretically)</em>.<br/>
                     The IDs of the two are the same.
                 </p> <p>
                     If a part of the section cannot match the pre-conditions of the curse effect it's using,
                     nothing <i>(that does matters)></i> will happen.
                 </p> <p>
                     Using a curse effect may produces many possibilities of results.<br/>
-                    <b>Just choose a specific one to use.</b>
+                    <strong>Just choose a specific one to use.</strong>
                 </p>
             <h3 id="General.Formats">Formats</h3>
                 <p>
                     The curses the player would experience, including the currents and the nexts, should be tipped by using text decorations on the bottom of the interface:
                     <div class="curstr">Current curse by Yangsy56302: 12-X<br/>Next curse by Yangsy56302: XT-X</div><br/>
-                    <i>(and that's why this cursed levels series is named <q><a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str">string</a></q>!)</i>
+                    <em>(and that's why this cursed levels series is named <q><a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str">string</a></q>!)</em>
                 </p> <p>
-                    As I said, these texts are <b>HINTS, WHICH IS NOT CURSES ITSELF</b>.<br/>
-                    <i>(those curses is more similar to some abstract existences)</i><br/>
+                    As I said, these texts are <strong>HINTS, WHICH IS NOT CURSES ITSELF</strong>.<br/>
+                    <em>(those curses is more similar to some abstract existences)</em><br/>
                     And since they are tips, they shouldn't move or rotate with the camera, or they will not have a prompt effect.
                 </p> <p>
                     There will be a countdown before updating the current curse effects:<br/>
-                    The countdown starts with 3, decreases by 1 in equal interval time. The curse effects will be updated <b>at the exact same time</b> when the number <i>should be</i> counted down to -1.<br/>
+                    The countdown starts with 3, decreases by 1 in equal interval time. The curse effects will be updated <strong>at the exact same time</strong> when the number <em>(should be)</em> counted down to -1.<br/>
                     <div class="curstr">
                         Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (3)<br/><br/>
                         Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (2)<br/><br/>
@@ -147,9 +148,9 @@
                     </p>
             <h3 id="General.Mechanisms">Mechanisms</h3>
                 <h4 id="General.Mechanisms.Basics">Basics</h4>
-                    <p>Curse effects is usually regarded as a section-to-section <b>mapping</b> at here.</p>
+                    <p>Curse effects is usually regarded as a section-to-section <strong>mapping</strong> at here.</p>
                     <p>
-                        You can compose 2 curses by using a <code>+</code> sign between, similar to the <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">function compositions</a> <i>(which use the </i><code>∘</code><i> sign)</i>.
+                        You can compose 2 curses by using a <code>+</code> sign between, similar to the <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">function compositions</a> <em>(which use the </i><code>∘</code><i> sign)</em>.
                         <div class="curstr">Current curse by Yangsy56302: XR-X + 12-X<br/>Next curse by Yangsy56302: 12-X + XR-X</div><br/>
                     </p>
                 <h4 id="General.Mechanisms.Advanced">Advanced</h4>
@@ -157,23 +158,23 @@
                         The affect order of curse effects in tips is from left to right.<br/>
                         For example: <div>
                             <p>
-                                <b>XR-X + 12-X</b> will first add triangles,<br/>
+                                <code>XR-X + 12-X</code> will first add triangles,<br/>
                                 then try to change the angle of every tile,<br/>
                                 including those tiles that is a part of these new triangle,<br/>
                                 so now these triangles are probably not triangles anymore;<br/>
                             </p> <p>
-                                but <b>12-X + XR-X</b> will first try to change the angle of every tile,<br/>
+                                but <code>12-X + XR-X</code> will first try to change the angle of every tile,<br/>
                                 then add triangles which will not be modified by the angle change process thats already finished.
                             </p>
                         </div>
                     </p>
                 <h4 id="General.Mechanisms.Meta">Meta</h4>
                     <p>
-                        The time order of curse effects <b>IS NOT</b> the affect order of curse effects.
+                        The time order of curse effects <strong>IS NOT</strong> the affect order of curse effects.
                     </p> <p>
                         There is a abbreviation for repeated curse effects.
                         <div class="curstr">Current curse by Yangsy56302: XS-X + XS-X + XS-X<br/>Next curse by Yangsy56302: XS-X<span class="curstr*">*</span>3</div><br/>
-                        <i>(color isn't required but recommended for readability)</i>
+                        <em>(color isn't required but recommended for readability)</em>
                     </p> 
                     <h5 id="General.Mechanisms.Meta.Anticurses">Anticurses</h5>
                         <b>Anticurses</b> are basically the reversal of the curse process, 
@@ -189,7 +190,7 @@
                     </p> <p>
                         Anticurse are represented by changing the <code>-</code> sign to the <code>+</code> sign in the ID of the corresponding curse.
                         <div class="curstr">Current curse by Yangsy56302: 8<span class="curstr+">+</span>X<br/>Next curse by Yangsy56302: 9-X + 9<span class="curstr+">+</span>X</div><br/>
-                        <i>(color isn't required but recommended for readability)</i>
+                        <em>(color isn't required but recommended for readability)</em>
                     </p> <p>
                         Specifically, if the curse effect is not from an ADOFAI level,
                         or there is no <code>+</code> sign in the ID,
@@ -199,14 +200,14 @@
                         <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">You can also abbreviate 2 opposite curses which are next to each other.</a>
                         <div class="curstr">Current curse by Yangsy56302: XC-X + XC<span class="curstr+">+</span>X<br/>Next curse by Yangsy56302: XC<span class="curstr+">&mnplus;</span>X</div><br/>
                         <div class="curstr">Current curse by Yangsy56302: XC<span class="curstr+">+</span>X + XC-X<br/>Next curse by Yangsy56302: XC<span class="curstr+">&plusmn;</span>X</div><br/>
-                        <i>(color isn't yet confirmed)</i>
+                        <em>(color isn't yet confirmed)</em>
                     </p> <p>
                         Using an anticurse may produces many possibilities of results which is totally different with the original section, or does not match expectations at all.<br/>
                         <b>Just choose a specific one to use as I mentioned before.</b>
                     </p>
         </div>
         <h2 id="List">List of Curses</h2> <div>
-            <b>For XML version of this list, see <a href="curstr.xml">curstr.xml</a>.</b>
+            <strong>For XML version of this list, see <a href="curstr.xml">curstr.xml</a>.</strong>
             <h3 id="List.Main">Main Game</h3> <div><dl>
                 <dt id="1-X">1-X - A Dance of Fire and Ice but the judgement limits are changing</dt> <dd>
                     Green ones are allowed;<br/>
@@ -232,36 +233,36 @@
                     Doubling the BPM and increasing paused beat counts by 1.
                 </dd>
                 <dt id="B-X">B-X - Thanks For Playing My Game but every tile is doubled</dt> <dd>
-                    <i>(except the end portal)</i>
+                    <em>(except the end portal)</em>
                 </dd>
                 <dt id="7-X">7-X - Spin 2 Win but each reflex angled tile will speed you up, and vice versa</dt> <dd>
                     &lt;180° = Speed Down, &gt;180° = Speed Up.
                 </dd>
                 <dt id="8-X">8-X - Jungle City but every successive same-angled tile segments has 1 additional tile</dt> <dd>
-                    <i>(0° and 360° may also counts, it depends)</i><br/>
-                    <i>(this effect can also adding or removing twirls without changing the rhythm for better readability)</i>
+                    <em>(0° and 360° may also counts, it depends)</em><br/>
+                    <em>(this effect can also adding or removing twirls without changing the rhythm for better readability)</em>
                 </dd>
                 <dt id="9-X">9-X - Classic Pursuit but every tile that its angle isn't θτ/4 has a twirl on it (θ∈ℤ)</dt> <dd>
-                    <i>(τ/4 = 90°)</i>
+                    <em>(τ/4 = 90°)</em>
                 </dd>
                 <dt id="10-X">10-X - Butterfly Planet but no more reflex angles for you</dt> <dd>
                     Twirls will be added on tiles thats its angle is &gt;180°.<br/>
-                    <i>(this effect can also adding or removing twirls without changing the rhythm for better readability)</i>
+                    <em>(this effect can also adding or removing twirls without changing the rhythm for better readability)</em>
                 </dd>
                 <dt id="11-X">11-X - Heracles but the twirls can change your current speed</dt> <dd>
                     Red Twirl = Speed Up, Blue Twirl = Speed Down. Simple.
                 </dd>
                 <dt id="12-X">12-X - Artificial Chariot but the acute angles and the obtuse angles are swapped</dt> <dd>
                     The angle of each tile is now its supplementary angle.<br/>
-                    <i>(integer multiples of 180° will bypass this curse)</i><br/>
-                    <i>(angles &gt;180° will be moduled by 180° when processing)</i><br/>
-                    <i>(this effect can also adding or removing twirls without changing the rhythm for better readability)</i>
+                    <em>(integer multiples of 180° will bypass this curse)</em><br/>
+                    <em>(angles &gt;180° will be moduled by 180° when processing)</em><br/>
+                    <em>(this effect can also adding or removing twirls without changing the rhythm for better readability)</em>
                 </dd>
             </dl></div>
             <h3 id="List.Xtra">Xtra/Challenge</h3> <div><dl>
                 <dt id="XF-X">XF-X - Third Wave Flip-Flop but you found the shortcuts</dt> <dd>
-                    If the center of two <i>(or more)</i> tiles was overlapped with each other, The planet will choose the shortest path <i>(in time, not in tile count)</i> to walk on.<br/>
-                    <i>(you can choose freely if there's a tie)</i>
+                    If the center of two <em>(or more)</em> tiles was overlapped with each other, The planet will choose the shortest path <em>(in time, not in tile count)</em> to walk on.<br/>
+                    <em>(you can choose freely if there's a tie)</em>
                 </dd>
                 <dt id="XC-X">XC-X - Credits but it's tutorial exclusive</dt> <dd>
                     Replacing a segment to a tutorial level, or inserting one.
@@ -273,14 +274,14 @@
                     Replace some non-midspin tiles to midspin, without changing the rhythm.
                 </dd>
                 <dt id="XS-X">XS-X - Party of spirits but each gameplay event is delayed by 1 tile</dt> <dd>
-                    <b>The corresponding level of this curse effect includes <a href="#XS-X.Meta">multi curses</a>!</b><br/>
+                    <strong>The corresponding level of this curse effect includes <a href="#XS-X.Meta">multi curses</a>!</strong><br/>
                     This curse effect can only affects these type of events below.
                     <ul>
                         <li>Set Speed, Twirl, Checkpoint</li>
                         <li>Hold, Multi Planet</li>
                         <li>Paused Beats, Timing Window Scale</li>
-                        <li>Hide Judgement/Floor Icons, AutoPlay tiles <i>(if as a part of gameplay)</i></li>
-                        <li>Set Conditional Events, Set Input Event <i>(if as a part of gameplay)</i></li>
+                        <li>Hide Judgement/Floor Icons, AutoPlay tiles <em>(if as a part of gameplay)</em></li>
+                        <li>Set Conditional Events, Set Input Event <em>(if as a part of gameplay)</em></li>
                     </ul>
                 </dd>
                 <dt id="XR-X">XR-X - Rose Garden but each 90° tile belongs to a triangle</dt> <dd>
@@ -288,7 +289,7 @@
                 </dd>
                 <dt id="RJ-X">RJ-X - Fear Grows but the multitaps has been changed to midspins</dt> <dd>
                     Replace multitaps to midspins.<br/>
-                    <i>(any angle is acceptable, except for those that cause the planet to spin extra loops)</i>
+                    <em>(any angle is acceptable, except for those that cause the planet to spin extra loops)</em>
                 </dd>
                 <dt id="XN-X">XN-X - Trans-Neptunian Object but it's a three-body problem</dt> <dd>
                     Change the planet counts to 3, without changing the shape of the chart, and the duration for 180° tiles.
@@ -300,16 +301,16 @@
                     For each 360° tiles, if there is no swirl on it, add one; otherwise remove the swirl.
                 </dd>
                 <dt id="XO-2">XO-2 - Back-to-back Loops but all the existence states of swirls on 180° tiles are inverted</dt> <dd>
-                    Same as XO-1, but it's for 180° <i>(instead of 360°)</i>.
+                    Same as XO-1, but it's for 180° <em>(instead of 360°)</em>.
                 </dd>
                 <dt id="XO-X">XO-X - One Forgotten Night but its curse effect is defined as the combination of XO-1 and XO-2</dt> <dd>
-                    <b>The corresponding level of this curse effect includes <a href="#XO-X.Meta">multi curses</a>!</b><br/>
-                    <i>(it can also be XO-2 + XO-1, since there's no difference between these 2 situations)</i>
+                    <strong>The corresponding level of this curse effect includes <a href="#XO-X.Meta">multi curses</a>!</strong><br/>
+                    <em>(it can also be XO-2 + XO-1, since there's no difference between these 2 situations)</em>
                 </dd>
                 <dt id="XI-X">XI-X - It Go but the planet would pause for 2 extra beats for each tile with icon on it, iff possible</dt> <dd>
                     Add 2 extra paused beats to each tile with icon,
-                    except hold starts <i>(the game refused to do that)</i>
-                    and portal <i>(no perceptible changes for that)</i>.
+                    except hold starts <em>(the game refused to do that)</em>
+                    and portal <em>(no perceptible changes for that)</em>.
                 </dd>
                 <dt id="XT-X">XT-X - Options but all the straight tiles are missing</dt> <dd>
                     Planet will skip them, rather than waiting.
@@ -318,17 +319,17 @@
                     Replace each midspin to non-midspin tiles, without changing the rhythm.
                 </dd>
                 <dt id="ML-X">ML-X - La nuit de vif but the time of notes in each beat is <a target="_blank" href="https://www.youtube.com/watch?v=CsKYccn41Nw&lc=UgzBXrA3IIsdEPLUzZl4AaABAg">rounded</a></dt> <dd>
-                    <i>(notes that span multiple parts belongs to the first part)</i><br/>
-                    <i>(it's possible to have no notes in a part)</i><br/>
-                    <i>(beats can also be section, 2 beats, etc.)</i><br/>
+                    <em>(notes that span multiple parts belongs to the first part)</em><br/>
+                    <em>(it's possible to have no notes in a part)</em><br/>
+                    <em>(beats can also be section, 2 beats, etc.)</em><br/>
                 </dd>
                 <dt id="MO-X">MO-X - EMOMOMO but after you meet a tile thats &gt;180° the speed should be doubled compared to tiles &lt;180°</dt> <dd>
-                    <b>The corresponding level of this curse effect includes <a href="#MO-X.Meta">multi curses</a>!</b><br/>
+                    <strong>The corresponding level of this curse effect includes <a href="#MO-X.Meta">multi curses</a>!</strong><br/>
                     When you hit a tile which its angle is &gt;180°, your current speed will be doubled for once,<br/>
                     until you hit a tile which its angle is &lt;180°, which will halved your current speed for once,<br/>
                     until you hit a tile which its angle is &gt;180°, which will doubled your current speed for once,<br/>
                     until you hit a tile which its angle is &lt;180°... <i>okay i'll shut up.</i><br/>
-                    <i>(your current speed can also be doubled or halved when curse effect starts for difficulty balancing)</i>
+                    <em>(your current speed can also be doubled or halved when curse effect starts for difficulty balancing)</em>
                 </dd>
             </dl></div>
             <h3 id="List.NeoC">Neo Cosmos</h3> <div><dl>
@@ -344,37 +345,37 @@
                 <dt id="T2-EX">T2-EX - sing sing <span style="color:#F00;">red</span> <span style="color:#00F;">indigo</span> but the special midspins can change the planet count</dt> <dd>
                     Fire Midspin = Triple Planets, Ice Midspin = Double Planets, "Yellow" Midspin = Swap To Another Count For Planets.
                 </dd>
-                <dt id="T3-X">T3-X - <i>(currently does not exist)</i></dt> <dd>
+                <dt id="T3-X">T3-X - <em>(currently does not exist)</em></dt> <dd>
                     Remove uncertain factors, such as free roam.
                 </dd>
-                <dt id="T3-EX">T3-EX - <i>(currently does not exist)</i></dt> <dd>
-                    <i>(undefined for now)</i>
+                <dt id="T3-EX">T3-EX - <em>(currently does not exist)</em></dt> <dd>
+                    <em>(undefined for now)</em>
                 </dd>
                 <dt id="T4-X">T4-X - Third Sun but it's a midspin party</dt> <dd>
                     Add special midspins, and also change some of the midspins to special variants.
                 </dd>
                 <dt id="T4-EX">T4-EX - Third Sun but the midspins are from australia</dt> <dd>
-                    <b>The corresponding level of this curse effect includes <a href="#T4-EX.Meta">multi curses</a>!</b><br/>
-                    For every tile with midspins, flip the midspins to another side, in the original <i>(not reversed)</i> order and the same ratio
-                    <i>(for example, a midspin that divided the angle equally, should also divide the angle equally on the other side)</i>.
+                    <strong>The corresponding level of this curse effect includes <a href="#T4-EX.Meta">multi curses</a>!</strong><br/>
+                    For every tile with midspins, flip the midspins to another side, in the original <em>(not reversed)</em> order and the same ratio
+                    <em>(for example, a midspin that divided the angle equally, should also divide the angle equally on the other side)</em>.
                 </dd>
                 <dt id="T5-X">T5-X - Divine Intervention but its curse can change the description of any curse effect</dt> <dd>
-                    <b>The corresponding level of this curse effect includes <a href="#T5-X.Meta">multi curses</a>!</b><br/>
+                    <strong>The corresponding level of this curse effect includes <a href="#T5-X.Meta">multi curses</a>!</strong><br/>
                     Remember when I said <a href="#General.Mechanisms.Basics"><q>Curse effects is a section-to-section mapping</q></a>?<br/>
-                    This one is special: It's a <b>curse-to-curse</b> mapping!<br/>
-                    As a result, T5-X curstr <b>cannot</b> be applied to level sections. It can only be applied to <b>curses</b>.<br/>
+                    This one is special: It's a <strong>curse-to-curse</strong> mapping!<br/>
+                    As a result, T5-X curstr <strong>cannot</strong> be applied to level sections. It can only be applied to <strong>curses</strong>.<br/>
                     More specifically, T5-X takes three parameters: <ol>
                         <li>the curse effect that will be modified</li>
-                        <li>the old substring <i>(it basically means <q>text clip</q>)</i> to be replaced</li>
+                        <li>the old substring <em>(it basically means <q>text clip</q>)</em> to be replaced</li>
                         <li>the new substring to be used for replacement</li>
                     </ol><br/>
-                    and return a new <i>(and temporary)</i> curse effect, with the replaced curse effect introduction.<br/>
+                    and return a new <em>(and temporary)</em> curse effect, with the replaced curse effect introduction.<br/>
                 </dd>
             </dl>
                 <div class="curstr">
                     Current curse by Yangsy56302: T5-X<sub>(<a class="curstr" href="#1-X">1-X</a>,
                         "judgement limits are", "title is")</sub><br/>
-                    <i>(which is 1-X - A Dance of Fire and Ice but the <b>title is</b> changing)</i>
+                    <em>(which is 1-X - A Dance of Fire and Ice but the <b>title is</b> changing)</em>
                 </div>
             </div>
             <h3 id="List.Mult">Multi-affected Levels</h3> <div><p>
@@ -382,7 +383,7 @@
             </p></div>
             <h3 id="List.NonLevelEffects">Non-level Effects</h3> <div><dl>
                 <p>
-                    It is possible <i>(but not recommended due to copyright issues)</i> to have a crossover with other works:
+                    It is possible <em>(but not recommended due to copyright issues)</em> to have a crossover with other works:
                     <p>
                         <a target="_blank" href="https://ddlc.moe/">Doki Doki Literature Club!</a> can be also included in XH-X,<br/>
                         <a target="_blank" href="https://bluearchive.nexon.com/">Blue Archive</a> can be also included in XR-X.<br/>
