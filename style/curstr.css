@@ -3,7 +3,7 @@ div.curstr {
     padding: 1em 1em;
     background-color: #336;
     color: #FFF;
-    text-shadow: 0.1em 0.1em #000F;
+    text-shadow: 0.1em 0.1em 0em #000F;
     text-wrap: nowrap;
     overflow: auto;
 }
