@@ -10,7 +10,7 @@ div {
     margin: 0.5em 2em;
 }
 div.content {
-    width: 50%;
+    width: 75%;
     margin: auto;
     padding: 1em 2em;
     background-color: #FFF;
@@ -19,7 +19,7 @@ div.title {
     z-index: 16;
     position: relative;
     top: 0%;
-    width: 60%;
+    width: 87.5%;
     margin: auto;
     padding: 1em 2em;
     overflow: auto;
@@ -37,7 +37,7 @@ div.top {
     z-index: 16;
     position: sticky;
     top: 0%;
-    width: 55%;
+    width: 81.25%;
     max-height: 8em;
     margin: auto;
     padding: 1em 2em;
@@ -48,7 +48,7 @@ div.bottom {
     z-index: 16;
     position: sticky;
     bottom: 0%;
-    width: 55%;
+    width: 81.25%;
     margin: auto;
     padding: 1em 2em;
     background-color: #EDF;
