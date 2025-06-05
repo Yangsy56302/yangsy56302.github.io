@@ -52,7 +52,7 @@
     <cursed>
         <id>7-X</id>
         <level>Spin 2 Win</level>
-        <but>each reflex angled tile will speed you up, and vice versa</but>
+        <but>each reflex angled tile will speed you up & vice versa</but>
     </cursed>
     <cursed>
         <id>8-X</id>
@@ -231,7 +231,7 @@
     <cursed>
         <id>ML-X</id>
         <level>La nuit de vif</level>
-        <but>the time of notes in each beat is rounded</but>
+        <but>the time of notes in each beat is equalized</but>
         <info>"beats" can also be section, 2 beats, etc.
             Notes that span multiple parts belongs to the first part,
             and it's a normal phenomenon that some of the part has no notes in them.</info>
