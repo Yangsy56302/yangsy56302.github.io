@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Yangsy56302">
+    <meta name="keywords" content="Yangsy56302,Yangsy,冰与火之舞,ADOFAI,A Dance of Fire and Ice,螃蟹,crab,Firestix,魔改,curse,cursed,文字,字符串,string,curstr">
+    <meta name="description" content="Yangsy56302的站点">
+    <title>冰与火之舞文字魔改</title>
+    <link rel="stylesheet" type="text/css" href="../style/yangsy.css">
+    <link rel="stylesheet" type="text/css" href="../style/adofai.css">
+    <link rel="stylesheet" type="text/css" href="../style/curstr.css">
+    <base target="_self">
+</head>
+<body>
+    <div class="title">
+        <h1>Yangsy56302的<a target="_blank" href="https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice/">冰与火之舞</a>文字魔改关卡</h1>
+    </div>
+    <div class="top">
+        <b>站内：</b>
+        <a href="index.html">主页</a>
+        <a href="info.html">更多信息</a><br/>
+        <a href="cursed.html">冰与火之舞魔改</a>
+        (<a href="curstr.html">文字魔改系列</a>)<br/>
+        <a href="bluearchived.html">蔚蓝归档</a>
+        <a href="template.html"><em>模板页面</em></a>
+    </div>
+    <div class="content">
+        <div class="index"><h1 id="Indexes">目录</h1><ol>
+            <li><a href="#Links">外部链接</a><ol>
+                <li><a href="#Links.Downloads">下载链接</a></li>
+            </ol></li>
+            <li><a href="#General">常规</a><ol>
+                <li><a href="#General.Basics">基础概念</a></li>
+                <li><a href="#General.Formats">文本格式</a><ol>
+                    <li><a href="#General.Formats.Keywords">关键词</a></li>
+                </ol></li>
+                <li><a href="#General.Mechanisms">魔改机制</a><ol>
+                    <li><a href="#General.Mechanisms.Basics">基础</a></li>
+                    <li><a href="#General.Mechanisms.Advanced">进阶</a></li>
+                    <li><a href="#General.Mechanisms.Meta">元</a><ol>
+                        <li><a href="#General.Mechanisms.Meta.Anticurses">逆向魔改</a></li>
+                    </ol></li>
+                </ol></li>
+            </ol></li>
+            <li><a href="#Effect">魔改效果关卡大全</a><ol>
+                <li>基础十二大关<div>
+                    <a href="#1-X">1-X</a>
+                    <a href="#2-X">2-X</a>
+                    <a href="#3-X">3-X</a>
+                    <a href="#4-X">4-X</a>
+                    <a href="#5-X">5-X</a>
+                    <a href="#6-X">6-X</a>
+                    <a href="#B-X">B-X</a><br/>
+                    <a href="#7-X">7-X</a>
+                    <a href="#8-X">8-X</a>
+                    <a href="#9-X">9-X</a>
+                    <a href="#10-X">10-X</a>
+                    <a href="#11-X">11-X</a>
+                    <a href="#12-X">12-X</a>
+                </div></li>
+                <li>额外 / 挑战关卡<div>
+                    <a href="#XF-X">XF-X</a>
+                    <a href="#XC-X">XC-X</a>
+                    <a href="#XH-X">XH-X</a>
+                    <a href="#PA-X">PA-X</a>
+                    <a href="#XS-X">XS-X</a><br/>
+                    <a href="#XR-X">XR-X</a>
+                    <a href="#RJ-X">RJ-X</a>
+                    <a href="#XN-X">XN-X</a>
+                    <a href="#XM-X">XM-X</a><br/>
+                    <a href="#XO-X">XO-X</a>
+                    <a href="#XI-X">XI-X</a>
+                    <a href="#XT-X">XT-X</a><br/>
+                    <a href="#MN-X">MN-X</a>
+                    <a href="#ML-X">ML-X</a>
+                    <a href="#MO-X">MO-X</a>
+                </div></li>
+                <li>新宇宙<div>
+                    <a href="#T1-X">T1-X</a>
+                    <a href="#T2-X">T2-X</a>
+                    <a href="#T3-X">T3-X</a>
+                    <a href="#T4-X">T4-X</a>
+                    <a href="#T5-X">T5-X</a><br/>
+                    <a href="#T1-EX">T1-EX</a>
+                    <a href="#T2-EX">T2-EX</a>
+                    <a href="#T3-EX">T3-EX</a>
+                    <a href="#T4-EX">T4-EX</a>
+                </div></li>
+                <li><a href="#NonLevelEffects">非关卡效果</a></li>
+            </ol></li>
+            <li><a href="#Affected">被魔改关卡中的效果列表</a><div>
+                <a href="#Novel_Feature">dash3n - Novel Feature 新特性</a><ul>
+                    <li><a href="#Novel_Feature.XT-6">XT-6 - Unlimited Flexibility 无限灵活</a></li>
+                    <li><a href="#Novel_Feature.XH-X">XH-X - Final Hope 最后的希望</a></li>
+                    <em><li><a href="#Novel_Feature.Meta">覆写用关卡</a></li></em>
+                </ul>
+                <a href="#Hints_Here">T3-X - Hints Here! 有提示！</a><br/>
+                <a href="#14G10R">XO-X - 1 4 Got 10 → 一 礻辶亡 亠</a><br/>
+                <a href="#D_is_isinstance">PA-X - 距例</a><br/>
+                <a href="#Actions">XT-X - 作用项</a><br/>
+                <a href="#TFWSC">B-X - 感谢收看文字魔改系列</a><br/>
+                <a href="#Party_of_stiripS">XS-X - 火彐青米派对</a><br/>
+                既作为魔改效果，又被魔改的关卡：
+                <a href="#T5-X.Meta">T5-X</a>
+                <a href="#XS-X.Meta">XS-X</a>
+                <a href="#XO-X.Meta">XO-X</a>
+                <a href="#MO-X.Meta">MO-X</a>
+                <a href="#T4-EX.Meta">T4-EX</a>
+            </div></li>
+        </ol></div>
+        <h2 id="Links">外部链接</h2> <div>
+            <a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3127510524">Steam创意工坊 合集<i>（并非完整列表）</i></a>
+            <a target="_blank" href="https://www.youtube.com/playlist?list=PLrMA_5KNMXbBoINe5qqBRmrWCb93CxM00">ADOFAI 播放列表（YouTube）</a>
+            <a target="_blank" href="https://space.bilibili.com/430612354/lists?sid=2000240"><del>冰与火之舞 视频合集（哔哩哔哩）</del></a><br/>
+            <a target="_blank" href="https://docs.google.com/document/d/18oEkYRD7uW-_8EwTp0inZFi8Qqf2AYAj7g7pJvC9mNs/">YouTube 用户 @Jack-O_hedgehog 的Emoji转写</a>
+            <h3 id="Links.Downloads">下载链接</h3>
+                <a target="_blank" href="https://drive.google.com/drive/folders/1zjZzuKc07wLJP3SkuoUuKIa7tldnrEqS?usp=sharing">Google 网盘</a>
+                <a target="_blank" href="https://drive.google.com/drive/folders/1gqEsd2btUwlOujfVoDYs_DG0kXshkcVj?usp=sharing">（包括其他魔改系列）</a>
+                <a target="_blank" href="https://www.dropbox.com/scl/fo/2x4q3a4bf29wks1z6rnve/AIMcFDGFORMJIQnrNUjd3N4?rlkey=u4gi4hg30l29xhvvl26gucwxk&st=qe8rl7ql&dl=0">Dropbox</a>
+        </div>
+        <h2 id="General">常规</h2> <div>
+            <p><a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
+                下文中，中旋默认按0°角处理。
+            </a></p>
+            <h3 id="General.Basics">基础概念</h3> <div>
+                <p>
+                    任何冰与火之舞关卡<em>（理论上）</em>都可以对应于一个魔改效果。
+                </p>
+            </div>
+            <h3 id="General.Formats">文本格式</h3> <div>
+                <p>
+                    在拥有多个魔改效果的关卡中，应在屏幕底部添加两行文本装饰作为提示：第一行是正在生效的魔改，第二行则是即将生效的魔改。
+                    <div class="curstr">Current curse by Yangsy56302: 12-X<br/>Next curse by Yangsy56302: XT-X</div><br/>
+                    <em>这也是该魔改系列被称作<q><a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str">文字魔改</a></q>的原因。</em>
+                </p> <p>
+                    注意，这些文本是<strong>提示，而不是魔改效果本体</strong>！
+                    <em>魔改效果本体更像是某种抽象的数学概念。</em><br/>
+                    提示文本不应随着镜头的变化而改变位置或大小，否则将无法起到提示作用。<em>估计短时间内也没人看得懂……</em>
+                </p> <p>
+                    魔改效果更换前会进行倒计时（从3到0，含两端）：倒计时（预计）降到-1的那一瞬间，就是魔改更换的时刻。<br/>
+                    <div class="curstr">
+                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (3)<br/><br/>
+                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (2)<br/><br/>
+                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (1)<br/><br/>
+                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (0)<br/><br/>
+                        Current curse by Yangsy56302: 5-X<br/>Next curse by Yangsy56302: 2-X
+                    </div>
+                </p>
+                <h4 id="General.Formats.Keywords">关键词</h4> <div>
+                    <p>
+                        <b><a id="..." target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></b> 在第二行时可以理解为<q>请稍候</q>，在第一行时则可以理解为<q>需要更多信息</q>。
+                        <div class="curstr">Current curse by Yangsy56302: ...<br/>Next curse by Yangsy56302: ...</div>
+                    </p> <p>
+                        <b><a id="None" target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></b>为“无魔改效果”。<br/>
+                        <b><a id="StopIteration" target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></b>可以理解为<q>在这一关结束之前，魔改效果不会更换，你现在可以将注意力完全放在谱面上了</q>。
+                        <div class="curstr">Current curse by Yangsy56302: None<br/>Next curse by Yangsy56302: StopIteration</div>
+                    </p>
+                </div>
+            </div>
+            <h3 id="General.Mechanisms">魔改机制</h3> <div>
+                <h4 id="General.Mechanisms.Basics">基础</h4> <div>
+                    <p>魔改效果可以看作是从谱面片段到谱面片段的<strong>映射</strong>。</p>
+                    <p>
+                        加号（<code>+</code>）表示组合两个魔改效果，与<a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a></em>类似。<br/>
+                        <div class="curstr">Current curse by Yangsy56302: XR-X + 12-X<br/>Next curse by Yangsy56302: 12-X + XR-X</div><br/>
+                    </p>
+                </div>
+                <h4 id="General.Mechanisms.Advanced">进阶</h4> <div>
+                    <p>
+                        魔改效果的运算顺序与基础数学运算相同。例如：<div>
+                            <p>
+                                <code>XR-X + 12-X</code>首先使用<code>XR-X</code>为直角添加三角形，其次使用<code>12-X</code>互换锐角与钝角，因此<code>XR-X</code>所添加的三角形由于受到<code>12-X</code>的影响不再保持三角形的形态；
+                            </p> <p>
+                                然而<code>12-X + XR-X</code>首先使用<code>12-X</code>互换锐角与钝角，其次使用<code>XR-X</code>为直角添加三角形，因此<code>XR-X</code>所添加的三角形不会受到到<code>12-X</code>的影响，保持原样。
+                            </p>
+                        </div>
+                    </p>
+                </div>
+                <h4 id="General.Mechanisms.Meta">元</h4> <div>
+                    <p>
+                        魔改效果的生效时间先后顺序<strong>并不是</strong>生效顺序，也不存在直接关系。
+                    </p> <p>
+                        连续且重复的魔改效果可以使用乘号（<code>*</code>）简写。
+                        <div class="curstr">Current curse by Yangsy56302: XS-X + XS-X + XS-X<br/>Next curse by Yangsy56302: XS-X<span class="curstr*">*</span>3</div><br/>
+                        <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
+                    </p> 
+                    <h5 id="General.Mechanisms.Meta.Anticurses">逆向魔改</h5> <div>
+                        <strong>逆向魔改<em>（又名逆魔改）</em></strong> ，简单来说，就是反推出魔改效果“生效”前的谱面片段：
+                        <div>
+                            <p>
+                                逆向魔改生效的前置条件：某个假设中的谱面片段，可以通过使用对应的正向魔改，转为将要被逆向魔改的谱面片段。<br/>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
+                                    即使不满足前置条件，魔改也可以被使用，但效果在条件重新满足前将不会实际发挥作用。
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    </p> <p>
+                        逆向魔改通过将减号（<code>-</code>）改为加号（<code>+</code>）来表示。
+                        <div class="curstr">Current curse by Yangsy56302: 8<span class="curstr+">+</span>X<br/>Next curse by Yangsy56302: 9-X + 9<span class="curstr+">+</span>X</div><br/>
+                        <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
+                    </p> <p>
+                        更通用地，如果魔改效果并非源自冰与火之舞关卡，或者魔改标识符内不包括减号，可以将减号（<code>-</code>）置于开头。
+                        <div class="curstr">Current curse by Yangsy56302: <span class="curstr+">-</span>Novel Feature<br/>Next curse by Team Salvato: <span class="curstr+">-</span>`DDLC+!`</div>
+                    </p> <p>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">可以通过正负号来缩写相邻且互逆的魔改。</a>
+                        <div class="curstr">Current curse by Yangsy56302: XC-X + XC<span class="curstr+">+</span>X<br/>Next curse by Yangsy56302: XC<span class="curstr+">&mnplus;</span>X</div><br/>
+                        <div class="curstr">Current curse by Yangsy56302: XC<span class="curstr+">+</span>X + XC-X<br/>Next curse by Yangsy56302: XC<span class="curstr+">&plusmn;</span>X</div><br/>
+                        <em>（文本颜色暂定）</em>
+                    </p> <p>
+                        逆向魔改所导致的可能性有很多，其中很大一部分也没那么直观。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 id="Effect">魔改效果关卡大全</h2> <div>
+            <!-- <strong>For XML version of this list, see <a href="curstr.xml">curstr.xml</a>.</strong> -->
+            <h3>基础十二大关</h3> <div><dl>
+                <dt id="1-X">1-X - 冰与火之舞，但判定限制是变化之神</dt> <dd>
+                    魔改效果允许出现被其标为绿色或黄色的判定<em>（尽管游戏机制仍然认为黄色判定会导致游戏失败）</em>，而禁止红色判定出现<em>（星球会爆毙）</em>。
+                </dd>
+                <dt id="2-X">2-X - 弱拍，但用的是另一种拍号</dt> <dd>
+                    3/4，7/8，4/5等……
+                </dd>
+                <dt id="3-X">3-X - 发条，但直线会变得越来越卡</dt> <dd>
+                    直线段<em>（连续180°地板）</em>的额外地板数量取决于这是魔改效果生效以来的第几条直线<em>（从零开始计数）</em>。
+                </dd>
+                <dt id="4-X">4-X - 情书，但短</dt> <dd>
+                    以<strong>任意规模</strong>移除轨道片段。
+                </dd>
+                <dt id="5-X">5-X - 午夜列车，但愚人节玩笑成真了</dt> <dd></dd>
+                <dt id="6-X">6-X - 脉冲，但每一块砖都有一拍暂停缓冲</dt> <dd>
+                    BPM加倍，暂停节拍+1。
+                </dd>
+                <dt id="B-X">B-X - 感谢你玩我们的游戏，但物量加倍</dt> <dd></dd>
+                <dt id="7-X">7-X - 旋转致胜，但外圈加速，内圈减速</dt> <dd>
+                    <q>外圈</q>与<q>内圈</q>指&gt;180°与&gt;180°，<strong>并不是与魔改前的方向进行比较。</strong>
+                </dd>
+                <dt id="8-X">8-X - 密林之城，但连续非180°角延长一格</dt> <dd>
+                    <em>【0°（中旋）与360°（发卡弯）是否受影响视情况而定】</em><br/>
+                    <em>（该效果允许在效果作用完成之后，为方便读谱与排版美观性，在不会进一步影响节奏的情况下适当增删旋转）</em>
+                </dd>
+                <dt id="9-X">9-X - 经典追求，但角度不满足 θτ/4 (θ∈ℤ) 的地板会额外添加旋转</dt> <dd>
+                    <em>（τ/4 = 90°）</em>
+                </dd>
+                <dt id="10-X">10-X - 蝴蝶行星，但优角已经无了</dt> <dd>
+                    依次在&gt;180°的地砖上增删旋转。<br/>
+                    <em>（该效果允许在效果作用完成之后，为方便读谱与排版美观性，在不会进一步影响节奏的情况下适当增删旋转）</em>
+                </dd>
+                <dt id="11-X">11-X - 赫拉克勒斯，但旋转可以更改速度</dt> <dd>
+                    红旋转加速，蓝旋转减速。<em>就这么简单。</em>
+                </dd>
+                <dt id="12-X">12-X - 人造战车，但锐角与钝角互换身份</dt> <dd>
+                    砖块角度改为其补角。<br/>
+                    <em>（180°的整数倍不受影响；除此之外，不在(0°, 180°)范围内的角度需要先对180°取模，别忘了补上被模掉的角度哦！）</em><br/>
+                    <em>（该效果允许在效果作用完成之后，为方便读谱与排版美观性，在不会进一步影响节奏的情况下适当增删旋转）</em>
+                </dd>
+            </dl></div>
+            <h3>额外 / 挑战关卡</h3> <div><dl>
+                <dt id="XF-X">XF-X - 第三波翻转，但你发现了捷径</dt> <dd>
+                    If the center of two <em>(or more)</em> tiles was overlapped with each other, The planet will choose the shortest path <em>(in time, not in tile count)</em> to walk on.<br/>
+                    <em>(you can choose freely if there's a tie)</em>
+                </dd>
+                <dt id="XC-X">XC-X - 制作组，但全部由教程组成</dt> <dd>
+                    Replacing a segment to a tutorial level, or inserting one.
+                </dd>
+                <dt id="XH-X">XH-X - 最后的希望，但这是个DLC关卡</dt> <dd>
+                    Add DLC contents.<br/>Additionally, Hold can replace 180° tiles by extra loops, and midspins cannot be created out of nothing.
+                </dd>
+                <dt id="PA-X">PA-X - 距离，但中旋正在接管这个关卡</dt> <dd>
+                    Replace some non-midspin tiles to midspin, without changing the rhythm.
+                </dd>
+                <dt id="XS-X">XS-X - 精灵派对，但游戏事件延后一块地砖</dt> <dd>
+                    <strong>The corresponding level of this curse effect includes <a href="#XS-X.Meta">multi curses</a>!</strong><br/>
+                    This curse effect can only affects these type of events below.
+                    <ul>
+                        <li>Set Speed, Twirl, Checkpoint</li>
+                        <li>Hold, Multi Planet</li>
+                        <li>Paused Beats, Timing Window Scale</li>
+                        <li>Hide Judgement/Floor Icons, AutoPlay tiles <em>(if as a part of gameplay)</em></li>
+                        <li>Set Conditional Events, Set Input Event <em>(if as a part of gameplay)</em></li>
+                    </ul>
+                </dd>
+                <dt id="XR-X">XR-X - 玫瑰花园，但直角必定属于三角形</dt> <dd>
+                    If any 90° tile wasn't a part of a right triangle, give it one.
+                </dd>
+                <dt id="RJ-X">RJ-X - 恐惧孳生，但多押被改成中旋了</dt> <dd>
+                    Replace multitaps to midspins.<br/>
+                    <em>(any angle is acceptable, except for those that cause the planet to spin extra loops)</em>
+                </dd>
+                <dt id="XN-X">XN-X - 海王星外天体，但这是个三体问题</dt> <dd>
+                    Change the planet counts to 3, without changing the shape of the chart, and the duration for 180° tiles.
+                </dd>
+                <dt id="XM-X">XM-X - Miko Skip，但发卡弯与中旋互换身份</dt> <dd>
+                    Continuously midspins is possible, and they will follow ADOFAI's default behavior.
+                </dd>
+                <dt id="XO-1">XO-1 - 发卡弯，但发卡弯上旋转的存在状态被逆转了</dt> <dd>
+                    For each 360° tiles, if there is no swirl on it, add one; otherwise remove the swirl.
+                </dd>
+                <dt id="XO-2">XO-2 - 背靠背循环，但平角砖上旋转的存在状态被逆转了</dt> <dd>
+                    Same as XO-1, but it's for 180° <em>(instead of 360°)</em>.
+                </dd>
+                <dt id="XO-X">XO-X - 一个被遗忘的夜晚，但其魔改效果被定义为XO-1和XO-2的组合</dt> <dd>
+                    <strong>The corresponding level of this curse effect includes <a href="#XO-X.Meta">multi curses</a>!</strong><br/>
+                    <em>(it can also be XO-2 + XO-1, since there's no difference between these 2 situations)</em>
+                </dd>
+                <dt id="XI-X">XI-X - It Go，但星球在带有图标的地砖上会额外等待两拍，如果可能</dt> <dd>
+                    Add 2 extra paused beats to each tile with icon,
+                    except hold starts <em>(the game refused to do that)</em>
+                    and portal <em>(no perceptible changes for that)</em>.
+                </dd>
+                <dt id="XT-X">XT-X - 选项，但宁可不要直中取</dt> <dd>
+                    Planet will skip them, rather than waiting.
+                </dd>
+                <dt id="MN-X">MN-X - 午夜漫游者（cnsouka Remix），但中旋从来就没有存在过</dt> <dd>
+                    Replace each midspin to non-midspin tiles, without changing the rhythm.
+                </dd>
+                <dt id="ML-X">ML-X - La nuit de vif，但每一拍所包含的节奏被均分了</dt> <dd>
+                    <em>(notes that span multiple parts belongs to the first part)</em><br/>
+                    <em>(it's possible to have no notes in a part)</em><br/>
+                    <em>(beats can also be section, 2 beats, etc.)</em><br/>
+                </dd>
+                <dt id="MO-X">MO-X - EMOMOMO，但经过&gt;180°地砖之后的速度应为经过&lt;180°地砖之后的两倍</dt> <dd>
+                    <strong>The corresponding level of this curse effect includes <a href="#MO-X.Meta">multi curses</a>!</strong><br/>
+                    When you hit a tile which its angle is &gt;180°, your current speed will be doubled for once,<br/>
+                    until you hit a tile which its angle is &lt;180°, which will halved your current speed for once,<br/>
+                    until you hit a tile which its angle is &gt;180°, which will doubled your current speed for once,<br/>
+                    until you hit a tile which its angle is &lt;180°... <em>okay i'll shut up.</em><br/>
+                    <em>(your current speed can also be doubled or halved when curse effect starts for difficulty balancing)</em>
+                </dd>
+            </dl></div>
+            <h3>Neo Cosmos</h3> <div><dl>
+                <dt id="T1-X">T1-X - NEW LIFE but every hold is now with 0 extra loops</dt> <dd>
+                    Add holds if there is no holds, then changes every hold to have 0 extra loops.
+                </dd>
+                <dt id="T1-EX">T1-EX - NEW LIFE but every hold is now 1 loop longer</dt> <dd>
+                    Add holds if there is no holds, then add 1 extra loops to every hold.
+                </dd>
+                <dt id="T2-X">T2-X - sing sing <span style="color:#F00;">red</span> <span style="color:#00F;">indigo</span> but the special midspins can change the speed</dt> <dd>
+                    Fire Midspin = Speed Up, Ice Midspin = Speed Down.
+                </dd>
+                <dt id="T2-EX">T2-EX - sing sing <span style="color:#F00;">red</span> <span style="color:#00F;">indigo</span> but the special midspins can change the planet count</dt> <dd>
+                    Fire Midspin = Triple Planets, Ice Midspin = Double Planets, "Yellow" Midspin = Swap To Another Count For Planets.
+                </dd>
+                <dt id="T3-X">T3-X - <em>(currently does not exist)</em></dt> <dd>
+                    Remove uncertain factors, such as free roam.
+                </dd>
+                <dt id="T3-EX">T3-EX - <em>(currently does not exist)</em></dt> <dd>
+                    <em>(undefined for now)</em>
+                </dd>
+                <dt id="T4-X">T4-X - Third Sun but it's a midspin party</dt> <dd>
+                    Add special midspins, and also change some of the midspins to special variants.
+                </dd>
+                <dt id="T4-EX">T4-EX - Third Sun but the midspins are from australia</dt> <dd>
+                    <strong>The corresponding level of this curse effect includes <a href="#T4-EX.Meta">multi curses</a>!</strong><br/>
+                    For every tile with midspins, flip the midspins to another side, in the original <em>(not reversed)</em> order and the same ratio
+                    <em>(for example, a midspin that divided the angle equally, should also divide the angle equally on the other side)</em>.
+                </dd>
+                <dt id="T5-X">T5-X - Divine Intervention but its curse can change the description of any curse effect</dt> <dd>
+                    <strong>The corresponding level of this curse effect includes <a href="#T5-X.Meta">multi curses</a>!</strong><br/>
+                    Remember when I said <a href="#General.Mechanisms.Basics"><q>Curse effects is a section-to-section mapping</q></a>?<br/>
+                    This one is special: It's a <strong>curse-to-curse</strong> mapping!<br/>
+                    As a result, T5-X curstr <strong>cannot</strong> be applied to level sections. It can only be applied to <strong>curses</strong>.<br/>
+                    More specifically, T5-X takes three parameters: <ol>
+                        <li>the curse effect that will be modified</li>
+                        <li>the old substring <em>(it basically means <q>text clip</q>)</em> to be replaced</li>
+                        <li>the new substring to be used for replacement</li>
+                    </ol><br/>
+                    and return a new <em>(and temporary)</em> curse effect, with the replaced curse effect introduction.<br/>
+                </dd>
+            </dl>
+                <div class="curstr">
+                    Current curse by Yangsy56302: T5-X<sub>(<a class="curstr" href="#1-X">1-X</a>,
+                        "judgement limits are", "title is")</sub><br/>
+                    <em>(which is 1-X - A Dance of Fire and Ice but the <b>title is</b> changing)</em>
+                </div>
+            </div>
+            <h3 id="NonLevelEffects">Non-level Effects</h3> <div><dl>
+                <p>
+                    It is possible <em>(but not recommended due to copyright issues)</em> to have a crossover with other works:
+                    <p>
+                        <a target="_blank" href="https://ddlc.moe/">Doki Doki Literature Club!</a> can be also included in XH-X,<br/>
+                        <a target="_blank" href="https://bluearchive.nexon.com/">Blue Archive</a> can be also included in XR-X.<br/>
+                    </p>
+                    For more informations, see <a href="bluearchived.html">Blue ArchiveD</a>.
+                </p>
+            </dl></div>
+        </div>
+        <h2 id="Affected">Multi-cursed Levels</h2> <div><dl>
+            <h3 id="Novel_Feature">dash3n - Novel Feature <em>(sub2.adofai)</em></h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#RJ-X">RJ-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#RJ-X">RJ-X</a>
+                    + <a class="curstr" href="#MN-X">MN-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#RJ-X">RJ-X</a>
+                    + <a class="curstr" href="#MN-X">MN-X</a>
+                    + <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XF-X">XF-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#PA-X">PA-X</a>
+                    + <a class="annotated curstr" href="#T2-X" title="ΔBPM = ±45">T2-X</a>
+                    + <a class="curstr" href="#7-X">7-X</a><br/>
+                Current curse by Yangsy56302: <a class="annotated curstr" href="#7-X" title="ΔBPM = ±5">7<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#3-X">3-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#3-X">3-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XS-X">XS-X</a><span class="curstr*">*</span>3<br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XT-X">XT-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XN-X">XN-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#4-X">4-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XS-X">XS-X</a><span class="curstr*">*</span>6<br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="annotated curstr" href="#11-X" title="BPM = [164, 193, 222, 250]">11-X</a>
+                    + <a class="curstr" href="#9-X">9-X</a>
+                    + <a class="curstr" href="#9-X">9<span class="curstr+">+</span>X</a><br/>
+                Current curse by Yangsy56302: <a class="annotated curstr" href="#XC-X" title="XT-5 Elevator Dance">XC-X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#...">...</a></em>
+            </div>
+            <h4 id="Novel_Feature.XT-6">XT-6 - Unlimited Flexibility <em>(sub3.adofai)</em></h4> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#9-X">9-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#9-X">9-X</a>
+                    + <a class="curstr" href="#7-X">7-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="annotated curstr" href="#XC-X" title="dash3n - Novel Feature">XC<span class="curstr+">+</span>X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#ML-X">ML-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#...">...</a><br/>
+                Value of <a class="curstr" href="#...">Ellipsis</a> <em>(in order of time)</em>: <ol>
+                    <li><a class="curstr" href="#8-X">8<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#8-X">8-X</a></li>
+                    <li><a class="curstr" href="#B-X">B-X</a></li>
+                    <li><a class="curstr" href="#B-X">B<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#B-X">B-X</a>
+                        + <a class="curstr" href="#8-X">8<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#8-X">8-X</a>
+                        + <a class="curstr" href="#B-X">B<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#None">None</a></li>
+                    <li><a class="curstr" href="#XS-X">XS-X</a>
+                        + <a class="curstr" href="#10-X">10<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#10-X">10-X</a>
+                        + <a class="curstr" href="#10-X">10<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#12-X">12-X</a></li>
+                    <li><a class="curstr" href="#XF-X">XF-X</a></li>
+                    <li><a class="annotated curstr" href="#11-X" title="ΔBPM = ±5">11-X</a></li>
+                    <li><a class="curstr" href="#XH-X">XH-X</a>
+                        + <a class="annotated curstr" href="#T2-X" title="BPM = [226, 223, 220]">T2-X</a></li>
+                </ol>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#3-X">3<span class="curstr+">+</span>X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#...">...</a></em>
+            </div>
+            <h4 id="Novel_Feature.XH-X">XH-X - Final Hope <em>(sub4.adofai)</em></h4> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#XF-X">XF-X</a>
+                    + <a class="curstr" href="#XF-X">XF<span class="curstr+">+</span>X</a>
+                    + <a class="annotated curstr" href="#7-X" title="ΔBPM = ±5">7-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="annotated curstr" href="#XC-X" title="dash3n - Novel Feature">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#4-X">4-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#3-X">3-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#XT-X">XT-X</a><br/>
+                Current curse by Yangsy56302: <a class="annotated curstr" href="#XC-X" title="XH-1 - Trust Your Ears, Not Your Eyes">XC-X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#...">...</a></em>
+            </div>
+            <h4 id="Novel_Feature.Meta">dash3n - Novel Feature <em>(main.adofai)</em></h4> <div class="curstr">
+                Current curse by Yangsy56302: <a class="annotated curstr" href="#XC-X" title="NF-1 - Lack of Cutscene">XC-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#...">...</a></em>
+            </div>
+            <h3 id="Hints_Here">T3-X - Hints Here!</h3> <div>
+                The following list are symbols used to distinguish different curse series: <dl>
+                    <dt><a href="cursed.html#Crabs">Crab curses by Firestix</a></dt> <dd>
+                        Question mark after the level ID: <code>1-X?</code>
+                    </dd>
+                    <dt><a href="cursed.html#Landmines">Landmine curses by Xiaojun4412</a></dt> <dd>
+                        Asterisk after the level ID: <code>1-X*</code>
+                    </dd>
+                    <dt><a href="cursed.html#String">String curses by Yangsy56302</a></dt> <dd>
+                        Quoted level ID: <code>"1-X"</code>
+                    </dd>
+                    <dt><a href="cursed.html#MissQing">Miss Qing curses by Grafrustix</a></dt> <dd>
+                        Less-than sign before the level ID, arabic numeral 3 after the level ID: <code>&lt;1-X3</code>
+                    </dd>
+                    <dt><a href="cursed.html#XXX">XXX curses by 小緑草</a></dt> <dd>
+                        Tripled the latter half of the level ID: <code>1-Xxx</code><br/>
+                    </dd>
+                    <dt><a href="cursed.html#Blocks">Block curses by MaxDudeIguess</a></dt> <dd>
+                        Square-bracketed level ID: <code>[1-X]</code>
+                    </dd>
+                    <dt><a href="cursed.html#Carrots">Carrot curses by BaiLe</a></dt> <dd>
+                        This handstand-delta after level ID: <code>1-X∇</code>
+                    </dd>
+                </dl>
+            </div>
+            <div class="curstr">
+                Current curse: <a class="curstr" href="#None">None</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="#B-X">"B<span class="curstr+">+</span>X"</a><br/>
+                Current curse: <a class="curstr" href="#12-X">"12-X"</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Crabs" target="_blank">8-X?</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Landmines" target="_blank">12-X*</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#MissQing" target="_blank">&lt;6-X3</a>
+                    <em>(<a class="annotated curstr" href="#2-X" title="23 / 24">"2-X"</a> for cutscene)</em>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Carrots" target="_blank">8-X∇</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#XXX" target="_blank">4-Xxx</a>
+                    <em>(<a class="curstr" href="#T3-X">"T3-X"</a> when paused)</em>
+                    <em>(<a class="curstr" href="cursed.html#Landmines" target="_blank">4-X*</a>
+                        + <a class="curstr" href="#RJ-X">"RJ-X"</a>
+                        + <a class="curstr" href="#MN-X">"MN-X"</a> for cutscene)</em>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Landmines" target="_blank">11-X*</a>
+                    + <a class="curstr" href="#XR-X">"XR-X"</a>
+                    + <a class="annotated curstr" href="cursed.html#Crabs" title="ΔBPM = 7.5" target="_blank">XR-X?</a><br/>
+                Current curse: <a class="curstr" href="cursed.html#Landmines" target="_blank">11-X*</a>
+                    + <a class="curstr" href="#XR-X">"XR-X"</a>
+                    + <a class="curstr" href="cursed.html#Landmines" target="_blank">XH-X*</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Landmines" target="_blank">4-X*</a>
+                    + <a class="curstr" href="#RJ-X">"RJ-X"</a>
+                    + <a class="curstr" href="#T2-EX">"T2-EX"</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="#None">None</a>
+                    <em>(None during the answer)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Crabs" target="_blank">XC-X?</a>
+                    <em>(None during the answer)</em>
+                    <em>(<a class="curstr" href="cursed.html#Blocks" target="_blank">[12-X]</a> for cutscene)</em>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="#XT-X">"XT-X"</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Landmines" target="_blank">3-X*</a>
+                    + <a class="annotated curstr" href="#7-X" title="ΔBPM = ±5">"7-X"</a>
+                    + <a class="annotated curstr" href="cursed.html#Landmines" target="_blank" title="ΔBPM = 5">T1-EX*</a>
+                    + <a class="curstr" href="#T1-EX">"T1-EX"</a>
+                    <em>(<a class="curstr" href="cursed.html#Crabs" target="_blank">5-X?</a> when paused)</em><br/>
+                Current curse: <a class="annotated curstr" href="cursed.html#Crabs" title="XT-6 - Unlimited Flexibility" target="_blank">4-X?</a>
+                    + <a class="curstr" href="cursed.html#Crabs" target="_blank">5-X?</a>
+                    + <a class="curstr" href="#XO-1">"XO-1"</a>
+                    + <a class="curstr" href="cursed.html#Landmines" target="_blank">XR-X*</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Crabs" target="_blank">7-X?</a>
+                    + <a class="curstr" href="#MO-X">"MO-X"</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="#PA-X">"PA-X"</a>
+                    + <a class="curstr" href="#RJ-X">"RJ<span class="curstr+">+</span>X"</a>
+                    + <a class="curstr" href="cursed.html#Blocks" target="_blank">[RJ-X]</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="#None">None</a>
+                    <em>(None during the answer)</em><br/>
+                Current curse: <a class="curstr" href="#10-X">"10<span class="curstr+">+</span>X"</a>
+                    <em>(None during the answer)</em>
+                    <em>(None for cutscene)</em>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Crabs" target="_blank">2-X?</a>
+                    + <a class="curstr" href="#XH-X">"XH<span class="curstr+">+</span>X"</a>
+                    + <a class="annotated curstr" href="cursed.html#Crabs" title="ΔBPM = 5" target="_blank">6-X?</a><br/>
+                Next Δcurse: + <a class="curstr" href="cursed.html#Landmines" target="_blank">4-EX*</a><br/>
+                Next Δcurse: + <a class="curstr" href="#RJ-X">"RJ-X"</a><br/>
+                Next Δcurse: + <a class="annotated curstr" href="cursed.html#Landmines" title="θ ∈ {360°}" target="_blank">T2-X*</a><br/>
+                Next Δcurse: + <a class="curstr" href="cursed.html#Landmines" target="_blank">4-EX*</a><br/>
+                Next Δcurse: + <a class="curstr" href="#RJ-X">"RJ-X"</a><br/>
+                Next Δcurse: + <a class="annotated curstr" href="cursed.html#Landmines" title="θ ∈ {360°}" target="_blank">T2-X*</a><br/>
+                Next Δcurse: + <a class="curstr" href="cursed.html#Landmines" target="_blank">4-EX*</a><br/>
+                Next Δcurse: + <a class="curstr" href="#RJ-X">"RJ-X"</a><br/>
+                Next Δcurse: + <a class="annotated curstr" href="cursed.html#Landmines" title="θ ∈ {360°}" target="_blank">T2-X*</a><br/>
+                Next Δcurse: + <a class="curstr" href="cursed.html#Landmines" target="_blank">4-EX*</a><br/>
+                Next Δcurse: + <a class="curstr" href="#RJ-X">"RJ-X"</a>
+                    <em>(<a class="curstr" href="cursed.html#Crabs" target="_blank">6-X?</a> when paused)</em><br/>
+                Current curse: <a class="annotated curstr" href="cursed.html#Crabs" title="ΔBPM = 10" target="_blank">XR<span class="curstr+">+</span>X?</a>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="#XO-2">"XO-2"</a>
+                    + <a class="curstr" href="cursed.html#MissQing" target="_blank">&lt;11-X3</a>
+                    <em>(<a class="curstr" href="cursed.html#XXX" target="_blank">3-Xxx</a>
+                        + <a class="curstr" href="cursed.html#Blocks" target="_blank">[2-X]</a> for cutscene)</em>
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="annotated curstr" href="cursed.html#Crabs" title="ΔBPM = 5" target="_blank">XR-X?</a><br/>
+                Current curse: <a class="curstr" href="cursed.html#Crabs" target="_blank">XH-X?</a><br/>
+                Current curse: <a class="curstr" href="cursed.html#Crabs" target="_blank">XH-X?</a><span class="curstr*">*</span>2
+                    <em>(None when paused)</em><br/>
+                Current curse: <a class="curstr" href="cursed.html#Crabs" target="_blank">XH-X?</a><span class="curstr*">*</span>2
+                    + <a class="curstr" href="#12-X">"12-X"</a><br/>
+                Current curse: <a class="curstr" href="cursed.html#Crabs" target="_blank">XH-X?</a><span class="curstr*">*</span>4
+                    + <a class="curstr" href="#12-X">"12-X"</a><br/>
+                Current curse: <a class="curstr" href="#XF-X">"XF-X"</a><br/>
+                Current curse: <a class="curstr" href="cursed.html#Landmines" target="_blank">XH-X*</a><br/>
+                Current curse: <a class="curstr" href="#XC-X">"XC-X"</a>
+                    + <a class="annotated curstr" href="#XC-X" title="T3-X - Hints Here!" target="_blank">"XC<span class="curstr+">+</span>X"</a><br/>
+                Current curse: <a class="curstr" href="cursed.html#Landmines" target="_blank">XH-X*</a><br/>
+                Current curse: <a class="curstr" href="#XC-X">"XC-X"</a>
+                    + <a class="annotated curstr" href="#XC-X" title="T3-X - Hints Here!" target="_blank">"XC<span class="curstr+">+</span>X"</a><br/>
+                Current curse: <a class="curstr" href="cursed.html#Landmines" target="_blank">XH-X*</a><br/>
+                Current curse: <a class="curstr" href="#XC-X">"XC-X"</a>
+                    + <a class="annotated curstr" href="#XC-X" title="T3-X - Hints Here!" target="_blank">"XC<span class="curstr+">+</span>X"</a><br/>
+                Current curse: <a class="curstr" href="#None">None</a>
+            </div>
+            <h3 id="14G10R">XO-X - 1 4 Got 10 →</h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#8-X">8-X</a>
+                    + <a class="curstr" href="#PA-X">PA-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#8-X">8-X</a>
+                    + <a class="curstr" href="#PA-X">PA-X</a>
+                    + <a class="curstr" href="#XF-X">XF-X</a>
+                    + <a class="curstr" href="#XM-X">XM-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XT-X">XT-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XM-X">XM-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XM-X">XM-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#10-X">10-X</a>
+                    + <a class="curstr" href="#XS-X">XS-X</a><span class="curstr*">*</span>3<br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#ML-X">ML-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XF-X">XF-X</a>
+                    + <a class="curstr" href="#XF-X">XF<span class="curstr+">+</span>X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XF-X">XF-X</a>
+                    + <a class="curstr" href="#XF-X">XF<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#6-X">6-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#6-X">12-X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#...">...</a></em>
+            </div>
+            <h3 id="D_is_isinstance">PA-X - D is isinstance</h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XR-X">XR-X</a>
+                    + <a class="curstr" href="#10-X">10-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#RJ-X">RJ<span class="curstr+">+</span>X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#9-X">9-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#8-X">8<span class="curstr+">+</span>X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#10-X">10-X</a>
+                    + <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#4-X">4-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#11-X">11-X</a><br/>
+                Current curse by Yangsy56302: <a class="annotated curstr" href="#XC-X" title="T5-5 - Two Planets Warning">XC-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XN-X">XN<span class="curstr+">+</span>X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XN-X">XN<span class="curstr+">+</span>X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XT-X">XT-X</a>
+                    + <a class="curstr" href="#11-X">11-X</a><br/>
+                Current curse by Yangsy56302: <a class="annotated curstr" href="#XC-X" title="XC-3 - Crashed on Boxes; XC-4 - Speedy Ladder; XC-5 - To Shorten the Time, Add Loops">XC-X</a>
+                    + <a class="curstr" href="#11-X">11-X</a><br/>
+                <em>Next curse by Yangsy56302: ...deja vu?</em><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="annotated curstr" href="#XC-X" title="11-X - Heracles (thanks for future me)">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#11-X">11-X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#...">...</a>yeah i'm quite sure i did a similar scene in B-X last time</em>
+            </div>
+            <h3 id="Actions">XT-X - Actions</h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#XR-X">XR-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#B-X">B-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#PA-X">PA-X</a>
+                    + <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#PA-X">PA-X</a>
+                    + <a class="curstr" href="#XM-X">XM-X</a>
+                    + <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#ML-X">ML-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#8-X">8-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#10-X">10-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#10-X">10-X</a>
+                    + <a class="curstr" href="#11-X">11-X</a><br/>
+                You are now experiencing the <a class="curstr" href="#T4-X">T4-X</a> curse by Yangsy56302.<br/>
+                You are now experiencing the <a class="curstr" href="#XN-X">XN-X</a> curse by Yangsy56302.<br/>
+                You are now experiencing the <a class="curstr" href="#9-X">9-X</a> curse by Yangsy56302.<br/>
+                You are now experiencing the <a class="curstr" href="#XT-X">XT-X</a> curse by Yangsy56302.<br/>
+                <a class="curstr" href="#None">You are now experiencing no curse by Yangsy56302.</a><br/>
+                <em><a class="curstr" href="#...">You will not experience another curse by Yangsy56302 for a while.</a></em><br/>
+                <em>Information alone is not enough.</em><br/>
+                <em>We also need <del>the meaning of that information</del> memes.</em>
+            </div>
+            <h3 id="TFWSC">B-X - Thanks For Watching String Curses</h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#1-X">1-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#1-X">1-X</a>
+                    + <a class="curstr" href="#3-X">3-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#4-X">4-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#10-X">10-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#10-X">10-X</a>
+                    + <a class="curstr" href="#8-X">8-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#8-X">8-X</a>
+                    + <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XR-X">XR-X</a>
+                    + <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XR-X">XR-X</a>
+                    + <a class="curstr" href="#12-X">12-X</a>
+                    + <a class="curstr" href="#11-X">11-X</a><br/>
+                Current <a class="curstr" target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=2161651144">curse</a>
+                    by <a class="curstr" target="_blank" href="https://steamcommunity.com/id/Firestix">Firestix</a>: 
+                    <a class="curstr" target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2118279790">4-X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#...">...</a></em>
+            </div>
+            <h3 id="Party_of_stiripS">XS-X - Party of stiripS</h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#8-X">8-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#8-X">8-X</a>
+                    + <a class="curstr" href="#XF-X">XF-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#10-X">10-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#12-X">12-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#PA-X">PA-X</a><br/>
+                Current curse by Yangsy56302: <a class="annotated curstr" href="#XC-X" title="XC-3 - Crumbling Boxes">XC-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XR-X">XR-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#5-X">5-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XR-X">XR-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#5-X">5-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XN-X">XN-X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#...">...</a></em>
+            </div>
+        </dl></div>
+        <h2 id="Effect">Multi-affected Curse Effect Levels</h2> <div><dl>
+            <h3 id="T5-X.Meta">
+                <a class="curstr" href="#T5-X">T5-X</a> - 
+                Divine Intervention but its curse can change the description of any curse effect
+            </h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#11-X">11-X</a>, "twirl", "hold")</sub><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T3-X">T3-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#XT-X">XT-X</a>, "missing", "replaced with holds")</sub><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#B-X">B-X</a>, "tile", "twirl")</sub><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T3-X">T3-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#XM-X">XM-X</a>, "u-turns", "non-midspin tiles")</sub><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#PA-X">PA-X</a>, "midspins", "enclosed shapes")</sub><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#2-X">2-X</a>, "rhythm", "chart")</sub><br/>
+                <em>Next Δcurse by Yangsy56302: + <a class="curstr" href="#MN-X">MN-X</a></em><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#2-X">2-X</a>, "rhythm", "chart")</sub>
+                    + <a class="curstr" href="#MN-X">MN-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#7-X">7<span class="curstr+">+</span>X</a>, " & vice versa", "")</sub><br/>
+                <em>Next Δcurse by Yangsy56302: + <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#XT-X">XT-X</a>, "straight tiles", "twirls")</sub></em><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#7-X">7<span class="curstr+">+</span>X</a>, " & vice versa", "")</sub>
+                    + <a class="curstr" href="#T5-X">T5-X</a>
+                        <sub>(<a class="curstr" href="#XT-X">XT-X</a>, "straight tiles", "twirls")</sub><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="annotated curstr" href="#XC-X" title="T3-X - No Hints Here!">XC<span class="curstr+">+</span>X</a><br/>
+                <em>Next Δcurse by Yangsy56302: + <a class="curstr" href="#MN-X">MN-X</a></em><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#MN-X">MN-X</a><br/>
+                <em>Next Δcurse by Yangsy56302: - <a class="curstr" href="#MN-X">MN-X</a>
+                    + <a class="curstr" href="#5-X">5-X</a></em><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#MN-X">5-X</a><br/>
+                <em>Next Δcurse by Yangsy56302: - <a class="curstr" href="#5-X">5-X</a></em><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#10-X">10-X</a>
+                    + <a class="curstr" href="#XR-X">XR-X</a>
+                    + <a class="curstr" href="#...">...</a><br/>
+                Value of <a class="curstr" href="#...">Ellipsis</a> <em>(in order of time)</em>: <ol>
+                    <li><a class="curstr" href="#None">None</a></li>
+                    <li><a class="annotated curstr" href="#XC-X" title="T3-X - No Hints Here!">XC<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#None">None</a></li>
+                    <li><a class="annotated curstr" href="#XC-X" title="T3-X - No Hints Here!">XC<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#None">None</a></li>
+                    <li><a class="annotated curstr" href="#XC-X" title="T3-X - No Hints Here!">XC<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#None">None</a></li>
+                    <li><a class="annotated curstr" href="#XC-X" title="T3-X - No Hints Here!">XC<span class="curstr+">+</span>X</a></li>
+                    <li><a class="curstr" href="#None">None</a></li>
+                    <li><a class="annotated curstr" href="#XC-X" title="T3-EX - No Hints Here!">XC<span class="curstr+">+</span>X</a></li>
+                </ol>
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(<a class="curstr" href="#XT-X">XT-X</a>, "missing", "replaced with holds")</sub><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#T5-X">T5-X</a>
+                    <sub>(XT-X, "missing", "going to boost the planets")</sub>
+                    + <a class="curstr" href="#...">...</a>
+                    + <a class="curstr" href="#T5-X">T5-X</a>
+                        <sub>(PA-X, "midspins", "enclosed shapes")</sub><br/>
+                Value of <a class="curstr" href="#...">Ellipsis</a> <em>(in order of time)</em>: <ol>
+                    <li><a class="curstr" href="#None">None</a></li>
+                    <li><a class="curstr" href="#9-X">9-X</a></li>
+                    <li><a class="curstr" href="#T5-X">T5-X</a>
+                        <sub>(<a class="curstr" href="#XT-X">XT-X</a>, "straight tiles", "twirls")</sub><br/></li>
+                </ol>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="annotated curstr" href="#XC-X" title="1-X - A Dance of Fire and Ice">XC<span class="curstr+">+</span>X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#StopIteration">StopIteration</a></em>
+            </div>
+            <h3 id="XS-X.Meta">
+                <a class="curstr" href="#XS-X">XS-X</a> - 
+                Party of spirits but each gameplay event is delayed by 1 tile
+            </h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#XS-X">XS-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#10-X">10-X</a>
+                    + <a class="curstr" href="#XS-X">XS-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XS-X">XS-X</a>
+                    + <a class="curstr" href="#9-X">9-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XS-X">XS-X</a>
+                    + <a class="curstr" href="#11-X">11-X</a>
+                    + <a class="curstr" href="#9-X">9-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XS-X">XS-X</a>
+                    + <a class="curstr" href="#XS-X">XS-X</a>
+                    + <a class="curstr" href="#XS-X">XS-X</a>
+                    + <a class="curstr" href="#XS-X">XS-X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#...">...</a></em>
+            </div>
+            <h3 id="XO-X.Meta">
+                <a class="curstr" href="#XO-X">XO-X</a> - 
+                One Forgotten Night but its curse effect is defined as the combination of 
+                <a class="curstr" href="#XO-1">XO-1</a> and <a class="curstr" href="#XO-2">XO-2</a>
+            </h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#XO-1">XO-1</a>
+                    + <a class="curstr" href="#XO-2">XO-2</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XO-1">XO-1</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XO-2">XO-2</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XO-1">XO-1</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XO-2">XO-2</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XO-1">XO-1</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XO-X">XO-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XO-1">XO-1</a>
+                    + <a class="curstr" href="#11-X">11-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#2-X">2-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="annotated curstr" href="#XC-X" title="B-X - Thanks For Playing My Game">XC<span class="curstr+">+</span>X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#XO-2">XO-2</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#4-X">4<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#XO-2">XO-2</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#XT-X">XT<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#XO-2">XO-2</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#StopIteration">StopIteration</a></em>
+            </div>
+            <h3 id="MO-X.Meta">
+                <a class="curstr" href="#MO-X">MO-X</a> - 
+                EMOMOMO but after you meet a tile thats &gt;180° the speed should be doubled compared to tiles &lt;180°
+            </h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#MO-X">MO-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#4-X">4-X</a>
+                    + <a class="curstr" href="#MO-X">MO-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#MO-X">MO-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#None">None</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#4-X">4-X</a>
+                    + <a class="curstr" href="#MO-X">MO-X</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#MO-X">MO-X</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#StopIteration">StopIteration</a></em>
+            </div>
+            <h3 id="T4-EX.Meta">
+                <a class="curstr" href="#T4-EX">T4-EX</a> - 
+                Third Sun but the midspins are from australia</h3> <div class="curstr">
+                Current curse by Yangsy56302: <a class="curstr" href="#T4-EX">T4-EX</a><br/>
+                Current curse by Yangsy56302: <a class="curstr" href="#XC-X">XC-X</a>
+                    + <a class="curstr" href="#XC-X">XC<span class="curstr+">+</span>X</a>
+                    + <a class="curstr" href="#T4-EX">T4-EX</a><br/>
+                <em>Next curse by Yangsy56302: <a class="curstr" href="#StopIteration">StopIteration</a></em>
+            </div>
+        </dl></div>
+    </div>
+    <div class="bottom">
+        <b>For this page:</b>
+        <a href="#">Top</a>
+        <a href="#Indexes">Index</a>
+        <a href>Link</a>
+        <a href download>Download</a>
+    </div>
+</body>
+</html>
