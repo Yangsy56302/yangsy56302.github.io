@@ -58,7 +58,7 @@
                     <a href="#11-X">11-X</a>
                     <a href="#12-X">12-X</a>
                 </div></li>
-                <li>额外 / 挑战关卡<div>
+                <li>额外 / 挑战 / 联动关卡<div>
                     <a href="#XF-X">XF-X</a>
                     <a href="#XC-X">XC-X</a>
                     <a href="#XH-X">XH-X</a>
@@ -256,77 +256,69 @@
                     <em>（该效果允许在效果作用完成之后，为方便读谱与排版美观性，在不会进一步影响节奏的情况下适当增删旋转）</em>
                 </dd>
             </dl></div>
-            <h3>额外 / 挑战关卡</h3> <div><dl>
+            <h3>额外 / 挑战 / 联动关卡</h3> <div><dl>
                 <dt id="XF-X">XF-X - 第三波翻转，但你发现了捷径</dt> <dd>
-                    If the center of two <em>(or more)</em> tiles was overlapped with each other, The planet will choose the shortest path <em>(in time, not in tile count)</em> to walk on.<br/>
-                    <em>(you can choose freely if there's a tie)</em>
+                    将几何中心重叠的地砖视为岔路口，然后保留总耗时最短的路径。
+                    <em>（出现平局的话可以随意选择）</em>
                 </dd>
                 <dt id="XC-X">XC-X - 制作组，但全部由教程组成</dt> <dd>
-                    Replacing a segment to a tutorial level, or inserting one.
+                    将受到影响的片段<em>（长度可以为零）</em>替换为教程。
                 </dd>
                 <dt id="XH-X">XH-X - 最后的希望，但这是个DLC关卡</dt> <dd>
-                    Add DLC contents.<br/>Additionally, Hold can replace 180° tiles by extra loops, and midspins cannot be created out of nothing.
+                    添加DLC机制。<em>另外，长按额外循环可以取代180°地砖，且中旋允许无中生有。</em>
                 </dd>
                 <dt id="PA-X">PA-X - 距离，但中旋正在接管这个关卡</dt> <dd>
-                    Replace some non-midspin tiles to midspin, without changing the rhythm.
+                    在保持节奏不变的前提下，将部分非中旋地砖替换为中旋。
                 </dd>
                 <dt id="XS-X">XS-X - 精灵派对，但游戏事件延后一块地砖</dt> <dd>
-                    <strong>The corresponding level of this curse effect includes <a href="#XS-X.Meta">multi curses</a>!</strong><br/>
-                    This curse effect can only affects these type of events below.
+                    <strong>该魔改效果所对应的关卡<a href="#XS-X.Meta">包括更复杂的魔改效果</a>！</strong><br/>
+                    受影响的游戏事件参见下表：
                     <ul>
-                        <li>Set Speed, Twirl, Checkpoint</li>
-                        <li>Hold, Multi Planet</li>
-                        <li>Paused Beats, Timing Window Scale</li>
-                        <li>Hide Judgement/Floor Icons, AutoPlay tiles <em>(if as a part of gameplay)</em></li>
-                        <li>Set Conditional Events, Set Input Event <em>(if as a part of gameplay)</em></li>
+                        <li>设置速度，旋转，检查点</li>
+                        <li>长按，多行星</li>
+                        <li>暂停节拍，定时窗口大小</li>
+                        <li>隐藏判定/地板图标，自动播放格子<em>（仅在用作特殊机制时）</em></li>
+                        <li>设置条件事件，设置输入事件<em>（仅在用作特殊机制时）</em></li>
                     </ul>
                 </dd>
                 <dt id="XR-X">XR-X - 玫瑰花园，但直角必定属于三角形</dt> <dd>
-                    If any 90° tile wasn't a part of a right triangle, give it one.
+                    为所有不属于三角形排版一部分的直角地砖添加三角形。
                 </dd>
                 <dt id="RJ-X">RJ-X - 恐惧孳生，但多押被改成中旋了</dt> <dd>
-                    Replace multitaps to midspins.<br/>
-                    <em>(any angle is acceptable, except for those that cause the planet to spin extra loops)</em>
+                    <em>（所添加的中旋可以为任何角度，包括那些会导致星球额外旋转的角度）</em>
                 </dd>
                 <dt id="XN-X">XN-X - 海王星外天体，但这是个三体问题</dt> <dd>
-                    Change the planet counts to 3, without changing the shape of the chart, and the duration for 180° tiles.
+                    将星球数量设为三，并在保持180°地砖耗时不变的前提下调整速度。
                 </dd>
                 <dt id="XM-X">XM-X - Miko Skip，但发卡弯与中旋互换身份</dt> <dd>
-                    Continuously midspins is possible, and they will follow ADOFAI's default behavior.
+                    允许连续中旋出现。<em>（根据循冰与火之舞的默认游戏机制，两个相邻的中旋会相互抵消）</em>
                 </dd>
                 <dt id="XO-1">XO-1 - 发卡弯，但发卡弯上旋转的存在状态被逆转了</dt> <dd>
-                    For each 360° tiles, if there is no swirl on it, add one; otherwise remove the swirl.
+                    对于所有360°砖，没旋转加旋转，有旋转去旋转。
                 </dd>
                 <dt id="XO-2">XO-2 - 背靠背循环，但平角砖上旋转的存在状态被逆转了</dt> <dd>
-                    Same as XO-1, but it's for 180° <em>(instead of 360°)</em>.
+                    对于所有180°砖，没旋转加旋转，有旋转去旋转。
                 </dd>
                 <dt id="XO-X">XO-X - 一个被遗忘的夜晚，但其魔改效果被定义为XO-1和XO-2的组合</dt> <dd>
-                    <strong>The corresponding level of this curse effect includes <a href="#XO-X.Meta">multi curses</a>!</strong><br/>
-                    <em>(it can also be XO-2 + XO-1, since there's no difference between these 2 situations)</em>
+                    <strong>该魔改效果所对应的关卡<a href="#XO-X.Meta">包括更复杂的魔改效果</a>！</strong><br/>
                 </dd>
                 <dt id="XI-X">XI-X - It Go，但星球在带有图标的地砖上会额外等待两拍，如果可能</dt> <dd>
-                    Add 2 extra paused beats to each tile with icon,
-                    except hold starts <em>(the game refused to do that)</em>
-                    and portal <em>(no perceptible changes for that)</em>.
+                    例外：长按开头<em>（<q>长按拍子与暂停拍子不能共存</q>）</em>与终点<em>（啥都不会发生）</em>。
                 </dd>
                 <dt id="XT-X">XT-X - 选项，但宁可不要直中取</dt> <dd>
-                    Planet will skip them, rather than waiting.
+                    移除所有180°砖，星球会直接跳过它们。
                 </dd>
                 <dt id="MN-X">MN-X - 午夜漫游者（cnsouka Remix），但中旋从来就没有存在过</dt> <dd>
-                    Replace each midspin to non-midspin tiles, without changing the rhythm.
+                    <em><q>能不用中旋，就不用中旋。</q></em>
                 </dd>
                 <dt id="ML-X">ML-X - La nuit de vif，但每一拍所包含的节奏被均分了</dt> <dd>
-                    <em>(notes that span multiple parts belongs to the first part)</em><br/>
-                    <em>(it's possible to have no notes in a part)</em><br/>
-                    <em>(beats can also be section, 2 beats, etc.)</em><br/>
+                    <em>（节奏所位于的拍子根据开始时间而定，向前取整）</em><br/>
+                    <em>（允许出现一整拍都没有按键的情况）</em><br/>
+                    <em>（<q>一拍</q>也可以是一小节，两拍……诸如此类。）</em><br/>
                 </dd>
                 <dt id="MO-X">MO-X - EMOMOMO，但经过&gt;180°地砖之后的速度应为经过&lt;180°地砖之后的两倍</dt> <dd>
-                    <strong>The corresponding level of this curse effect includes <a href="#MO-X.Meta">multi curses</a>!</strong><br/>
-                    When you hit a tile which its angle is &gt;180°, your current speed will be doubled for once,<br/>
-                    until you hit a tile which its angle is &lt;180°, which will halved your current speed for once,<br/>
-                    until you hit a tile which its angle is &gt;180°, which will doubled your current speed for once,<br/>
-                    until you hit a tile which its angle is &lt;180°... <em>okay i'll shut up.</em><br/>
-                    <em>(your current speed can also be doubled or halved when curse effect starts for difficulty balancing)</em>
+                    <strong>该魔改效果所对应的关卡<a href="#MO-X.Meta">包括更复杂的魔改效果</a>！</strong><br/>
+                    <em>（为了平衡难度，该魔改效果开始生效时，速度可以加倍或减半）</em>
                 </dd>
             </dl></div>
             <h3>Neo Cosmos</h3> <div><dl>
