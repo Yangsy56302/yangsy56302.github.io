@@ -7,6 +7,15 @@ div.curstr {
     text-wrap: nowrap;
     overflow: auto;
 }
+a.curstr {
+    color: inherit;
+    text-shadow: inherit;
+    text-decoration: none;
+}
+span.curstr- {
+    color: #F66;
+    text-shadow: inherit inherit #6006;
+}
 span.curstr\+ {
     color: #F66;
     text-shadow: inherit inherit #6006;
@@ -14,11 +23,6 @@ span.curstr\+ {
 span.curstr\* {
     color: #6F6;
     text-shadow: inherit inherit #0606;
-}
-a.curstr {
-    color: inherit;
-    text-shadow: inherit;
-    text-decoration: none;
 }
 a.curstr:hover {
     text-decoration: solid underline;
