@@ -38,3 +38,6 @@ a.curstr:hover {
 a.annotated {
     text-decoration: dotted underline;
 }
+code {
+    background-color: #336;
+}

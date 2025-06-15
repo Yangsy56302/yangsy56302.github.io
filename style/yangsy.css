@@ -125,6 +125,7 @@ abbr{
 code {
     font-family: 'Courier New', Courier, 'Consolas', monospace;
     font-weight: bold;
+    text-shadow: none;
     background-color: #000;
     color: #FFF;
     font-size: inherit;
