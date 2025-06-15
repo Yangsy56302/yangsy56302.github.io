@@ -12,16 +12,24 @@ a.curstr {
     text-shadow: inherit;
     text-decoration: none;
 }
-span.curstr- {
-    color: #F66;
+span.curstr\- {
+    color: #F55;
     text-shadow: inherit inherit #6006;
 }
 span.curstr\+ {
-    color: #F66;
+    color: #F55;
+    text-shadow: inherit inherit #6006;
+}
+span.curstr\+\- {
+    color: #FA5;
+    text-shadow: inherit inherit #6006;
+}
+span.curstr\-\+ {
+    color: #FA5;
     text-shadow: inherit inherit #6006;
 }
 span.curstr\* {
-    color: #6F6;
+    color: #5F5;
     text-shadow: inherit inherit #0606;
 }
 a.curstr:hover {
