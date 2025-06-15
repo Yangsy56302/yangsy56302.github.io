@@ -6,7 +6,7 @@ body {
     background-color: #4C8;
     color: #000;
 }
-div, section {
+div, section, article {
     margin: 0.5em 2em;
 }
 section.base {
