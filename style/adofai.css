@@ -12,12 +12,12 @@ body {
     background-color: #336;
     color: #FFF;
     font-family: 'godoMaum', 'Consolas', 'Courier New', monospace, sans-serif, serif;
-    font-size: 24px;
+    text-shadow: 0.1em 0.1em 0em #000F;
 }
 div.curstr {
     margin: 0.25em 2em 0.25em 2em;
     padding: 1em 1em;
-    text-shadow: 0.1em 0.1em 0em #000F;
+    font-size: 24px;
     text-wrap: nowrap;
     overflow: auto;
 }
@@ -26,6 +26,9 @@ div.curstr a {
     font-weight: inherit;
     text-shadow: inherit;
     text-decoration: none;
+}
+code.curstr {
+    font-size: 20px;
 }
 .\- {
     color: #F55;

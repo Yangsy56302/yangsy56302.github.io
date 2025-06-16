@@ -6,5 +6,7 @@
 }
 .curstr {
     font-family: 'Consolas', 'Courier New', 'HappyZcool', 'SimHei', 'Microsoft YaHei', monospace, sans-serif, serif;
+}
+div.curstr, code.curstr {
     font-size: inherit;
 }
