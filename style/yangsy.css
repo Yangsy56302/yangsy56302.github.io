@@ -1,5 +1,5 @@
 body {
-    font-family: 'Consolas', 'SimHei', 'Microsoft YaHei', monospace, sans-serif, serif;
+    font-family: 'Consolas', 'Courier New', monospace, sans-serif, serif;
     font-size: 16px;
     margin: auto;
     padding: 1em 2em;
@@ -92,9 +92,6 @@ dt {
 }
 dd {
     padding: 0.5em 0em;
-}
-sub, sup {
-    font-size: 0.75em;
 }
 strong {
     color: #80F;

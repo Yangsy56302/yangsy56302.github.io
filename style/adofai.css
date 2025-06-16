@@ -1,5 +1,55 @@
+@import "yangsy.css";
+@font-face {
+    font-family: "godoMaum";
+    src: url("godoMaum.ttf") format("truetype");
+}
 body {
     background-image: url("tutotile.png");
     background-repeat: repeat;
     background-attachment: fixed;
+}
+.curstr {
+    background-color: #336;
+    color: #FFF;
+    font-family: 'godoMaum', 'Consolas', 'Courier New', monospace, sans-serif, serif;
+    font-size: 24px;
+}
+div.curstr {
+    margin: 0.25em 2em 0.25em 2em;
+    padding: 1em 1em;
+    text-shadow: 0.1em 0.1em 0em #000F;
+    text-wrap: nowrap;
+    overflow: auto;
+}
+div.curstr a {
+    color: inherit;
+    font-weight: inherit;
+    text-shadow: inherit;
+    text-decoration: none;
+}
+.\- {
+    color: #F55;
+    text-shadow: inherit inherit #6006;
+}
+.\+ {
+    color: #F55;
+    text-shadow: inherit inherit #6006;
+}
+.\+\- {
+    color: #FA5;
+    text-shadow: inherit inherit #6006;
+}
+.\-\+ {
+    color: #FA5;
+    text-shadow: inherit inherit #6006;
+}
+.\* {
+    color: #5F5;
+    text-shadow: inherit inherit #0606;
+}
+div.curstr a.annotated {
+    text-decoration: dotted underline;
+}
+div.curstr a:hover {
+    text-decoration: solid underline;
 }

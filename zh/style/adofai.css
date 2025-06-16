@@ -1,0 +1,10 @@
+@import "../../style/adofai.css";
+@import "yangsy.css";
+@font-face {
+    font-family: "HappyZcool";
+    src: url("HappyZcool.ttf") format("truetype");
+}
+.curstr {
+    font-family: 'Consolas', 'Courier New', 'HappyZcool', 'SimHei', 'Microsoft YaHei', monospace, sans-serif, serif;
+    font-size: inherit;
+}
