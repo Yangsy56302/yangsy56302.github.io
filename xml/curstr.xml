@@ -52,14 +52,15 @@
     <cursed>
         <id>7-X</id>
         <level>Spin 2 Win</level>
-        <but>each reflex angled tile will speed you up & vice versa</but>
+        <but>each reflex angled tile will speed you up &amp; vice versa</but>
+        <info>&lt;180° = Speed Down, &gt;180° = Speed Up. Simple.</info>
     </cursed>
     <cursed>
         <id>8-X</id>
         <level>Jungle City</level>
         <but>every successive same-angled tile segments has 1 additional tile</but>
         <info>0° and 360° may also counts, it depends.
-            This effect can also add or remove twirls without changing the rhythm for better readability.</info>
+            This effect can also adding or removing twirls without changing the rhythm for better readability.</info>
     </cursed>
     <cursed>
         <id>9-X</id>
@@ -72,7 +73,7 @@
         <level>Butterfly Planet</level>
         <but>no more reflex angles for you</but>
         <info>Twirls will be added on tiles thats its angle is &gt;180°.
-            This effect can also add or remove twirls without changing the rhythm for better readability.</info>
+            This effect can also adding or removing twirls without changing the rhythm for better readability.</info>
     </cursed>
     <cursed>
         <id>11-X</id>
@@ -87,7 +88,7 @@
         <info>The angle of each tile is now its supplementary angle.
             Integer multiples of 180° will bypass this curse.
             Angles &gt;180° will be moduled by 180° when processing.
-            This effect can also add or remove twirls without changing the rhythm for better readability.</info>
+            This effect can also adding or removing twirls without changing the rhythm for better readability.</info>
     </cursed>
     <cursed>
         <id>XF-X</id>
@@ -115,7 +116,7 @@
         <id>PA-X</id>
         <level>Distance</level>
         <but>the midspins are taking over this level</but>
-        <info>Replace some non-midspin tiles to midspin without changing the rhythm.</info>
+        <info>Replace some non-midspin tiles to midspin, without changing the rhythm.</info>
     </cursed>
     <cursed>
         <id>XS-X</id>
@@ -175,8 +176,8 @@
         <id>RJ-X</id>
         <level>Fear Grows</level>
         <but>the multitaps has been changed to midspins</but>
-        <info>Any angle is acceptable for the midspins,
-            except for those that cause the planet to spin extra loops.</info>
+        <info>Any angle for the midspin is acceptable,
+            including for those that cause the planet to spin extra loops.</info>
     </cursed>
     <cursed>
         <id>XN-X</id>
@@ -206,7 +207,7 @@
         <id>XO-X</id>
         <level>One Forgotten Night</level>
         <but>its curse effect is defined as the combination of XO-1 and XO-2</but>
-        <info></info>
+        <info/>
     </cursed>
     <cursed>
         <id>XI-X</id>
@@ -226,21 +227,21 @@
         <id>MN-X</id>
         <level>Night Wander (cnsouka Remix)</level>
         <but>it is in the "midspin not found" state</but>
-        <info>Replace every midspin to non-midspin tiles, without changing the rhythm.</info>
+        <info>Replace each midspin to non-midspin tile, without changing the rhythm.</info>
     </cursed>
     <cursed>
         <id>ML-X</id>
         <level>La nuit de vif</level>
         <but>the time of notes in each beat is equalized</but>
-        <info>"beats" can also be section, 2 beats, etc.
-            Notes that span multiple parts belongs to the first part,
-            and it's a normal phenomenon that some of the part has no notes in them.</info>
+        <info>Notes that span multiple parts belongs to the first part,
+            and it's possible to have no notes in a part.
+            "beats" can also be section, 2 beats, etc.</info>
     </cursed>
     <cursed>
         <id>MO-X</id>
         <level>EMOMOMO</level>
         <but>after you meet a tile thats &gt;180° the speed should be doubled compared to tiles &lt;180°</but>
-        <info>The speed can also be doubled or halved when curse effect starts for difficulty balancing.</info>
+        <info>Your current speed can also be  can also be doubled or halved when curse effect starts for difficulty balancing.</info>
     </cursed>
     <cursed>
         <id>T1-X</id>
@@ -258,7 +259,7 @@
         <id>T2-X</id>
         <level>sing sing red indigo</level>
         <but>the special midspins can change the speed</but>
-        <info>Fire Midspin = Speed Up, Ice Midspin = Speed Down.</info>
+        <info>Fire Midspin = Speed Up, Ice Midspin = Speed Down. Simple.</info>
     </cursed>
     <cursed>
         <id>T2EX-X</id>
@@ -281,7 +282,7 @@
         <id>T4-X</id>
         <level>Third Sun</level>
         <but>it's a midspin party</but>
-        <info>Add some special midspins, and change the existing midspins to special variants.</info>
+        <info>Add special midspins, and also some of the midspins to special variants.</info>
     </cursed>
     <cursed>
         <id>T4EX-X</id>
@@ -295,12 +296,12 @@
         <id>T5-X</id>
         <level>Divine Intervention</level>
         <but>its curse can change the description of any curse effect</but>
-        <info>T5-X is a curse-to-curse mapping which takes three parameters:
+        <info>T5-X is a curse-to-curse mapping, which takes three parameters:
             <ol>
                 <li>the curse effect that will be modified</li>
                 <li>the old substring to be replaced</li>
                 <li>the new substring to be used for replacement</li>
             </ol>
-            and return a new (and temporary) curse effect with the replaced curse effect introduction.</info>
+            and return a new (and temporary) curse effect, with the replaced curse effect introduction.</info>
     </cursed>
 </root>
