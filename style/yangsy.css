@@ -111,9 +111,12 @@ a:hover {
     color: #AAF;
     text-shadow: 0.05em 0.05em 0.1em #448;
 }
-del.bc {
+del.heimu {
     color: #444;
     background-color: #444;
+}
+del.huhua {
+    color: #AAA;
 }
 abbr{
     color: inherit;
@@ -145,6 +148,25 @@ ol.zero {
 }
 ol,ul {
     list-style-position: inside;
+}
+img.a {
+    background-color: #AAF;
+    border-color: #88F;
+    border-width: 0.1em;
+    border-style: outset;
+}
+img.a:hover {
+    background-color: #CCF;
+    border-color: #AAF;
+    border-style: inset;
+}
+img.icon {
+    width: 1em;
+    height: 1em;
+}
+img.iconhw {
+    width: 0.5em;
+    height: 0.5em;
 }
 .nobr {
     word-wrap: nowrap;
