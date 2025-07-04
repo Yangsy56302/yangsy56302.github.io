@@ -231,18 +231,22 @@
             <strong>For XML version of this list, see <a href="xml/curstr.xml">curstr.xml</a>.</strong>
             <section> <h3>Main Game</h3> <dl>
                 <dt id="1-X">1-X - A Dance of Fire and Ice but the judgement limits are changing</dt> <dd>
-                    Green ones are allowed;<br/>
-                    Yellow ones are allowed by the curse but you will be killed by judgement itself;<br/>
-                    Red ones are NOT allowed and you will be killed instantly by the curse.
+                    <strong>Extra parameters:</strong> <dl>
+                        <dt><var>{disallowed}</var></dt> <dd>The judgements that's not allowed -- you will be killed instantly by the curse.</dd>
+                    </dl>
                 </dd>
                 <dt id="2-X">2-X - Offbeats but it is in another type of rhythm</dt> <dd>
-                    3/4, 7/8, 4/5, etc.
+                    <strong>Extra parameters:</strong> <dl>
+                        <dt><var>{rhythm}</var> <em>(default: 3/4)</em></dt> <dd>The type of rhythm. can also be 7/8, 4/5, etc.</dd>
+                    </dl>
                 </dd>
                 <dt id="3-X">3-X - THE WIND-UP but each straight line makes you more laggy</dt> <dd>
-                    You starts with N = 0.<br/>
+                    <strong>Extra parameters:</strong> <dl>
+                        <dt><var>{n}</var> <em>(default: 0)</em></dt> <dd>The initial value for extra 180° tile counts.</dd>
+                    </dl>
                     Every time you reached the end of a chain of 180° tiles,<br/>
-                    the tile right after the chain needs to hit N extra times;<br/>
-                    After that, N increased by 1.
+                    the tile right after the chain needs to hit <var>{n}</var> extra times;<br/>
+                    After that, <var>{n}</var> increases by 1.
                 </dd>
                 <dt id="4-X">4-X - Love Letters but short</dt> <dd>
                     Remove segments at any scale.
@@ -257,7 +261,16 @@
                     Both ends of the track are excluded.
                 </dd>
                 <dt id="7-X">7-X - Spin 2 Win but each reflex angled tile will speed you up & vice versa</dt> <dd>
-                    &lt;180° = Speed Down, &gt;180° = Speed Up. Simple.
+                    <strong>Extra parameters:</strong> <dl>
+                        <dt><var>{reflex}</var></dt> <dd>
+                            A BPM-to-BPM function that would be used on tiles which its angle is &gt;180°.<br/>
+                            <strong>THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</strong>
+                        </dd>
+                        <dt><var>{inferior}</var></dt> <dd>
+                            A BPM-to-BPM function that would be used on tiles which its angle is &lt;180°.<br/>
+                            <strong>THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</strong>
+                        </dd>
+                    </dl>
                 </dd>
                 <dt id="8-X">8-X - Jungle City but every successive same-angled tile segments has 1 additional tile</dt> <dd>
                     <em>(0° and 360° may also counts, it depends)</em><br/>
@@ -271,7 +284,17 @@
                     <em>(this effect can also adding or removing twirls without changing the rhythm for better readability)</em>
                 </dd>
                 <dt id="11-X">11-X - Heracles but the twirls can change the speed <br/>(<a href="#11-X.Meta">Timeline</a>)</dt> <dd>
-                    Red Twirl = Speed Up, Blue Twirl = Speed Down. Simple.
+                    <strong>Extra parameters:</strong> <dl>
+                        <dt><var>{red}</var></dt> <dd>
+                            A BPM-to-BPM function that would be used on tiles with red twirl.<br/>
+                            <strong>THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</strong>
+                        </dd>
+                        <dt><var>{blue}</var></dt> <dd>
+                            A BPM-to-BPM function that would be used on tiles with blue twirl.<br/>
+                            <strong>THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</strong>
+                        </dd>
+                    </dl>
+                    Twirls can change the speed even if it wasn't displayed.
                 </dd>
                 <dt id="12-X">12-X - Artificial Chariot but the acute angles and the obtuse angles are swapped</dt> <dd>
                     The angle of each tile is now its supplementary angle.<br/>
@@ -286,6 +309,9 @@
                     <em>(if these shortest choices end up in a tie, you can choose any of them)</em>
                 </dd>
                 <dt id="XC-X">XC-X - Credits but it's tutorial exclusive</dt> <dd>
+                    <strong>Extra parameters:</strong> <dl>
+                        <dt><var>{level}</var></dt> <dd>The level for replacing, or to be inserted. <strong>TUTORIAL LEVEL ONLY.</strong></dd>
+                    </dl>
                     Replacing a segment to a tutorial level, or inserting one.
                 </dd>
                 <dt id="XH-X">XH-X - Final Hope but this is a DLC level</dt> <dd>
@@ -357,16 +383,75 @@
                     Add holds if there is no holds, then add 1 extra loops to every hold.
                 </dd>
                 <dt id="T2-X">T2-X - sing sing <span style="color:#F00;">red</span> <span style="color:#00F;">indigo</span> but the special midspins can change the speed</dt> <dd>
-                    Fire Midspin = Speed Up, Ice Midspin = Speed Down. Simple.
+                    <strong>Extra parameters:</strong> <dl>
+                        <dt><var>{fire}</var></dt> <dd>
+                            A BPM-to-BPM function that would be used on fire tiles.<br/>
+                            <strong>THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</strong>
+                        </dd>
+                        <dt><var>{ice}</var></dt> <dd>
+                            A BPM-to-BPM function that would be used on ice tiles.<br/>
+                            <strong>THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</strong>
+                        </dd>
+                    </dl>
                 </dd>
                 <dt id="T2-EX">T2-EX - sing sing <span style="color:#F00;">red</span> <span style="color:#00F;">indigo</span> but the special midspins can change the planet count</dt> <dd>
-                    Fire Midspin = Triple Planets, Ice Midspin = Double Planets, "Yellow" Midspin = Swap To Another Count For Planets.
+                    Fire Midspin = Triple Planets,<br/>
+                    Ice Midspin = Double Planets,<br/>
+                    "Yellow" Midspin = Swap To Another Count For Planets.
                 </dd>
                 <dt id="T3-X">T3-X - No Hints Here! but the ending is destined <em>(aka Hints Here!)</em> <br/>(<a href="#T3-X.Meta">Timeline</a>)</dt> <dd>
                     Remove uncertain factors, such as free roam, in any way.
                 </dd>
-                <dt id="T3-EX">T3-EX - <em>(currently does not exist)</em></dt> <dd>
-                    <em>(undefined for now)</em>
+                <dt id="T3-EX">T3-EX - <em>(unfinished)</em> No Hints Here! but the affected sections are separated to multiple levels (<a href="#T3EX.Meta">Timeline</a>)</dt> <dd>
+                    <dl>
+                        <dt id="T3-E1">T3-E1 - Warm Up!! but the given curse effects are halved (<strong>METACURSE</strong>; <a href="#T3-E1.Meta">Timeline</a>)</dt> <dd>
+                            <strong>Extra parameters:</strong> <dl>
+                                <dt><var>{curses}</var></dt> <dd>curse effect(s) to be halved</dd>
+                            </dl>
+                            Each curse effect should be halved individually, even for those with <a href="#*">repeations</a>.<br/>
+                            <em>(affection from this curse effect should be equalized as much as possible)</em>
+                        </dd>
+                        <dt id="T3-E2">T3-E2 - Holds & midspins!! but the 1st one makes your speed slower & the 2nd one faster</dt> <dd>
+                            <strong>Extra parameters:</strong> <dl>
+                                <dt><var>{holds}</var></dt> <dd>
+                                    A BPM-to-BPM function that would be used when hold starts.<br/>
+                                    <strong>THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</strong>
+                                </dd>
+                                <dt><var>{midspins}</var></dt> <dd>
+                                    A BPM-to-BPM function that would be used when hitting the midspin tile.<br/>
+                                    <strong>THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</strong>
+                                </dd>
+                            </dl>
+                        </dd>
+                        <dt id="T3-E3">T3-E3 - Don't miss a shot!! but i failed to figure out of the length of the straight segments (<a href="#T3-E3.Meta">Timeline</a>)</dt> <dd>
+                            Choose an arbitrary number as the new tile count <em>(it can be the same as before)</em> for each of the continuous 180° tiles.
+                        </dd>
+                        <dt id="T3-E4">T3-E4 - Tricky Triangles!! but it reverses the order for tiles in each loop (<a href="#T3-E4.Meta">Timeline</a>)</dt> <dd>
+                            Have a list of tiles in each loop, <strong>with additional informations including relative angles and gameplay events, </strong>then reverse it.
+                            <!-- TODO: what's the difference between loop and enclosed shapes? were some usage of the word in curses wrong? -->
+                        </dd>
+                        <dt id="T3-E5">T3-E5 - High Fives!! but the midspins are mirrored (<a href="#T3-E5.Meta">Timeline</a>)</dt> <dd>
+                            <em>(the order should also be mirrored)</em>
+                        </dd>
+                        <dt id="T3-E6">T3-E6 - Collect 3!! but the freeroam isn't free anymore (<a href="#T3-E6.Meta">Timeline</a>)</dt> <dd>
+                            Unlike <a href="#T3-X">T3-X</a>, kipping the music isn't allowed for this curse.
+                            Please make an actual chart, or leave it by using paused beats for delay.
+                        </dd>
+                        <dt id="T3-E7">T3-E7 - Remember This!! but you should have remembered this a long time ago (<a href="#T3-E7.Meta">Timeline</a>)</dt> <dd>
+                            Hide all the charts until this point.<br/>
+                            <strong>It does not change the default chart opacity though, </strong>
+                            means that every brand-new-created tiles after this effect should still be shown as the same as that this effect never takes place.
+                        </dd>
+                        <dt id="T3-E8">T3-E8 - Warp Tiles!! but there's a hard limit to the value in minimum for angle of tiles (<a href="#T3-E8.Meta">Timeline</a>)</dt> <dd>
+                            <strong>Extra parameters:</strong> <dl>
+                                <dt><var>{angle}</var></dt> <dd>minimum value for tile's angle.</dd>
+                            </dl>
+                            Every tile that its angle is &lt;<var>{angle}</var> is now =<var>{angle}</var>.
+                        </dd>
+                        <dt id="T3-E9">T3-E9 - Answer!! but the pauses has stopped functioning (<a href="#T3-E9.Meta">Timeline</a>)</dt> <dd>
+                            Remove all the pauses.
+                        </dd>
+                    </dl>
                 </dd>
                 <dt id="T4-X">T4-X - Third Sun but it's a midspin party</dt> <dd>
                     Add special midspins, and also change some of the midspins to special variants.
@@ -375,23 +460,24 @@
                     For every tile with midspins, flip the midspins to another side, in the original <em>(not reversed)</em> order and the same ratio
                     <em>(for example, a midspin that divided the angle equally, should also divide the angle equally on the other side)</em>.
                 </dd>
-                <dt id="T5-X">T5-X - Divine Intervention but its curse can change the description of any curse effect <br/>(<a href="#T5-X.Meta">Timeline</a>)</dt> <dd>
+                <dt id="T5-X">T5-X - Divine Intervention but its curse can change the description of any curse effect <br/>(<strong>METACURSE</strong>; <a href="#T5-X.Meta">Timeline</a>)</dt> <dd>
                     Remember when I said <a href="#General.Mechanisms.Basics"><q>Curse effects is a section-to-section mapping</q></a>?<br/>
                     This one is special: It's a <strong>curse-to-curse</strong> mapping!<br/>
                     As a result, T5-X curstr <strong>cannot</strong> be applied to level sections. It can only be applied to <strong>curses</strong>.<br/>
-                    More specifically, T5-X takes three parameters: <ol>
-                        <li>the curse effect that will be modified</li>
-                        <li>the old substring <em>(it basically means <q>text clip</q>)</em> to be replaced</li>
-                        <li>the new substring to be used for replacement</li>
-                    </ol><br/>
-                    and return a new <em>(and temporary)</em> curse effect, with the replaced curse effect introduction.<br/>
+                    More specifically, T5-X takes 3 extra parameters: <dl>
+                        <dt><var>{curse}</var></dt> <dd>the curse effect that will be modified</dd>
+                        <dt><var>{old}</var></dt> <dd>the old substring <em>(it basically means <q>text clip</q>)</em> to be replaced</dd>
+                        <dt><var>{new}</var></dt> <dd>the new substring to be used for replacement</dd>
+                    </dl>
+                    and return a new <em>(and temporary)</em> curse effect based on <var>{curse}</var>,
+                    with the curse effect introduction, that all the <var>{old}</var> are replaced to <var>{new}</var>.
+                    <div class="curstr">
+                        Current curse by Yangsy56302: T5-X<sub>(<a href="#1-X">1-X</a>,
+                            "judgement limits are", "title is")</sub><br/>
+                        <em>(which is 1-X - A Dance of Fire and Ice but the <b>title is</b> changing)</em>
+                    </div>
                 </dd>
             </dl>
-                <div class="curstr">
-                    Current curse by Yangsy56302: T5-X<sub>(<a href="#1-X">1-X</a>,
-                        "judgement limits are", "title is")</sub><br/>
-                    <em>(which is 1-X - A Dance of Fire and Ice but the <b>title is</b> changing)</em>
-                </div>
             </section>
             <article id="NonLevelEffects"> <h3>Non-level Effects</h3> <dl>
                 <p>
@@ -1289,6 +1375,89 @@
                         + <a class="annotated" href="#XC-X" title="T3-X - Hints Here!" target="_blank">"XC<span class="curstr +">+</span>X"</a><br/>
                     Current curse: <a href="#None">None</a>
                 </div>
+            </section>
+            <section id="T3EX.Meta"> <h3>
+                    <a href="#T3-EX">T3-EX</a> - No Hints Here! 
+                    but the affected sections are separated to multiple levels</h3>
+                This world <em>(specifically, <a href="#T3-E9.Meta">T3-E9</a>)</em> introduced a function-like format to describe curses.<br/>
+                For the formatting method in this section, see <a href="#T3-X.Meta">T3-X string cursed level</a>.
+                <section id="T3-E1.Meta"> <h4>
+                        <a href="#T3-E1">T3-E1</a> - Warm Up!! 
+                        but the given curse effects are halved <em>(sub1.adofai)</em></h4>
+                    <div class="curstr">
+                        Current curse: <a href="#T3-E1">"T3-E1"</a>(<a href="#B-X">"B-X"</a>)<br/>
+                        <em>Next curse: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E3.Meta"> <h4>
+                        <a href="#T3-E3">T3-E3</a> - Don't miss a shot!! 
+                        but i failed to figure out of the length of the straight segments <em>(sub3.adofai)</em></h4>
+                    <div class="curstr">
+                        Current curse: <a href="cursed.html#Landmines">11-EX*</a>
+                            + <a href="#T3-E3">"T3-E3"</a>
+                            + <a href="cursed.html#Landmines">10-EX*</a><br/>
+                        <em>Next curse: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E4.Meta"> <h4>
+                        <a href="#T3-E4">T3-E4</a> - Tricky Triangles!! 
+                        but it reverses the order for tiles in each loop <em>(sub4.adofai)</em></h4>
+                    <div class="curstr">
+                        Current curse: <a href="#-"><span class="curstr -">-</span></a>
+                            <a href="#10-X">"10-X"</a>
+                            + <a href="#T3-E4">"T3-E4"</a>
+                            + <a href="#10-X">"10-X"</a><br/>
+                        <em>Next curse: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E5.Meta"> <h4>
+                        <a href="#T3-E5">T3-E5</a> - High Fives!! 
+                        but the midspins are mirrored <em>(sub5.adofai)</em></h4>
+                    <div class="curstr">
+                        Current curse: <a href="#T2-EX">"T2-EX"</a>
+                            + <a href="#T3-E5">"T3-E5"</a><br/>
+                        <em>Next curse: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E6.Meta"> <h4>
+                        <a href="#T3-E6">T3-E6</a> - Collect 3!! 
+                        but the freeroam isn't free anymore <em>(sub6.adofai)</em></h4>
+                    <div class="curstr">
+                        Current curse: <a href="#T3-E6">"T3-E6"</a><br/>
+                        Current curse: <a href="#T3-E6">"T3-E6"</a>
+                            + <a href="cursed.html#Blocks">[11-X]</a><br/>
+                        <em>Next curse: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E7.Meta"> <h4>
+                        <a href="#T3-E7">T3-E7</a> - Remember This!! 
+                        but you should have remembered this a long time ago <em>(sub7.adofai)</em></h4>
+                    <div class="curstr">
+                        Current curse: <a href="#T3-E7">"T3-E7"</a>
+                            + <a href="#XO-1">"XO-1"</a><br/>
+                        Current curse: <a href="#T3-E7">"T3-E7"</a>
+                            + <a href="#XO-1">"XO-1"</a>
+                            + <a href="#T4-EX">"T4-EX"</a><br/>
+                        <em>Next curse: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E8.Meta"> <h4>
+                        <a href="#T3-E8">T3-E8</a> - Warp Tiles!! 
+                        but there's a hard limit to the value in minimum for angle of tiles <em>(sub8.adofai)</em></h4>
+                    <div class="curstr">
+                        Current curse: <a href="#T3-E8">"T3-E8"</a>(90°)<br/>
+                        <em>Next curse: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E9.Meta"> <h4>
+                        <a href="#T3-E9">T3-E9</a> - Answer!! 
+                        but the pauses has stopped functioning <em>(sub9.adofai)</em></h4>
+                    <div class="curstr">
+                        Current curse: <a href="#T3-E9">"T3-E9"</a>
+                            + <a target="_blank" href="https://store.steampowered.com/app/2595110/_/">Love Nest</a><br/>
+                        <em>Next curse: <a href="#...">...</a></em>
+                    </div>
+                </section>
             </section>
             <section id="Novel_Feature"> <h3>World NF</h3>
                 This world introduced that the next level is decided by the end, not the start nor the pause menu, of the current level,

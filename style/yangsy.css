@@ -6,7 +6,7 @@ body {
     background-color: #4C8;
     color: #000;
 }
-div, section, article {
+div, section, article, dt {
     margin: 0.5em 2em;
 }
 section.base {
@@ -91,7 +91,7 @@ dt {
     color: #204;
 }
 dd {
-    padding: 0.5em 0em;
+    padding: 0.25em 1em;
 }
 strong {
     color: #80F;
@@ -122,14 +122,19 @@ abbr{
     color: inherit;
     font-size: inherit;
 }
-code {
+code, var {
     font-family: 'Courier New', Courier, 'Consolas', monospace;
     font-weight: bold;
     text-shadow: none;
     background-color: #000;
-    color: #FFF;
     font-size: inherit;
     padding: 0.125em .5em;
+}
+code {
+    color: #AF5;
+}
+var {
+    color: #5FA;
 }
 ul {
     list-style-type: disc;
