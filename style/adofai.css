@@ -50,6 +50,10 @@ code.curstr {
     color: #5F5;
     text-shadow: inherit inherit #0606;
 }
+.\^ {
+    color: #5FF;
+    text-shadow: inherit inherit #0606;
+}
 div.curstr a.annotated {
     text-decoration: dotted underline;
 }

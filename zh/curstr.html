@@ -23,11 +23,12 @@
                 <li><a href="#General.Basics">基础概念</a></li>
                 <li><a href="#General.Formats">文本格式</a><ol>
                     <li><a href="#General.Formats.Keywords">关键词</a></li>
+                    <li><a href="#General.Formats.Functions">函数式表示法</a></li>
                 </ol></li>
                 <li><a href="#General.Mechanisms">魔改机制</a><ol>
                     <li><a href="#General.Mechanisms.Basics">基础</a></li>
                     <li><a href="#General.Mechanisms.Advanced">进阶</a></li>
-                    <li><a href="#General.Mechanisms.Meta">元</a><ol>
+                    <li><a href="#General.Mechanisms.Meta">元机制</a><ol>
                         <li><a href="#-">逆向魔改</a></li>
                     </ol></li>
                 </ol></li>
@@ -93,96 +94,158 @@
                 <a target="_blank" href="https://www.dropbox.com/scl/fo/39tu8wqmt3st13md7i6a5/AMsJss1KHZO4yXwD6DYNJ6E?rlkey=g0sulegupuid42onx8k5vbvym&st=8woo71yi&dl=0">Dropbox；</a>
         </article>
         <article id="General"> <h2>常规</h2>
-            <p><a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
+            <section><a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
                 下文中，中旋默认按0°角处理。
-            </a></p>
+            </a></section>
             <article id="General.Basics"> <h3>基础概念</h3>
-                <p>
-                    任何冰与火之舞关卡<em>（理论上）</em>都可以对应于一个魔改效果。
-                </p>
+                任何冰与火之舞关卡<em>（理论上）</em>都可以对应于一个魔改效果。
             </article>
             <article id="General.Formats"> <h3>文本格式</h3>
-                <p>
-                    在拥有多个魔改效果的关卡中，应在屏幕底部添加两行文本装饰作为提示：第一行是正在生效的魔改，第二行则是即将生效的魔改。
-                    <div class="curstr">Current curse by Yangsy56302: 12-X<br/>Next curse by Yangsy56302: XT-X</div><br/>
-                    <em>这也是该魔改系列被称作<q><a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str">文字魔改</a></q>的原因。</em>
-                </p> <p>
+                <section>
+                    在拥有多个魔改效果的关卡中，应在屏幕底部添加两行文本装饰作为提示：第一行是正在生效的魔改，第二行则是即将生效的魔改。<br/>
+                    <em>这也是该魔改系列被称作<q><a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str">文字魔改</a></q>的原因。</em><br/>
+                    此处使用顺序式表示法举例：
+                    <div class="curstr">当前魔改效果："12-X"<br/>后继魔改效果："XT-X"</div>
+                    另外，在仅包括某单一系列的魔改效果时，顺序式表示法可以使用以下记录方式省略魔改系列标识符：
+                    <div class="curstr">当前文字魔改效果：12-X<br/>后继文字魔改效果：XT-X</div>
+                </section> <section>
                     注意，这些文本是<strong>提示，而不是魔改效果本体</strong>！
                     <em>魔改效果本体更像是某种抽象的数学概念。</em><br/>
                     提示文本不应随着镜头的变化而改变位置或大小，否则将无法起到提示作用。<em>估计短时间内也没人看得懂……</em>
-                </p> <p>
-                    魔改效果更换前会进行倒计时（从3到0，含两端）：倒计时（预计）降到-1的那一瞬间，就是魔改更换的时刻。<br/>
+                </section> <section>
+                    魔改效果更换前会进行倒计时（从 3 到 0 ，含两端）：倒计时预计降到 -1 的那一瞬间，就是魔改更换的时刻。<br/>
                     <div class="curstr">
-                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (3)<br/><br/>
-                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (2)<br/><br/>
-                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (1)<br/><br/>
-                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (0)<br/><br/>
-                        Current curse by Yangsy56302: 5-X<br/>Next curse by Yangsy56302: 2-X
+                        当前魔改效果："ML-X"<br/>后继魔改效果："5-X" (3)<br/><br/>
+                        当前魔改效果："ML-X"<br/>后继魔改效果："5-X" (2)<br/><br/>
+                        当前魔改效果："ML-X"<br/>后继魔改效果："5-X" (1)<br/><br/>
+                        当前魔改效果："ML-X"<br/>后继魔改效果："5-X" (0)<br/><br/>
+                        当前魔改效果："5-X"<br/>后继魔改效果："2-X"
                     </div>
-                </p>
+                </section>
                 <article id="General.Formats.Keywords"> <h4>关键词</h4>
-                    <p>
-                        <b><a id="..." target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></b> 在第二行时可以理解为<q>请稍候</q>，在第一行时则可以理解为<q>需要更多信息</q>。
-                        <div class="curstr">Current curse by Yangsy56302: ...<br/>Next curse by Yangsy56302: ...</div>
-                    </p> <p>
-                        <b><a id="None" target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></b>为“无魔改效果”。<br/>
-                        <b><a id="StopIteration" target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></b>可以理解为<q>在这一关结束之前，魔改效果不会更换，你现在可以将注意力完全放在谱面上了</q>。
-                        <div class="curstr">Current curse by Yangsy56302: None<br/>Next curse by Yangsy56302: StopIteration</div>
-                    </p>
+                    <section>
+                        <b><a id="..." target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></b> 在当前魔改可以理解为<q>请稍候</q>，在后继魔改则可以理解为<q>需要更多信息</q>。
+                        <div class="curstr">当前魔改效果：...<br/>后继魔改效果：...</div>
+                    </section>
+                    <section>
+                        <b>空（<a id="None" target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a>）</b>代表<q>无魔改效果</q>。<br/>
+                        <b>迭代终止（<a id="StopIteration" target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a>）</b>可以理解为<q>在这一关结束之前，魔改效果不会更换，你现在可以将注意力完全放在谱面上了</q>。
+                        <div class="curstr">当前魔改效果：空<br/>后继魔改效果：迭代终止</div>
+                    </section>
+                </article>
+                <article id="General.Formats.Functions"> <h4>函数式表示法</h4>
+                    <section>
+                        首先来看<a href="../curstr.html#XS-X.Meta">一个例子</a>：
+                        <div class="curstr">
+                            当前魔改效果："10-X" + "XS-X"<br/>
+                            当前关卡："XS-X"("10-X"(XS-X))
+                        </div><br/>
+                        可以看出，<ol>
+                            <li>该表示法可以同时包括关卡信息；</li>
+                            <li>该表示法中魔改效果的书写顺序与之前所用的表示法相反。</li>
+                        </ol>
+                    </section>
+                    <section>
+                        函数式表示法中，倒计时位于冒号之前：
+                        <div class="curstr">
+                            当前关卡："XR-X"(XT-X)<br/>后继关卡 (3)："B-X"(XT-X)<br/><br/>
+                            当前关卡："XR-X"(XT-X)<br/>后继关卡 (2)："B-X"(XT-X)<br/><br/>
+                            当前关卡："XR-X"(XT-X)<br/>后继关卡 (1)："B-X"(XT-X)<br/><br/>
+                            当前关卡："XR-X"(XT-X)<br/>后继关卡 (0)："B-X"(XT-X)<br/><br/>
+                            当前关卡："B-X"(XT-X)<br/>后继关卡："PA-X"("12-X"(XT-X))
+                        </div>
+                    </section>
+                    <section>
+                        部分关键词在函数式表示法中也有些许差别：<dl>
+                            <dt><a href="#...">...</a></dt> <dd>
+                                仅保留<q>请稍候</q>用途：
+                                <div class="curstr">后继关卡：...</div>
+                            </dd>
+                            <dt><a href="#None">空</a></dt> <dd>
+                                由于未被魔改的片段可以直接使用关卡名称标注而被废除：
+                                <div class="curstr">当前关卡：XS-X</div>
+                            </dd>
+                            <dt><a href="#StopIteration">迭代终止</a></dt> <dd>
+                                <div class="curstr">后继关卡：迭代终止</div>
+                            </dd>
+                        </dl>
+                    </section>
                 </article>
             </article>
             <article id="General.Mechanisms"> <h3>魔改机制</h3>
                 <article id="General.Mechanisms.Basics"> <h4>基础</h4>
-                    <p>魔改效果可以看作是从谱面片段到谱面片段的<strong>映射</strong>。</p>
-                    <p>
-                        加号（<code class="curstr">+</code>）表示组合两个魔改效果，与<a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a></em>类似。<br/>
-                        <div class="curstr">Current curse by Yangsy56302: XR-X + 12-X<br/>Next curse by Yangsy56302: 12-X + XR-X</div><br/>
-                    </p>
+                    <section>
+                        魔改效果可以看作是从谱面片段到谱面片段的<strong>映射</strong>——
+                        这也是<a href="#General.Formats.Functions">函数式表示法</a>的底层原理。
+                    </section>
+                    <section>
+                        在顺序式表示法中，加号（<code class="curstr">+</code>）表示组合两个魔改效果，与<a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a></em>类似：
+                        <div class="curstr">当前魔改效果："XR-X" + "12-X"<br/>后继魔改效果："12-X" + "XR-X"</div><br/>
+                        在函数式表示法中，通常直接嵌套表示：
+                        <div class="curstr">当前关卡："12-X"("XR-X"(XC-X))<br/>后继关卡："XR-X"("12-X"(XC-X))</div><br/>
+                        如果真的有组合魔改的必要性，则需要使用函数组合符号（<code class="curstr">∘</code>）：
+                        <div class="curstr">当前关卡："12-X"∘"XR-X"(XC-X)<br/>后继关卡："XR-X"∘"12-X"(XC-X)</div>
+                    </section>
                 </article>
                 <article id="General.Mechanisms.Advanced"> <h4>进阶</h4>
-                    <p>
-                        魔改效果的运算顺序与基础数学运算相同。例如：<section>
-                            <p>
-                                <code class="curstr">XR-X + 12-X</code>首先使用<code class="curstr">XR-X</code>为直角添加三角形，其次使用<code class="curstr">12-X</code>互换锐角与钝角，因此<code class="curstr">XR-X</code>所添加的三角形由于受到<code class="curstr">12-X</code>的影响不再保持三角形的形态；
-                            </p> <p>
-                                然而<code class="curstr">12-X + XR-X</code>首先使用<code class="curstr">12-X</code>互换锐角与钝角，其次使用<code class="curstr">XR-X</code>为直角添加三角形，因此<code class="curstr">XR-X</code>所添加的三角形不会受到到<code class="curstr">12-X</code>的影响，保持原样。
-                            </p>
-                        </section>
-                    </p>
+                    魔改效果的运算顺序与对应的数学运算相同。例如，在顺序式表示法中：<section>
+                        <code class="curstr">"XR-X" + "12-X"</code>首先使用<code class="curstr">"XR-X"</code>为直角添加三角形，其次使用<code class="curstr">"12-X"</code>互换锐角与钝角，因此<code class="curstr">"XR-X"</code>所添加的三角形由于受到<code class="curstr">"12-X"</code>的影响不再保持三角形的形态；<br/><br/>
+                        然而<code class="curstr">"12-X" + "XR-X"</code>首先使用<code class="curstr">"12-X"</code>互换锐角与钝角，其次使用<code class="curstr">"XR-X"</code>为直角添加三角形，因此<code class="curstr">"XR-X"</code>所添加的三角形不会受到到<code class="curstr">"12-X"</code>的影响，保持原样。
+                    </section>
+                    而在函数式表示法中，最内侧的魔改效果会首先生效，而最靠左侧的魔改效果会在最后生效。
                 </article>
-                <article id="General.Mechanisms.Meta"> <h4>元</h4>
-                    <p>
-                        魔改效果的生效时间先后顺序<strong>并不是</strong>生效顺序，也不存在直接关系。
-                    </p> <p id="*">
-                        连续且重复的魔改效果可以使用乘号（<code class="curstr">*</code>）简写。
-                        <div class="curstr">Current curse by Yangsy56302: XS-X + XS-X + XS-X<br/>Next curse by Yangsy56302: XS-X<a href="#*"><span class="curstr *">*</span>3</a></div><br/>
-                        <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
-                    </p> 
-                    <article id="-"> <h5>逆向魔改</h5>
+                <article id="General.Mechanisms.Meta"> <h4>元机制</h4>
+                    <section>
+                        魔改效果的起效时间先后顺序<strong>并不是</strong>生效因果顺序，也不存在直接关系。
+                    </section>
+                    <section id="*">
+                        在顺序式表示法中，连续且重复的魔改效果可以使用乘号（<code class="curstr">*</code>）简写。
+                        <div class="curstr">当前文字魔改效果：XS-X + XS-X + XS-X<br/>后继文字魔改效果：XS-X<a href="#*"><span class="curstr *">*</span>3</a></div>
+                        <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em><br/>
+                    </section> 
+                    <section id="^">
+                        在函数式表示法中，则可以使用函数的幂运算简写：
+                        <div class="curstr">
+                            当前关卡："XS-X"("XS-X"("XS-X"(XS-X)))<br/>
+                            后继关卡："XS-X"<sup><span class="curstr ^"><a href="#^">3</a></span></sup>(XS-X)<br/>
+                            <em>或者，</em>后继关卡："XS-X"<a href="#^"><span class="curstr ^">^</span>3</a>(XS-X)
+                        </div>
+                    </section> 
+                    <article> <h5>逆向魔改</h5>
                         <strong>逆向魔改<em>（又名逆魔改）</em></strong> ，简单来说，就是反推出魔改效果“生效”前的谱面片段：
                         <section>
-                            <p>
-                                逆向魔改生效的前置条件：某个假设中的谱面片段，可以通过使用对应的正向魔改，转为将要被逆向魔改的谱面片段。<br/>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
-                                    即使不满足前置条件，魔改也可以被使用，但效果在条件重新满足前将不会实际发挥作用。
-                                </a>
-                            </p>
+                            <strong>逆向魔改生效的前置条件：</strong>某个假设中的谱面片段，可以通过使用对应的正向魔改，转为将要被逆向魔改的谱面片段。<br/>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
+                                即使不满足前置条件，魔改也可以被使用，但效果在条件重新满足前将不会实际发挥作用。
+                            </a>
                         </section>
-                        <p>
-                            逆向魔改通过将减号（<code class="curstr">-</code>）改为加号（<code class="curstr">+</code>）来表示。
-                            <div class="curstr">Current curse by Yangsy56302: 8<span class="curstr +">+</span>X<br/>Next curse by Yangsy56302: 9-X + 9<span class="curstr +">+</span>X</div><br/>
-                            <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
-                        </p> <p>
-                            更通用地，如果魔改效果并非源自冰与火之舞关卡，或者魔改标识符内不包括减号，可以将减号（<code class="curstr">-</code>）置于开头。
-                            <div class="curstr">Current curse by Yangsy56302: <span class="curstr +">-</span>Novel Feature<br/>Next curse by Team Salvato: <span class="curstr +">-</span>`DDLC+!`</div>
-                        </p> <p>
-                            <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">可以通过正负号来缩写相邻且互逆的魔改。</a>
-                            <div class="curstr">Current curse by Yangsy56302: XC-X + XC<span class="curstr +">+</span>X<br/>Next curse by Yangsy56302: XC<span class="curstr -+">&mnplus;</span>X</div><br/>
-                            <div class="curstr">Current curse by Yangsy56302: XC<span class="curstr +">+</span>X + XC-X<br/>Next curse by Yangsy56302: XC<span class="curstr +-">&plusmn;</span>X</div><br/>
-                            <em>（<a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">文本颜色</a>并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
-                        </p> <p>
+                        <section>
+                            在顺序式表示法中，
+                            <section id="-">
+                                逆向魔改通过将减号（<code class="curstr">-</code>）改为加号（<code class="curstr">+</code>）来表示。
+                                <div class="curstr">当前魔改效果："8<span class="curstr +">+</span>X"<br/>后继魔改效果："9-X" + "9<span class="curstr +">+</span>X"</div>
+                                <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
+                            </section> <section>
+                                更通用且推荐地，如果魔改效果并非源自冰与火之舞关卡，或者魔改标识符内不包括减号，可以将减号（<code class="curstr">-</code>）置于开头。
+                                <div class="curstr">当前魔改效果："<span class="curstr +">-</span>Novel Feature"<br/>后继魔改效果：<span class="curstr +">-</span>DDLC+!</div>
+                            </section> <section>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">可以通过正负号来缩写相邻且互逆的魔改。</a>
+                                <div class="curstr">当前魔改效果："XC-X" + "XC<span class="curstr +">+</span>X"<br/>后继魔改效果："XC<span class="curstr -+">&mnplus;</span>X"</div><br/>
+                                <div class="curstr">当前魔改效果："XC<span class="curstr +">+</span>X" + "XC-X"<br/>后继魔改效果："XC<span class="curstr +-">&plusmn;</span>X"</div>
+                                <em>（<a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">文本颜色</a>并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
+                            </section>
+                        </section>
+                        <section>
+                            在函数式表示法中，逆向魔改与重复魔改效果同时通过函数的幂运算进行表示：
+                            <div class="curstr">
+                                当前关卡："XS<span class="curstr +">+</span>X"("XS<span class="curstr +">+</span>X"("XS<span class="curstr +">+</span>X"(XS-X)))<br/>
+                                后继关卡：<span class="curstr -">-</span>"XS-X"<sup><span class="curstr ^">3</span></sup>(XS-X)<br/>
+                                <em>或者，</em>后继关卡："XS-X"<sup><span class="curstr ^"><span class="curstr -">-</span>3</span></sup>(XS-X)<br/>
+                            </div>
+                        </section>
+                        <section>
                             逆向魔改所导致的可能性有很多，其中很大一部分也没那么直观。
-                        </p>
+                        </section>
                     </article>
                 </article>
             </article>
@@ -372,7 +435,7 @@
                             对于每段连续180°地砖，选择一个任意数字<em>（甚至可以是同一个）</em> 作为新的长度。
                         </dd>
                         <dt id="T3-E4">T3-E4 - 棘手的三角阵！！，但它反转了循环轨道的地砖顺序（<a href="../curstr.html#T3-E4.Meta">时间线</a>）</dt> <dd>
-                            将每一圈循环轨道的地砖信息记在一张表里，<strong>使用相对角度并包括游戏时间信息，</strong>然后将其倒序。
+                            将每一圈循环轨道的地砖信息记在一张表里，<strong>使用相对角度记录，并包括游戏时间信息，</strong>然后将其倒序。
                             <!-- ……循环轨道和封闭图形的区别是什么？我之前会不会混用过这两个概念啊？ -->
                         </dd>
                         <dt id="T3-E5">T3-E5 - 击掌！！，但中旋镜像翻转（<a href="../curstr.html#T3-E5.Meta">时间线</a>）</dt> <dd>
@@ -418,26 +481,23 @@
                     然后返回一个崭新<em>（且临时）</em>的，基于<var>{curse}</var>的魔改效果，
                     标题中所有的关键词<var>{old}</var>都被替换成了<var>{new}</var>。
                     <div class="curstr">
-                        Current curse by Yangsy56302: T5-X<sub>(<a href="#1-X">1-X</a>,
+                        当前魔改效果："T5-X"<sub>(<a href="#1-X">1-X</a>,
                             "判定限制", "关卡标题")</sub><br/>
                         <em>(也就是 1-X - 冰与火之舞，但<b>判定限制</b>是变化之神)</em>
                     </div>
                 </dd>
-            </dl>
-            </section>
+            </dl> </section>
             <article id="NonLevelEffects"> <h3>非关卡效果</h3>
-                <p>
-                    有可能<em>（但出于版权问题不建议）</em>使用魔改效果进行跨游戏联动：
-                    <p>
-                        <a target="_blank" href="https://ddlc.moe/">心跳文学部！</a> 相关内容可以作为XH-X魔改的部分效果，<br/>
-                        <a target="_blank" href="https://bluearchive.nexon.com/">蔚蓝档案</a>相关内容可以作为XR-X魔改的部分效果。<br/>
-                    </p>
-                    更多信息请参考<a href="bluearchived.html">《蔚蓝归档！》</a>。
-                </p>
+                有可能<em>（但出于版权问题不建议）</em>使用魔改效果进行跨游戏联动：
+                <section>
+                    <a target="_blank" href="https://ddlc.moe/">心跳文学部！</a> 相关内容可以作为XH-X魔改的部分效果，<br/>
+                    <a target="_blank" href="https://bluearchive.nexon.com/">蔚蓝档案</a>相关内容可以作为XR-X魔改的部分效果。<br/>
+                </section>
+                更多信息请参考<a href="bluearchived.html">《蔚蓝归档！》</a>。
             </article>
         </article>
         <article id="Affected"> <h2>被魔改关卡中的效果列表</h2>
-            <p>请暂时参考<a target="_blank"  href="../curstr.html#Affected">英文页面</a>。</p>
+            请暂时参考<a target="_blank"  href="../curstr.html#Affected">英文页面</a>。
         </article>
     </section>
     <footer>
