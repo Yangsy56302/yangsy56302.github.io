@@ -232,7 +232,7 @@
             <section> <h3>Main Game</h3> <dl>
                 <dt id="1-X">1-X - A Dance of Fire and Ice but the judgement limits are changing</dt> <dd>
                     <strong>Extra parameters:</strong> <dl>
-                        <dt><var>{disallowed}</var></dt> <dd>The judgements that's not allowed -- you will be killed instantly by the curse.</dd>
+                        <dt><var>{disallowed}</var></dt> <dd>The judgements that's not allowed, recolored in red -- you will be killed instantly by the curse.</dd>
                     </dl>
                 </dd>
                 <dt id="2-X">2-X - Offbeats but it is in another type of rhythm</dt> <dd>
@@ -294,7 +294,7 @@
                             <strong>THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</strong>
                         </dd>
                     </dl>
-                    Twirls can change the speed even if it wasn't displayed.
+                    <em>(twirls can change the speed even if it wasn't displayed)</em>
                 </dd>
                 <dt id="12-X">12-X - Artificial Chariot but the acute angles and the obtuse angles are swapped</dt> <dd>
                     The angle of each tile is now its supplementary angle.<br/>
@@ -310,9 +310,9 @@
                 </dd>
                 <dt id="XC-X">XC-X - Credits but it's tutorial exclusive</dt> <dd>
                     <strong>Extra parameters:</strong> <dl>
-                        <dt><var>{level}</var></dt> <dd>The level for replacing, or to be inserted. <strong>TUTORIAL LEVEL ONLY.</strong></dd>
+                        <dt><var>{level}</var></dt> <dd>The level section for replacing. <strong>FROM TUTORIAL LEVEL ONLY.</strong></dd>
                     </dl>
-                    Replacing a segment to a tutorial level, or inserting one.
+                    Replace the affected section <em>(the length can be 0)</em> to <var>{level}</var>.
                 </dd>
                 <dt id="XH-X">XH-X - Final Hope but this is a DLC level</dt> <dd>
                     Add DLC contents.<br/>Additionally, Hold can replace 180° tiles by extra loops, and midspins cannot be created out of nothing.
@@ -406,7 +406,7 @@
                     <dl>
                         <dt id="T3-E1">T3-E1 - Warm Up!! but the given curse effects are halved (<strong>METACURSE</strong>; <a href="#T3-E1.Meta">Timeline</a>)</dt> <dd>
                             <strong>Extra parameters:</strong> <dl>
-                                <dt><var>{curses}</var></dt> <dd>curse effect(s) to be halved</dd>
+                                <dt><var>{curses}</var></dt> <dd>curse effect(s) to be halved.</dd>
                             </dl>
                             Each curse effect should be halved individually, even for those with <a href="#*">repeations</a>.<br/>
                             <em>(affection from this curse effect should be equalized as much as possible)</em>
