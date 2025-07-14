@@ -23,11 +23,12 @@
                 <li><a href="#General.Basics">Basics</a></li>
                 <li><a href="#General.Formats">Formats</a><ol>
                     <li><a href="#General.Formats.Keywords">Keywords</a></li>
+                    <li><a href="#General.Formats.Functional">Functional Formatting Method</a></li>
                 </ol></li>
                 <li><a href="#General.Mechanisms">Mechanisms</a><ol>
                     <li><a href="#General.Mechanisms.Basics">Basics</a></li>
                     <li><a href="#General.Mechanisms.Advanced">Advanced</a></li>
-                    <li><a href="#General.Mechanisms.Meta">Meta</a><ol>
+                    <li><a href="#General.Mechanisms.Meta">Metamechanisms</a><ol>
                         <li><a href="#-">Anticurses</a></li>
                     </ol></li>
                 </ol></li>
@@ -118,111 +119,161 @@
                 <a target="_blank" href="https://www.dropbox.com/scl/fo/39tu8wqmt3st13md7i6a5/AMsJss1KHZO4yXwD6DYNJ6E?rlkey=g0sulegupuid42onx8k5vbvym&st=8woo71yi&dl=0">Dropbox</a>;<br/>
         </article>
         <article id="General"> <h2>General</h2>
-            <p><em><q>curstr</q> is an abbreviation for <q>string cursed</q>.</em></p>
-            <p><a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
+            <a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
                 In the following content, midspins will be considered as 0° angle.
-            </a></p>
+            </a>
             <article id="General.Basics"> <h3>Basics</h3>
-                <p>
-                    Each ADOFAI level may correspond to an curse effect <em>(theoretically)</em>.<br/>
-                    The IDs of the two are the same.
-                </p> <p>
-                    Using a curse effect may produces many possibilities of results.<br/>
-                    <strong>Just choose a specific one to use.</strong>
-                </p>
+                Each ADOFAI level may correspond to an curse effect <em>(theoretically)</em>.
             </article>
             <article id="General.Formats"> <h3>Formats</h3>
-                <p>
-                    The curses the player would experience, including the currents and the nexts, should be tipped by using text decorations on the bottom of the interface:
-                    <div class="curstr">Current curse by Yangsy56302: 12-X<br/>Next curse by Yangsy56302: XT-X</div><br/>
+                <section>
+                    The curses the player would experience, including the currents and the nexts, should be tipped by using text decorations on the bottom of the interface.
                     <em>(and that's why this cursed levels series is named <q><a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str">string</a></q>!)</em>
-                </p> <p>
+                    Here's an example in sequential format:
+                    <div class="curstr">Current curse: "12-X"<br/>Next curse: "XT-X"</div><br/>
+                    In addition, if the curse effects are all from 1 single series:
+                    <div class="curstr">Current curse by Yangsy56302: 12-X<br/>Next curse by Yangsy56302: XT-X</div><br/>
+                </section> <section>
                     As I said, these texts are <strong>HINTS, WHICH IS NOT CURSES ITSELF</strong>.<br/>
                     <em>(those curses is more similar to some abstract existences)</em><br/>
                     And since they are tips, they shouldn't move or rotate with the camera, or they will not have a prompt effect.
-                </p> <p>
+                </section> <section>
                     There will be a countdown before updating the current curse effects:<br/>
                     The countdown starts with 3, decreases by 1 in equal interval time. The curse effects will be updated <strong>at the exact same time</strong> when the number <em>(should be)</em> counted down to -1.<br/>
                     <div class="curstr">
-                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (3)<br/><br/>
-                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (2)<br/><br/>
-                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (1)<br/><br/>
-                        Current curse by Yangsy56302: ML-X<br/>Next curse by Yangsy56302: 5-X (0)<br/><br/>
-                        Current curse by Yangsy56302: 5-X<br/>Next curse by Yangsy56302: 2-X
+                        Current curse: ML-X<br/>Next curse: 5-X (3)<br/><br/>
+                        Current curse: ML-X<br/>Next curse: 5-X (2)<br/><br/>
+                        Current curse: ML-X<br/>Next curse: 5-X (1)<br/><br/>
+                        Current curse: ML-X<br/>Next curse: 5-X (0)<br/><br/>
+                        Current curse: 5-X<br/>Next curse: 2-X
                     </div>
-                </p>
+                </section>
                 <article id="General.Formats.Keywords"> <h4>Keywords</h4>
-                    <p>
+                    <section>
                         <b><a id="..." target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></b> stands for "please wait" for nexts, and infrequently, "need more info" for currents.
-                        <div class="curstr">Current curse by Yangsy56302: ...<br/>Next curse by Yangsy56302: ...</div>
-                    </p> <p>
+                        <div class="curstr">Current curse: ...<br/>Next curse: ...</div>
+                    </section> <section>
                         <b><a id="None" target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></b> literally stands for "no effects".<br/>
                         <b><a id="StopIteration" target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></b> stands for <q>that was the last curse change, you can take a break now</q>.
-                        <div class="curstr">Current curse by Yangsy56302: None<br/>Next curse by Yangsy56302: StopIteration</div>
-                    </p>
+                        <div class="curstr">Current curse: None<br/>Next curse: StopIteration</div>
+                    </section>
+                </article>
+                <article id="General.Formats.Functional"> <h4>Functional Formatting Method</h4>
+                    <section>
+                        Let's take a look at <a href="../curstr.html#XS-X.Meta">an example</a> first:
+                        <div class="curstr">
+                            Current curse: "10-X" + "XS-X"<br/>
+                            Current level: "XS-X"("10-X"(XS-X))
+                        </div><br/>
+                        Not hard to noticed that, <ol>
+                            <li>This format also includes the level information;</li>
+                            <li>The writing order between these 2 formatting method are opposite.</li>
+                        </ol>
+                    </section> <section>
+                        The countdowns are located before the colon in functional formats:
+                        <div class="curstr">
+                            Current level: "XR-X"(XT-X)<br/>Next level (3): "B-X"(XT-X)<br/><br/>
+                            Current level: "XR-X"(XT-X)<br/>Next level (2): "B-X"(XT-X)<br/><br/>
+                            Current level: "XR-X"(XT-X)<br/>Next level (1): "B-X"(XT-X)<br/><br/>
+                            Current level: "XR-X"(XT-X)<br/>Next level (0): "B-X"(XT-X)<br/><br/>
+                            Current level: "B-X"(XT-X)<br/>Next level: "PA-X"("12-X"(XT-X))
+                        </div>
+                    </section> <section>
+                        Some keywords are also different here:<dl>
+                            <dt><a href="#...">...</a></dt> <dd>
+                                Only keeps the <q>please wait</q> usage:
+                                <div class="curstr">Next level: ...</div>
+                            </dd>
+                            <dt><a href="#None">None</a></dt> <dd>
+                                Removed, since the level with no curses can be simply noted by the ID standalone:
+                                <div class="curstr">Current level: XS-X</div>
+                            </dd>
+                            <dt><a href="#StopIteration">StopIteration</a></dt> <dd>
+                                <div class="curstr">Next level: StopIteration</div>
+                            </dd>
+                        </dl>
+                    </section>
                 </article>
             </article>
             <article id="General.Mechanisms"> <h3>Mechanisms</h3>
                 <article id="General.Mechanisms.Basics"> <h4>Basics</h4>
-                    <p>Curse effects is usually regarded as a section-to-section <strong>mapping</strong> at here.</p>
-                    <p>
-                        You can compose 2 curses by using a <code class="curstr">+</code> sign between, similar to the <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">function compositions</a> <em>(which use the </em><code class="curstr">∘</code><em> sign)</em>.
-                        <div class="curstr">Current curse by Yangsy56302: XR-X + 12-X<br/>Next curse by Yangsy56302: 12-X + XR-X</div><br/>
-                    </p>
+                    <section>
+                        Curse effects is usually regarded as a section-to-section <strong>mapping</strong> at here, 
+                        and this was why the sequential format works.
+                    </section> <section>
+                        In sequential format, You can compose 2 curses by using a <code class="curstr">+</code> sign between, similar to the <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">function compositions</a>:
+                        <div class="curstr">Current curse: "XR-X" + "12-X"<br/>Next curse: "12-X" + "XR-X"</div><br/>
+                        In functional format, You should just nest curse functions by default:
+                        <div class="curstr">Current level: "12-X"("XR-X"(XC-X))<br/>Next level: "XR-X"("12-X"(XC-X))</div><br/>
+                        And if there's necessity to combine curses, Composition Operator Sign (<code class="curstr">∘</code>) would be a must:
+                        <div class="curstr">Current level: "12-X"∘"XR-X"(XC-X)<br/>Next level: "XR-X"∘"12-X"(XC-X)</div>
+                    </section>
                 </article>
                 <article id="General.Mechanisms.Advanced"> <h4>Advanced</h4>
-                    <p>
-                        The affect order of curse effects in tips is from left to right.<br/>
-                        For example: <section class="baz">
-                            <p>
-                                <code class="curstr">XR-X + 12-X</code> will first add triangles,<br/>
-                                then try to change the angle of every tile,<br/>
-                                including those tiles that is a part of these new triangle,<br/>
-                                so now these triangles are probably not triangles anymore;<br/>
-                            </p> <p>
-                                but <code class="curstr">12-X + XR-X</code> will first try to change the angle of every tile,<br/>
-                                then add triangles which will not be modified by the angle change process thats already finished.
-                            </p>
-                        </section>
-                    </p>
+                    The affect order of curse effects in tips is from left to right.<br/>
+                    For example, in sequential format:
+                    <section>
+                        <code class="curstr">"XR-X" + "12-X"</code> will first add triangles,
+                        then try to change the angle of every tile,
+                        including those tiles that is a part of these new triangle,
+                        so now these triangles are probably not triangles anymore;<br/>
+                        but <code class="curstr">"12-X" + "XR-X"</code> will first try to change the angle of every tile,
+                        then add triangles which will not be modified by the angle change process thats already finished.
+                    </section>
+                    In functional format, the innermost function will take effect first, and the leftmost function will take effect last. 
                 </article>
-                <article id="General.Mechanisms.Meta"> <h4>Meta</h4>
-                    <p>
-                        The time order of curse effects <strong>IS NOT</strong> the affect order of curse effects.
-                    </p> <p id="*">
-                        There is a abbreviation for repeated curse effects.
-                        <div class="curstr">Current curse by Yangsy56302: XS-X + XS-X + XS-X<br/>Next curse by Yangsy56302: XS-X<a href="#*"><span class="curstr *">*</span>3</a></div><br/>
+                <article id="General.Mechanisms.Meta"> <h4>Metamechanisms</h4>
+                    <section>
+                        The time order of curse effects <strong>IS NOT</strong> the affect order of curse effects, and there's no direct relationship between them.
+                    </section>
+                    <section id="*">
+                        In sequential format, repeated curse effects are represented by the multiplication:
+                        <div class="curstr">Current curse: "XS-X" + "XS-X" + "XS-X"<br/>Next curse: "XS-X"<a href="#*"><span class="curstr *">*</span>3</a></div><br/>
                         <em>(color isn't required but recommended for readability)</em>
-                    </p> 
-                    <article id="-"> <h5>Reversed Curses</h5>
+                    </section> 
+                    <section id="^">
+                        In functional format, they are represented by the power operation of functions:
+                        <div class="curstr">
+                            Current level: "XS-X"("XS-X"("XS-X"(XS-X)))<br/>
+                            Next level: "XS-X"<sup><span class="curstr ^"><a href="#^">3</a></span></sup>(XS-X)<br/>
+                            <em>or </em>Next level: "XS-X"<a href="#^"><span class="curstr ^">^</span>3</a>(XS-X)
+                        </div>
+                    </section> 
+                    <article> <h5>Reversed Curses</h5>
                         <strong>Reversed / Inverted / Negated / Anti- Curses</strong> are basically the reversal of the curse process, 
                         so they can be used to reverse the effect of a curse: <section>
-                            <p>
-                                the precondition is that part is possible to have an reversed version 
-                                which is possible to form the current part if you use the original curse to it;<br/>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
-                                    Otherwise, you can still use them, but it won't do anything when the preconditions no longer mets, until it mets again.
-                                </a>
-                            </p>
+                            the precondition is that part is possible to have an reversed version 
+                            which is possible to form the current part if you use the original curse to it;<br/>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
+                                Otherwise, you can still use them, but it won't do anything when the preconditions no longer mets, until it mets again.
+                            </a>
+                        </section> <section>
+                            In sequential format,
+                            <section id="-">
+                                Reversed curses are represented by changing the <code class="curstr">-</code> sign to the <code class="curstr">+</code> sign in the ID of the corresponding curse.
+                                <div class="curstr">Current curse: "8<span class="curstr +">+</span>X"<br/>Next curse: "9-X" + "9<span class="curstr +">+</span>X"</div><br/>
+                                <em>(color isn't required but recommended for readability)</em>
+                            </section> <section>
+                                More universally and recommended, if the curse effect is not from an ADOFAI level,
+                                or there is no <code class="curstr">-</code> sign in the ID,
+                                you can insert the <code class="curstr">-</code> sign at the beginning instead.
+                                <div class="curstr">Current curse: "<span class="curstr +">-</span>Novel Feature"<br/>Next curse: <span class="curstr +">-</span>DDLC+!</div>
+                            </section> <section>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">You can also abbreviate 2 opposite curses which are next to each other.</a>
+                                <div class="curstr">Current curse: "XC-X" + "XC<span class="curstr +">+</span>X"<br/>Next curse: "XC<span class="curstr -+">&mnplus;</span>X"</div><br/>
+                                <div class="curstr">Current curse: "XC<span class="curstr +">+</span>X" + "XC-X"<br/>Next curse: "XC<span class="curstr +-">&plusmn;</span>X"</div><br/>
+                                <em>(<a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">color</a> isn't required but recommended for readability)</em>
+                            </section>
+                        </section> <section>
+                            In functional format, reversed curses are represented by the power operation too:
+                            <div class="curstr">
+                                Current level: "XS<span class="curstr +">+</span>X"("XS<span class="curstr +">+</span>X"("XS<span class="curstr +">+</span>X"(XS-X)))<br/>
+                                Next level: <span class="curstr -">-</span>"XS-X"<sup><span class="curstr ^">3</span></sup>(XS-X)<br/>
+                                <em>or </em>Next level: "XS-X"<sup><span class="curstr ^"><span class="curstr -">-</span>3</span></sup>(XS-X)<br/>
+                            </div>
+                        </section> <section>
+                            Using a reversed curse may produces many possibilities of results which is totally different with the original section, or does not match expectations at all.
                         </section>
-                        <p>
-                            Reversed curses are represented by changing the <code class="curstr">-</code> sign to the <code class="curstr">+</code> sign in the ID of the corresponding curse.
-                            <div class="curstr">Current curse by Yangsy56302: 8<span class="curstr +">+</span>X<br/>Next curse by Yangsy56302: 9-X + 9<span class="curstr +">+</span>X</div><br/>
-                            <em>(color isn't required but recommended for readability)</em>
-                        </p> <p>
-                            More universally, if the curse effect is not from an ADOFAI level,
-                            or there is no <code class="curstr">-</code> sign in the ID,
-                            insert the <code class="curstr">-</code> sign at the beginning instead.
-                            <div class="curstr">Current curse by Yangsy56302: <span class="curstr +">-</span>Novel Feature<br/>Next curse by Team Salvato: <span class="curstr +">-</span>`DDLC+!`</div>
-                        </p> <p>
-                            <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">You can also abbreviate 2 opposite curses which are next to each other.</a>
-                            <div class="curstr">Current curse by Yangsy56302: XC-X + XC<span class="curstr +">+</span>X<br/>Next curse by Yangsy56302: XC<span class="curstr -+">&mnplus;</span>X</div><br/>
-                            <div class="curstr">Current curse by Yangsy56302: XC<span class="curstr +">+</span>X + XC-X<br/>Next curse by Yangsy56302: XC<span class="curstr +-">&plusmn;</span>X</div><br/>
-                            <em>(<a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">color</a> isn't required but recommended for readability)</em>
-                        </p> <p>
-                            Using a reversed curse may produces many possibilities of results which is totally different with the original section, or does not match expectations at all.<br/>
-                            <strong>Just choose a specific one to use as I mentioned before.</strong>
-                        </p>
                     </article>
                 </article>
             </article>
@@ -311,8 +362,7 @@
                     <em>(angles &gt;180° will be moduled by 180° when processing)</em><br/>
                     <em>(this effect can also adding or removing twirls without changing the rhythm for better readability)</em>
                 </dd>
-            </dl> </section>
-            <section> <h3>Xtra/Challenge</h3> <dl>
+            </dl> </section> <section> <h3>Xtra/Challenge</h3> <dl>
                 <dt id="XF-X">"XF-X" - Third Wave Flip-Flop but you found the shortcuts</dt> <dd>
                     If the center of two <em>(or more)</em> tiles was overlapped with each other, The planet will choose the shortest path <em>(in time, not in tile count)</em> to walk on.<br/>
                     <em>(if these shortest choices end up in a tie, you can choose any of them)</em>
@@ -421,8 +471,7 @@
                     until you hit a tile which its angle is &lt;180°... <em>okay i'll shut up.</em><br/>
                     <em>(your current speed can also be doubled or halved when curse effect starts for difficulty balancing)</em>
                 </dd>
-            </dl> </section>
-            <section> <h3>Neo Cosmos</h3> <dl>
+            </dl> </section> <section> <h3>Neo Cosmos</h3> <dl>
                 <dt id="T1-X">"T1-X" - NEW LIFE but every hold is now with 0 extra loops</dt> <dd>
                     Add holds if there is no holds, then changes every hold to have 0 extra loops.
                 </dd>
@@ -545,7 +594,7 @@
                     and return a new <em>(and temporary)</em> curse effect based on <var>{curse}</var>,
                     with the curse effect introduction, that all the <var>{old}</var> are replaced to <var>{new}</var>.
                     <div class="curstr">
-                        Current curse by Yangsy56302: T5-X<sub>(<a href="#1-X">1-X</a>,
+                        Current curse: "T5-X"<sub>(<a href="#1-X">"1-X"</a>,
                             "judgement limits are", "title is")</sub><br/>
                         <em>(which is "1-X" - A Dance of Fire and Ice but the <b>title is</b> changing)</em>
                     </div>
@@ -1611,8 +1660,7 @@
                             + <a href="#3-X">3<span class="curstr +">+</span>X</a><br/>
                         <em>Next curse by Yangsy56302: <a href="#...">...</a></em>
                     </div>
-                </section>
-                <section> <h4 id="Novel_Feature.XH-X">XH-X - Final Hope <em>(sub4.adofai)</em></h4>
+                </section> <section> <h4 id="Novel_Feature.XH-X">XH-X - Final Hope <em>(sub4.adofai)</em></h4>
                     <div class="curstr">
                         Current curse by Yangsy56302: <a href="#XF-X">XF-X</a>
                             + <a href="#XF-X">XF<span class="curstr +">+</span>X</a>

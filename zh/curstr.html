@@ -23,7 +23,7 @@
                 <li><a href="#General.Basics">基础概念</a></li>
                 <li><a href="#General.Formats">文本格式</a><ol>
                     <li><a href="#General.Formats.Keywords">关键词</a></li>
-                    <li><a href="#General.Formats.Functions">函数式表示法</a></li>
+                    <li><a href="#General.Formats.Functional">函数式表示法</a></li>
                 </ol></li>
                 <li><a href="#General.Mechanisms">魔改机制</a><ol>
                     <li><a href="#General.Mechanisms.Basics">基础</a></li>
@@ -133,7 +133,7 @@
                         <div class="curstr">当前魔改效果：空<br/>后继魔改效果：迭代终止</div>
                     </section>
                 </article>
-                <article id="General.Formats.Functions"> <h4>函数式表示法</h4>
+                <article id="General.Formats.Functional"> <h4>函数式表示法</h4>
                     <section>
                         首先来看<a href="../curstr.html#XS-X.Meta">一个例子</a>：
                         <div class="curstr">
@@ -176,7 +176,7 @@
                 <article id="General.Mechanisms.Basics"> <h4>基础</h4>
                     <section>
                         魔改效果可以看作是从谱面片段到谱面片段的<strong>映射</strong>——
-                        这也是<a href="#General.Formats.Functions">函数式表示法</a>的底层原理。
+                        这也是<a href="#General.Formats.Functional">函数式表示法</a>的底层原理。
                     </section>
                     <section>
                         在顺序式表示法中，加号（<code class="curstr">+</code>）表示组合两个魔改效果，与<a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a></em>类似：
@@ -218,8 +218,7 @@
                             <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
                                 即使不满足前置条件，魔改也可以被使用，但效果在条件重新满足前将不会实际发挥作用。
                             </a>
-                        </section>
-                        <section>
+                        </section> <section>
                             在顺序式表示法中，
                             <section id="-">
                                 逆向魔改通过将减号（<code class="curstr">-</code>）改为加号（<code class="curstr">+</code>）来表示。
