@@ -251,22 +251,24 @@
             </article>
         </article>
         <article id="Effect"> <h2>魔改效果关卡大全</h2>
-            <!-- <strong>For XML version of this list, see <a href="xml/curstr.xml">curstr.xml</a>.</strong> -->
+            <!-- <div class="bar">
+                关于以XML格式存储的该列表，请见<a href="xml/curstr.xml">此处</a>。
+            </div> -->
             <section> <h3>基础十二大关</h3> <dl>
                 <dt id="1-X">"1-X" - 冰与火之舞，但判定限制是变化之神</dt> <dd>
-                    <strong>额外参数：</strong> <dl>
+                    <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{disallowed}</var></dt> <dd>禁止出现的判定，以红色文本显示——在这些判定出现的同时，星球会爆毙。</dd>
-                    </dl>
+                    </dl> </section>
                 </dd>
                 <dt id="2-X">"2-X" - 弱拍，但用的是另一种拍号</dt> <dd>
-                    <strong>额外参数：</strong> <dl>
+                    <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{rhythm}</var> <em>（默认值：3/4）</em></dt> <dd>所使用的拍号，也可为 7/8，4/5 等。</dd>
-                    </dl>
+                    </dl> </section>
                 </dd>
                 <dt id="3-X">"3-X" - 发条，但直线会变得越来越卡</dt> <dd>
-                    <strong>额外参数：</strong> <dl>
+                    <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{n}</var> <em>（默认值：0）</em></dt> <dd>计数器的初始值。</dd>
-                    </dl>
+                    </dl> </section>
                     直线段<em>（连续180°地砖）</em>的额外地砖数量取决于这是魔改效果生效以来的第几条直线<em>（计数器从<var>{n}</var>开始）</em>。
                 </dd>
                 <dt id="4-X">"4-X" - 情书，但短</dt> <dd>
@@ -276,9 +278,14 @@
                 <dt id="6-X">"6-X" - 脉冲，但每一块砖都有一拍暂停缓冲</dt> <dd>
                     BPM加倍，暂停节拍+1。
                 </dd>
-                <dt id="B-X">"B-X" - 感谢你玩我们的游戏，但物量加倍</dt> <dd></dd>
+                <dt id="B-X">"B-X" - 感谢你玩我们的游戏，但物量加倍</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见“<a href="../curstr.html#TWFSC">Thanks For Watching String Curses</a>”。
+                    </div>
+                </dd>
                 <dt id="7-X">"7-X" - 旋转制胜，但外圈加速 内圈减速</dt> <dd>
-                    <strong>额外参数：</strong> <dl>
+                    <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{reflex}</var></dt> <dd>
                             对于外圈地砖，将要使用的更改BPM函数。
                             <strong>对于所有输入，该函数的输出必须更大。</strong>
@@ -287,7 +294,7 @@
                             对于内圈地砖，将要使用的更改BPM函数。
                             <strong>对于所有输入，该函数的输出必须更小。</strong>
                         </dd>
-                    </dl>
+                    </dl> </section>
                     此处的<q>外圈</q>与<q>内圈</q>代指&gt;180°与&gt;180°，<strong>并非在与魔改前的方向进行比较。</strong>
                 </dd>
                 <dt id="8-X">"8-X" - 密林之城，但连续非平角砖会延长一格</dt> <dd>
@@ -301,8 +308,11 @@
                     依次在&gt;180°的地砖上增删旋转。<br/>
                     <em>（该效果允许在效果作用完成之后，为方便读谱与排版美观性，在不会进一步影响节奏的情况下适当增删旋转）</em>
                 </dd>
-                <dt id="11-X">"11-X" - 赫拉克勒斯，但旋转可以更改速度（<a href="../curstr.html#11-X.Meta">时间线</a>）</dt> <dd>
-                    <strong>额外参数：</strong> <dl>
+                <dt id="11-X">"11-X" - 赫拉克勒斯，但旋转可以更改速度</dt> <dd>
+                    <div class="bar">
+                        关于该关卡所使用的魔改效果的详细信息，请见<a href="../curstr.html#11-X.Meta">此处</a>。
+                    </div>
+                    <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{red}</var></dt> <dd>
                             对于红色旋转，将要使用的更改BPM函数。
                             <strong>对于所有输入，该函数的输出必须更大。</strong>
@@ -311,7 +321,7 @@
                             对于蓝色旋转，将要使用的更改BPM函数。
                             <strong>对于所有输入，该函数的输出必须更小。</strong>
                         </dd>
-                    </dl>
+                    </dl> </section>
                     <em>（旋转即使不显示图标也可以更改速度）</em>
                 </dd>
                 <dt id="12-X">"12-X" - 人造战车，但锐角与钝角互换身份</dt> <dd>
@@ -326,18 +336,29 @@
                     <em>（出现平局的话可以随意选择）</em>
                 </dd>
                 <dt id="XC-X">"XC-X" - 制作组，但全部由教程组成</dt> <dd>
-                    <strong>额外参数：</strong> <dl>
+                    <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{level}</var></dt> <dd>作为替换内容的关卡片段</em>。<strong>必须选自教程关卡。</strong></dd>
-                    </dl>
+                    </dl> </section>
                     将受到影响的关卡片段<em>（长度可以为零）</em>替换为<var>{level}</var>。
                 </dd>
                 <dt id="XH-X">"XH-X" - 最后的希望，但这是个DLC关卡</dt> <dd>
                     添加DLC机制。<em>另外，长按额外循环可以取代180°地砖，且中旋允许无中生有。</em>
                 </dd>
                 <dt id="PA-X">"PA-X" - 距离，但中旋正在接管这个关卡</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见“<a href="../curstr.html#D_is_isinstance">D is isinstance</a>”。
+                    </div>
                     在保持节奏不变的前提下，将部分非中旋地砖替换为中旋。
                 </dd>
-                <dt id="XS-X">"XS-X" - 精灵派对，但游戏事件延后一块地砖（<a href="../curstr.html#XS-X.Meta">时间线</a>）</dt> <dd>
+                <dt id="XS-X">"XS-X" - 精灵派对，但游戏事件延后一块地砖</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见“<a href="../curstr.html#Party_of_stiripS">Party of stiripS</a>”。
+                    </div>
+                    <div class="bar">
+                        关于该关卡所使用的魔改效果的详细信息，请见<a href="../curstr.html#XS-X.Meta">此处</a>。
+                    </div>
                     受影响的游戏事件参见下表：
                     <ul>
                         <li>设置速度，旋转，检查点</li>
@@ -365,12 +386,31 @@
                 <dt id="XO-2">"XO-2" - 背靠背循环，但平角砖上旋转的存在状态被逆转了</dt> <dd>
                     对于所有180°砖，没旋转加旋转，有旋转去旋转。
                 </dd>
-                <dt id="XO-X">"XO-X" - 一个被遗忘的夜晚，但其魔改效果被定义为XO-1和XO-2的组合（<a href="../curstr.html#XO-X.Meta">时间线</a>）</dt> <dd>
+                <dt id="XO-X">"XO-X" - 一个被遗忘的夜晚，但其魔改效果被定义为XO-1和XO-2的组合</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见“<a href="../curstr.html#14G10R">1 4 Got 10 →</a>”
+                        <em>“<a href="../curstr.html#NFG10R">None For Got 10 Right</a>”
+                        “<a href="../curstr.html#Non_Explosive_Memes">Non-Explosive Memes</a>”。</em>
+                    </div>
+                    <div class="bar">
+                        关于该关卡所使用的魔改效果的详细信息，请见<a href="../curstr.html#XO-X.Meta">此处</a>。
+                    </div>
                 </dd>
                 <dt id="XI-X">"XI-X" - It Go，但星球在带有图标的地砖上会额外等待两拍，如果可能</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见“<a href="../curstr.html#Git0">Git0</a>”
+                        <em>“<a href="../curstr.html#It_Is_Curse">It Is Curse</a>”
+                        “<a href="../curstr.html#It_Does">It Does</a>”。</em>
+                    </div>
                     例外：长按开头<em>（<q>长按拍子与暂停拍子不能共存</q>）</em>与终点<em>（啥都不会发生）</em>。
                 </dd>
                 <dt id="XT-X">"XT-X" - 选项，但宁可不要直中取</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见“<a href="../curstr.html#Actions">Actions</a>”。
+                    </div>
                     移除所有180°砖，星球会直接跳过它们。
                 </dd>
                 <dt id="MN-X">"MN-X" - 午夜漫游者（cnsouka Remix），但中旋从来就没有存在过</dt> <dd>
@@ -381,7 +421,15 @@
                     <em>（允许出现一整拍都没有按键的情况）</em><br/>
                     <em>（<q>一拍</q>也可以是一小节，两拍……诸如此类。）</em><br/>
                 </dd>
-                <dt id="MO-X">"MO-X" - EMOMOMO，但经过&gt;180°地砖之后的速度应为经过&lt;180°地砖之后的两倍（<a href="../curstr.html#MO-X.Meta">时间线</a>）</dt> <dd>
+                <dt id="MO-X">"MO-X" - EMOMOMO，但经过&gt;180°地砖之后的速度应为经过&lt;180°地砖之后的两倍</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见“<a href="../curstr.html#EMCLL">EEEEVEN MOMOMORE CURSED LED LEVELS</a>”
+                        <em>“<a href="../curstr.html#ECL">EMOMOMORE CURSED LEVELS</a>”。</em>
+                    </div>
+                    <div class="bar">
+                        关于该关卡所使用的魔改效果的详细信息，请见<a href="../curstr.html#MO-X.Meta">此处</a>。
+                    </div>
                     <em>（为了平衡难度，该效果开始生效时，速度可以加倍或减半）</em>
                 </dd>
             </dl> </section>
@@ -393,7 +441,7 @@
                     <em>（该效果可以事先添加长按）</em>
                 </dd>
                 <dt id="T2-X">"T2-X" - <span style="color:#00F;">靛</span><span style="color:#F00;">红</span>之歌，但中旋方块可以更改速度</dt> <dd>
-                    <strong>额外参数：</strong> <dl>
+                    <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{fire}</var></dt> <dd>
                             火中旋上，将要使用的更改BPM函数。
                             <strong>对于所有输入，该函数的输出必须更大。</strong>
@@ -402,25 +450,39 @@
                             冰中旋上，将要使用的更改BPM函数。
                             <strong>对于所有输入，该函数的输出必须更小。</strong>
                         </dd>
-                    </dl>
+                    </dl> </section>
                 </dd>
                 <dt id="T2-EX">"T2-EX" - <span style="color:#00F;">靛</span><span style="color:#F00;">红</span>之歌，但中旋方块可以更改星球数量</dt> <dd>
                     <span style="color:#00F;">冰</span>中旋双球，<span style="color:#F00;">火</span>中旋三球，<span style="color:#AA0;">中</span>中旋切换。
                 </dd>
-                <dt id="T3-X">"T3-X" - 这里没有提示！，但结局早已落定（<a href="../curstr.html#T3-X.Meta">时间线</a>）</dt> <dd>
+                <dt id="T3-X">"T3-X" - 这里没有提示！，但结局早已落定</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见<em>“<a href="../curstr.html#Nothing_Here!">Nothing Here!</a>”。</em>
+                    </div>
+                    <div class="bar">
+                        关于该关卡所使用的魔改效果的详细信息，请见<a href="../curstr.html#T3-X.Meta">此处</a>。
+                    </div>
                     以任意手段移除不确定因素，包括但不限于自由移动。
                 </dd>
-                <dt id="T3-EX">"T3-EX" <em>（未完工）</em>这里没有提示！，但被影响的段落会被拆分成多个关卡（<a href="../curstr.html#T3EX.Meta">时间线</a>）</dt> <dd>
+                <dt id="T3-EX">"T3-EX" <em>（未完工）</em>这里没有提示！，但被影响的段落会被拆分成多个关卡</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见<em>“<a href="../curstr.html#No_Crabs_Here!">No Crabs Here!</a>”。</em>
+                    </div>
+                    <div class="bar">
+                        关于该关卡所使用的魔改效果的详细信息，请见<a href="../curstr.html#T3EX.Meta">此处</a>。
+                    </div>
                     <dl>
-                        <dt id="T3-E1">"T3-E1" - 热身！！，但指定魔改效果打对折（<strong>元魔改</strong>；<a href="../curstr.html#T3-E1.Meta">时间线</a>）</dt> <dd>
-                            <strong>额外参数：</strong> <dl>
+                        <dt id="T3-E1">"T3-E1" - 热身！！，但指定魔改效果打对折</dt> <dd>
+                            <section class="baz"> <strong>额外参数：</strong> <dl>
                                 <dt><var>{curses}</var></dt> <dd>将要被打对折的魔改效果。</dd>
-                            </dl>
+                            </dl> </section>
                             多魔改效果组合应当被分别削弱，包括<a href="#*">重复的魔改效果</a>。<br/>
                             <em>（请尽可能平摊该魔改效果所造成的削弱影响）</em>
                         </dd>
                         <dt id="T3-E2">"T3-E2" - 长按与中旋！！，但前者减速，且后者加速</dt> <dd>
-                            <strong>额外参数：</strong> <dl>
+                            <section class="baz"> <strong>额外参数：</strong> <dl>
                                 <dt><var>{holds}</var></dt> <dd>
                                     长按开始时，将要使用的更改BPM函数。
                                     <strong>对于所有输入，该函数的输出必须更小。</strong>
@@ -429,34 +491,34 @@
                                     触发中旋时，将要使用的更改BPM函数。
                                     <strong>对于所有输入，该函数的输出必须更大。</strong>
                                 </dd>
-                            </dl>
+                            </dl> </section>
                         </dd>
-                        <dt id="T3-E3">"T3-E3" - 不要错过射门！！，但我看不出来直线段的长度（<a href="../curstr.html#T3-E3.Meta">时间线</a>）</dt> <dd>
+                        <dt id="T3-E3">"T3-E3" - 不要错过射门！！，但我看不出来直线段的长度</dt> <dd>
                             对于每段连续180°地砖，选择一个任意数字<em>（甚至可以是同一个）</em> 作为新的长度。
                         </dd>
-                        <dt id="T3-E4">"T3-E4" - 棘手的三角阵！！，但它反转了循环轨道的地砖顺序（<a href="../curstr.html#T3-E4.Meta">时间线</a>）</dt> <dd>
+                        <dt id="T3-E4">"T3-E4" - 棘手的三角阵！！，但它反转了循环轨道的地砖顺序</dt> <dd>
                             将每一圈循环轨道的地砖信息记在一张表里，<strong>使用相对角度记录，并包括游戏时间信息，</strong>然后将其倒序。
                             <!-- ……循环轨道和封闭图形的区别是什么？我之前会不会混用过这两个概念啊？ -->
                         </dd>
-                        <dt id="T3-E5">"T3-E5" - 击掌！！，但中旋镜像翻转（<a href="../curstr.html#T3-E5.Meta">时间线</a>）</dt> <dd>
+                        <dt id="T3-E5">"T3-E5" - 击掌！！，但中旋镜像翻转</dt> <dd>
                             <em>（前后顺序也要一同翻转）</em>
                         </dd>
-                        <dt id="T3-E6">"T3-E6" - 收集三枚！！，但自由移动不再自由（<a href="../curstr.html#T3-E6.Meta">时间线</a>）</dt> <dd>
+                        <dt id="T3-E6">"T3-E6" - 收集三枚！！，但自由移动不再自由</dt> <dd>
                             与<a href="#T3-X">T3-X</a>不同，该魔改效果不允许直接跳过自由移动段落。
                             请尽可能自行踩音，否则也请使用暂停节拍等待。
                         </dd>
-                        <dt id="T3-E7">"T3-E7" - 要记住哦！！，但你早就该记住这个了（<a href="../curstr.html#T3-E7.Meta">时间线</a>）</dt> <dd>
+                        <dt id="T3-E7">"T3-E7" - 要记住哦！！，但你早就该记住这个了</dt> <dd>
                             隐藏所有轨道与踩音。<br/>
                             <strong>该魔改效果并不会更改默认的地砖可见性。</strong><br/>
                             也就是说，这之后所有的魔改效果所自行产生的新地砖，仍然需要如同该效果从未生效一样显示出来。
                         </dd>
-                        <dt id="T3-E8">"T3-E8" - 传送格子！！，但存在一个地砖可用角度范围的下限（<a href="../curstr.html#T3-E8.Meta">时间线</a>）</dt> <dd>
-                            <strong>额外参数：</strong> <dl>
+                        <dt id="T3-E8">"T3-E8" - 传送格子！！，但存在一个地砖可用角度范围的下限</dt> <dd>
+                            <section class="baz"> <strong>额外参数：</strong> <dl>
                                 <dt><var>{angle}</var></dt> <dd>作为范围下限的角度。</dd>
-                            </dl>
+                            </dl> </section>
                             将所有角度小于<var>{angle}</var>的地砖改为<var>{angle}</var>角度。
                         </dd>
-                        <dt id="T3-E9">"T3-E9" - 快回答！！但暂停不起作用了（<a href="../curstr.html#T3-E9.Meta">时间线</a>）</dt> <dd>
+                        <dt id="T3-E9">"T3-E9" - 快回答！！但暂停不起作用了</dt> <dd>
                             移除所有暂停事件。
                         </dd>
                     </dl>
@@ -465,19 +527,31 @@
                     将中旋转为特殊变种。
                     <em>（该效果可以事先添加中旋）</em>
                 </dd>
-                <dt id="T4-EX">"T4-EX" - 第三太阳，但中旋来自南半球（<a href="../curstr.html#T4-EX.Meta">时间线</a>）</dt> <dd>
+                <dt id="T4-EX">"T4-EX" - 第三太阳，但中旋来自南半球</dt> <dd>
+                    <div class="bar">
+                        关于该关卡所使用的魔改效果的详细信息，请见<a href="../curstr.html#T4-EX.Meta">此处</a>。
+                    </div>
                     在先后顺序不变的前提下，将中旋翻转到另一侧，并保留夹角的比例。<br/>
                     <em>（例如，在该效果生效之前平分某块地砖的中旋，在该效果生效之后应该仍然平分这块地砖）</em>
                 </dd>
-                <dt id="T5-X">"T5-X" - 神圣干涉，但其魔改效果可以更改任意魔改效果的描述（<strong>元魔改</strong>；<a href="../curstr.html#T5-X.Meta">时间线</a>）</dt> <dd>
+                <dt id="T5-X">"T5-X" - 神圣干涉，但其魔改效果可以更改任意魔改效果的描述</dt> <dd>
+                    <div class="bar">
+                        本关自带魔改效果。<br/>
+                        关于不包括新魔改效果的同源关卡，请见<em>“<a href="../curstr.html#Divide_By_Infinity">Divide By Infinity</a>”
+                        “<a href="../curstr.html#T9Viod">Tier 9V: init on dev</a>”。</em>
+                    </div>
+                    <div class="bar">
+                        关于该关卡所使用的魔改效果的详细信息，请见<a href="../curstr.html#T5-X.Meta">此处</a>。
+                    </div>
                     还记得我之前说过<a href="#General.Mechanisms.Basics"><q>魔改效果是从谱面片段到谱面片段的映射</q></a>吗？<br/>
                     T5-X的文字魔改效果是个例外：它是从<strong>魔改效果到魔改效果</strong>的映射！<br/>
                     因此，它<strong>无法</strong>直接作用于谱面片段，只能作用在其他<strong>魔改效果</strong>的上方。<br/>
-                    更具体一点的话，"T5-X"接受三个额外参数：<dl>
+                    更具体一点的话，"T5-X"接受三个……
+                    <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{curse}</var></dt> <dd>将要被更改的魔改效果；</dd>
                         <dt><var>{old}</var></dt> <dd>将要被替换掉的子字符串<em>（通俗点说就是文本片段）</em>；</dd>
                         <dt><var>{new}</var></dt> <dd>将要用于替换的子字符串；</dd>
-                    </dl>
+                    </dl> </section>
                     然后返回一个崭新<em>（且临时）</em>的，基于<var>{curse}</var>的魔改效果，
                     标题中所有的关键词<var>{old}</var>都被替换成了<var>{new}</var>。
                     <div class="curstr">
@@ -488,12 +562,14 @@
                 </dd>
             </dl> </section>
             <article id="NonLevelEffects"> <h3>非关卡效果</h3>
+                <div class="bar">
+                    关于更多信息，请见“<a href="bluearchived.html">《蔚蓝归档！》</a>”。
+                </div>
                 有可能<em>（但出于版权问题不建议）</em>使用魔改效果进行跨游戏联动：
                 <section>
                     <a target="_blank" href="https://ddlc.moe/">心跳文学部！</a> 相关内容可以作为XH-X魔改的部分效果，<br/>
                     <a target="_blank" href="https://bluearchive.nexon.com/">蔚蓝档案</a>相关内容可以作为XR-X魔改的部分效果。<br/>
                 </section>
-                更多信息请参考<a href="bluearchived.html">《蔚蓝归档！》</a>。
             </article>
         </article>
         <article id="Affected"> <h2>被魔改关卡中的效果列表</h2>
