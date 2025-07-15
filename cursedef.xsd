@@ -36,6 +36,11 @@
             <xs:enumeration value="StopIteration" />
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="var_name">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[_a-zA-Z][0-9_a-zA-Z]*" />
+        </xs:restriction>
+    </xs:simpleType>
     <xs:group name="general_curse_type_group">
         <xs:choice>
             <xs:element name="curse" type="curse_reference" />
@@ -47,6 +52,19 @@
             <xs:group ref="general_curse_type_group" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
+    <xs:complexType name="var">
+        <xs:sequence>
+            <xs:element name="name" type="var_name" />
+            <xs:element name="type" type="xs:string" minOccurs="0" />
+            <xs:element name="default" type="xs:string" minOccurs="0" />
+            <xs:element name="desc" type="xs:string" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="param">
+        <xs:sequence>
+            <xs:element name="var" type="var" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
     <xs:complexType name="links">
         <xs:sequence>
             <xs:element name="workshop" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded" />
@@ -56,6 +74,7 @@
     </xs:complexType>
     <xs:group name="extra_group">
         <xs:sequence>
+            <xs:element name="param" type="param" minOccurs="0" />
             <xs:element name="links" type="links" minOccurs="0" />
             <xs:element name="desc" type="xs:string" minOccurs="0" />
             <xs:element name="info" minOccurs="0" />

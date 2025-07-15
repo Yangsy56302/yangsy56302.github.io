@@ -5,24 +5,42 @@
         <id>1-X</id>
         <level>A Dance of Fire and Ice</level>
         <but>the judgement limits are changing</but>
-        <info>Green ones are allowed;
-            Yellow ones are allowed by the curse but you will be killed by judgement itself;
-            Red ones are NOT allowed and you will be killed instantly by the curse.</info>
+        <param>
+            <var>
+                <name>disallowed</name>
+                <type>Judgement</type>
+                <desc>The judgements that's not allowed, recolored in red --
+                    you will be killed instantly by the curse.</desc>
+            </var>
+        </param>
     </cursed>
     <cursed>
         <id>2-X</id>
         <level>Offbeats</level>
         <but>it is in another type of rhythm</but>
-        <info>3/4, 7/8, 4/5, etc.</info>
+        <param>
+            <var>
+                <name>rhythm</name>
+                <type>int / int</type>
+                <default>3/4</default>
+                <desc>The type of rhythm. can also be 7/8, 4/5, etc.</desc>
+            </var>
+        </param>
     </cursed>
     <cursed>
         <id>3-X</id>
         <level>THE WIND-UP</level>
         <but>each straight line makes you more laggy</but>
-        <info>You starts with N = 0.
-            Every time you reached the end of a chain of 180° tiles,
-            the tile right after the chain needs to hit N extra times;
-            After that, N increased by 1.</info>
+        <param>
+            <var>
+                <name>n</name>
+                <type>int</type>
+                <desc>The initial value for extra 180° tile counts.</desc>
+            </var>
+        </param>
+        <info>Every time you reached the end of a chain of 180° tiles,
+            the tile right after the chain needs to hit <var>n</var> extra times;
+            After that, <var>n</var> increases by 1.</info>
     </cursed>
     <cursed>
         <id>4-X</id>
@@ -53,7 +71,20 @@
         <id>7-X</id>
         <level>Spin 2 Win</level>
         <but>each reflex angled tile will speed you up &amp; vice versa</but>
-        <info>&lt;180° = Speed Down, &gt;180° = Speed Up. Simple.</info>
+        <param>
+            <var>
+                <name>reflex</name>
+                <type>Callable[[BPM], BPM]</type>
+                <desc>Would be used on tiles which its angle is &gt;180°.
+                    THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</desc>
+            </var>
+            <var>
+                <name>inferior</name>
+                <type>Callable[[BPM], BPM]</type>
+                <desc>Would be used on tiles which its angle is &lt;180°.
+                    THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</desc>
+            </var>
+        </param>
     </cursed>
     <cursed>
         <id>8-X</id>
@@ -65,7 +96,7 @@
     <cursed>
         <id>9-X</id>
         <level>Classic Pursuit</level>
-        <but>every tile that its angle isn't θτ/4 has a twirl on it (θ∈ℤ)</but>
+        <but>every tile that its angle isn't τθ/4 (θ∈ℤ) has a twirl on it</but>
         <info>In case you don't know, τ = 360°, and τ/4 = 90°.</info>
     </cursed>
     <cursed>
@@ -78,8 +109,22 @@
     <cursed>
         <id>11-X</id>
         <level>Heracles</level>
-        <but>the twirls can change your current speed</but>
-        <info>Red Twirl = Speed Up, Blue Twirl = Speed Down. Simple.</info>
+        <but>the twirls can change the speed</but>
+        <param>
+            <var>
+                <name>red</name>
+                <type>Callable[[BPM], BPM]</type>
+                <desc>Would be used on tiles with red twirl.
+                    THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</desc>
+            </var>
+            <var>
+                <name>blue</name>
+                <type>Callable[[BPM], BPM]</type>
+                <desc>Would be used on tiles with blue twirl.
+                    THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</desc>
+            </var>
+        </param>
+        <info>Twirls can change the speed even if it wasn't displayed.</info>
     </cursed>
     <cursed>
         <id>12-X</id>
@@ -102,7 +147,16 @@
         <id>XC-X</id>
         <level>Credits</level>
         <but>it's tutorial exclusive</but>
-        <info>Replacing a segment to a tutorial level, or inserting one.</info>
+        <param>
+            <var>
+                <name>section</name>
+                <type>LevelSlice</type>
+                <desc>The level section for replacing.
+                    FROM TUTORIAL LEVEL ONLY.</desc>
+            </var>
+        </param>
+        <info>Replace the affected section to <var>section</var>.
+            The length of the former can be 0.</info>
     </cursed>
     <cursed>
         <id>XH-X</id>
@@ -207,7 +261,6 @@
         <id>XO-X</id>
         <level>One Forgotten Night</level>
         <but>its curse effect is defined as the combination of XO-1 and XO-2</but>
-        <info/>
     </cursed>
     <cursed>
         <id>XI-X</id>
@@ -241,7 +294,7 @@
         <id>MO-X</id>
         <level>EMOMOMO</level>
         <but>after you meet a tile thats &gt;180° the speed should be doubled compared to tiles &lt;180°</but>
-        <info>Your current speed can also be  can also be doubled or halved when curse effect starts for difficulty balancing.</info>
+        <info>Your current speed can also be doubled or halved when curse effect starts for difficulty balancing.</info>
     </cursed>
     <cursed>
         <id>T1-X</id>
@@ -250,7 +303,7 @@
         <info>Add holds if there is no holds, then changes every hold to have 0 extra loops.</info>
     </cursed>
     <cursed>
-        <id>T1EX-X</id>
+        <id>T1-EX</id>
         <level>NEW LIFE</level>
         <but>every hold is now 1 loop longer</but>
         <info>Add holds if there is no holds, then add 1 extra loops to every hold.</info>
@@ -262,21 +315,21 @@
         <info>Fire Midspin = Speed Up, Ice Midspin = Speed Down. Simple.</info>
     </cursed>
     <cursed>
-        <id>T2EX-X</id>
+        <id>T2-EX</id>
         <level>sing sing red indigo</level>
         <but>the special midspins can change the planet count</but>
         <info>Fire Midspin = Triple Planets, Ice Midspin = Double Planets, "Yellow" Midspin = Swap To Another Count For Planets.</info>
     </cursed>
     <cursed>
         <id>T3-X</id>
-        <level>Hints Here!</level>
-        <but />
-        <info>Remove uncertain factors, such as free roam.</info>
+        <level>No Hints Here!</level>
+        <but>the ending is destined</but>
+        <info>Remove uncertain factors, such as free roam, in any way.</info>
     </cursed>
     <cursed>
-        <id>T3EX-X</id>
+        <id>T3-EX</id>
         <level>No Hints Here!</level>
-        <but />
+        <but>the affected sections are separated to multiple levels</but>
     </cursed>
     <cursed>
         <id>T4-X</id>
@@ -285,23 +338,36 @@
         <info>Add special midspins, and also some of the midspins to special variants.</info>
     </cursed>
     <cursed>
-        <id>T4EX-X</id>
+        <id>T4-EX</id>
         <level>Third Sun</level>
         <but>the midspins are from australia</but>
         <info>For every tile with midspins, flip the midspins to another side
             in the original (not reversed) order and the same ratio.
-            For example, a midspin that divided the angle equally, should also divide the angle equally on the other side.</info>
+            For example, a midspin that divided the angle equally,
+            should also divide the angle equally on the other side.</info>
     </cursed>
     <cursed>
         <id>T5-X</id>
         <level>Divine Intervention</level>
         <but>its curse can change the description of any curse effect</but>
-        <info>T5-X is a curse-to-curse mapping, which takes three parameters:
-            <ol>
-                <li>the curse effect that will be modified</li>
-                <li>the old substring to be replaced</li>
-                <li>the new substring to be used for replacement</li>
-            </ol>
-            and return a new (and temporary) curse effect, with the replaced curse effect introduction.</info>
+        <param>
+            <var>
+                <name>curse</name>
+                <type>Curse</type>
+                <desc>The curse effect that will be modified.</desc>
+            </var>
+            <var>
+                <name>old</name>
+                <type>str</type>
+                <desc>The old substring to be replaced.</desc>
+            </var>
+            <var>
+                <name>new</name>
+                <type>str</type>
+                <desc>The new substring to be used for replacement.</desc>
+            </var>
+        </param>
+        <info>Returns a new (and temporary) curse effect based on <var>curse</var>,
+            with the curse effect introduction that all the <var>old</var> are replaced to <var>new</var>.</info>
     </cursed>
 </root>

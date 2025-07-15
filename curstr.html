@@ -280,7 +280,7 @@
         </article>
         <article id="Effect"> <h2>List of Curse Effects</h2>
             <div class="bar">
-                For XML version of this list, see <a href="xml/curstr.xml">curstr.xml</a>.
+                For XML version of this list, see <a href="curstr.xml">curstr.xml</a>.
             </div>
             <section> <h3>Main Game</h3> <dl>
                 <dt id="1-X">"1-X" - A Dance of Fire and Ice but the judgement limits are changing</dt> <dd>
@@ -369,9 +369,9 @@
                 </dd>
                 <dt id="XC-X">"XC-X" - Credits but it's tutorial exclusive</dt> <dd>
                     <section class="baz"> <strong>Extra parameters:</strong> <dl>
-                        <dt><var>{level}</var></dt> <dd>The level section for replacing. <strong>FROM TUTORIAL LEVEL ONLY.</strong></dd>
+                        <dt><var>{section}</var></dt> <dd>The level section for replacing. <strong>FROM TUTORIAL LEVEL ONLY.</strong></dd>
                     </dl> </section>
-                    Replace the affected section <em>(the length can be 0)</em> to <var>{level}</var>.
+                    Replace the affected section <em>(the length can be 0)</em> to <var>{section}</var>.
                 </dd>
                 <dt id="XH-X">"XH-X" - Final Hope but this is a DLC level</dt> <dd>
                     Add DLC contents.<br/>Additionally, Hold can replace 180° tiles by extra loops, and midspins cannot be created out of nothing.
@@ -587,9 +587,9 @@
                     As a result, T5-X curstr <strong>cannot</strong> be applied to level sections. It can only be applied to <strong>curses</strong>.<br/>
                     More specifically, T5-X takes 3...
                     <section class="baz"> <strong>Extra parameters:</strong> <dl>
-                        <dt><var>{curse}</var></dt> <dd>the curse effect that will be modified</dd>
-                        <dt><var>{old}</var></dt> <dd>the old substring <em>(it basically means <q>text clip</q>)</em> to be replaced</dd>
-                        <dt><var>{new}</var></dt> <dd>the new substring to be used for replacement</dd>
+                        <dt><var>{curse}</var></dt> <dd>The curse effect that will be modified</dd>
+                        <dt><var>{old}</var></dt> <dd>The old substring <em>(it basically means <q>text clip</q>)</em> to be replaced.</dd>
+                        <dt><var>{new}</var></dt> <dd>The new substring to be used for replacement.</dd>
                     </dl> </section>
                     and return a new <em>(and temporary)</em> curse effect based on <var>{curse}</var>,
                     with the curse effect introduction, that all the <var>{old}</var> are replaced to <var>{new}</var>.
