@@ -5,7 +5,7 @@
     <meta name="author" content="Yangsy56302">
     <meta name="keywords" content="Yangsy56302,Yangsy0xDBEE,Yangsy,ADOFAI,A Dance of Fire and Ice,crab,Firestix,curse,cursed,string,curstr">
     <meta name="description" content="Yangsy56302's Website">
-    <title>ADOFAI Curstr</title>
+    <title>ADOFAI str Curses</title>
     <link rel="icon" href="style/yangsy1b.ico">
     <link rel="stylesheet" type="text/css" href="style/adofai.css">
     <base target="_self">
@@ -566,6 +566,49 @@
                         <dt id="T3-E11">"T3-E11" - Drifting Floors!! but it reverses the order for tiles between horizonal segments</dt> <dd>
                             
                         </dd>
+                        <dt id="T3-E12">"T3-E12" - Drunk Rhythms!! but the amount of precision for tiles is π/4 (rounds up)</dt> <dd>
+                            
+                        </dd>
+                        <dt id="T3-E13">"T3-E13" - Defend the Castle!! but the title can tell you what's going on here</dt> <dd>
+                            <section class="baz"> <strong>Extra parameters:</strong> <dl>
+                                <dt><var>{curse}</var></dt> <dd>The curse effect that will be displayed on the title.</dd>
+                            </dl> </section>
+                            Append the but statement of <var>{curse}</var> to the current level title, according to the order of priority.
+                        </dd>
+                        <dt id="T3-E14">"T3-E14" - Fog!! but there's an extra 180° tile for each amount of tile passed</dt> <dd>
+                            <section class="baz"> <strong>Extra parameters:</strong> <dl>
+                                <dt><var>{gap}</var></dt> <dd>The gap length between extra 180° tiles.</dd>
+                            </dl> </section>
+                        </dd>
+                        <dt id="T3-E15">"T3-E15" - Disappearing Floor!! but the planet would step on the 1st tile on its orbit as long as that tile is located after the tile it stays on</dt> <dd>
+                            
+                        </dd>
+                        <dt id="T3-E16">"T3-E16" - Answer!! Again!! but each pause beat generates an 180° tile after it</dt> <dd>
+                            This curse wouldn't remove the pause itself -- please use <a href="#T3-E9">"T3-E9"</a> for that.
+                        </dd>
+                        <dt id="T3-E17">"T3-E17" - Avoid Being Spotted!! but each continuous turnarounds repeats the section until the next turnaround for each of turnarounds here</dt> <dd>
+                            <em>(turnarounds themselves wouldn't be repeated)</em><br/>
+                            Also, this curse uses the absolute angle as the reference system, that means the section being repeated must keep their rotation unchanged, So the angle of the tile at the end of the section could be changed caused by this rule.<br/>
+                            <del class="huhua">(just realized that i used way too many "the", but whatever)</del>
+                        </dd>
+                        <dt id="T3-E18">"T3-E18" - Tricky Triangles... Two!! but the 1st numerical value would be incresed by 1</dt> <dd>
+                            <section class="baz"> <strong>Extra parameters:</strong> <dl>
+                                <dt><var>{obj}</var></dt> <dd>
+                                    The object to be affected.<br/>
+                                    If it's a level <em>(or a level section)</em>, both of the world ID and level ID would be considered as numerical values, but not if it's a curse.
+                                    Every number inside the but statement, even in other forms ("<ruby>5<rt>Five</rt></ruby>", "<ruby>6<rt>Sixth</rt></ruby>",
+                                    "<ruby>3<rt>Triple</rt></ruby> Planets", "<ruby>1<rt>a</rt></ruby> <ruby>2<rt>pair</rt></ruby> of"), <strong>DOES COUNTS.</strong><br/>
+                                    <em>(one of the exception is 0; it depends. same as 1, but it's more certainly to be counted)</em>
+                                </dd>
+                            </dl> </section>
+                        </dd>
+                        <dt id="T3-E19">"T3-E19" - Almost there!! Don't get distracted!! but all the angles are multiplied by a number</dt> <dd>
+                            <section class="baz"> <strong>Extra parameters:</strong> <dl>
+                                <dt><var>{multiplier}</var></dt> <dd>The multiplier to the angles.</dd>
+                            </dl> </section>
+                            Angles should be modded by 360° to have more flexibility.<br/>
+                            <em>(integer multiples of 360° should be transformed into turnarounds rather than midspins)</em>
+                        </dd>
                     </dl>
                 </dd>
                 <dt id="T4-X">"T4-X" - Third Sun but it's a midspin party</dt> <dd>
@@ -592,7 +635,7 @@
                     As a result, T5-X curstr <strong>cannot</strong> be applied to level sections. It can only be applied to <strong>curses</strong>.<br/>
                     More specifically, T5-X takes 3...
                     <section class="baz"> <strong>Extra parameters:</strong> <dl>
-                        <dt><var>{curse}</var></dt> <dd>The curse effect that will be modified</dd>
+                        <dt><var>{curse}</var></dt> <dd>The curse effect that will be modified.</dd>
                         <dt><var>{old}</var></dt> <dd>The old substring <em>(it basically means <q>text clip</q>)</em> to be replaced.</dd>
                         <dt><var>{new}</var></dt> <dd>The new substring to be used for replacement.</dd>
                     </dl> </section>
@@ -892,7 +935,8 @@
                 </div>
             </section>
             <section id="D_is_isinstance"> <h3>PA-X - D is isinstance</h3>
-                This world introduced how to insert tutorial levels by using <a href="#XC-X">"XC-X"</a>.<br/>
+                This world introduced <a href="#General.Mechanisms.RevertedCurses">reverted curses</a>, 
+                and how to insert tutorial levels by using <a href="#XC-X">"XC-X"</a>.<br/>
                 Level name from similar word, and repetitive network malfunction: <h3>
                     D <ruby>is<sup>2</sup> tance<rt><a target="_blank" href="https://docs.python.org/3/library/expressions.html#is">is</a> <a target="_blank" href="https://docs.python.org/3/library/functions.html#isinstance">isinstance</a></rt></ruby>
                 </h3>
@@ -1025,7 +1069,7 @@
                     <ruby>Memes<rt><a href="cursed.html#Crabs">One Forgotten Meme</a></rt></ruby> 
                 </h3>
                 <div class="bar">
-                    For the formatting method in this section, see <a href="#T3-X.Meta">here</a>.
+                    For the brief introduction for other curse series, see <a target="_blank" href="cursed.html">here</a>.
                 </div>
                 <div class="curstr">
                     Current curse: <a href="cursed.html#Crabs">11-X?</a><br/>
@@ -1143,6 +1187,9 @@
                     <ruby>G It<rt><a target="_blank" href="https://git-scm.com/"></a>Git</rt></ruby>
                     <ruby>o<rt>0</rt></ruby>
                 </h3>
+                <div class="bar">
+                    For the brief introduction for other curse series, see <a target="_blank" href="cursed.html">here</a>.
+                </div>
                 <div class="curstr">
                     Current curse: <a href="#-"><span class="curstr -">-</span></a>
                         <a href="#XF-X">"XF-X"</a><br/>
@@ -1249,7 +1296,7 @@
                     It <ruby>Go<rt>Does</rt></ruby> 
                 </h3>
                 <div class="bar">
-                    For the formatting method in this section, see <a href="#T3-X.Meta">here</a>.
+                    For the brief introduction for other curse series, see <a target="_blank" href="cursed.html">here</a>.
                 </div>
                 <div class="curstr">
                     Current curse: <a href="cursed.html#Crabs">10-X?</a><br/>
@@ -1508,13 +1555,12 @@
             <section id="T3EX.Meta"> <h3>
                     <a href="#T3-EX">"T3-EX"</a> - No Hints Here! 
                     but the affected sections are separated to multiple levels</h3>
-                This world <em>(specifically, <a href="#T3-E9.Meta">T3-E9</a>)</em> introduced a function-like format to describe curses.<br/>
                 <div class="bar">
-                    For the formatting method in this section, see <a href="#T3-X.Meta">here</a>.
+                    For the brief introduction for other curse series, see <a target="_blank" href="cursed.html">here</a>.
                 </div>
                 <section id="T3-E1.Meta"> <h4>
                         <a href="#T3-E1">"T3-E1"</a> - Warm Up!! 
-                        but the given curse effects are halved <em>(sub1.adofai)</em></h4>
+                        but the given curse effects are halved</h4>
                     <div class="curstr">
                         Current curse: <a href="#T3-E1">"T3-E1"</a>(<a href="#B-X">"B-X"</a>)<br/>
                         <em>Next curse: <a href="#...">...</a></em>
@@ -1522,7 +1568,7 @@
                 </section>
                 <section id="T3-E3.Meta"> <h4>
                         <a href="#T3-E3">"T3-E3"</a> - Don't miss a shot!! 
-                        but i failed to figure out of the length of the straight segments <em>(sub3.adofai)</em></h4>
+                        but i failed to figure out of the length of the straight segments</h4>
                     <div class="curstr">
                         Current curse: <a href="cursed.html#Landmines">11-EX*</a>
                             + <a href="#T3-E3">"T3-E3"</a>
@@ -1532,7 +1578,7 @@
                 </section>
                 <section id="T3-E4.Meta"> <h4>
                         <a href="#T3-E4">"T3-E4"</a> - Tricky Triangles!! 
-                        but it reverses the order for tiles in each loop <em>(sub4.adofai)</em></h4>
+                        but it reverses the order for tiles in each loop</h4>
                     <div class="curstr">
                         Current curse: <a href="#-"><span class="curstr -">-</span></a>
                             <a href="#10-X">"10-X"</a>
@@ -1543,7 +1589,7 @@
                 </section>
                 <section id="T3-E5.Meta"> <h4>
                         <a href="#T3-E5">"T3-E5"</a> - High Fives!! 
-                        but the midspins are mirrored <em>(sub5.adofai)</em></h4>
+                        but the midspins are mirrored</h4>
                     <div class="curstr">
                         Current curse: <a href="#T2-EX">"T2-EX"</a>
                             + <a href="#T3-E5">"T3-E5"</a><br/>
@@ -1552,7 +1598,7 @@
                 </section>
                 <section id="T3-E6.Meta"> <h4>
                         <a href="#T3-E6">"T3-E6"</a> - Collect 3!! 
-                        but the freeroam isn't free anymore <em>(sub6.adofai)</em></h4>
+                        but the freeroam isn't free anymore</h4>
                     <div class="curstr">
                         Current curse: <a href="#T3-E6">"T3-E6"</a><br/>
                         Current curse: <a href="#T3-E6">"T3-E6"</a>
@@ -1562,7 +1608,7 @@
                 </section>
                 <section id="T3-E7.Meta"> <h4>
                         <a href="#T3-E7">"T3-E7"</a> - Remember This!! 
-                        but you should have remembered this a long time ago <em>(sub7.adofai)</em></h4>
+                        but you should have remembered this a long time ago</h4>
                     <div class="curstr">
                         Current curse: <a href="#T3-E7">"T3-E7"</a>
                             + <a href="#XO-1">"XO-1"</a><br/>
@@ -1574,7 +1620,7 @@
                 </section>
                 <section id="T3-E8.Meta"> <h4>
                         <a href="#T3-E8">"T3-E8"</a> - Warp Tiles!! 
-                        but there's a hard limit to the value in minimum for angle of tiles <em>(sub8.adofai)</em></h4>
+                        but there's a hard limit to the value in minimum for angle of tiles</h4>
                     <div class="curstr">
                         Current curse: <a href="#T3-E8">"T3-E8"</a>(90°)<br/>
                         <em>Next curse: <a href="#...">...</a></em>
@@ -1582,7 +1628,9 @@
                 </section>
                 <section id="T3-E9.Meta"> <h4>
                         <a href="#T3-E9">"T3-E9"</a> - Answer!! 
-                        but the pauses has stopped functioning <em>(sub9.adofai)</em></h4>
+                        but the pauses has stopped functioning</h4>
+                    This level introduced <a href="#General.Formats.Functional">a functional formatting method</a> to describe curses.<br/>
+                    Solution: <del class="heimu" title="You need to select the text, rather than hovering the cursor over them, to see the content.">1. ↑; 2. ↓.</del>
                     <div class="curstr">
                         Current curse: <a href="#T3-E9">"T3-E9"</a>
                             + <a target="_blank" href="https://store.steampowered.com/app/2595110/_/">Love Nest</a><br/>
@@ -1591,7 +1639,7 @@
                 </section>
                 <section id="T3-E10.Meta"> <h4>
                         <a href="#T3-E10">"T3-E10"</a> - Speedy Floors!! 
-                        but there's a hidden twirl behind every setspeed with icon <em>(sub10.adofai)</em></h4>
+                        but there's a hidden twirl behind every setspeed with icon</h4>
                     <div class="curstr">
                         Current level: <a href="#T3-E10">"T3-E10"</a> (
                             T3-E10
@@ -1608,14 +1656,14 @@
                                 T3-E10
                             )
                         )<br/>
-                        Current level: <a href="cursed.html#Minus">-2-X</a> (
+                        Current level: <a href="cursed.html#Dash">-2-X</a> (
                             <a href="#XC-X">"XC-X"</a>
                             <sup><span class="curstr ^"><span class="curstr -">-</span>1</span></sup>
                             ∘ <a href="#XC-X">"XC-X"</a> (
                                 T3-E10,  T1-EX
                             )
                         )<br/>
-                        Current level: <a href="cursed.html#Minus">-2-X</a> (
+                        Current level: <a href="cursed.html#Dash">-2-X</a> (
                             <a href="cursed.html#Fishes">2-X&lt;</a>
                             <sup><span class="curstr ^">5</sup> (
                                 <a href="#XC-X">"XC-X"</a>
@@ -1632,8 +1680,8 @@
                     </div>
                 </section>
                 <section id="T3-E11.Meta"> <h4>
-                        <a href="#T3-E11">"T3-E11"</a> - 
-                        but it reverses the order for tiles between horizonal segments <em>(sub11.adofai)</em></h4>
+                        <a href="#T3-E11">"T3-E11"</a> - Drifting Floors!! 
+                        but it reverses the order for tiles between horizonal segments</h4>
                     <div class="curstr">
                         Current level: <a href="#T3-E11">"T3-E11"</a> (
                             T3-E11
@@ -1643,6 +1691,250 @@
                                 T3-E11
                             )
                         )<br/>
+                        <em>Next level: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E12.Meta"> <h4>
+                        <a href="#T3-E12">"T3-E12"</a> - Drunk Rhythms!! 
+                        but the amount of precision for tiles is π/4 (rounds up)</h4>
+                    <div class="curstr">
+                        Current level: <a href="cursed.html#KirbyCreep">{5-X}</a> (
+                            <a href="#T3-E12">"T3-E12"</a> (
+                                T3-E12
+                            )
+                        )<br/>
+                        <em>Next level: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E13.Meta"> <h4>
+                        <a href="#T3-E13">"T3-E13"</a> - Defend the Castle!! 
+                        but the title can tell you what's going on here</h4>
+                    <div class="curstr">
+                        Current level: <a href="#MO-X">"MO-X"</a> (
+                            T3-E13
+                        )<br/>
+                        <span class="annotated" title="12-X - Artificial Chariot but all the right angles are twirled midspin">Current level</span>:
+                        <em><a href="cursed.html#Crabs">4-X?</a> (
+                                <a href="#MO-X">"MO-X"</a> (
+                                    T3-E13
+                                ),</em>
+                            <a href="#T3-E13">"T3-E13"</a> (
+                                <a href="cursed.html#ExMark">1-X!</a>
+                            ) (
+                                12-X
+                            )
+                        <em>)</em><br/>
+                        <span class="annotated" title="12-X - Artificial Chariot but it has always been upward">Current level</span>:
+                        <a href="cursed.html#XXX">6-xxx</a> (
+                            <a href="#T3-E13">"T3-E13"</a> (
+                                <a href="cursed.html#ExMark">MN-X!</a>
+                            ) (
+                                12-X
+                            )
+                        )<br/>
+                        <span class="annotated" title="12-X - Artificial Chariot but all the loops are squares">Current level</span>:
+                        <a href="#T3-E13">"T3-E13"</a> (
+                            <a href="cursed.html#ExMark">9-X!</a>
+                        ) (
+                            12-X
+                        )<br/>
+                        <span class="annotated" title="12-X - Artificial Chariot but each three point turn generates a twirl on the tile right after it ends">Current level</span>:
+                        <a href="#T3-E13">"T3-E13"</a> (
+                            <a href="cursed.html#Dash">-3-X</a>
+                        ) (
+                            <a href="cursed.html#ExMark">9-X!</a> (
+                                12-X
+                            )
+                        )<br/>
+                        <span class="annotated" title="12-X - Artificial Chariot but each three point turn generates a twirl on the tile right after it ends but the twirl tiles and the other tiles are swapped">Current level</span>:
+                        <a href="#T3-E13">"T3-E13"</a> (
+                            <a href="cursed.html#MissQing">&lt;7-X3</a>
+                        ) (
+                            <a href="#T3-E13">"T3-E13"</a> (
+                                <a href="cursed.html#Dash">-3-X</a>
+                            ) (
+                                <a href="cursed.html#ExMark">9-X!</a> (
+                                    12-X
+                                )
+                            )
+                        )<br/>
+                        <span class="annotated" title="&quot;T3-E13&quot; - Defend the Castle!! but the title can tell you what's going on here">Current level</span>: T3-E13<br/>
+                        <em>Next level: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E14.Meta"> <h4>
+                        <a href="#T3-E14">"T3-E14"</a> - Fog!! 
+                        but there's an extra 180° tile for each amount of tiles passed</h4>
+                    <div class="curstr">
+                        Current level: <a href="#T3-E14">"T3-E14"</a> ( 3 ) (
+                            T3-E14
+                        )<br/>
+                        Current level: <a href="#T3-E14">"T3-E14"</a> ( 3 ) (
+                            <a href="cursed.html#Crabs">XC-X?</a> (
+                                <a href="#T3-E7">"T3-E7"</a> (
+                                    T3-E14
+                                )
+                            )
+                        )<br/>
+                        Current level: <a href="#XO-X">"XO-X"</a> (
+                            <a href="#T3-E14">"T3-E14"</a> ( 3 ) (
+                                <a href="cursed.html#Crabs">11-X?</a> (
+                                    <a href="#T3-E7">"T3-E7"</a> (
+                                        T3-E14
+                                    )
+                                )
+                            )
+                        )<br/>
+                        <em>Next level: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E15.Meta"> <h4>
+                        <a href="#T3-E15">"T3-E15"</a> - Disappearing Floor!! 
+                        but the planet would step on the 1st tile on its orbit as long as that tile is located after the tile it stays on</h4>
+                    <div class="curstr">
+                        Current level: <a href="cursed.html#Landmines">T4-EX*</a> (
+                            <a href="#T3-E15">"T3-E15"</a> (
+                                T3-E15
+                            )
+                        )<br/>
+                        <em>Next level: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E16.Meta"> <h4>
+                        <a href="#T3-E16">"T3-E16"</a> - Answer!! Again!! 
+                        but each pause beat generates an 180° tile after it</h4>
+                    This level introduced that <q>
+                        By default, applying a curse to another curse will
+                        limits the effect of the former
+                        to the range of changes caused by the latter
+                    </q>.<br/>
+                    Solution: <del class="heimu" title="You need to select the text, rather than hovering the cursor over them, to see the content.">1. ↑; 2. ↓.</del>
+                    <div class="curstr">
+                        Current level: <a href="#T3-E16">"T3-E16"</a> (
+                            T3-E16
+                        )<br/>
+                        Current level: <a href="#T3-E9">"T3-E9"</a> (
+                            <a href="#XR-X">"XR-X"</a> (
+                                <a href="#T3-E7">"T3-E7"</a> (
+                                    <a href="#XO-X">"XO-X"</a> (
+                                        <a href="#T3-E16">"T3-E16"</a> (
+                                            T3-E16
+                                        )
+                                    )
+                                )
+                            )
+                        )<br/>
+                        <em>Next level: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E17.Meta"> <h4>
+                        <a href="#T3-E17">"T3-E17"</a> - Avoid Being Spotted!! 
+                        but each continuous turnarounds repeats the section until the next turnaround for each of turnarounds here</h4>
+                    <div class="curstr">
+                        Current level: <a href="#XR-X">"XR-X"</a> (
+                            T3-E17
+                        )<br/>
+                        Current level: <a href="cursed.html#Blocks">[12-X]</a> (
+                            <a href="#XR-X">"XR-X"</a> (
+                                T3-E17
+                            )
+                        )<br/>
+                        Current level: <a href="cursed.html#Landmines">12-X*</a> (
+                            <a href="cursed.html#Blocks">[12-X]</a> (
+                                <a href="#XR-X">"XR-X"</a> (
+                                    T3-E17
+                                )
+                            )
+                        )<br/>
+                        Current level: <a href="cursed.html#Landmines">1-X*</a> (
+                            <a href="cursed.html#Landmines">12-X*</a>
+                        ) (
+                            <a href="cursed.html#Blocks">[12-X]</a> (
+                                <a href="#XR-X">"XR-X"</a> (
+                                    <a href="cursed.html#Crabs">2-X?</a> (
+                                        T3-E17
+                                    )
+                                )
+                            )
+                        )<br/>
+                        Current level: <a href="cursed.html#Landmines">XM-X*</a> (
+                            <a href="#T3-E17">"T3-E17"</a>
+                            ∘ <a href="cursed.html#Landmines">1-X*</a>
+                        ) (
+                            <a href="cursed.html#Landmines">12-X*</a>
+                        ) (
+                            <a href="cursed.html#Blocks">[12-X]</a> (
+                                <a href="#XR-X">"XR-X"</a> (
+                                    <a href="cursed.html#Crabs">2-X?</a> (
+                                        T3-E17
+                                    )
+                                )
+                            )
+                        )<br/>
+                        <em>Next level: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E18.Meta"> <h4>
+                        <a href="#T3-E18">"T3-E18"</a> - Tricky Triangles... Two!! 
+                        but the 1st numerical value would be incresed by 1</h4>
+                    <div class="curstr">
+                        Current level: <a href="#T3-E18">"T3-E18"</a> (
+                            <a href="#T3-E18">"T3-E18"</a>
+                        ) (
+                            <a href="#T3-E18">"T3-E18"</a>
+                        ) (
+                            <a href="cursed.html#Blocks">[7-X]</a>
+                        ) (
+                            T3-E18
+                        )<br/>
+                        Current level: <a href="#T3-E1">"T3-E1"</a> (
+                            <a href="#T1-EX">"T1-EX"</a>
+                        ) (
+                            <a href="#T3-E1">"T3-E1"</a> (
+                                <a href="cursed.html#MissQing">&lt;XF-X3</a>
+                            ) (
+                                <a href="#T3-E18">"T3-E18"</a>
+                                <sup><span class="curstr ^">2</span></sup> (
+                                    <a href="cursed.html#Blocks">[7-X]</a>
+                                ) (
+                                    T3-E18
+                                )
+                            )
+                        )<br/>
+                        Current level: <a href="#T3-E13">"T3-E13"</a> (
+                            <a href="#T3-E18">"T3-E18"</a> (
+                                <a href="#T3-E18">"T3-E18"</a>
+                            ) (
+                                <a href="cursed.html#MissQing">&lt;6-X3</a>
+                            )
+                        ) (
+                            <a href="#1-X">"1-X"</a>
+                            ∘ <a href="cursed.html#Landmines">10-X*</a>
+                            <sup><span class="curstr ^">3</span></sup> (
+                                T3-E18
+                            )
+                        )<br/>
+                        <em>Next level: <a href="#...">...</a></em>
+                    </div>
+                </section>
+                <section id="T3-E19.Meta"> <h4>
+                        <a href="#T3-E19">"T3-E19"</a> - Almost there!! Don't get distracted!! 
+                        but all the angles are multiplied by a number</h4>
+                    This level introduced that to switch the current level by simply writing down the level to the prompt, without using any curses.
+                    <div class="curstr">
+                        Current level: <a href="cursed.html#Colors">#FFF600</a> (
+                            T3-E19
+                        )<br/>
+                        Current level: <a href="#3-X">"3-X"</a> ( 1 ) (
+                            <a href="#T2-X">"T2-X"</a> (
+                                <a href="cursed.html#Fishes">6-X&lt;</a> (
+                                    T3-EX
+                                )
+                            )
+                        )<br/>
+                        Current level: T2-EX<br/>
+                        Current level: <a href="#7-X">"7-X"</a> ( 7-X )<br/>
+                        Current level: <a href="#T3-E19">"T3-E19"</a> ( 1 ) ( T3-E19 )<br/>
                         <em>Next level: <a href="#...">...</a></em>
                     </div>
                 </section>

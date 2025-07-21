@@ -54,7 +54,7 @@ code.curstr {
     color: #5FF;
     text-shadow: inherit inherit #0606;
 }
-div.curstr a.annotated {
+div.curstr .annotated {
     text-decoration: dotted underline;
 }
 div.curstr a:hover {
