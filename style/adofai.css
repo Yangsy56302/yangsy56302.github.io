@@ -1,9 +1,8 @@
-@import "yangsy.css";
 @font-face {
     font-family: "godoMaum";
     src: url("godoMaum.ttf") format("truetype");
 }
-body {
+body.tutotile {
     background-image: url("tutotile.png");
     background-repeat: repeat;
     background-attachment: fixed;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="cursedef.xsd"?>
+<?xml-model href="../../cursedef.xsd"?>
 <root>
     <cursed>
         <id>1-X</id>
