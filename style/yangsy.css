@@ -139,3 +139,6 @@ img.iconhw {
 .nobr {
     word-wrap: nowrap;
 }
+.annotated {
+    text-decoration: dotted underline;
+}
