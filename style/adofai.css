@@ -11,17 +11,18 @@ body.tutotile {
     background-color: #336;
     color: #FFF;
     font-family: 'godoMaum', 'Consolas', 'Courier New', monospace, sans-serif, serif;
-    text-shadow: 0.1em 0.1em 0em #000F;
+    text-shadow: 0.1em 0.1em 0em #000A;
 }
 div.curstr {
     margin: 0.25em 2em 0.25em 2em;
+    color: #AAC;
     padding: 1em 1em;
     font-size: 24px;
     text-wrap: nowrap;
     overflow: auto;
 }
 div.curstr a {
-    color: inherit;
+    color: #FFF;
     font-weight: inherit;
     text-shadow: inherit;
     text-decoration: none;
