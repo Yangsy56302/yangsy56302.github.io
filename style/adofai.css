@@ -27,8 +27,15 @@ div.curstr a {
     text-shadow: inherit;
     text-decoration: none;
 }
+div.curstr a:hover {
+    text-decoration: solid underline;
+}
+div.curstr .annotated {
+    text-decoration: dotted underline;
+}
 code.curstr {
-    font-size: 20px;
+    font-weight: unset;
+    font-size: 24px;
 }
 .\- {
     color: #F55;
@@ -53,7 +60,4 @@ code.curstr {
 .\^ {
     color: #5FF;
     text-shadow: inherit inherit #0606;
-}
-div.curstr a:hover {
-    text-decoration: solid underline;
 }
