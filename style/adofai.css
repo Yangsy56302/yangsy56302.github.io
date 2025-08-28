@@ -10,7 +10,7 @@ body.tutotile {
 .curstr {
     background-color: #336;
     color: #FFF;
-    font-family: 'godoMaum', 'Consolas', 'Courier New', monospace, sans-serif, serif;
+    font-family: "godoMaum", "Consolas", "Courier New", monospace, sans-serif, serif;
     text-shadow: 0.1em 0.1em 0em #000A;
 }
 div.curstr {

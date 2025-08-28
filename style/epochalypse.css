@@ -1,0 +1,15 @@
+html {
+    font-family: "Courier New", "Microsoft YaHei", monospace;
+}
+body {
+    background-color: #000;
+    color: #AAA;
+}
+span {
+    font-weight: bold;
+    color: #FFF;
+}
+#deltaSeconds {
+    font-size: 200%;
+    color: #F55;
+}

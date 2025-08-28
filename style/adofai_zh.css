@@ -7,7 +7,7 @@
     src: url("HappyZcool.ttf") format("truetype");
 }
 .curstr {
-    font-family: '16FontSeto', 'HappyZcool', 'Consolas', 'Courier New', 'SimHei', 'Microsoft YaHei', monospace, sans-serif, serif;
+    font-family: "16FontSeto", "HappyZcool", "Consolas", "Courier New", "SimHei", "Microsoft YaHei", monospace, sans-serif, serif;
 }
 div.curstr, code.curstr {
     font-size: inherit;
