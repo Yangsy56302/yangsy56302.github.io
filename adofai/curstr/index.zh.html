@@ -118,7 +118,7 @@
                     提示文本不应随着镜头的变化而改变位置或大小，否则将无法起到提示作用。<em>估计短时间内也没人看得懂……</em>
                 </section> <section>
                     魔改效果更换前会进行倒计时（从 3 到 0 ，含两端）：倒计时预计降到 -1 的那一瞬间，就是魔改更换的时刻。<br/>
-                    倒计时通常情况下位于<del>行尾</del>冒号之前，被半角括号括起，并仅在左括号之前多出一个半角空格：
+                    倒计时通常情况下位于<del>行尾</del>的全角冒号之前，被半角括号括起，并仅在左括号之前多出一个半角空格：
                     <div class="curstr">
                         当前魔改效果：<a target="e" href="e.html#ML-X">"ML-X"</a><br/>后继魔改效果 (3)：<a target="e" href="e.html#5-X">"5-X"</a><br/><br/>
                         当前魔改效果：<a target="e" href="e.html#ML-X">"ML-X"</a><br/>后继魔改效果 (2)：<a target="e" href="e.html#5-X">"5-X"</a><br/><br/>
@@ -181,16 +181,16 @@
             <article id="General.Mechanisms"> <h3>魔改机制</h3>
                 <article id="General.Mechanisms.Basics"> <h4>基础</h4>
                     <section>
-                        魔改效果可以看作是从谱面片段到谱面片段的<strong>映射</strong>——
+                        魔改效果可以看作是从谱面片段集合到谱面片段集合的<strong>映射</strong>——
                         这也是<a href="#General.Formats.Functional">函数式表示法</a>的底层原理。
                     </section>
                     <section>
                         在顺序式表示法中，加号（<code class="curstr">+</code>）表示组合两个魔改效果，与<a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a></em>类似：
-                        <div class="curstr">当前魔改效果："XR-X" + "12-X"<br/>后继魔改效果："12-X" + "XR-X"</div><br/>
+                        <div class="curstr">当前魔改效果：<a target="e" href="e.html#XR-X">"XR-X"</a> + <a target="e" href="e.html#12-X">"12-X"</a><br/>后继魔改效果：<a target="e" href="e.html#12-X">"12-X"</a> + <a target="e" href="e.html#XR-X">"XR-X"</a></div><br/>
                         在函数式表示法中，通常直接嵌套表示：
-                        <div class="curstr">当前关卡："12-X"("XR-X"(XC-X))<br/>后继关卡："XR-X"("12-X"(XC-X))</div><br/>
-                        如果真的有组合魔改的必要性，则需要使用函数组合符号（<code class="curstr">∘</code>）：
-                        <div class="curstr">当前关卡："12-X"∘"XR-X"(XC-X)<br/>后继关卡："XR-X"∘"12-X"(XC-X)</div>
+                        <div class="curstr">当前关卡：<a target="e" href="e.html#12-X">"12-X"</a>( <a target="e" href="e.html#XR-X">"XR-X"</a>( XC-X ) )<br/>后继关卡：<a target="e" href="e.html#XR-X">"XR-X"</a>( <a target="e" href="e.html#12-X">"12-X"</a>( XC-X ) )</div><br/>
+                        如果确实存在组合魔改的需求，则需要使用函数组合符号（<code class="curstr">∘</code>）：
+                        <div class="curstr">当前关卡：<a target="e" href="e.html#12-X">"12-X"</a> ∘ <a target="e" href="e.html#XR-X">"XR-X"</a>( XC-X )<br/>后继关卡：<a target="e" href="e.html#XR-X">"XR-X"</a> ∘ <a target="e" href="e.html#12-X">"12-X"</a>( XC-X )</div>
                     </section>
                 </article>
                 <article id="General.Mechanisms.Advanced"> <h4>进阶</h4>
