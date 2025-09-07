@@ -109,9 +109,9 @@
                     在拥有多个魔改效果的关卡中，应在屏幕底部添加两行文本装饰作为提示：第一行是正在生效的魔改，第二行则是即将生效的魔改。<br/>
                     <em>这也是该魔改系列被称作<q><a target="_blank" href="https://docs.python.org/3/library/stdtypes.html#str">文字魔改</a></q>的原因。</em><br/>
                     此处使用顺序式表示法举例：
-                    <div class="curstr">当前魔改效果："12-X"<br/>后继魔改效果："XT-X"</div>
+                    <div class="curstr">当前魔改效果：<a target="e" href="e.html#12-X">"12-X"</a><br/>后继魔改效果：<a target="e" href="e.html#XT-X">"XT-X"</a></div>
                     另外，在仅包括某单一系列的魔改效果时，顺序式表示法可以使用以下记录方式省略魔改系列标识符：
-                    <div class="curstr">当前文字魔改效果：12-X<br/>后继文字魔改效果：XT-X</div>
+                    <div class="curstr">当前文字魔改效果：<a target="e" href="e.html#12-X">12-X</a><br/>后继文字魔改效果：<a target="e" href="e.html#XT-X">XT-X</a></div>
                 </section> <section>
                     注意，这些文本是<strong>提示，而不是魔改效果本体</strong>！
                     <em>魔改效果本体更像是某种抽象的数学概念。</em><br/>
@@ -120,11 +120,11 @@
                     魔改效果更换前会进行倒计时（从 3 到 0 ，含两端）：倒计时预计降到 -1 的那一瞬间，就是魔改更换的时刻。<br/>
                     倒计时通常情况下位于<del>行尾</del>冒号之前，被半角括号括起，并仅在左括号之前多出一个半角空格：
                     <div class="curstr">
-                        当前魔改效果："ML-X"<br/>后继魔改效果 (3)："5-X"<br/><br/>
-                        当前魔改效果："ML-X"<br/>后继魔改效果 (2)："5-X"<br/><br/>
-                        当前魔改效果："ML-X"<br/>后继魔改效果 (1)："5-X"<br/><br/>
-                        当前魔改效果："ML-X"<br/>后继魔改效果 (0)："5-X"<br/><br/>
-                        当前魔改效果："5-X"<br/>后继魔改效果："2-X"
+                        当前魔改效果：<a target="e" href="e.html#ML-X">"ML-X"</a><br/>后继魔改效果 (3)：<a target="e" href="e.html#5-X">"5-X"</a><br/><br/>
+                        当前魔改效果：<a target="e" href="e.html#ML-X">"ML-X"</a><br/>后继魔改效果 (2)：<a target="e" href="e.html#5-X">"5-X"</a><br/><br/>
+                        当前魔改效果：<a target="e" href="e.html#ML-X">"ML-X"</a><br/>后继魔改效果 (1)：<a target="e" href="e.html#5-X">"5-X"</a><br/><br/>
+                        当前魔改效果：<a target="e" href="e.html#ML-X">"ML-X"</a><br/>后继魔改效果 (0)：<a target="e" href="e.html#5-X">"5-X"</a><br/><br/>
+                        当前魔改效果：<a target="e" href="e.html#5-X">"5-X"</a><br/>后继魔改效果：<a target="e" href="e.html#5-X">"2-X"</a>
                     </div>
                 </section>
                 <article id="General.Formats.Keywords"> <h4>关键词</h4>
@@ -142,8 +142,8 @@
                     <section>
                         首先来看<a href="../curstr.html#XS-X.Meta">一个例子</a>：
                         <div class="curstr">
-                            当前魔改效果："10-X" + "XS-X"<br/>
-                            当前关卡："XS-X"("10-X"(XS-X))
+                            当前魔改效果：<a target="e" href="e.html#10-X">"10-X"</a> + <a target="e" href="e.html#XS-X">"XS-X"</a><br/>
+                            当前关卡：<a target="e" href="e.html#XS-X">"XS-X"</a>( <a target="e" href="e.html#10-X">"10-X"</a>( XS-X ) ) 
                         </div><br/>
                         可以看出，<ol>
                             <li>该表示法可以同时包括关卡信息；</li>
@@ -151,26 +151,27 @@
                         </ol>
                     </section>
                     <section>
-                        函数式表示法中，倒计时位于冒号之前：
+                        函数式表示法中的倒计时同样位于冒号之前：
                         <div class="curstr">
-                            当前关卡："XR-X"(XT-X)<br/>后继关卡 (3)："B-X"(XT-X)<br/><br/>
-                            当前关卡："XR-X"(XT-X)<br/>后继关卡 (2)："B-X"(XT-X)<br/><br/>
-                            当前关卡："XR-X"(XT-X)<br/>后继关卡 (1)："B-X"(XT-X)<br/><br/>
-                            当前关卡："XR-X"(XT-X)<br/>后继关卡 (0)："B-X"(XT-X)<br/><br/>
-                            当前关卡："B-X"(XT-X)<br/>后继关卡："PA-X"("12-X"(XT-X))
+                            当前关卡：<a target="e" href="e.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (3)：<a target="e" href="e.html#B-X">"B-X"</a>( XT-X )<br/><br/>
+                            当前关卡：<a target="e" href="e.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (2)：<a target="e" href="e.html#B-X">"B-X"</a>( XT-X )<br/><br/>
+                            当前关卡：<a target="e" href="e.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (1)：<a target="e" href="e.html#B-X">"B-X"</a>( XT-X )<br/><br/>
+                            当前关卡：<a target="e" href="e.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (0)：<a target="e" href="e.html#B-X">"B-X"</a>( XT-X )<br/><br/>
+                            当前关卡：<a target="e" href="e.html#B-X">"B-X"</a>( XT-X )<br/>后继关卡：<a target="e" href="e.html#PA-X">"PA-X"</a>( <a target="e" href="e.html#12-X">"12-X"</a>( XT-X ) )
                         </div>
                     </section>
                     <section>
                         部分关键词在函数式表示法中也有些许差别：<dl>
                             <dt><a href="#...">...</a></dt> <dd>
-                                仅保留<q>请稍候</q>用途：
+                                目前仅保留<q>请稍候</q>用途：
                                 <div class="curstr">后继关卡：...</div>
                             </dd>
                             <dt><a href="#None">空</a></dt> <dd>
-                                由于未被魔改的片段可以直接使用关卡名称标注而被废除：
+                                由于未被魔改的片段可以直接使用关卡名称标注而已无用途：
                                 <div class="curstr">当前关卡：XS-X</div>
                             </dd>
                             <dt><a href="#StopIteration">迭代终止</a></dt> <dd>
+                                照常。
                                 <div class="curstr">后继关卡：迭代终止</div>
                             </dd>
                         </dl>
