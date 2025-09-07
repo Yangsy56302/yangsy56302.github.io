@@ -1,1 +1,4 @@
 /temp/**
+*.temp.*
+*.hidden.*
+*.outdated.*
