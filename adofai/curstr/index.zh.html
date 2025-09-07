@@ -206,15 +206,18 @@
                     </section>
                     <section id="*">
                         在顺序式表示法中，连续且重复的魔改效果可以使用乘号（<code class="curstr">*</code>）简写。
-                        <div class="curstr">当前文字魔改效果：XS-X + XS-X + XS-X<br/>后继文字魔改效果：XS-X<a href="#*"><span class="curstr *">*</span>3</a></div>
+                        <div class="curstr">
+                            当前魔改效果：<a target="e" href="e.html#XS-X">"XS-X"</a> + <a target="e" href="e.html#XS-X">"XS-X"</a> + <a target="e" href="e.html#XS-X">"XS-X"</a><br/>
+                            后继魔改效果：<a target="e" href="e.html#XS-X">"XS-X"</a> <a href="#*"><span class="curstr *">*</span> 3</a>
+                        </div>
                         <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em><br/>
                     </section> 
                     <section id="^">
                         在函数式表示法中，则可以使用函数的幂运算简写：
                         <div class="curstr">
-                            当前关卡："XS-X"("XS-X"("XS-X"(XS-X)))<br/>
-                            后继关卡："XS-X"<sup><span class="curstr ^"><a href="#^">3</a></span></sup>(XS-X)<br/>
-                            <em>或者，</em>后继关卡："XS-X"<a href="#^"><span class="curstr ^">^</span>3</a>(XS-X)
+                            当前关卡：<a target="e" href="e.html#XS-X">"XS-X"</a>( <a target="e" href="e.html#XS-X">"XS-X"</a>( <a target="e" href="e.html#XS-X">"XS-X"</a>( XS-X ) ) )<br/>
+                            后继关卡：<a target="e" href="e.html#XS-X">"XS-X"</a><sup><a href="#^"><span class="curstr ^">3</span></a></sup>( XS-X )<br/>
+                            <em>或者，</em>后继关卡：<a target="e" href="e.html#XS-X">"XS-X"</a><a href="#^"> <span class="curstr ^">^</span> 3</a>( XS-X )
                         </div>
                     </section> 
                     <article id="General.Mechanisms.RevertedCurses"> <h5>逆向魔改</h5>
@@ -227,25 +230,29 @@
                         </section> <section>
                             在顺序式表示法中，
                             <section id="-">
-                                逆向魔改通过将减号（<code class="curstr">-</code>）改为加号（<code class="curstr">+</code>）来表示。
-                                <div class="curstr">当前魔改效果："8<span class="curstr +">+</span>X"<br/>后继魔改效果："9-X" + "9<span class="curstr +">+</span>X"</div>
-                                <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
+                                逆向魔改<strong>曾</strong>通过将减号（<code class="curstr">-</code>）改为加号（<code class="curstr">+</code>）来表示。
+                                <div class="curstr">
+                                    当前魔改效果：<a target="e" href="e.html#8-X">"8<span class="curstr +">+</span>X"</a><br/>
+                                    后继魔改效果："9-X" + <a target="e" href="e.html#9-X">"9<span class="curstr +">+</span>X"</a>
+                                </div>
+                                <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em><br/>
+                                <strong>该表示法已被弃用，请不要在之后所创作的魔改作品中继续使用。</strong>
                             </section> <section>
-                                更通用且推荐地，如果魔改效果并非源自冰与火之舞关卡，或者魔改标识符内不包括减号，可以将减号（<code class="curstr">-</code>）置于开头。
-                                <div class="curstr">当前魔改效果："<span class="curstr +">-</span>Novel Feature"<br/>后继魔改效果：<span class="curstr +">-</span>DDLC+!</div>
+                                更通用的逆向魔改表示法为将减号（<code class="curstr">-</code>）置于开头。
+                                <div class="curstr">当前魔改效果：<span class="curstr +">-</span>"Novel Feature"<br/>后继魔改效果：<span class="curstr +">-</span>DDLC+!</div>
                             </section> <section>
                                 <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">可以通过正负号来缩写相邻且互逆的魔改。</a>
-                                <div class="curstr">当前魔改效果："XC-X" + "XC<span class="curstr +">+</span>X"<br/>后继魔改效果："XC<span class="curstr -+">&mnplus;</span>X"</div><br/>
-                                <div class="curstr">当前魔改效果："XC<span class="curstr +">+</span>X" + "XC-X"<br/>后继魔改效果："XC<span class="curstr +-">&plusmn;</span>X"</div>
+                                <div class="curstr">当前魔改效果：<a target="e" href="e.zh.html#XC-X">"XC-X"</a> <span class="curstr +">-</span> <a target="e" href="e.zh.html#XC-X">"XC-X"</a><br/>后继魔改效果：<span class="curstr +-">&plusmn;</span> <a target="e" href="e.zh.html#XC-X">"XC-X"</a></div>
+                                <div class="curstr">当前魔改效果：<span class="curstr +">-</span> <a target="e" href="e.zh.html#XC-X">"XC-X"</a> + <a target="e" href="e.zh.html#XC-X">"XC-X"</a><br/>后继魔改效果：<span class="curstr -+">&mnplus;</span> <a target="e" href="e.zh.html#XC-X">"XC-X"</a></div>
                                 <em>（<a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">文本颜色</a>并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
                             </section>
                         </section>
                         <section>
                             在函数式表示法中，逆向魔改与重复魔改效果同时通过函数的幂运算进行表示：
                             <div class="curstr">
-                                当前关卡："XS<span class="curstr +">+</span>X"("XS<span class="curstr +">+</span>X"("XS<span class="curstr +">+</span>X"(XS-X)))<br/>
-                                后继关卡：<span class="curstr -">-</span>"XS-X"<sup><span class="curstr ^">3</span></sup>(XS-X)<br/>
-                                <em>或者，</em>后继关卡："XS-X"<sup><span class="curstr ^"><span class="curstr -">-</span>3</span></sup>(XS-X)<br/>
+                                当前关卡：<span class="curstr -">-</span><a target="e" href="e.html#XS-X">"XS-X"</a>( <span class="curstr -">-</span><a target="e" href="e.html#XS-X">"XS-X"</a>( <span class="curstr -">-</span><a target="e" href="e.html#XS-X">"XS-X"</a>( XS-X ) ) )<br/>
+                                后继关卡：<a target="e" href="e.html#XS-X">"XS-X"</a><sup><span class="curstr ^"><span class="curstr -">-</span>3</span></sup>( XS-X )<br/>
+                                <em>或者，</em>后继关卡：( <span class="curstr -">-</span><a target="e" href="e.html#XS-X">"XS-X"</a> )<sup><span class="curstr ^">3</span></sup>( XS-X )<br/>
                             </div>
                         </section>
                         <section>
