@@ -1,4 +1,6 @@
-/temp/**
-*.temp.*
-*.hidden.*
-*.outdated.*
+**/temp/**
+**/hidden/**
+**/outdated/**
+**/*.temp.*
+**/*.hidden.*
+**/*.outdated.*
