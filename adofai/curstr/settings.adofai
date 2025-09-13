@@ -1,0 +1,50 @@
+{
+    "settings": {
+		"zoom": 100
+    },
+    "actions": [
+
+    ],
+    "decorations": [
+        {
+            "eventType": "AddText", "locked": true,
+            "decText": "Current curse: {current}",
+            "tag": "cc fg ccfg", "font": "Default",
+            "position": [0, -8], "relativeTo": "Camera",
+            "pivotOffset": [0, 0], "rotation": 0, "lockRotation": true,
+            "scale": [50, 50], "lockScale": true,
+            "color": "ffffff", "opacity": 100,
+            "depth": -108, "parallax": [0, 0], "parallaxOffset": [0, 0]
+        },
+        {
+            "eventType": "AddText", "locked": true,
+            "decText": "Current curse: {current}",
+            "tag": "cc bg ccbg", "font": "Default",
+            "position": [0, -8], "relativeTo": "Camera",
+            "pivotOffset": [0.02, -0.02], "rotation": 0, "lockRotation": true,
+            "scale": [50, 50], "lockScale": true,
+            "color": "00000050", "opacity": 100,
+            "depth": -106, "parallax": [0, 0], "parallaxOffset": [0, 0]
+        },
+        {
+            "eventType": "AddText", "locked": true, 
+            "decText": "Next curse: {next}",
+            "tag": "nc fg ncfg", "font": "Default",
+            "position": [0, -9], "relativeTo": "Camera",
+            "pivotOffset": [0, 0], "rotation": 0, "lockRotation": true,
+            "scale": [50, 50], "lockScale": true,
+            "color": "ffffff", "opacity": 100,
+            "depth": -107, "parallax": [0, 0], "parallaxOffset": [0, 0]
+        },
+        {
+            "eventType": "AddText", "locked": true,
+            "decText": "Next curse: {next}",
+            "tag": "nc bg ncbg", "font": "Default",
+            "position": [0, -9], "relativeTo": "Camera",
+            "pivotOffset": [0.02, -0.02], "rotation": 0, "lockRotation": true,
+            "scale": [50, 50], "lockScale": true,
+            "color": "00000050", "opacity": 100,
+            "depth": -105, "parallax": [0, 0], "parallaxOffset": [0, 0]
+        }
+    ]
+}
