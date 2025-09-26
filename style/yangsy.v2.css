@@ -44,7 +44,7 @@ p {
     font-size: 1em;
 }
 dl {
-    margin: 0em 0em 1em 0em;
+    margin: 0.5em 0em 1em 0em;
     padding: 0em 2em;
 }
 dt {
@@ -53,7 +53,7 @@ dt {
     color: #204;
 }
 dd {
-    margin: 0em 0em 1.5em 0em;
+    margin: 0em 0em 1em 0em;
     padding: 0em 2em;
 }
 strong {
@@ -113,9 +113,6 @@ ol {
 }
 ol.zero {
     list-style-type: decimal-leading-zero;
-}
-ol,ul {
-    list-style-position: inside;
 }
 img.a {
     background-color: #AAF;
