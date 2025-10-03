@@ -42,7 +42,7 @@ nav {
     background-color: #BED;
     flex-grow: 1;
 }
-aside div {
+aside>div {
     position: sticky;
     bottom: 0%;
     padding: 1em 2em;
