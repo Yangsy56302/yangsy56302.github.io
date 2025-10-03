@@ -9,29 +9,28 @@ body.tutotile {
 }
 .curstr {
     background-color: #336;
-    color: #FFF;
+    color: #AAC;
     font-family: "godoMaum", "Consolas", "Courier New", monospace, sans-serif, serif;
     text-shadow: 0.1em 0.1em 0em #000A;
 }
-div.curstr {
-    margin: 0.25em 2em 0.25em 2em;
-    color: #AAC;
-    padding: 1em 1em;
-    font-size: 24px;
-    text-wrap: nowrap;
-    overflow: auto;
-}
-div.curstr a {
+.curstr a {
     color: #FFF;
     font-weight: inherit;
     text-shadow: inherit;
     text-decoration: none;
 }
-div.curstr a:hover {
+.curstr a:hover {
     text-decoration: solid underline;
 }
-div.curstr .annotated {
+.curstr .annotated {
     text-decoration: dotted underline;
+}
+div.curstr {
+    margin: 0.25em 2em 0.25em 2em;
+    padding: 1em 1em;
+    font-size: 24px;
+    text-wrap: nowrap;
+    overflow: auto;
 }
 code.curstr {
     font-weight: unset;
