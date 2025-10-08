@@ -60,7 +60,14 @@
                     <div class="bar">
                         What's the deal with rhythm games? Like, what's the deal with it?
                     </div>
-                    (WIP)
+                    Has multiple subeffects: <dl>
+                        <dt id="Turnaround">Turnaround</dt> <dd>
+                            Replace each S-bend and Z-bend to a turnaround.
+                        </dd>
+                        <dt id="MEGALOVANIA">MEGALOVANIA</dt> <dd>
+                            Replace a piece of the chart to Toby Fox - MEGALOVANIA.
+                        </dd>
+                    </dl>
                 </dd>
                 <dt id="2-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=2117926195">2-X?</a>
@@ -81,7 +88,8 @@
                     <div class="bar">
                         !eef etal ruoy yap ot tegrof t'noD
                     </div>
-                    (WIP)
+                    Triple the affected section, then reverse the middle section. Use twirled midspin between repeated sections.
+                    <em>(no autoplay -- you still have to play the level when rewinding)</em><br/>
                 </dd>
                 <dt id="4-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=2118279790">4-X?</a>
@@ -102,7 +110,8 @@
                     <div class="bar">
                         I'm no expert, but I don't think trains should sound like this...
                     </div>
-                    Make the track upside-down. Usually by adding a twirl at both the start and the end of the curse.
+                    Make the track upside-down, usually by adding a twirl at both the start and the end of the curse,
+                    although for level 5-X? by swapping 5-2 Bigger Skewed Step with the 5-3 Cliffhanger & etc.
                 </dd>
                 <dt id="6-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=2117152202">6-X?</a>
@@ -112,8 +121,9 @@
                         Are you bored with normal ADOFAI? Are you one of the chosen few who can ace PULSE first try? Well, this level is for you!
                     </div>
                     <section class="baz"> <strong>Extra parameters:</strong> <dl>
-                        <dt><var>{increment}</var></dt> <dd>
-                            The increment value of BPM that would be used on tiles that goes up or down.
+                        <dt><var>{increment}</var> <em>(default: None)</em></dt> <dd>
+                            The increment value of BPM that would be used on tiles that goes up or down.<br/>
+                            Use None for arbitrary value.
                         </dd>
                     </dl> </section>
                     Only directions that's vertical counts for <q>up or down</q> -- swinging tile doesn't count.<br/>
@@ -211,9 +221,10 @@
                         Made an easy level this time. Pay no attention to the fact that it's 7 gems. I don't know why it's like that and I can't change it.
                     </div>
                     <section class="baz"> <strong>Extra parameters:</strong> <dl>
-                        <dt><var>{increment}</var></dt> <dd>
+                        <dt><var>{increment}</var> <em>(default: None)</em></dt> <dd>
                             The increment value of BPM that would be used for each triangle passed.<br/>
-                            Could be negative to decrease BPM.
+                            Number should be positive; For the usage of decreasing BPM, please use <a href="index.html#General.Mechanisms.RevertedCurses">reverted curse mechanism</a>.<br/>
+                            Use None for arbitrary positive value.
                         </dd>
                     </dl> </section>
                     Increase the speed by a bit for each triangle passed.
