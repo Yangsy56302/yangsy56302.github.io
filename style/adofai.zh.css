@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "16FontSeto";
+    src: url("16FontSeto.ttf") format("truetype");
+}
+@font-face {
+    font-family: "HappyZcool";
+    src: url("HappyZcool.ttf") format("truetype");
+}
 .curstr {
     font-family: "16FontSeto", "HappyZcool", "Consolas", "Courier New", "SimHei", "Microsoft YaHei", monospace, sans-serif, serif;
 }
