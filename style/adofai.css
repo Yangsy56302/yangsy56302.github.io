@@ -2,6 +2,14 @@
     font-family: "godoMaum";
     src: url("godoMaum.ttf") format("truetype");
 }
+@font-face {
+    font-family: "16FontSeto";
+    src: url("16FontSeto.ttf") format("truetype");
+}
+@font-face {
+    font-family: "HappyZcool";
+    src: url("HappyZcool.ttf") format("truetype");
+}
 body.tutotile {
     background-image: url("tutotile.png");
     background-repeat: repeat;
@@ -10,7 +18,7 @@ body.tutotile {
 .curstr {
     background-color: #336;
     color: #AAC;
-    font-family: "godoMaum", "Consolas", "Courier New", monospace, sans-serif, serif;
+    font-family: "godoMaum", "16FontSeto", "HappyZcool", "Consolas", "Courier New", monospace, sans-serif, serif;
     text-shadow: 0.1em 0.1em 0em #000A;
 }
 .curstr a {
