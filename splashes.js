@@ -115,11 +115,11 @@ const splashes = [
     "Next curse: ...",
     "Current level: <a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/string/a.html#D_is_isinstance\">\"11-X\"(\"XT-X\"(PA-X))</a>",
     "Next level: XT-6",
-    "<a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/string/index.html#None\">None</a> = λx.x",
+    "<a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/index.html#None\">None</a> = λx.x",
 
     // ADOFAI Cursed Mathematical Models
-    "<a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/string/index.html#General.Formats.Functional\">Function composition</a>!",
-    "<a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/string/index.html#General.Mechanisms.RevertedCurses\">Inverse function</a>!",
+    "<a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/index.html#Functional\">Function composition</a>!",
+    "<a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/index.html#Revert\">Inverse function</a>!",
     "Matrix!",
     "Lambda calculus!",
 
