@@ -30,7 +30,8 @@ iframe {
 }
 aside {
     width: 20%;
-    height: 100%;
+    min-height: 100vh;
+    margin: 0%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -38,9 +39,9 @@ aside {
 }
 nav {
     top: 0%;
+    margin: 0%;
     padding: 0em 2em;
     background-color: #BED;
-    flex-grow: 1;
 }
 nav dl {
     padding: 0em 1em;
@@ -51,11 +52,13 @@ nav>dl {
 aside>div {
     position: sticky;
     bottom: 0%;
+    margin: 0%;
     padding: 1em 2em;
     background-color: #FFF;
 }
 div.right {
     width: 80%;
+    margin: 0%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -64,7 +67,7 @@ div.right {
 header {
     position: relative;
     top: 0%;
-    margin-bottom: 0%;
+    margin: 0%;
     width: 100%;
     padding: 0em 2em;
     overflow: auto;
@@ -72,14 +75,13 @@ header {
 }
 div.content {
     padding: 1em 2em;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin: 0%;
     width: 100%;
     background-color: #FFF;
 }
 footer {
     position: sticky;
-    margin-top: 0%;
+    margin: 0%;
     bottom: 0%;
     width: 100%;
     padding: 1em 2em;
