@@ -111,7 +111,7 @@
 -but midspins turns into turnarounds-
 
 ### T4-EX - Third Sun 
--but the charter broke the DLC when making the level-
+-but the charter broke the DLC when making level-
 
 ## Curse Affected Levels
 
