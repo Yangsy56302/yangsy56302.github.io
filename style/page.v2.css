@@ -43,10 +43,10 @@ nav {
     padding: 0em 2em;
     background-color: #BED;
 }
-nav dl {
+nav ol, nav ul, nav dl, nav dd {
     padding: 0em 1em;
 }
-nav>dl {
+nav>ol, nav>ul, nav>dl, nav>dd {
     padding: 0em 0em;
 }
 aside>div {
