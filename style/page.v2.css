@@ -46,9 +46,6 @@ nav {
 nav ol, nav ul, nav dl, nav dd {
     padding: 0em 1em;
 }
-nav>ol, nav>ul, nav>dl, nav>dd {
-    padding: 0em 0em;
-}
 aside>div {
     position: sticky;
     bottom: 0%;
