@@ -9,17 +9,17 @@ body {
     color: #000;
 }
 div, section, article {
-    margin: 0em 0em 1em 0em;
+    margin: 0.5em 0em 0.5em 0em;
     padding: 0em 2em 0em 2em;
 }
 .bar {
-    margin: 0em 0em 1em 0em;
+    margin: 0.5em 0em 0.5em 0em;
     padding: 0.5em 0.5em 0.5em 0.5em;
     border-left: 0.25em solid #C8F;
     background-color: #C8F4;
 }
 .baz {
-    margin: 0em 0em 1em 0em;
+    margin: 0.5em 0em 0.5em 0em;
     padding: 0.5em 0.5em 0.5em 0.5em;
     border: 0.25em solid #84F;
     background-color: #84F4;
