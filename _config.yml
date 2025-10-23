@@ -1,5 +1,7 @@
 markdown: GFM
-theme: jekyll-theme-primer
+remote_theme: pages-themes/primer@v0.6.0
+plugins:
+- jekyll-remote-theme
 
 title: Markdown Formatted Page
 description: Yangsy56302's pages on Github
