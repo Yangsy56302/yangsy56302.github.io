@@ -80,14 +80,6 @@ i do love 2swap's videos btw :3
 
 ---
 
-[**I think i have an idea for showing which `XS-X` crab curse is happening  
-put a pink heart on if it's from grafrustix  
-put a green diamond on if it's from TQG  
-or in curstr notation, it could look like `XS-X?(♡)` and `XS-X?(♢)`  
-Kind of like the suits in a deck of cards**](https://www.youtube.com/watch?v=sh8vYN2t-p4&lc=UgysLcuqfVwyfzEYLhJ4AaABAg)
-
----
-
 [**How should `"T3-E1"("T3-E7")` work?**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgyU7fcNdlLE_LYhW-N4AaABAg)
 
 hide half of the chart  
@@ -241,8 +233,8 @@ idk
 ---
 
 [**I think I have figured out how curse `XF-X?` works  
-before: θ₁, θ₂, θ₃, θ₄, θ₅, … θₙ₋₁, θₙ  
-after: θ₁+30°, θ₂-60°, θ₃+60°, θ₄-60°, θ₅+60°, … θₙ₋₁∓60°, θₙ±60°**](https://www.youtube.com/watch?v=YGQjXTU421c&lc=Ugxbfab3ghWi_cW82mN4AaABAg)
+before: `θ₁, θ₂, θ₃, θ₄, θ₅, … θₙ₋₁, θₙ`  
+after: `θ₁+30°, θ₂-60°, θ₃+60°, θ₄-60°, θ₅+60°, … θₙ₋₁∓60°, θₙ±60°`**](https://www.youtube.com/watch?v=YGQjXTU421c&lc=Ugxbfab3ghWi_cW82mN4AaABAg)
 
 ---
 
@@ -312,6 +304,12 @@ should note that which unofficial crab is applying there
 **how about this?**  
 **`XS-X?♡` removes tempo changes**  
 **`XS-X?♢` twists the shapes**
+
+[**I think i have an idea for showing which `XS-X` crab curse is happening  
+put a pink heart on if it's from grafrustix  
+put a green diamond on if it's from TQG  
+or in curstr notation, it could look like `XS-X?(♡)` and `XS-X?(♢)`  
+Kind of like the suits in a deck of cards**](https://www.youtube.com/watch?v=sh8vYN2t-p4&lc=UgysLcuqfVwyfzEYLhJ4AaABAg)
 
 ---
 
