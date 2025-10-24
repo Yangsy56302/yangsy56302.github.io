@@ -23,7 +23,7 @@ if the midspin itself is a multitap, locate the midspin to the tile right after 
 **(⚪)⚫🤍⚫ → ⚪🤍🤍⚫**  
 **?**
 
-[..., 180, 90, (999), 90, 180, ...] -> [..., 180, 90, 999, 45, 999, 45, 180, ...]
+[..., 180, 90, (999), 90, 180, ...] -&gt; [..., 180, 90, 999, 45, 999, 45, 180, ...]
 
 ---
 
@@ -200,7 +200,7 @@ sadly no, are you trying to find `"XM-X"`?
 
 uh that definition wasn't meant to works everywhere -- some of the angle-related curse would ignore those edge cases  
 `"10-X"` is a example, which follows the original design for turnarounds and midspins of adofai  
-treats `"10-X"` as a conditional `5-X?` with angles >180° might works  
+treats `"10-X"` as a conditional `5-X?` with angles &gt;180° might works  
 
 ---
 
@@ -339,8 +339,8 @@ welp it's too late
 
 [**What does `T3-E2` mean by "one"?**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgwSBOUVk-kACgPbLGF4AaABAg)
 
-1st one -> Holds  
-2nd one -> midspins
+1st one -&gt; Holds  
+2nd one -&gt; midspins
 
 ---
 
@@ -590,7 +590,7 @@ either from workshop file or curse maker themselves
 [**I have encountered an issue while making the first level in my own curse series  
 I can't seem to find the thing that can make the song start before the level starts**](https://www.youtube.com/watch?v=GYsEEckDIe4&lc=UgzOkQTbTmAtNuskAkN4AaABAg)
 
-menu at left side > Song Settings (1st) > Offset (4th, milliseconds, usually a positive number of 3~5 digits)
+menu at left side &gt; Song Settings (1st) &gt; Offset (4th, milliseconds, usually a positive number of 3~5 digits)
 
 ---
 
@@ -649,4 +649,171 @@ because if you have a 4 planet section, applying `"XN-X"` would turn into 3 plan
 
 ---
 
-(Work In Progress)
+[**0:45 why isn't that straight tile affected**](https://www.youtube.com/watch?v=nMe1uoJcC8w&lc=Ugxc8pQzQuhpsceIMZZ4AaABAg)
+
+another bug :(
+
+---
+
+[**When the `T2-X` curse is active, what happens when there are enough cold midspins to bring the speed down to `0.0×`?**](https://www.youtube.com/watch?v=VPG4GkiW9Rs&lc=UgyX0Okf20eetMo5SDR4AaABAg)
+
+undefined behavior
+
+---
+
+[**1:01 i thought that the `12-X` curse swaps acute and obtuse angles**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=UgxI6xMfLxnWcKNFKfp4AaABAg)
+
+OH \*\*\*\* that's a dumb mistake
+
+**1:09 also these 135° tiles aren't being affected by the `12-X` curse, although it's affecting the `XR-X` curse's triangle**
+
+---
+
+[**What does "∆curse" mean?**](https://www.youtube.com/watch?v=nMe1uoJcC8w&lc=UgzuQfhCd2yf6RKXS4x4AaABAg)
+
+the changes of the curses
+
+---
+
+[**Does the following combination of curses act in a similar way to `"5-X"` ?
+`7-X?` + `5-X?` + `XC-X*`**](https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzAxlwSW1tzzKcj0nN4AaABAg)
+
+good idea & question, unfortunately the BPM changes doesn't match :(
+
+---
+
+[**Can this curse change curses that aren't from curstr?**](https://www.youtube.com/watch?v=riC7nUC-vVo&lc=Ugzh_1NAM6t-UgDrOsh4AaABAg)
+
+Yes, the valid able2use range of `"T5-X"` should be similar to reverted curses  
+and here's another way to describe `"T5-X"('old', 'new', curse)` without mentioning `"T5-X"` is a string curse because why not: `curse.replace('old', 'new')`
+
+---
+
+[**If the new `"T4EX-X"` curse is active, what happens to midspins that are on U-turns?**](https://www.youtube.com/watch?v=1HDO1dS4HlI&lc=Ugw_cjlDwVlV2JfWGKV4AaABAg)
+
+hmmmm... i think they should remain unchanged :/
+
+wait they should be changed like 5-X crab, sorry
+
+---
+
+[**What does that XC-X mine curse do?**](https://www.youtube.com/watch?v=1HDO1dS4HlI&lc=UgyoOex1sdlZLN_vz5t4AaABAg)
+
+rabbits &lt;-&gt; snails
+
+---
+
+[**2:07 ?  
+That's confusing  
+If there's a space on that `⚪⚪⚫⚪⚪⚪`, why isn't there a very long space between the gem tiles and the red tiles?**](https://www.youtube.com/watch?v=QA9aEeIcU28&lc=UgyE7ZlEhiyoQaOfzIB4AaABAg)
+
+wait that part does have a bug, the 270° angle shouldn't exist :0
+
+---
+
+[**3:41 uhhhh?????????????**](https://www.youtube.com/watch?v=QA9aEeIcU28&lc=Ugy7WwiDmFQFv9-gsmZ4AaABAg)
+
+YES I WAS STACKING CURSES
+
+---
+
+[**I have a silly idea for the “Drifting floors!!!” section:  
+`10-X crab + 3-X miss qing + 3-X blocurse`**](https://www.youtube.com/post/Ugkxnh4nC0UNpclqfPi31Da7er_HuLGXy-53?lc=UgyWUZlOpdB5tk9-mrZ4AaABAg)
+
+you are.. really late this time, and the chart of `T3-X` is already completed :(  
+(also i don't think their swing effect can stack on each other, sorry for that)
+
+---
+
+[**So,  
+`❤️` Makes 3 planet  
+`💛` Alternates between 2 planet and 3 planet  
+`💙` Makes 2 planet**](https://www.youtube.com/watch?v=1HDO1dS4HlI&lc=UgzyOmzRGhIw3Mth7xt4AaABAg)
+
+yes :)
+
+---
+
+[**8:57  
+Accidental 2-x curse?**](https://www.youtube.com/watch?v=RIeEAcHjtWg&lc=UgxTkpDRuEOnbljVe_h4AaABAg)
+
+uhhh yes
+
+---
+
+[**Where do you get the audio for these cursed levels?**](https://www.youtube.com/watch?v=HwLlBm7Zt18&lc=UgyiQpLn5PYvMePkIpJ4AaABAg)
+
+https://github.com/K0lb3/UnityPy  
+this python module
+
+---
+
+[**So the bpm is set to half the base bpm when you make it to a non-reflex tile, and goes back to normal when you get to a reflex tile?**](https://www.youtube.com/watch?v=nwCKsUX8rUM&lc=UgzgP64FglxizVELZgZ4AaABAg)
+
+yes, or another method:  
+the bpm is set to double the base bpm when you make it to a reflex tile, and goes back to normal when you get to a non-reflex tile
+
+---
+
+[**There is a strange issue i'm having while trying to play this  
+Every time it tries to go to the next level when I finish one, the game freezes as soon as I try to start the next tutorial and I have to close the game, open it again, and manually go to the next tutorial by going into the level and then into the next tutorial via pause menu**](https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=Ugyg2VdmWals-l888s94AaABAg)
+
+woah
+
+what the hell  
+i have no clue why this happened, sorry for that :(
+
+---
+
+[**‽**](https://www.youtube.com/post/UgkxhqZsBR_1F6woawwiqIcsq9MAp_z-wy_0?lc=Ugx_nlD1KOS5gl5HiSx4AaABAg)
+
+⸘
+
+---
+
+[**Why is nobody else commenting when this is your most viewed video?**](https://www.youtube.com/watch?v=4VohGTx1uzA&lc=UgzUS5KwejCBAuX40Xl4AaABAg)
+
+I almost forgot that I posted this video here :/
+
+---
+
+[**Does `6-X`'s curse have the rhythm of two planets traversing a path built for four planets?**]()
+
+wtf is a 4th planet o.o
+
+by default it wouldn't
+
+[**Couldn't reply to your second reply on my previous comment for some reason  
+If you want to know what four planet gameplay is, Play the custom level `KAERRA - OCTAGON`  
+Or maybe the one that uses the `B-X` music but minecraft noteblocks**](https://www.youtube.com/watch?v=lrBwA4wsXsY&lc=UgwqtCdEEymhL2U6P894AaABAg)
+
+oh i saw them before, i guess it is
+
+---
+
+[**1:57 `baba eye s you`?**](https://www.youtube.com/watch?v=ByynxER7ukA&lc=Ugy-Um-beXg3Xpx0P2B4AaABAg)
+
+> I'm tired of imitating assets by myself, so I used this sprite of the eye from Baba Is You
+
+-- subtitle by me (uhhh i mean Yangsy0xDBEE, not someone named `me`)
+
+---
+
+[**By mistake, I got `divide by infinity` instead of `tier 9V init on dev`  
+Why aren't these levels on the Steam workshop**](https://www.youtube.com/watch?v=RIeEAcHjtWg&lc=Ugzqs4Uodn8h0bIXvSl4AaABAg)
+
+I no longer upload files on Steam Workshop since my `XH` curse was warned by Steam
+
+---
+
+[**I have decided I will turn this level's chart into a google document instead of a comment  
+I will post it here once I have finished it.  
+Why do I love doing useless challenges**](https://www.youtube.com/watch?v=9RPKPLqcLbs&lc=Ugz2aDJNu-CBSTqRYI14AaABAg)
+
+yangsy56302@gmail.com
+
+looking forward to your document o(^u^ )o
+
+---
+
+~~(Work In Progress)~~ `IT IS DONE`
