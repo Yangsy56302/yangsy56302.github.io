@@ -175,14 +175,14 @@ maybe this below?
 
 ---
 
-[**10:45 Why does the yellow midspin sound like an ice tile?**](https://www.youtube.com/watch?v=ycYemC-VF8Y&lc=UgxdM6bkqr3VEcBUiSp4AaABAg)
+[**10:45 Why does the yellow midspin sound like an ice tile?**](https://www.youtube.com/watch?v=ycYemC-VF8Y&lc=UgxdM6bkqr3VEcBUiSp4AaABAg&t=645s)
 
 that was a mistake  
 won't fix because can't upload to steam workshop
 
 ---
 
-[**9:19 Is it just me or are the colors on the holds moving a little faster than normal?**](https://www.youtube.com/watch?v=ycYemC-VF8Y&lc=UgykDVyiz86vvfC26kx4AaABAg)
+[**9:19 Is it just me or are the colors on the holds moving a little faster than normal?**](https://www.youtube.com/watch?v=ycYemC-VF8Y&lc=UgykDVyiz86vvfC26kx4AaABAg&t=559s)
 
 was recorded at higher speed because my old laptop was very laggy
 
@@ -320,7 +320,7 @@ Kind of like the suits in a deck of cards**](https://www.youtube.com/watch?v=sh8
 [**5:00 do I see a cross on that mine?  
 I may be wrong, but I think that's supposed to be `1-EX*`, which I think is supposed to turn 90° tiles and 270° tiles into multitap turnarounds, but I don't see any multitaps.  
 Also, it says `1-X*` in the bottom instead of `1-EX*`  
-I think you used the wrong image**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgzIHDqSdVGesXFselB4AaABAg)
+I think you used the wrong image**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgzIHDqSdVGesXFselB4AaABAg&t=300s)
 
 it's hotfix time
 
@@ -344,7 +344,7 @@ welp it's too late
 
 ---
 
-[**6:46 did you forget an "E"?**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgyIdbjyx0HfDRM1XGN4AaABAg)
+[**6:46 did you forget an "E"?**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgyIdbjyx0HfDRM1XGN4AaABAg&t=406s)
 
 OH
 
@@ -391,7 +391,7 @@ i thought it's obivious but it seems it's not :(
 
 ---
 
-[**5:55 what does `#FFF600` do??**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgzBm2x0dho6qD-meeN4AaABAg)
+[**5:55 what does `#FFF600` do??**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgzBm2x0dho6qD-meeN4AaABAg&t=355s)
 
 remove segments that's too fast / too slow  
 (i'm not sure where exactly are the boundaries, so i decided to remove the parts which would display the rabbit / snail icons)
@@ -401,7 +401,7 @@ also that curse isn't level bounded, strongly recommend that to use a similar me
 ---
 
 [**5:24 what does `○` mean  
-oh i see**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgxmwHjorj96YUleKsp4AaABAg)
+oh i see**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgxmwHjorj96YUleKsp4AaABAg&t=324s)
 
 ---
 
@@ -416,7 +416,7 @@ oh right, it says so in the title**](https://www.youtube.com/watch?v=n-SS0MDip4Y
 
 ---
 
-[**4:44 whatt**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgxylnTbNCP33it33CB4AaABAg)
+[**4:44 whatt**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgxylnTbNCP33it33CB4AaABAg&t=284s)
 
 stacking curses at ABS!! the 2nd time :3
 
@@ -462,7 +462,7 @@ YES but it's hard to make the chart :(
 
 ---
 
-[**2:00 - 2:16 has speeds that are similar to the speeds in "No distance", Is that a coincidence?**](https://www.youtube.com/watch?v=xK8Mkp1apdg&lc=Ugz3R9m_oP-iR98qnBJ4AaABAg)
+[**2:00 - 2:16 has speeds that are similar to the speeds in "No distance", Is that a coincidence?**](https://www.youtube.com/watch?v=xK8Mkp1apdg&lc=Ugz3R9m_oP-iR98qnBJ4AaABAg&t=120s)
 
 ---
 
@@ -493,14 +493,14 @@ i just ignored them :/
 
 ---
 
-[**1:35 where's the yellow gem tile**](https://www.youtube.com/watch?v=QA9aEeIcU28&lc=UgyKydu2T4nWma_1WwF4AaABAg)
+[**1:35 where's the yellow gem tile**](https://www.youtube.com/watch?v=QA9aEeIcU28&lc=UgyKydu2T4nWma_1WwF4AaABAg&t=95s)
 
 OH MY (since i don't believe in god, uhhhh, MONIKA???) YOU'RE RIGHT :O  
 the set obj event still exists but the decoration was gone somehow, that's weird :/
 
 ---
 
-[**3:07 "Information not alone is memeless, you see?"**](https://www.youtube.com/watch?v=QqVs1dQ795o&lc=UgxzJsY4_lg1bJheRY54AaABAg)
+[**3:07 "Information not alone is memeless, you see?"**](https://www.youtube.com/watch?v=QqVs1dQ795o&lc=UgxzJsY4_lg1bJheRY54AaABAg&t=187s)
 
 * Information not alone is memes we need.
 
@@ -547,7 +547,7 @@ no
 ---
 
 [**21:20  
-why isn't the `"T2-X"` curse changing the speed**](https://www.youtube.com/watch?v=VPG4GkiW9Rs&lc=Ugz2RrVKxvNl77SvrV14AaABAg)
+why isn't the `"T2-X"` curse changing the speed**](https://www.youtube.com/watch?v=VPG4GkiW9Rs&lc=Ugz2RrVKxvNl77SvrV14AaABAg&t=1280s)
 
 the old setting of `"T2-X"` allows that it only changes the midspin color. i know it's a bad design so i never do that after i start to remake curstr levels, also that's 1 of the reason why i abandoned this version of `T3-X` string cursed level :(  
 and if i must use the current definitions for `"T2-X"` effect to explain this... the speed did changed by 0 ??? :/
@@ -566,8 +566,10 @@ Does the twirl get moved to the tile before? Does the twirl not get moved? Does 
 
 ---
 
+[**1:41 Why aren't the pairs of straight tiles affected?**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=UgxltPac6ETIDwk-ZPp4AaABAg&t=101s)
+
 [**1:41  
-why aren't some of the straight tiles being affected by curse `"ML+X"`?**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=UgzLnTFW5c6MMxy32gx4AaABAg)
+why aren't some of the straight tiles being affected by curse `"ML+X"`?**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=UgzLnTFW5c6MMxy32gx4AaABAg&t=101s)
 
 i chose the same shape of track as the uncursed in some segments.  
 this **technically** still met the conditions since `"ML-X"` wouldn't make **visible** changes in track shape on segments that's already equalized :3
@@ -600,10 +602,6 @@ menu at left side &gt; Song Settings (1st) &gt; Offset (4th, milliseconds, usual
 
 ---
 
-[**1:41 Why aren't the pairs of straight tiles affected?**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=UgxltPac6ETIDwk-ZPp4AaABAg)
-
----
-
 [**???**](https://www.youtube.com/watch?v=YGQjXTU421c&lc=UgyOe614Z8wc-TvfyTB4AaABAg)
 
 [**SUBTRACTING CURSES??????**](https://www.youtube.com/watch?v=YGQjXTU421c&lc=UgyekoBoOoieZku5Tax4AaABAg)
@@ -630,7 +628,7 @@ it does not matter
 
 ---
 
-[**0:48 accidental `T4EX-X` curse?**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=Ugznj9l7SQ0eW0whjpN4AaABAg)
+[**0:48 accidental `T4EX-X` curse?**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=Ugznj9l7SQ0eW0whjpN4AaABAg&t=48s)
 
 what does "accidental" actually mean, is it that i forgot to add `T4-EX`, or the curse combo made a result that looks like `T4-EX`'s result? i don't quite understand that, sorry :/
 
@@ -649,7 +647,7 @@ because if you have a 4 planet section, applying `"XN-X"` would turn into 3 plan
 
 ---
 
-[**0:45 why isn't that straight tile affected**](https://www.youtube.com/watch?v=nMe1uoJcC8w&lc=Ugxc8pQzQuhpsceIMZZ4AaABAg)
+[**0:45 why isn't that straight tile affected**](https://www.youtube.com/watch?v=nMe1uoJcC8w&lc=Ugxc8pQzQuhpsceIMZZ4AaABAg&t=45s)
 
 another bug :(
 
@@ -661,7 +659,7 @@ undefined behavior
 
 ---
 
-[**1:01 i thought that the `12-X` curse swaps acute and obtuse angles**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=UgxI6xMfLxnWcKNFKfp4AaABAg)
+[**1:01 i thought that the `12-X` curse swaps acute and obtuse angles**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=UgxI6xMfLxnWcKNFKfp4AaABAg&t=61s)
 
 OH \*\*\*\* that's a dumb mistake
 
@@ -705,13 +703,13 @@ rabbits &lt;-&gt; snails
 
 [**2:07 ?  
 That's confusing  
-If there's a space on that `⚪⚪⚫⚪⚪⚪`, why isn't there a very long space between the gem tiles and the red tiles?**](https://www.youtube.com/watch?v=QA9aEeIcU28&lc=UgyE7ZlEhiyoQaOfzIB4AaABAg)
+If there's a space on that `⚪⚪⚫⚪⚪⚪`, why isn't there a very long space between the gem tiles and the red tiles?**](https://www.youtube.com/watch?v=QA9aEeIcU28&lc=UgyE7ZlEhiyoQaOfzIB4AaABAg&t=127s)
 
 wait that part does have a bug, the 270° angle shouldn't exist :0
 
 ---
 
-[**3:41 uhhhh?????????????**](https://www.youtube.com/watch?v=QA9aEeIcU28&lc=Ugy7WwiDmFQFv9-gsmZ4AaABAg)
+[**3:41 uhhhh?????????????**](https://www.youtube.com/watch?v=QA9aEeIcU28&lc=Ugy7WwiDmFQFv9-gsmZ4AaABAg&t=221s)
 
 YES I WAS STACKING CURSES
 
@@ -735,7 +733,7 @@ yes :)
 ---
 
 [**8:57  
-Accidental 2-x curse?**](https://www.youtube.com/watch?v=RIeEAcHjtWg&lc=UgxTkpDRuEOnbljVe_h4AaABAg)
+Accidental 2-x curse?**](https://www.youtube.com/watch?v=RIeEAcHjtWg&lc=UgxTkpDRuEOnbljVe_h4AaABAg&t=537s)
 
 uhhh yes
 
@@ -791,7 +789,7 @@ oh i saw them before, i guess it is
 
 ---
 
-[**1:57 `baba eye s you`?**](https://www.youtube.com/watch?v=ByynxER7ukA&lc=Ugy-Um-beXg3Xpx0P2B4AaABAg)
+[**1:57 `baba eye s you`?**](https://www.youtube.com/watch?v=ByynxER7ukA&lc=Ugy-Um-beXg3Xpx0P2B4AaABAg&t=117s)
 
 > I'm tired of imitating assets by myself, so I used this sprite of the eye from Baba Is You
 
