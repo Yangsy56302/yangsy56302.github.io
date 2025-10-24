@@ -75,12 +75,12 @@ if using `curse2(curse1(level))`, no; use `curse ^ -1` instead
 [**what if we made a graph out of a level and these curses?  
 This idea is inspired by 2swap's video about making graphs of states of a puzzle about sliding blocks**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgwpptRiCieACge4v_h4AaABAg)
 
-not sure
+not sure  
 i do love 2swap's videos btw :3
 
 ---
 
-[**I think i have an idea for showing which XS-X crab curse is happening  
+[**I think i have an idea for showing which `XS-X` crab curse is happening  
 put a pink heart on if it's from grafrustix  
 put a green diamond on if it's from TQG  
 or in curstr notation, it could look like `XS-X?(♡)` and `XS-X?(♢)`  
@@ -240,13 +240,13 @@ idk
 
 ---
 
-[**I think I have figured out how curse XF-X? works  
+[**I think I have figured out how curse `XF-X?` works  
 before: θ₁, θ₂, θ₃, θ₄, θ₅, … θₙ₋₁, θₙ  
 after: θ₁+30°, θ₂-60°, θ₃+60°, θ₄-60°, θ₅+60°, … θₙ₋₁∓60°, θₙ±60°**](https://www.youtube.com/watch?v=YGQjXTU421c&lc=Ugxbfab3ghWi_cW82mN4AaABAg)
 
 ---
 
-[**What can 12-X? consider a loop?**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgxR7Enl4eFNPb2e7c14AaABAg)
+[**What can `12-X?` consider a loop?**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgxR7Enl4eFNPb2e7c14AaABAg)
 
 not sure, maybe for tiles that their line forms closed shapes (and some extra tiles somehow)
 
@@ -261,15 +261,15 @@ good idea :)
 ---
 
 [**Can you use just any number as the ∆BPM for tempo changing curses?  
-I know that they usually use values that start with the "±" symbol to indicate that it can be positive or negative
+I know that they usually use values that start with the `±` symbol to indicate that it can be positive or negative
 but can you have the ∆BPM be only positive or only negative?  
-like, can `"11-X"` cause ALL twirls to change the tempo by -5 if ∆BPM = -5 instead of ±5 ?**](https://www.youtube.com/watch?v=ycYemC-VF8Y&lc=UgzoRmXCOCm84pfkwdp4AaABAg)
+like, can `"11-X"` cause ALL twirls to change the tempo by -5 if `∆BPM = -5` instead of ±5 ?**](https://www.youtube.com/watch?v=ycYemC-VF8Y&lc=UgzoRmXCOCm84pfkwdp4AaABAg)
 
 ---
 
 [**I wonder how fast a speed changing tile has to be to have a visible icon**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgzL87q0h_pCGDiycp14AaABAg)
 
-maybe 10% ? not sure :/
+maybe `10%` ? not sure :/
 
 ---
 
@@ -310,8 +310,8 @@ the other twists the shapes**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=Ug
 should note that which unofficial crab is applying there
 
 **how about this?**  
-**XS-X?♡ removes tempo changes**  
-**XS-X?♢ twists the shapes**
+**`XS-X?♡` removes tempo changes**  
+**`XS-X?♢` twists the shapes**
 
 ---
 
@@ -366,7 +366,7 @@ Negative (or dash, to remove ambiguity between Inverted curses);
 Fish
 
 **Apparently `-3-X` adds a twirl after every three point turn**  
-**So, which 3-X curse is being inverted?**
+**So, which `3-X` curse is being inverted?**
 
 if a twirl is after a three point turn, it may disappear
 
@@ -389,7 +389,7 @@ i thought it's obivious but it seems it's not :(
 
 [**what math operation is the circle supposed to represent**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgxMmNmH_45M97cwXRx4AaABAg.ALD5qCdgK2iALLOM7XgMbZ)
 
-g∘f(x) = g(f(x))
+`g∘f(x)` = `g(f(x))`
 
 ---
 
@@ -402,7 +402,7 @@ also that curse isn't level bounded, strongly recommend that to use a similar me
 
 ---
 
-[**5:24 what does ○ mean  
+[**5:24 what does `○` mean  
 oh i see**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgxmwHjorj96YUleKsp4AaABAg)
 
 ---
@@ -412,7 +412,7 @@ oh i see**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=Ugzgw59RTCthPXfzsdZ4A
 
 ---
 
-[**does T3-E5 mirror the midspins?  
+[**does `T3-E5` mirror the midspins?  
 ⚪🤍⚫⚫⚪ → ⚪⚫⚫🤍⚪  
 oh right, it says so in the title**](https://www.youtube.com/watch?v=n-SS0MDip4Y&lc=UgzNnoNqsg9h8U6DH3p4AaABAg)
 
@@ -425,7 +425,7 @@ stacking curses at ABS!! the 2nd time :3
 ---
 
 [**When curse `"XR-X"` is active, will it turn 90° tiles into triangles if there is an outside triangle beside the 90° tile?  
-like for example the one in XS-X**](https://www.youtube.com/watch?v=CsKYccn41Nw&lc=UgxhNXXHhkHboeLw_GB4AaABAg)
+like for example the one in `XS-X`**](https://www.youtube.com/watch?v=CsKYccn41Nw&lc=UgxhNXXHhkHboeLw_GB4AaABAg)
 
 the 90° must be a corner of a triangle to avoid `"XR-X"` affection
 
@@ -456,7 +456,7 @@ for a pure answer: `PA-X*`
 
 ---
 
-[**`XN-X` + `XN+X` is powerful  
+[**`XN-X + XN+X` is powerful  
 I am sure it has the possibility of setting the amount of planets to TWENTY**](https://www.youtube.com/watch?v=g69MM7wciEY&lc=UgzpIzVzzagXOKheIDt4AaABAg)
 
 YES but it's hard to make the chart :(
@@ -484,7 +484,7 @@ similar but no, the palette was referenced from imaginary blackhole images (and 
 Could `"XN-X" + <12-X3` give you four planets?  
 Would `"XR-X" + <12-X3` turn 90° tiles into triangles even if those 90° tiles are already beside a triangle?**](https://www.youtube.com/watch?v=erH8yaNOyiU&lc=Ugw8jyLjCb0OxDvhHXd4AaABAg)
 
-1. I'm not sure. that depends on how did 12-X Miss-Qing-curse defined
+1. I'm not sure. that depends on how did `12-X` Miss-Qing-curse defined
 2. probably yes
 
 ---
@@ -504,7 +504,7 @@ the set obj event still exists but the decoration was gone somehow, that's weird
 
 [**3:07 "Information not alone is memeless, you see?"**](https://www.youtube.com/watch?v=QqVs1dQ795o&lc=UgxzJsY4_lg1bJheRY54AaABAg)
 
-*Information not alone is memes we need.
+* Information not alone is memes we need.
 
 ---
 
@@ -515,7 +515,7 @@ here are the questions :**](https://www.youtube.com/watch?v=RZcw15rsVpg&lc=Ugz4j
 3. **Does curse `"MN+X"` have the same effect as curse `"PA-X"`?**
 <!-- -->
 1. No, it's still 3 planets
-2. Yes; Same with -"RJ-X" but backwards
+2. Yes; Same with `-"RJ-X"` but backwards
 3. According to the definition of the inverted curses, Yes
 
 ---
@@ -536,7 +536,7 @@ still put the pauses on every tile as long as the midspin doesn't have in-game b
 
 ---
 
-[**does your RJ-X curse turn triple taps into tiles with two midspins?**](https://www.youtube.com/watch?v=CsKYccn41Nw&lc=UgxsuF7CIvp9mKQmkEl4AaABAg)
+[**does your `RJ-X` curse turn triple taps into tiles with two midspins?**](https://www.youtube.com/watch?v=CsKYccn41Nw&lc=UgxsuF7CIvp9mKQmkEl4AaABAg)
 
 yep
 
@@ -551,7 +551,7 @@ no
 [**21:20  
 why isn't the `"T2-X"` curse changing the speed**](https://www.youtube.com/watch?v=VPG4GkiW9Rs&lc=Ugz2RrVKxvNl77SvrV14AaABAg)
 
-the old setting of `"T2-X"` allows that it only changes the midspin color. i know it's a bad design so i never do that after i start to remake curstr levels, also that's 1 of the reason why i abandoned this version of T3-X string cursed level :(  
+the old setting of `"T2-X"` allows that it only changes the midspin color. i know it's a bad design so i never do that after i start to remake curstr levels, also that's 1 of the reason why i abandoned this version of `T3-X` string cursed level :(  
 and if i must use the current definitions for `"T2-X"` effect to explain this... the speed did changed by 0 ??? :/
 
 also you are really keen, a lot of bugs were found by you, so good job + thank you :D
@@ -624,7 +624,7 @@ What happened to ut**](https://www.youtube.com/watch?v=YGQjXTU421c&lc=UgwFs33hMq
 **Like, I know that ⚪⚫⚫🤍⚫⚫ will turn into (⚪)⚫⚫⚫⚫⚫ but what about ⚪🤍⚫⚫⚫⚫ or ⚪⚫⚫⚫🤍⚫**
 
 it does not matter  
-(although i always put the midspin from RJ-X actually at middle of the tile, it's not necessary; it's just a default behavior)
+(although i always put the midspin from `RJ-X` actually at middle of the tile, it's not necessary; it's just a default behavior)
 
 **Also, what happens if there are multiple midspins on one tile when `RJ+X` is active?**
 
