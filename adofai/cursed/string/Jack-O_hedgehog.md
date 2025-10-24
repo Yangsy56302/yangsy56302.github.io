@@ -1,4 +1,12 @@
-# Q&A between [@Jack-O_hedgehog](https://www.youtube.com/@Jack-O_hedgehog) and Yangsy56302
+---
+markdown: GFM
+title: Q&A between @Jack-O_hedgehog and @Yangsy56302
+remote_theme: pages-themes/primer@v0.6.0
+plugins:
+- jekyll-remote-theme
+---
+
+# Q&A between [@Jack-O_hedgehog](https://www.youtube.com/@Jack-O_hedgehog) and @Yangsy56302
 
 
 [**How should `"1-X"⁻¹` work?**](https://www.youtube.com/watch?v=lrBwA4wsXsY&lc=Ugxby0cdVR6tpTj5Fg14AaABAg)
