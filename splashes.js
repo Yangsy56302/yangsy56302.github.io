@@ -151,7 +151,7 @@ const splashes = [
 ];
 
 function randomSplash() {
-    document.getElementById('splash').innerHTML = splashes[Math.floor(Math.random() * splashes.length)];
+    document.getElementById("splash").innerHTML = splashes[Math.floor(Math.random() * splashes.length)];
 }
-
 randomSplash();
+document.getElementById("randomSplash").addEventListener("click", randomSplash);
