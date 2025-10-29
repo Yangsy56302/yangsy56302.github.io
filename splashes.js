@@ -133,7 +133,7 @@ const splashes = [
     // DDLC x BA
     "Doki Doki Heart Milestone Event!",
     "Rotating, Translating, Rewinding, and Scaling!",
-    "Student('./archives/mil/sem/yuuka.chr').obj.mass = 100 * si.common.kilo",
+    "yuuka.obj.mass = 100 * si.common.kilo",
     
     // BA
     "Vol1.3 sucks!",
