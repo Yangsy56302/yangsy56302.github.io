@@ -607,18 +607,21 @@
                     T5-X的文字魔改效果是个例外：它是从<strong>魔改效果到魔改效果</strong>的映射！<br/>
                     因此，它<strong>无法</strong>直接作用于谱面片段，只能作用在其他<strong>魔改效果</strong>的上方。<br/>
                     更具体一点的话，"T5-X"接受三个……
-                    <section class="baz"> <strong>额外参数：</strong> <dl>
-                        <dt><var>{curse}</var></dt> <dd>将要被更改的魔改效果；</dd>
+                    <section class="baz"> <strong>参数：</strong> <dl>
                         <dt><var>{old}</var></dt> <dd>将要被替换掉的子字符串<em>（通俗点说就是文本片段）</em>；</dd>
                         <dt><var>{new}</var></dt> <dd>将要用于替换的子字符串；</dd>
+                        <dt><var>{curse}</var></dt> <dd>将要被更改的魔改效果。</dd>
                     </dl> </section>
-                    然后返回一个崭新<em>（且临时）</em>的，基于<var>{curse}</var>的魔改效果，
-                    标题中所有的关键词<var>{old}</var>都被替换成了<var>{new}</var>。
+                    并返回一个崭新<em>（且临时）</em>的，基于<var>{curse}</var>的魔改效果，
+                    其但式中所有的关键词<var>{old}</var>都被替换成了<var>{new}</var>。
                     <div class="curstr">
-                        当前魔改："T5-X"<sub>(<a href="#1-X">"1-X"</a>,
-                            "判定限制", "关卡标题")</sub><br/>
+                        当前魔改："T5-X"<sub>(
+                            "判定限制", "关卡标题", 
+                            <a href="#1-X">"1-X"</a>
+                        )</sub><br/>
                         # "1-X" 冰与火之舞，但<em>判定限制</em>是变化之神
                     </div>
+                    返回值的具体效果基于对关键词替换后魔改但式的再分析，且必须与<var>{curse}</var>不同（即使但式相同）。
                 </dd>
             </dl> </section>
             <!-- <article id="NonLevelEffects"> <h2>非关卡效果</h2>

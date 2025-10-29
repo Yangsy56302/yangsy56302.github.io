@@ -623,18 +623,22 @@
                     This one is special: It's a <strong>curse-to-curse</strong> mapping!<br/>
                     As a result, T5-X curstr <strong>cannot</strong> be applied to level sections. It can only be applied to <strong>curses</strong>.<br/>
                     More specifically, T5-X takes 3...
-                    <section class="baz"> <strong>Extra parameters:</strong> <dl>
-                        <dt><var>{curse}</var></dt> <dd>The curse effect that will be modified.</dd>
-                        <dt><var>{old}</var></dt> <dd>The old substring <em>(it basically means <q>text clip</q>)</em> to be replaced.</dd>
-                        <dt><var>{new}</var></dt> <dd>The new substring to be used for replacement.</dd>
+                    <section class="baz"> <strong>Parameters:</strong> <dl>
+                        <dt><var>{old}</var></dt> <dd>The old substring <em>(it basically means <q>text clip</q>)</em> to be replaced; </dd>
+                        <dt><var>{new}</var></dt> <dd>The new substring to be used for replacement; </dd>
+                        <dt><var>{curse}</var></dt> <dd>The curse effect that will be modified. </dd>
                     </dl> </section>
                     and return a new <em>(and temporary)</em> curse effect based on <var>{curse}</var>,
-                    with the curse effect introduction, that all the <var>{old}</var> are replaced to <var>{new}</var>.
+                    with the but statement that all the <var>{old}</var> are replaced to <var>{new}</var>.
                     <div class="curstr">
-                        Current curse: "T5-X"<sub>(<a href="#1-X">"1-X"</a>,
-                            "judgement limits are", "title is")</sub><br/>
+                        Current curse: "T5-X"<sub>(
+                            "judgement limits are", "title is", 
+                            <a href="#1-X">"1-X"</a>
+                        )</sub><br/>
                         # "1-X" A Dance of Fire and Ice but the <em>title is</em> changing
                     </div>
+                    The actual effect of the return value is based on the reanalysis of the keyword-replaced but statement, 
+                    and must be different between <var>{curse}</var> (even when they have the same but statement).
                 </dd>
             </dl> </section>
             <!-- <article id="NonLevelEffects"> <h2>Non-level Effects</h2> <dl>
