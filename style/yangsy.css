@@ -66,13 +66,23 @@ em {
 }
 a {
     color: #448;
-    text-shadow: 0.05em 0.05em 0.1em #AAF;
+    text-shadow: 0.05em 0.05em 0em #AAF;
     font-weight: bold;
     font-size: inherit;
 }
 a:hover {
     color: #AAF;
-    text-shadow: 0.05em 0.05em 0.1em #448;
+    text-shadow: 0.05em 0.05em 0em #448;
+}
+a.light {
+    color: #AAF;
+    text-shadow: 0.05em 0.05em 0em #448;
+    font-weight: bold;
+    font-size: inherit;
+}
+a.light:hover {
+    color: #448;
+    text-shadow: 0.05em 0.05em 0em #AAF;
 }
 del.heimu {
     color: #444;
@@ -87,17 +97,25 @@ abbr{
 }
 code, var {
     font-family: 'Courier New', Courier, 'Consolas', monospace;
-    font-weight: bold;
-    text-shadow: none;
     background-color: #000;
     font-size: inherit;
     padding: 0.125em 0.25em;
 }
+code a, var a {
+    text-shadow: none;
+}
 code {
-    color: #AF5;
+    font-style: normal;
+    color: #AAA;
+}
+code strong {
+    color: #FFF;
 }
 var {
-    color: #5FA;
+    color: #F5A;
+}
+var strong {
+    color: #F8C;
 }
 ul {
     list-style-type: disc;

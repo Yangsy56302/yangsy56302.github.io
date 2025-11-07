@@ -156,11 +156,11 @@
                     <section class="baz"> <strong>Extra parameters:</strong> <dl>
                         <dt><var>{reflex}</var></dt> <dd>
                             A BPM-to-BPM function that would be used on tiles which its angle is &gt;180°.<br/>
-                            <strong>THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</strong>
+                            <strong><del class="huhua" title="whatever :3">THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</del></strong>
                         </dd>
                         <dt><var>{inferior}</var></dt> <dd>
                             A BPM-to-BPM function that would be used on tiles which its angle is &lt;180°.<br/>
-                            <strong>THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</strong>
+                            <strong><del class="huhua" title="whatever :3">THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</del></strong>
                         </dd>
                     </dl> </section>
                 </dd>
@@ -194,11 +194,11 @@
                     <section class="baz"> <strong>Extra parameters:</strong> <dl>
                         <dt><var>{red}</var></dt> <dd>
                             A BPM-to-BPM function that would be used on tiles with red twirl.<br/>
-                            <strong>THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</strong>
+                            <strong><del class="huhua" title="whatever :3">THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</del></strong>
                         </dd>
                         <dt><var>{blue}</var></dt> <dd>
                             A BPM-to-BPM function that would be used on tiles with blue twirl.<br/>
-                            <strong>THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</strong>
+                            <strong><del class="huhua" title="whatever :3">THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</del></strong>
                         </dd>
                     </dl> </section>
                     <em>(twirls can change the speed even if it wasn't displayed)</em>
@@ -406,13 +406,16 @@
                     "T2-X" sing sing <span style="color:#933;">red</span> <span style="color:#339;">indigo</span> but the special midspins can change the speed
                 </dt> <dd>
                     <section class="baz"> <strong>Extra parameters:</strong> <dl>
-                        <dt><var>{fire}</var></dt> <dd>
+                        <dt><var>{fire}</var> <em>(default: <code><a class="light" target="_blank" href="https://docs.python.org/3/glossary.html#term-lambda">lambda</a> f: f + originalBPM * 0.1</code>)</em></dt> <dd>
                             A BPM-to-BPM function that would be used on fire tiles.<br/>
-                            <strong>THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</strong>
+                            <strong><del class="huhua" title="whatever :3">THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</del></strong>
                         </dd>
-                        <dt><var>{ice}</var></dt> <dd>
+                        <dt><var>{ice}</var> <em>(default: <code><a class="light" target="_blank" href="https://docs.python.org/3/glossary.html#term-lambda">lambda</a> f: <a class="light" target="_blank" href="https://docs.python.org/3/library/functions.html#max">max</a>(f - originalBPM * 0.1, originalBPM * 0.1)</code>)</em></dt> <dd>
                             A BPM-to-BPM function that would be used on ice tiles.<br/>
-                            <strong>THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</strong>
+                            <strong><del class="huhua" title="whatever :3">THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</del></strong>
+                        </dd>
+                        <dt><var>{wind}</var> <em>(default: <code><a class="light" target="_blank" href="https://docs.python.org/3/glossary.html#term-lambda">lambda</a> f: f</code>)</em></dt> <dd>
+                            A BPM-to-BPM function that would be used on midspins that's right at the middle.
                         </dd>
                     </dl> </section>
                 </dd>
@@ -458,7 +461,7 @@
                         <dt id="T3EX-1">
                             "T3EX-1" Warm Up!! but the given curse effects are halved
                         </dt> <dd>
-                            <section class="baz"> <strong>Extra parameters:</strong> <dl>
+                            <section class="baz"> <strong>Parameters:</strong> <dl>
                                 <dt><var>{curses}</var></dt> <dd>curse effect(s) to be halved.</dd>
                             </dl> </section>
                             Each curse effect should be halved individually, even for those with <a href="../index.html#*">repeations</a>.<br/>
@@ -470,11 +473,11 @@
                             <section class="baz"> <strong>Extra parameters:</strong> <dl>
                                 <dt><var>{holds}</var></dt> <dd>
                                     A BPM-to-BPM function that would be used when hold starts.<br/>
-                                    <strong>THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</strong>
+                                    <strong><del class="huhua" title="whatever :3">THE OUTPUT MUST BE SMALLER FOR ANY INPUT.</del></strong>
                                 </dd>
                                 <dt><var>{midspins}</var></dt> <dd>
                                     A BPM-to-BPM function that would be used when hitting the midspin tile.<br/>
-                                    <strong>THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</strong>
+                                    <strong><del class="huhua" title="whatever :3">THE OUTPUT MUST BE BIGGER FOR ANY INPUT.</del></strong>
                                 </dd>
                             </dl> </section>
                         </dd>
@@ -538,7 +541,7 @@
                         <dt id="T3EX-13">
                             "T3EX-13" Defend the Castle!! but the title can tell you what's going on here
                         </dt> <dd>
-                            <section class="baz"> <strong>Extra parameters:</strong> <dl>
+                            <section class="baz"> <strong>Parameters:</strong> <dl>
                                 <dt><var>{curse}</var></dt> <dd>The curse effect that will be displayed on the title.</dd>
                             </dl> </section>
                             Append the but statement of <var>{curse}</var> to the current level title, according to the order of priority.
@@ -570,7 +573,7 @@
                         <dt id="T3EX-18">
                             "T3EX-18" Tricky Triangles... Two!! but the 1st numerical value would be incresed by 1
                         </dt> <dd>
-                            <section class="baz"> <strong>Extra parameters:</strong> <dl>
+                            <section class="baz"> <strong>Parameters:</strong> <dl>
                                 <dt><var>{obj}</var></dt> <dd>
                                     The object to be affected.<br/>
                                     If it's a level <em>(or a level section)</em>, both of the world ID and level ID would be considered as numerical values, but not if it's a curse.<br/>

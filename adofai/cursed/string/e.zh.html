@@ -155,11 +155,11 @@
                     <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{reflex}</var></dt> <dd>
                             对于外圈地砖，将要使用的更改BPM函数。
-                            <strong>对于所有输入，该函数的输出必须更大。</strong>
+                            <strong><del class="huhua" title="随便啦 :3">对于所有输入，该函数的输出必须更大。</del></strong>
                         </dd>
                         <dt><var>{inferior}</var></dt> <dd>
                             对于内圈地砖，将要使用的更改BPM函数。
-                            <strong>对于所有输入，该函数的输出必须更小。</strong>
+                            <strong><del class="huhua" title="随便啦 :3">对于所有输入，该函数的输出必须更小。</del></strong>
                         </dd>
                     </dl> </section>
                     此处的<q>外圈</q>与<q>内圈</q>代指&gt;180°与&lt;180°，<strong>并非在与魔改前的方向进行比较。</strong>
@@ -194,11 +194,11 @@
                     <section class="baz"> <strong>额外参数：</strong> <dl>
                         <dt><var>{red}</var></dt> <dd>
                             对于红色旋转，将要使用的更改BPM函数。
-                            <strong>对于所有输入，该函数的输出必须更大。</strong>
+                            <strong><del class="huhua" title="随便啦 :3">对于所有输入，该函数的输出必须更大。</del></strong>
                         </dd>
                         <dt><var>{blue}</var></dt> <dd>
                             对于蓝色旋转，将要使用的更改BPM函数。
-                            <strong>对于所有输入，该函数的输出必须更小。</strong>
+                            <strong><del class="huhua" title="随便啦 :3">对于所有输入，该函数的输出必须更小。</del></strong>
                         </dd>
                     </dl> </section>
                     <em>（旋转即使不显示图标也可以更改速度）</em>
@@ -399,13 +399,16 @@
                     "T2-X" <span style="color:#339;">靛</span><span style="color:#933;">红</span>之歌，但中旋方块可以更改速度
                 </dt> <dd>
                     <section class="baz"> <strong>额外参数：</strong> <dl>
-                        <dt><var>{fire}</var></dt> <dd>
+                        <dt><var>{fire}</var> <em>（默认值：<code><a class="light" target="_blank" href="https://docs.python.org/3/glossary.html#term-lambda">lambda</a> f: f + originalBPM * 0.1</code>）</dt><dd>
                             火中旋上，将要使用的更改BPM函数。
-                            <strong>对于所有输入，该函数的输出必须更大。</strong>
+                            <strong><del class="huhua" title="随便啦 :3">对于所有输入，该函数的输出必须更大。</del></strong>
                         </dd>
-                        <dt><var>{ice}</var></dt> <dd>
+                        <dt><var>{ice}</var> <em>（默认值：<code><a class="light" target="_blank" href="https://docs.python.org/3/glossary.html#term-lambda">lambda</a> f: <a class="light" target="_blank" href="https://docs.python.org/3/library/functions.html#max">max</a>(f - originalBPM * 0.1, originalBPM * 0.1)</code>）</dt><dd>
                             冰中旋上，将要使用的更改BPM函数。
-                            <strong>对于所有输入，该函数的输出必须更小。</strong>
+                            <strong><del class="huhua" title="随便啦 :3">对于所有输入，该函数的输出必须更小。</del></strong>
+                        </dd>
+                        <dt><var>{wind}</var> <em>（默认值：<code><a class="light" target="_blank" href="https://docs.python.org/3/glossary.html#term-lambda">lambda</a> f: f</code>）</dt><dd>
+                            位于正中间的中旋上，将要使用的更改BPM函数。
                         </dd>
                     </dl> </section>
                 </dd>
@@ -442,7 +445,7 @@
                         <dt id="T3EX-1">
                             "T3EX-1" 热身！！，但指定魔改效果打对折
                         </dt> <dd>
-                            <section class="baz"> <strong>额外参数：</strong> <dl>
+                            <section class="baz"> <strong>参数：</strong> <dl>
                                 <dt><var>{curses}</var></dt> <dd>将要被打对折的魔改效果。</dd>
                             </dl> </section>
                             多魔改效果组合应当被分别削弱，包括<a href="index.zh.html#*">重复的魔改效果</a>。<br/>
@@ -454,11 +457,11 @@
                             <section class="baz"> <strong>额外参数：</strong> <dl>
                                 <dt><var>{holds}</var></dt> <dd>
                                     长按开始时，将要使用的更改BPM函数。
-                                    <strong>对于所有输入，该函数的输出必须更小。</strong>
+                                    <strong><del class="huhua" title="随便啦 :3">对于所有输入，该函数的输出必须更小。</del></strong>
                                 </dd>
                                 <dt><var>{midspins}</var></dt> <dd>
                                     触发中旋时，将要使用的更改BPM函数。
-                                    <strong>对于所有输入，该函数的输出必须更大。</strong>
+                                    <strong><del class="huhua" title="随便啦 :3">对于所有输入，该函数的输出必须更大。</del></strong>
                                 </dd>
                             </dl> </section>
                         </dd>
@@ -522,7 +525,7 @@
                         <dt id="T3EX-13">
                             "T3EX-13" 守卫城堡！！，但指定魔改效果必定在关卡标题显示
                         </dt> <dd>
-                            <section class="baz"> <strong>额外参数：</strong> <dl>
+                            <section class="baz"> <strong>参数：</strong> <dl>
                                 <dt><var>{curse}</var></dt> <dd>将会在标题上显示的魔改效果。</dd>
                             </dl> </section>
                             根据生效优先级，将<var>{curse}</var>的描述词附加到当前关卡标题的末尾。
@@ -553,7 +556,7 @@
                         <dt id="T3EX-18">
                             "T3EX-18" 棘手的三角阵……第二季！！，但第一个数+1
                         </dt> <dd>
-                            <section class="baz"> <strong>额外参数：</strong> <dl>
+                            <section class="baz"> <strong>参数：</strong> <dl>
                                 <dt><var>{obj}</var></dt> <dd>
                                     将受到影响的对象。<br/>
                                     对于关卡<em>（或关卡片段）</em>，世界编号和关卡编号均会被作为数值处理，对于魔改而言则不会。<br/>
