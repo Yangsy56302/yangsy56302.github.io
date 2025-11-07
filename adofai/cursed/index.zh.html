@@ -77,12 +77,12 @@
                     <article id="ButStatement"> <h4>但式</h4> <section>
                         对魔改效果的简要描述称为<strong>但式</strong>。<br/>
                         但式通常会写在其所属关卡的标题结尾，例如：
-                        <div class="curstr">
+                        <div class="adofai">
                             <a target="_blank" href="crab/index.zh.html#1-X">1-X?</a> 冰与火之舞<i>但音乐变得很不对劲</i><br/>
                             <a target="_blank" href="crab/index.zh.html#2-X">2-X?</a> 弱拍<i>之略微加长版</i><br/>
                         </div>
                         本站推荐使用以下关卡标题格式：
-                        <div class="curstr">
+                        <div class="adofai">
                             <i>{关卡ID}</i> <i>{关卡标题}</i>，但<i>{魔改效果简述}</i><br/>
                             <i>{level ID}</i> <i>{level title}</i> but <i>{curse effect introduction}</i><br/>
                         </div>
@@ -96,14 +96,14 @@
                 <article id="Formats"> <h3>文本格式</h3>
                     <section>
                         在拥有多个魔改效果的关卡中，可以在屏幕底部添加两行文本装饰作为提示：第一行是正在生效的魔改，第二行则是即将生效的魔改。<br/>
-                        <div class="curstr">当前魔改：<a href="e.zh.html#12-X">"12-X"</a><br/>后继魔改：<a href="e.zh.html#XT-X">"XT-X"</a></div>
+                        <div class="adofai">当前魔改：<a href="e.zh.html#12-X">"12-X"</a><br/>后继魔改：<a href="e.zh.html#XT-X">"XT-X"</a></div>
                         另外，在仅包括某单一系列的魔改效果时，可以使用以下记录方式省略魔改系列标识符：
-                        <div class="curstr">当前文字魔改：<a href="e.zh.html#12-X">12-X</a><br/>后继文字魔改：<a href="e.zh.html#XT-X">XT-X</a></div>
+                        <div class="adofai">当前文字魔改：<a href="e.zh.html#12-X">12-X</a><br/>后继文字魔改：<a href="e.zh.html#XT-X">XT-X</a></div>
                         提示文本不应随着镜头的变化而改变位置或大小，否则将无法起到提示作用。<em>估计短时间内也没人看得懂……</em>
                     </section> <section>
                         魔改效果更换前会进行倒计时（从 3 到 0 ，含两端）：倒计时预计降到 -1 的那一瞬间，就是魔改更换的时刻。<br/>
                         倒计时通常情况下位于<em><del>行尾</del></em>全角冒号之前，被半角括号括起，并仅在左括号之前多出一个半角空格：
-                        <div class="curstr">
+                        <div class="adofai">
                             当前魔改：<a href="e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (3)：<a href="e.zh.html#5-X">"5-X"</a><br/><br/>
                             当前魔改：<a href="e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (2)：<a href="e.zh.html#5-X">"5-X"</a><br/><br/>
                             当前魔改：<a href="e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (1)：<a href="e.zh.html#5-X">"5-X"</a><br/><br/>
@@ -111,8 +111,8 @@
                             当前魔改：<a href="e.zh.html#5-X">"5-X"</a><br/>后继魔改：<a href="e.zh.html#5-X">"2-X"</a>
                         </div>
                     </section> <section>
-                        加号（<code class="curstr">+</code>）用于表示多个魔改效果从左到右依次生效：
-                        <div class="curstr">
+                        加号（<code class="adofai">+</code>）用于表示多个魔改效果从左到右依次生效：
+                        <div class="adofai">
                             当前魔改：<a href="e.zh.html#XR-X">"XR-X"</a> + <a href="e.zh.html#12-X">"12-X"</a><br/>
                             后继魔改：<a href="e.zh.html#12-X">"12-X"</a> + <a href="e.zh.html#XR-X">"XR-X"</a>
                         </div> <br/>
@@ -125,17 +125,17 @@
                     <article id="Keywords"> <h4>关键词</h4>
                         <section>
                             <b><a id="..." target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">…</a></b> 在当前魔改可以理解为<q>请稍候</q>，在后继魔改则可以理解为<q>需要更多信息</q>。
-                            <div class="curstr">当前魔改：…<br/>后继魔改：…</div>
+                            <div class="adofai">当前魔改：…<br/>后继魔改：…</div>
                         </section> <section>
                             <b>空（<a id="None" target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a>）</b>代表<q>无魔改效果</q>。<br/>
                             <b>迭代终止（<a id="StopIteration" target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a>）</b>可以理解为<q>在这一关结束之前，魔改效果不会更换，你现在可以将注意力完全放在谱面上了</q>。
-                            <div class="curstr">当前魔改：空<br/>后继魔改：迭代终止</div>
+                            <div class="adofai">当前魔改：空<br/>后继魔改：迭代终止</div>
                         </section>
                     </article>
                     <article id="Functional"> <h4>函数式表示法</h4>
                         <section>
-                            首先来看<a href="../curstr.html#XS-X">一个例子</a>：
-                            <div class="curstr">
+                            首先来看<a href="../adofai.html#XS-X">一个例子</a>：
+                            <div class="adofai">
                                 当前魔改：<a href="e.zh.html#10-X">"10-X"</a> + <a href="e.zh.html#XS-X">"XS-X"</a><br/>
                                 当前关卡：<a href="e.zh.html#XS-X">"XS-X"</a>( <a href="e.zh.html#10-X">"10-X"</a>( XS-X ) ) 
                             </div><br/>
@@ -145,7 +145,7 @@
                             </ol>
                         </section> <section>
                             函数式表示法中的倒计时同样位于冒号之前：
-                            <div class="curstr">
+                            <div class="adofai">
                                 当前关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (3)：<a href="e.zh.html#B-X">"B-X"</a>( XT-X )<br/><br/>
                                 当前关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (2)：<a href="e.zh.html#B-X">"B-X"</a>( XT-X )<br/><br/>
                                 当前关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (1)：<a href="e.zh.html#B-X">"B-X"</a>( XT-X )<br/><br/>
@@ -156,22 +156,22 @@
                             部分关键词在函数式表示法中也有些许差别：<dl>
                                 <dt><a href="#...">...</a></dt> <dd>
                                     目前仅保留<q>请稍候</q>用途：
-                                    <div class="curstr">后继关卡：...</div>
+                                    <div class="adofai">后继关卡：...</div>
                                 </dd>
                                 <dt><a href="#None">空</a></dt> <dd>
                                     由于未被魔改的片段可以直接使用关卡名称标注而已无用途：
-                                    <div class="curstr">当前关卡：XS-X</div>
+                                    <div class="adofai">当前关卡：XS-X</div>
                                 </dd>
                                 <dt><a href="#StopIteration">迭代终止</a></dt> <dd>
                                     照常。
-                                    <div class="curstr">后继关卡：迭代终止</div>
+                                    <div class="adofai">后继关卡：迭代终止</div>
                                 </dd>
                             </dl>
                         </section> <section>
                             在函数式表示法中，通常使用函数嵌套的方式指定魔改生效顺序：最内侧的魔改效果会首先生效，而最靠左侧的魔改效果会在最后生效。
-                            <div class="curstr">当前关卡：<a href="e.zh.html#12-X">"12-X"</a>( <a href="e.zh.html#XR-X">"XR-X"</a>( XC-X ) )<br/>后继关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( <a href="e.zh.html#12-X">"12-X"</a>( XC-X ) )</div><br/>
-                            如果确实存在组合魔改的需求，则需要使用<a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a>符号（<code class="curstr">∘</code>）：
-                            <div class="curstr">当前关卡：<a href="e.zh.html#12-X">"12-X"</a> ∘ <a href="e.zh.html#XR-X">"XR-X"</a>( XC-X )<br/>后继关卡：<a href="e.zh.html#XR-X">"XR-X"</a> ∘ <a href="e.zh.html#12-X">"12-X"</a>( XC-X )</div>
+                            <div class="adofai">当前关卡：<a href="e.zh.html#12-X">"12-X"</a>( <a href="e.zh.html#XR-X">"XR-X"</a>( XC-X ) )<br/>后继关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( <a href="e.zh.html#12-X">"12-X"</a>( XC-X ) )</div><br/>
+                            如果确实存在组合魔改的需求，则需要使用<a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a>符号（<code class="adofai">∘</code>）：
+                            <div class="adofai">当前关卡：<a href="e.zh.html#12-X">"12-X"</a> ∘ <a href="e.zh.html#XR-X">"XR-X"</a>( XC-X )<br/>后继关卡：<a href="e.zh.html#XR-X">"XR-X"</a> ∘ <a href="e.zh.html#12-X">"12-X"</a>( XC-X )</div>
                         </section>
                     </article>
                 </article>
@@ -181,30 +181,30 @@
                     </section>
                     <section id="_">
                         如果想具体描述多个相同ID的魔改是否为同一实例，请使用下标：
-                        <div class="curstr">
+                        <div class="adofai">
                             当前魔改：<a href="e.zh.html#3-X">"3-X"</a>₁<br/>
                             后继魔改：<a href="e.zh.html#3-X">"3-X"</a>₂
                         </div>
-                        <div class="curstr">
+                        <div class="adofai">
                             当前魔改：<a href="e.zh.html#3-X">"3-X"</a>_1<br/>
                             后继魔改：<a href="e.zh.html#3-X">"3-X"</a>_2
                         </div>
                         <em>（感谢 <a target="_blank" href="https://steamcommunity.com/profiles/76561199480231514">Regularly</a> 提供的表述格式！）</em>
                     </section>
                     <section id="*">
-                        在顺序式表示法中，连续且重复的魔改效果可以使用乘号（<code class="curstr">*</code>）简写。
-                        <div class="curstr">
+                        在顺序式表示法中，连续且重复的魔改效果可以使用乘号（<code class="adofai">*</code>）简写。
+                        <div class="adofai">
                             当前魔改：<a href="e.zh.html#XS-X">"XS-X"</a> + <a href="e.zh.html#XS-X">"XS-X"</a> + <a href="e.zh.html#XS-X">"XS-X"</a><br/>
-                            后继魔改：<a href="e.zh.html#XS-X">"XS-X"</a> <a href="#*"><span class="curstr *">*</span> 3</a>
+                            后继魔改：<a href="e.zh.html#XS-X">"XS-X"</a> <a href="#*"><span class="adofai *">*</span> 3</a>
                         </div>
                         <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em><br/>
                     </section>
                     <section id="^">
                         在函数式表示法中，则可以使用函数的幂运算简写：
-                        <div class="curstr">
+                        <div class="adofai">
                             当前关卡：<a href="e.zh.html#XS-X">"XS-X"</a>( <a href="e.zh.html#XS-X">"XS-X"</a>( <a href="e.zh.html#XS-X">"XS-X"</a>( XS-X ) ) )<br/>
-                            后继关卡：<a href="e.zh.html#XS-X">"XS-X"</a><sup><a href="#^"><span class="curstr ^">3</span></a></sup>( XS-X )<br/>
-                            <em>或者，</em>后继关卡：<a href="e.zh.html#XS-X">"XS-X"</a><a href="#^"> <span class="curstr ^">^</span> 3</a>( XS-X )
+                            后继关卡：<a href="e.zh.html#XS-X">"XS-X"</a><sup><a href="#^"><span class="adofai ^">3</span></a></sup>( XS-X )<br/>
+                            <em>或者，</em>后继关卡：<a href="e.zh.html#XS-X">"XS-X"</a><a href="#^"> <span class="adofai ^">^</span> 3</a>( XS-X )
                         </div>
                     </section> 
                     <article id="Revert"> <h4>逆向魔改</h4>
@@ -217,32 +217,32 @@
                         </section> <section>
                             在顺序式表示法中，
                             <section id="-">
-                                逆向魔改<strong>曾</strong>通过将减号（<code class="curstr">-</code>）改为加号（<code class="curstr">+</code>）来表示。<br/>
+                                逆向魔改<strong>曾</strong>通过将减号（<code class="adofai">-</code>）改为加号（<code class="adofai">+</code>）来表示。<br/>
                                 <strong>该表示法已被弃用，请不要在之后所创作的魔改作品中继续使用。</strong>
-                                <div class="curstr">
-                                    当前魔改：<a href="e.zh.html#8-X">"8<span class="curstr +">+</span>X"</a><br/>
-                                    后继魔改：<a href="e.zh.html#9-X">"9-X"</a> + <a href="e.zh.html#9-X">"9<span class="curstr +">+</span>X"</a>
+                                <div class="adofai">
+                                    当前魔改：<a href="e.zh.html#8-X">"8<span class="adofai +">+</span>X"</a><br/>
+                                    后继魔改：<a href="e.zh.html#9-X">"9-X"</a> + <a href="e.zh.html#9-X">"9<span class="adofai +">+</span>X"</a>
                                 </div>
                                 <em>（文本颜色并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
                             </section> <section>
-                                更通用的逆向魔改表示法为将减号（<code class="curstr">-</code>）置于开头。
-                                <div class="curstr">
-                                    当前魔改：<span class="curstr -">-</span> <a href="e.zh.html#8-X">"8-X"</a><br/>
-                                    后继魔改：<a href="e.zh.html#9-X">"9-X"</a> <span class="curstr -">-</span> <a href="e.zh.html#9-X">"9-X"</a>
+                                更通用的逆向魔改表示法为将减号（<code class="adofai">-</code>）置于开头。
+                                <div class="adofai">
+                                    当前魔改：<span class="adofai -">-</span> <a href="e.zh.html#8-X">"8-X"</a><br/>
+                                    后继魔改：<a href="e.zh.html#9-X">"9-X"</a> <span class="adofai -">-</span> <a href="e.zh.html#9-X">"9-X"</a>
                                 </div>
                             </section> <section>
                                 <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">可以通过正负号来缩写相邻且互逆的魔改。</a>
-                                <div class="curstr">当前魔改：<a href="e.zh.html#XC-X">"XC-X"</a> <span class="curstr +">-</span> <a href="e.zh.html#XC-X">"XC-X"</a><br/>后继魔改：<span class="curstr +-">&plusmn;</span> <a href="e.zh.html#XC-X">"XC-X"</a></div>
-                                <div class="curstr">当前魔改：<span class="curstr +">-</span> <a href="e.zh.html#XC-X">"XC-X"</a> + <a href="e.zh.html#XC-X">"XC-X"</a><br/>后继魔改：<span class="curstr -+">&mnplus;</span> <a href="e.zh.html#XC-X">"XC-X"</a></div>
+                                <div class="adofai">当前魔改：<a href="e.zh.html#XC-X">"XC-X"</a> <span class="adofai +">-</span> <a href="e.zh.html#XC-X">"XC-X"</a><br/>后继魔改：<span class="adofai +-">&plusmn;</span> <a href="e.zh.html#XC-X">"XC-X"</a></div>
+                                <div class="adofai">当前魔改：<span class="adofai +">-</span> <a href="e.zh.html#XC-X">"XC-X"</a> + <a href="e.zh.html#XC-X">"XC-X"</a><br/>后继魔改：<span class="adofai -+">&mnplus;</span> <a href="e.zh.html#XC-X">"XC-X"</a></div>
                                 <em>（<a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">文本颜色</a>并非强制要求，但为了方便读谱还是尽量加上吧……）</em>
                             </section>
                         </section>
                         <section>
                             在函数式表示法中，逆向魔改与重复魔改效果同时通过函数的幂运算进行表示：
-                            <div class="curstr">
-                                当前关卡：<span class="curstr -">-</span><a href="e.zh.html#XS-X">"XS-X"</a>( <span class="curstr -">-</span><a href="e.zh.html#XS-X">"XS-X"</a>( <span class="curstr -">-</span><a href="e.zh.html#XS-X">"XS-X"</a>( XS-X ) ) )<br/>
-                                后继关卡：<a href="e.zh.html#XS-X">"XS-X"</a><sup><span class="curstr ^"><span class="curstr -">-</span>3</span></sup>( XS-X )<br/>
-                                <em>或者，</em>后继关卡：( <span class="curstr -">-</span><a href="e.zh.html#XS-X">"XS-X"</a> )<sup><span class="curstr ^">3</span></sup>( XS-X )<br/>
+                            <div class="adofai">
+                                当前关卡：<span class="adofai -">-</span><a href="e.zh.html#XS-X">"XS-X"</a>( <span class="adofai -">-</span><a href="e.zh.html#XS-X">"XS-X"</a>( <span class="adofai -">-</span><a href="e.zh.html#XS-X">"XS-X"</a>( XS-X ) ) )<br/>
+                                后继关卡：<a href="e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai ^"><span class="adofai -">-</span>3</span></sup>( XS-X )<br/>
+                                <em>或者，</em>后继关卡：( <span class="adofai -">-</span><a href="e.zh.html#XS-X">"XS-X"</a> )<sup><span class="adofai ^">3</span></sup>( XS-X )<br/>
                             </div>
                         </section>
                         <section>

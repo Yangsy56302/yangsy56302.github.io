@@ -15,32 +15,32 @@ body.tutotile {
     background-repeat: repeat;
     background-attachment: fixed;
 }
-.curstr {
+.adofai {
     background-color: #336;
     color: #AAC;
     font-family: "godoMaum", "16FontSeto", "HappyZcool", "Consolas", "Courier New", monospace, sans-serif, serif;
     text-shadow: 0.1em 0.1em 0em #000A;
 }
-.curstr a {
+.adofai a {
     color: #FFF;
     font-weight: inherit;
     text-shadow: inherit;
     text-decoration: none;
 }
-.curstr a:hover {
+.adofai a:hover {
     text-decoration: solid underline;
 }
-.curstr .annotated {
+.adofai .annotated {
     text-decoration: dotted underline;
 }
-div.curstr {
+div.adofai {
     margin: 0.25em 2em 0.25em 2em;
     padding: 1em 1em;
     font-size: 24px;
     text-wrap: nowrap;
     overflow: auto;
 }
-code.curstr {
+code.adofai {
     font-weight: unset;
     font-size: 24px;
 }

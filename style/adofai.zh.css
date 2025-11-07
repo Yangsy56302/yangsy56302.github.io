@@ -6,9 +6,9 @@
     font-family: "HappyZcool";
     src: url("HappyZcool.ttf") format("truetype");
 }
-.curstr {
+.adofai {
     font-family: "16FontSeto", "HappyZcool", "Consolas", "Courier New", "SimHei", "Microsoft YaHei", monospace, sans-serif, serif;
 }
-div.curstr, code.curstr {
+div.adofai, code.adofai {
     font-size: inherit;
 }
