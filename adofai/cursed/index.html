@@ -112,7 +112,9 @@
                         </div>
                     </section> <section>
                         Multiplication signs <code class="adofai">*</code> are used to present that
-                        multiple curses takes effect <strong>in order from right to left</strong>. 
+                        multiple curses takes effect <strong>in order from right to left</strong>. <br/>
+                        The "multiplication" used here is actually 
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">Function composition</a> <code class="adofai">∘</code> . 
                         <section>
                             Here's an example:
                             <div class="adofai">
@@ -126,65 +128,45 @@
                             <br/>
                             but <code class="adofai">"XR-X" * "12-X"</code> will first try to change the angle of every tile, <br/>
                             then add triangles which will not be modified by the angle change process thats already finished. <br/>
-                        </section>
-                        The "multiplication" used here is actually <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">Function composition</a> <code class="adofai">∘</code> . 
-                        <section>
+                        </section> <section>
+                            Nesting curse functions is another way to specify the curse order: 
+                            The innermost function will take effect first, and the leftmost function will take effect last. <br/>
+                            <div class="adofai">
+                                Current level: <a href="e.html#12-X">"12-X"</a>( <a href="e.html#XR-X">"XR-X"</a>( XC-X ) )<br/>
+                                Next level: <a href="e.html#XR-X">"XR-X"</a>( <a href="e.html#12-X">"12-X"</a>( XC-X ) )
+                            </div>
+                            However, abusing nesting would cause a lot of brackets to stack, therefore the hints would be even harder to parse. 
+                        </section> <section>
                             The notation method that uses <strong>plus sign</strong> <code class="adofai">+</code> to represent that multiple curses takes effect in order from left to right <strong>has been deprecated! </strong>
                         </section>
                     </section>
-                    <article id="Keywords"> <h4>Keywords</h4>
-                        <section>
-                            <b><a id="..." target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></b> stands for "please wait" for nexts, and infrequently, "need more info" for currents.
-                            <div class="adofai">Current curse: ...<br/>Next curse: ...</div>
-                        </section> <section>
-                            <b><a id="None" target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></b> literally stands for "no effects".<br/>
-                            <b><a id="StopIteration" target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></b> stands for <q>that was the last curse change, you can take a break now</q>.
-                            <div class="adofai">Current curse: None<br/>Next curse: StopIteration</div>
-                        </section>
-                    </article>
-                    <article id="Functional"> <h4>Functional Formatting Method</h4>
-                        <section>
-                            Let's take a look at <a href="../adofai.html#XS-X">an example</a> first:
+                    <article id="Keywords"> <h4>Keywords</h4> <dl>
+                        <dt><a target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></dt> <dd>
+                            Special curse effect that doesn't do anything actually.
                             <div class="adofai">
-                                Current curse: <a href="e.html#10-X">"10-X"</a> + <a href="e.html#XS-X">"XS-X"</a><br/>
-                                Current level: <a href="e.html#XS-X">"XS-X"</a>( <a href="e.html#10-X">"10-X"</a>( XS-X ) ) 
-                            </div><br/>
-                            Not hard to noticed that, <ol>
-                                <li>This format also includes the level information;</li>
-                                <li>The writing order between these 2 formatting method are opposite.</li>
-                            </ol>
-                        </section> <section>
-                            The countdowns are still located before the colon even in functional formats:
-                            <div class="adofai">
-                                Current level: <a href="e.html#XR-X">"XR-X"</a>( XT-X )<br/>Next level (3): <a href="e.html#B-X">"B-X"</a>( XT-X )<br/><br/>
-                                Current level: <a href="e.html#XR-X">"XR-X"</a>( XT-X )<br/>Next level (2): <a href="e.html#B-X">"B-X"</a>( XT-X )<br/><br/>
-                                Current level: <a href="e.html#XR-X">"XR-X"</a>( XT-X )<br/>Next level (1): <a href="e.html#B-X">"B-X"</a>( XT-X )<br/><br/>
-                                Current level: <a href="e.html#XR-X">"XR-X"</a>( XT-X )<br/>Next level (0): <a href="e.html#B-X">"B-X"</a>( XT-X )<br/><br/>
-                                Current level: <a href="e.html#B-X">"B-X"</a>( XT-X )<br/>Next level: <a href="e.html#PA-X">"PA-X"</a>( <a href="e.html#12-X">"12-X"</a>( XT-X ) )
+                                Current curse: None
                             </div>
-                        </section> <section>
-                            Some keywords are also different here:<dl>
-                                <dt><a href="#...">...</a></dt> <dd>
-                                    Only keeps the <q>please wait</q> usage for now:
-                                    <div class="adofai">Next level: ...</div>
-                                </dd>
-                                <dt><a href="#None">None</a></dt> <dd>
-                                    Unused, since the level with no curses can be simply noted by the ID standalone:
-                                    <div class="adofai">Current level: XS-X</div>
-                                </dd>
-                                <dt><a href="#StopIteration">StopIteration</a></dt> <dd>
-                                    Unchanged.
-                                    <div class="adofai">Next level: StopIteration</div>
-                                </dd>
-                            </dl>
-                        </section> <section>
-                            In functional format, nesting curse functions is the default way to specify the curse order: <br/>
-                            The innermost function will take effect first, and the leftmost function will take effect last. 
-                            <div class="adofai">Current level: <a href="e.html#12-X">"12-X"</a>( <a href="e.html#XR-X">"XR-X"</a>( XC-X ) )<br/>Next level: <a href="e.html#XR-X">"XR-X"</a>( <a href="e.html#12-X">"12-X"</a>( XC-X ) )</div><br/>
-                            And if there's actual needs for combining curses, Composition Operator Sign (<code class="adofai">∘</code>) would be a must:
-                            <div class="adofai">Current level: <a href="e.html#12-X">"12-X"</a> ∘ <a href="e.html#XR-X">"XR-X"</a>( XC-X )<br/>Next level: <a href="e.html#XR-X">"XR-X"</a> ∘ <a href="e.html#12-X">"12-X"</a>( XC-X )</div>
-                        </section>
-                    </article>
+                        </dd>
+                        <dt><a target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></dt> <dd>
+                            Usually lonely appears at Next curse to represent <q>please wait</q>. 
+                            <div class="adofai">
+                                Next curse: ...
+                            </div>
+                            Sometimes could alsos be used as <q>need more info</q>: 
+                            If some part of the curse hint wouldn't change in a while, while the other part changes frequently,
+                            Ellipsis could be used to represent that "other" part which could be noted at somewhere else.
+                            <div class="adofai">
+                                Current curse: <a href="e.zh.html#12-X">"12-X"</a> * <a href="e.zh.html#12-X">"12-X"</a><br/>
+                                Next curse: <a href="e.zh.html#12-X">"12-X"</a> * … * <a href="e.zh.html#12-X">"12-X"</a>
+                            </div>
+                        </dd>
+                        <dt><a target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></dt> <dd>
+                            The curse effect won't change before level ends, so the player can now finally ignore the hint and fully focuses on the chart.
+                            <div class="adofai">
+                                Next curse: StopIteration
+                            </div>
+                        </dd>
+                    </dl> </article>
                 </article>
                 <article id="MetaMechanism"> <h3>Meta Mechanism</h3>
                     <section>

@@ -112,9 +112,10 @@
                             当前魔改：<a href="e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (1)：<a href="e.zh.html#5-X">"5-X"</a><br/><br/>
                             当前魔改：<a href="e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (0)：<a href="e.zh.html#5-X">"5-X"</a><br/><br/>
                             当前魔改：<a href="e.zh.html#5-X">"5-X"</a><br/>后继魔改：<a href="e.zh.html#5-X">"2-X"</a>
-                        </div>
+                        </div><br/>
                     </section> <section>
-                        <strong>乘号</strong> <code class="adofai">*</code> 可用于表示多个魔改效果<strong>以从右到左的顺序</strong>依次生效。
+                        <strong>乘号</strong> <code class="adofai">*</code> 可用于表示多个魔改效果<strong>以从右到左的顺序</strong>依次生效。<br/>
+                        此处所使用的“乘法”的本质是 <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a> <code class="adofai">∘</code> 。
                         <section>
                             此处给出一个示例：
                             <div class="adofai">
@@ -126,64 +127,45 @@
                             <br/>
                             后者首先使用<a href="e.zh.html#12-X">"12-X"</a>互换锐角与钝角，其次使用<a href="e.zh.html#XR-X">"XR-X"</a>为直角添加三角形，<br/>
                             因此<a href="e.zh.html#XR-X">"XR-X"</a>所添加的三角形不会受到<a href="e.zh.html#12-X">"12-X"</a>的影响，仍保持三角形的形态。<br/>
-                        </section>
-                        此处所使用的“乘法”的本质是 <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a> <code class="adofai">∘</code> 。
-                        <section>
+                        </section> <section>
+                            使用函数嵌套的方式也可以指定魔改生效顺序：
+                            最内侧的魔改效果会首先生效，而最靠左侧的魔改效果会在最后生效。
+                            <div class="adofai">
+                                当前关卡：<a href="e.zh.html#12-X">"12-X"</a>( <a href="e.zh.html#XR-X">"XR-X"</a>( XC-X ) )<br/>
+                                后继关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( <a href="e.zh.html#12-X">"12-X"</a>( XC-X ) )
+                            </div>
+                            然而，过度使用函数嵌套会导致大量括号累积，从而使魔改提示更加难以解析。
+                        </section> <section>
                             使用 <strong>加号</strong> <code class="adofai">+</code> 表示魔改效果从左到右依次生效的<strong>顺序式表示法已被弃用！</strong>
                         </section>
                     </section>
-                    <article id="Keywords"> <h4>关键词</h4>
-                        <section>
-                            <b><a id="..." target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">…</a></b> 在当前魔改可以理解为<q>请稍候</q>，在后继魔改则可以理解为<q>需要更多信息</q>。
-                            <div class="adofai">当前魔改：…<br/>后继魔改：…</div>
-                        </section> <section>
-                            <b>空（<a id="None" target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a>）</b>代表<q>无魔改效果</q>。<br/>
-                            <b>迭代终止（<a id="StopIteration" target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a>）</b>可以理解为<q>在这一关结束之前，魔改效果不会更换，你现在可以将注意力完全放在谱面上了</q>。
-                            <div class="adofai">当前魔改：空<br/>后继魔改：迭代终止</div>
-                        </section>
-                    </article>
-                    <article id="Functional"> <h4>函数式表示法</h4>
-                        <section>
-                            首先来看<a href="../adofai.html#XS-X">一个例子</a>：
+                    <article id="Keywords"> <h4>关键词</h4> <dl>
+                        <dt>空 <a target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></dt> <dd>
+                            特殊魔改效果，不造成实质性影响。
                             <div class="adofai">
-                                当前魔改：<a href="e.zh.html#10-X">"10-X"</a> + <a href="e.zh.html#XS-X">"XS-X"</a><br/>
-                                当前关卡：<a href="e.zh.html#XS-X">"XS-X"</a>( <a href="e.zh.html#10-X">"10-X"</a>( XS-X ) ) 
-                            </div><br/>
-                            可以看出，<ol>
-                                <li>该表示法可以同时包括关卡信息；</li>
-                                <li>该表示法中魔改效果的书写顺序与之前所用的表示法相反。</li>
-                            </ol>
-                        </section> <section>
-                            函数式表示法中的倒计时同样位于冒号之前：
-                            <div class="adofai">
-                                当前关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (3)：<a href="e.zh.html#B-X">"B-X"</a>( XT-X )<br/><br/>
-                                当前关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (2)：<a href="e.zh.html#B-X">"B-X"</a>( XT-X )<br/><br/>
-                                当前关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (1)：<a href="e.zh.html#B-X">"B-X"</a>( XT-X )<br/><br/>
-                                当前关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( XT-X )<br/>后继关卡 (0)：<a href="e.zh.html#B-X">"B-X"</a>( XT-X )<br/><br/>
-                                当前关卡：<a href="e.zh.html#B-X">"B-X"</a>( XT-X )<br/>后继关卡：<a href="e.zh.html#PA-X">"PA-X"</a>( <a href="e.zh.html#12-X">"12-X"</a>( XT-X ) )
+                                当前魔改：空
                             </div>
-                        </section> <section>
-                            部分关键词在函数式表示法中也有些许差别：<dl>
-                                <dt><a href="#...">...</a></dt> <dd>
-                                    目前仅保留<q>请稍候</q>用途：
-                                    <div class="adofai">后继关卡：...</div>
-                                </dd>
-                                <dt><a href="#None">空</a></dt> <dd>
-                                    由于未被魔改的片段可以直接使用关卡名称标注而已无用途：
-                                    <div class="adofai">当前关卡：XS-X</div>
-                                </dd>
-                                <dt><a href="#StopIteration">迭代终止</a></dt> <dd>
-                                    照常。
-                                    <div class="adofai">后继关卡：迭代终止</div>
-                                </dd>
-                            </dl>
-                        </section> <section>
-                            在函数式表示法中，通常使用函数嵌套的方式指定魔改生效顺序：最内侧的魔改效果会首先生效，而最靠左侧的魔改效果会在最后生效。
-                            <div class="adofai">当前关卡：<a href="e.zh.html#12-X">"12-X"</a>( <a href="e.zh.html#XR-X">"XR-X"</a>( XC-X ) )<br/>后继关卡：<a href="e.zh.html#XR-X">"XR-X"</a>( <a href="e.zh.html#12-X">"12-X"</a>( XC-X ) )</div><br/>
-                            如果确实存在组合魔改的需求，则需要使用<a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a>符号（<code class="adofai">∘</code>）：
-                            <div class="adofai">当前关卡：<a href="e.zh.html#12-X">"12-X"</a> ∘ <a href="e.zh.html#XR-X">"XR-X"</a>( XC-X )<br/>后继关卡：<a href="e.zh.html#XR-X">"XR-X"</a> ∘ <a href="e.zh.html#12-X">"12-X"</a>( XC-X )</div>
-                        </section>
-                    </article>
+                        </dd>
+                        <dt>省略号 <a target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">…</a></dt> <dd>
+                            通常会单独出现在后继魔改中以用于表达<q>请稍候</q>。
+                            <div class="adofai">
+                                后继魔改：…
+                            </div>
+                            有时也可用作<q>需要更多信息</q>：
+                            当魔改提示的其中一部分长时间保持不变，而另一部分变化频繁时，
+                            省略号可用于代表在其他位置单独列出的变化频繁的那部分魔改。
+                            <div class="adofai">
+                                当前魔改：<a href="e.zh.html#12-X">"12-X"</a> * <a href="e.zh.html#12-X">"12-X"</a><br/>
+                                后继魔改：<a href="e.zh.html#12-X">"12-X"</a> * … * <a href="e.zh.html#12-X">"12-X"</a>
+                            </div>
+                        </dd>
+                        <dt>迭代终止 <a target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></dt> <dd>
+                            在关卡结束之前，魔改效果不会再次更换，玩家现在可以忽略魔改提示，而将注意力完全放在谱面上了。
+                            <div class="adofai">
+                                后继魔改：迭代终止
+                            </div>
+                        </dd>
+                    </dl> </article>
                 </article>
                 <article id="MetaMechanism"> <h3>元机制</h3>
                     <section>
