@@ -91,10 +91,6 @@
                         </div>
                         The actual effect might be different between what the but statement describes. <br/>
                     </section> </article>
-                    <section>
-                        Curse effects is usually regarded as a section-to-section <strong>mapping</strong> here, 
-                        and this is why <a href="#Functional">functional formatting method</a> works.
-                    </section>
                 </article>
                 <article id="Formats"> <h3>Formats</h3>
                     <section>
@@ -115,18 +111,26 @@
                             Current curse: <a href="e.html#5-X">"5-X"</a><br/>Next curse: <a href="e.html#5-X">"2-X"</a>
                         </div>
                     </section> <section>
-                        Plus signs (<code class="adofai">+</code>) are used to present that multiple curses takes effect in order from left to right: 
-                        <div class="adofai">
-                            Current curse: <a href="e.html#XR-X">"XR-X"</a> + <a href="e.html#12-X">"12-X"</a><br/>
-                            Next curse: <a href="e.html#12-X">"12-X"</a> + <a href="e.html#XR-X">"XR-X"</a>
-                        </div> <br/>
-                        <code class="adofai">"XR-X" + "12-X"</code> will first add triangles, <br/>
-                        then try to change the angle of every tile, <br/>
-                        including those tiles that is a part of these new triangle, <br/>
-                        so now these triangles are probably not triangles anymore; <br/>
-                        <br/>
-                        but <code class="adofai">"12-X" + "XR-X"</code> will first try to change the angle of every tile, <br/>
-                        then add triangles which will not be modified by the angle change process thats already finished. <br/>
+                        Multiplication signs <code class="adofai">*</code> are used to present that
+                        multiple curses takes effect <strong>in order from right to left</strong>. 
+                        <section>
+                            Here's an example:
+                            <div class="adofai">
+                                Current curse: <a href="e.html#12-X">"12-X"</a> * <a href="e.html#XR-X">"XR-X"</a><br/>
+                                Next curse: <a href="e.html#XR-X">"XR-X"</a> * <a href="e.html#12-X">"12-X"</a>
+                            </div> <br/>
+                            <code class="adofai">"12-X" * "XR-X"</code> will first add triangles, <br/>
+                            then try to change the angle of every tile, <br/>
+                            including those tiles that is a part of these new triangle, <br/>
+                            so now these triangles are probably not triangles anymore; <br/>
+                            <br/>
+                            but <code class="adofai">"XR-X" * "12-X"</code> will first try to change the angle of every tile, <br/>
+                            then add triangles which will not be modified by the angle change process thats already finished. <br/>
+                        </section>
+                        The "multiplication" used here is actually <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">Function composition</a> <code class="adofai">∘</code> . 
+                        <section>
+                            The notation method that uses <strong>plus sign</strong> <code class="adofai">+</code> to represent that multiple curses takes effect in order from left to right <strong>has been deprecated! </strong>
+                        </section>
                     </section>
                     <article id="Keywords"> <h4>Keywords</h4>
                         <section>

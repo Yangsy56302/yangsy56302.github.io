@@ -95,10 +95,6 @@
                         </div>
                         魔改的实际效果可能会与但式所述的效果有一定差距。<br/>
                     </section> </article>
-                    <section>
-                        魔改效果可以看作是从谱面片段集合到谱面片段集合的<strong>映射</strong>——
-                        这也是<a href="#Functional">函数式表示法</a>的底层原理。
-                    </section>
                 </article>
                 <article id="Formats"> <h3>文本格式</h3>
                     <section>
@@ -118,16 +114,23 @@
                             当前魔改：<a href="e.zh.html#5-X">"5-X"</a><br/>后继魔改：<a href="e.zh.html#5-X">"2-X"</a>
                         </div>
                     </section> <section>
-                        加号（<code class="adofai">+</code>）用于表示多个魔改效果从左到右依次生效：
-                        <div class="adofai">
-                            当前魔改：<a href="e.zh.html#XR-X">"XR-X"</a> + <a href="e.zh.html#12-X">"12-X"</a><br/>
-                            后继魔改：<a href="e.zh.html#12-X">"12-X"</a> + <a href="e.zh.html#XR-X">"XR-X"</a>
-                        </div> <br/>
-                        前者首先使用<a href="e.zh.html#XR-X">"XR-X"</a>为直角添加三角形，其次使用<a href="e.zh.html#12-X">"12-X"</a>互换锐角与钝角，<br/>
-                        因此<a href="e.zh.html#XR-X">"XR-X"</a>所添加的三角形由于受到<a href="e.zh.html#12-X">"12-X"</a>的影响不再保持三角形的形态；<br/>
-                        <br/>
-                        后者首先使用<a href="e.zh.html#12-X">"12-X"</a>互换锐角与钝角，其次使用<a href="e.zh.html#XR-X">"XR-X"</a>为直角添加三角形，<br/>
-                        因此<a href="e.zh.html#XR-X">"XR-X"</a>所添加的三角形不会受到<a href="e.zh.html#12-X">"12-X"</a>的影响，仍保持三角形的形态。<br/>
+                        <strong>乘号</strong> <code class="adofai">*</code> 可用于表示多个魔改效果<strong>以从右到左的顺序</strong>依次生效。
+                        <section>
+                            此处给出一个示例：
+                            <div class="adofai">
+                                当前魔改：<a href="e.zh.html#12-X">"12-X"</a> * <a href="e.zh.html#XR-X">"XR-X"</a><br/>
+                                后继魔改：<a href="e.zh.html#XR-X">"XR-X"</a> * <a href="e.zh.html#12-X">"12-X"</a>
+                            </div> <br/>
+                            前者首先使用<a href="e.zh.html#XR-X">"XR-X"</a>为直角添加三角形，其次使用<a href="e.zh.html#12-X">"12-X"</a>互换锐角与钝角，<br/>
+                            因此<a href="e.zh.html#XR-X">"XR-X"</a>所添加的三角形由于受到<a href="e.zh.html#12-X">"12-X"</a>的影响不再保持三角形的形态；<br/>
+                            <br/>
+                            后者首先使用<a href="e.zh.html#12-X">"12-X"</a>互换锐角与钝角，其次使用<a href="e.zh.html#XR-X">"XR-X"</a>为直角添加三角形，<br/>
+                            因此<a href="e.zh.html#XR-X">"XR-X"</a>所添加的三角形不会受到<a href="e.zh.html#12-X">"12-X"</a>的影响，仍保持三角形的形态。<br/>
+                        </section>
+                        此处所使用的“乘法”的本质是 <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a> <code class="adofai">∘</code> 。
+                        <section>
+                            使用 <strong>加号</strong> <code class="adofai">+</code> 表示魔改效果从左到右依次生效的<strong>顺序式表示法已被弃用！</strong>
+                        </section>
                     </section>
                     <article id="Keywords"> <h4>关键词</h4>
                         <section>
