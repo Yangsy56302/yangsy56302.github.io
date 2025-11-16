@@ -90,6 +90,9 @@
                         </div>
                         The actual effect might be different between what the but statement describes. <br/>
                     </section> </article>
+                    <section>
+                        The time order of curse effects <strong>IS NOT</strong> the affect order of curse effects, and there's no direct relationship between them.
+                    </section>
                 </article>
                 <article id="Formats"> <h3>Formats</h3>
                     <section>
@@ -120,15 +123,17 @@
                                 Current curse: <a href="string/e.html#12-X">"12-X"</a> * <a href="string/e.html#XR-X">"XR-X"</a><br/>
                                 Next curse: <a href="string/e.html#XR-X">"XR-X"</a> * <a href="string/e.html#12-X">"12-X"</a>
                             </div> <br/>
-                            <code class="adofai">"12-X" * "XR-X"</code> will first add triangles, <br/>
-                            then try to change the angle of every tile, <br/>
-                            including those tiles that is a part of these new triangle, <br/>
-                            so now these triangles are probably not triangles anymore; <br/>
-                            <br/>
-                            but <code class="adofai">"XR-X" * "12-X"</code> will first try to change the angle of every tile, <br/>
-                            then add triangles which will not be modified by the angle change process thats already finished. <br/>
+                            <section>
+                                <code class="adofai">"12-X" * "XR-X"</code> will first add triangles, <br/>
+                                then try to change the angle of every tile, <br/>
+                                including those tiles that is a part of these new triangle, <br/>
+                                so now these triangles are probably not triangles anymore; <br/>
+                                <br/>
+                                but <code class="adofai">"XR-X" * "12-X"</code> will first try to change the angle of every tile, <br/>
+                                then add triangles which will not be modified by the angle change process thats already finished. <br/>
+                            </section>
                         </section> <section>
-                            Nesting curse functions is another way to specify the curse order: 
+                            Nesting curse functions is another way to specify the curse order: <br/>
                             The innermost function will take effect first, and the leftmost function will take effect last. <br/>
                             <div class="adofai">
                                 Current level: <a href="string/e.html#12-X">"12-X"</a>( <a href="string/e.html#XR-X">"XR-X"</a>( XC-X ) )<br/>
@@ -136,7 +141,7 @@
                             </div>
                             However, abusing nesting would cause a lot of brackets to stack, therefore the hints would be even harder to parse. 
                         </section> <section>
-                            The notation method that uses <strong>plus sign</strong> <code class="adofai">+</code> to represent that multiple curses takes effect in order from left to right <strong>has been deprecated! </strong>
+                            The notation method that uses <strong>plus sign</strong> <code class="adofai">+</code> to represent that multiple curses takes effect in order from left to right <strong>has been DEPRECATED! </strong>
                         </section>
                     </section>
                     <article id="Keywords"> <h4>Keywords</h4> <dl>
@@ -155,8 +160,8 @@
                             If some part of the curse hint wouldn't change in a while, while the other part changes frequently,
                             Ellipsis could be used to represent that "other" part which could be noted at somewhere else.
                             <div class="adofai">
-                                Current curse: <a href="e.zh.html#12-X">"12-X"</a> * <a href="e.zh.html#12-X">"12-X"</a><br/>
-                                Next curse: <a href="e.zh.html#12-X">"12-X"</a> * … * <a href="e.zh.html#12-X">"12-X"</a>
+                                Current curse: <a href="e.html#12-X">"12-X"</a> * <a href="e.html#12-X">"12-X"</a><br/>
+                                Next curse: <a href="e.html#12-X">"12-X"</a> * … * <a href="e.html#12-X">"12-X"</a>
                             </div>
                         </dd>
                         <dt><a target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></dt> <dd>
@@ -168,9 +173,6 @@
                     </dl> </article>
                 </article>
                 <article id="MetaMechanism"> <h3>Meta Mechanism</h3>
-                    <section>
-                        The time order of curse effects <strong>IS NOT</strong> the affect order of curse effects, and there's no direct relationship between them.
-                    </section>
                     <section id="_">
                         If there's need to describe that if multiple curses with same ID are the same instance or not, please use subscripts:
                         <div class="adofai">
@@ -183,55 +185,60 @@
                         </div>
                         <em>(Thanks <a target="_blank" href="https://steamcommunity.com/profiles/76561199480231514">Regularly</a> for the format method!)</em>
                     </section>
-                    <section id="*">
-                        In sequential format, repeated curse effects are represented by the multiplication:
-                        <div class="adofai">
-                            Current curse: <a href="string/e.html#XS-X">"XS-X"</a> + <a href="string/e.html#XS-X">"XS-X"</a> + <a href="string/e.html#XS-X">"XS-X"</a><br/>
-                            Next curse: <a href="string/e.html#XS-X">"XS-X"</a><a href="#*"> <span class="adofai *">*</span> 3</a>
-                        </div>
-                        <em>(color isn't required but recommended for readability)</em>
-                    </section> 
                     <section id="^">
-                        In functional format, they are represented by the power operation of functions:
+                        Repeated curse effects can be represented by the power operation of functions:
                         <div class="adofai">
-                            Current level: <a href="string/e.html#XS-X">"XS-X"</a>( <a href="string/e.html#XS-X">"XS-X"</a>( <a href="string/e.html#XS-X">"XS-X"</a>( XS-X ) ) )<br/>
-                            Next level: <a href="string/e.html#XS-X">"XS-X"</a><sup><a href="#^"><span class="adofai ^">3</span></a></sup>( XS-X )<br/>
-                            <em>or </em>Next level: <a href="string/e.html#XS-X">"XS-X"</a><a href="#^"> <span class="adofai ^">^</span> 3</a>( XS-X )
+                            Current curse: <a href="string/e.html#XS-X">"XS-X"</a>
+                                * <a href="string/e.html#XS-X">"XS-X"</a>
+                                * <a href="string/e.html#XS-X">"XS-X"</a><br/>
+                            Next curse: <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai ^">3</span></sup><br/>
+                            <em>or</em><br/>
+                            Next curse: <a href="string/e.html#XS-X">"XS-X"</a> <span class="adofai ^">^ 3</span>
                         </div>
                     </section>
                     <article id="Revert"> <h5>Reverted Curses</h5>
-                        <strong>Reverted (recommended) / Inverted / Negated / Anti- Curses</strong> is basically a method to "revert" the effect of a curse: <section>
-                            the precondition is that part is possible to have an reverted version 
-                            which is possible to form the current part if you use the original curse to it;<br/>
+                        <section>
+                            <strong>Reverted (recommended) / Inverted / Negated / Anti- Curses</strong> is basically a method to "revert" the effect of a curse.
+                        </section> <section>
+                            An extra condition is that part is possible to have an reverted version 
+                            which is possible to form the current part if you use the original curse to it; <br/>
                             <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
                                 Otherwise, you can still use them, but it won't do anything when the preconditions no longer mets, until it mets again.
                             </a>
                         </section> <section>
-                            In sequential format,
-                            <section id="-">
-                                Reverted curses <strong>WERE</strong> represented by changing the <code class="adofai">-</code> sign to the <code class="adofai">+</code> sign in the ID of the corresponding curse.<br/>
-                                <strong>This format is now DEPRECATED and should not be use for new curse creations anymore.</strong>
-                                <div class="adofai">
-                                    Current curse: <a href="string/e.html#8-X">"8<span class="adofai +">+</span>X"</a><br/>
-                                    Next curse: <a href="string/e.html#9-X">"9-X"</a> + <a href="string/e.html#9-X">"9<span class="adofai +">+</span>X"</a>
-                                </div>
-                                <em>(color isn't required but recommended for readability)</em><br/>
-                            </section> <section>
-                                The more universal format for reverted curses is to insert the <code class="adofai">-</code> sign at the beginning instead.
-                                <div class="adofai">Current curse: <span class="adofai +">-</span>"Novel Feature"<br/>Next curse: <span class="adofai +">-</span>DDLC+!</div>
-                            </section> <section>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">You can also abbreviate 2 opposite curses which are next to each other.</a>
-                                <div class="adofai">Current curse: <a href="string/e.html#XC-X">"XC-X"</a> <span class="adofai -">-</span> <a href="string/e.html#XC-X">"XC-X"</a><br/>Next curse: <span class="adofai +-">&plusmn;</span> <a href="string/e.html#XC-X">"XC-X"</a></div>
-                                <div class="adofai">Current curse: <span class="adofai -">-</span> <a href="string/e.html#XC-X">"XC-X"</a> + <a href="string/e.html#XC-X">"XC-X"</a><br/>Next curse: <span class="adofai -+">&mnplus;</span> <a href="string/e.html#XC-X">"XC-X"</a></div>
-                                <em>(<a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">color</a> isn't required but recommended for readability)</em>
-                            </section>
-                        </section> <section>
                             In functional format, reverted curses are represented by the power operation too:
                             <div class="adofai">
-                                Current level: <span class="adofai -">-</span><a href="string/e.html#XS-X">"XS-X"</a>( <span class="adofai -">-</span><a href="string/e.html#XS-X">"XS-X"</a>( <span class="adofai -">-</span><a href="string/e.html#XS-X">"XS-X"</a>( XS-X ) ) )<br/>
-                                Next level: <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai ^"><span class="adofai -">-</span>3</span></sup>( XS-X )<br/>
-                                <em>or </em>Next level: ( <span class="adofai -">-</span><a href="string/e.html#XS-X">"XS-X"</a> )<sup><span class="adofai ^">3</span></sup>( XS-X )<br/>
+                                Current curse: <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai ^"><span class="adofai -">-1</span></span></sup>
+                                    * <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai ^"><span class="adofai -">-1</span></span></sup>
+                                    * <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai ^"><span class="adofai -">-1</span></span></sup><br/>
+                                Next curse: <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai ^"><span class="adofai -">-</span>3</span></sup><br/>
+                                <em>or</em><br/>
+                                Next curse: <a href="string/e.html#XS-X">"XS-X"</a> <span class="adofai ^">^ <span class="adofai -">-</span>3</span>
                             </div>
+                        </section> <section>
+                            In the deprecated sequential format,
+                            <section>
+                                Reverted curses were represented by changing the <code class="adofai">-</code> sign
+                                to the <code id="+" class="adofai +">+</code> sign in the ID of the corresponding curse, 
+                                or by inserting the <code id="-" class="adofai -">-</code> sign at the beginning of the ID.
+                                <div class="adofai">
+                                    Current curse: <a href="string/e.html#8-X">"8<span class="adofai +">+</span>X"</a><br/>
+                                    Next curse: <a href="string/e.html#9-X">"9-X"</a> <span class="adofai -">-</span> <a href="string/e.html#9-X">"9-X"</a>
+                                </div>
+                            </section> <section>
+                                <a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">Sequential format allowed to abbreviate 2 opposite curses which are next to each other.</a>
+                                <div class="adofai">
+                                    Current curse: <a href="string/e.html#XC-X">"XC-X"</a>
+                                        <span class="adofai -">-</span> <a href="string/e.html#XC-X">"XC-X"</a><br/>
+                                    Next curse: <span class="adofai +-">&plusmn;</span> <a href="string/e.html#XC-X">"XC-X"</a>
+                                </div>
+                                <div class="adofai">
+                                    Current curse: <span class="adofai -">-</span> <a href="string/e.html#XC-X">"XC-X"</a>
+                                        + <a href="string/e.html#XC-X">"XC-X"</a><br/>
+                                    Next curse: <span class="adofai -+">&mnplus;</span> <a href="string/e.html#XC-X">"XC-X"</a>
+                                </div>
+                                <em>(Thanks DragonFire28 for <a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">the suggestion of the color</a>! )</em>
+                            </section>
                         </section> <section>
                             Using a reverted curse may produces many possibilities of results which is totally different with the original section, or does not match expectations at all.
                         </section>
