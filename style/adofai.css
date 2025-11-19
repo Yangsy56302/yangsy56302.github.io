@@ -44,19 +44,23 @@ code.adofai {
     font-weight: unset;
     font-size: 24px;
 }
-.\/,.\-,.\+ {
+.adofai .\/, .adofai .\-, .adofai .\+ {
     color: #F55;
     text-shadow: inherit inherit #6006;
 }
-.\+\-,.\-\+,.\*\/,.\/\* {
+.adofai .\+\-, .adofai .\-\+, .adofai .\*\/, .adofai .\/\* {
     color: #FA5;
     text-shadow: inherit inherit #6006;
 }
-.\* {
+.adofai .\* {
     color: #5F5;
     text-shadow: inherit inherit #0606;
 }
-.\^ {
+.adofai sup, .adofai .\^ {
     color: #5FF;
+    text-shadow: inherit inherit #0606;
+}
+.adofai sub, .adofai .\s {
+    color: #F5F;
     text-shadow: inherit inherit #0606;
 }
