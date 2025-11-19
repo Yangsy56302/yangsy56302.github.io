@@ -44,19 +44,11 @@ code.adofai {
     font-weight: unset;
     font-size: 24px;
 }
-.\- {
+.\/,.\-,.\+ {
     color: #F55;
     text-shadow: inherit inherit #6006;
 }
-.\+ {
-    color: #F55;
-    text-shadow: inherit inherit #6006;
-}
-.\+\- {
-    color: #FA5;
-    text-shadow: inherit inherit #6006;
-}
-.\-\+ {
+.\+\-,.\-\+,.\*\/,.\/\* {
     color: #FA5;
     text-shadow: inherit inherit #6006;
 }
