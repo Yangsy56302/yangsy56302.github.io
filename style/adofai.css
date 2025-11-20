@@ -1,6 +1,7 @@
 @font-face {
     font-family: "godoMaum";
     src: url("godoMaum.ttf") format("truetype");
+    size-adjust: 150%;
 }
 @font-face {
     font-family: "16FontSeto";
@@ -36,13 +37,11 @@ body.tutotile {
 div.adofai {
     margin: 0.25em 2em 0.25em 2em;
     padding: 1em 1em;
-    font-size: 24px;
     text-wrap: nowrap;
     overflow: auto;
 }
 code.adofai {
     font-weight: unset;
-    font-size: 24px;
 }
 .adofai .\/, .adofai .\-, .adofai .\+ {
     color: #F55;
