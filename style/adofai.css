@@ -60,7 +60,7 @@ code.adofai {
     color: #5FF;
     text-shadow: inherit inherit #0606;
 }
-.adofai sub, .adofai .\s {
+.adofai sub, .adofai ._ {
     color: #F5F;
     text-shadow: inherit inherit #0606;
 }
