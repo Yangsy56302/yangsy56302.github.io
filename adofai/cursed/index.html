@@ -114,22 +114,23 @@
                         </div>
                     </section> <section>
                         Multiplication signs <code class="adofai">*</code> are used to present that
+                        multiple curses takes effect <strong>in order from left to right</strong>. <br/>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">Function composition</a>
+                        signs <code class="adofai">∘</code> are used to present that
                         multiple curses takes effect <strong>in order from right to left</strong>. <br/>
-                        The "multiplication" used here is actually 
-                        <a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">Function composition</a> <code class="adofai">∘</code> . 
                         <section>
                             Here's an example:
                             <div class="adofai">
-                                Current curse: <a href="string/e.html#12-X">"12-X"</a> * <a href="string/e.html#XR-X">"XR-X"</a><br/>
-                                Next curse: <a href="string/e.html#XR-X">"XR-X"</a> * <a href="string/e.html#12-X">"12-X"</a>
+                                Current curse: <a href="string/e.html#XR-X">"XR-X"</a> * <a href="string/e.html#12-X">"12-X"</a><br/>
+                                Next curse: <a href="string/e.html#XR-X">"XR-X"</a> ∘ <a href="string/e.html#12-X">"12-X"</a>
                             </div> <br/>
                             <section>
-                                <code class="adofai">"12-X" * "XR-X"</code> will first add triangles, <br/>
+                                <code class="adofai">"XR-X" * "12-X"</code> will first add triangles, <br/>
                                 then try to change the angle of every tile, <br/>
                                 including those tiles that is a part of these new triangle, <br/>
                                 so now these triangles are probably not triangles anymore; <br/>
                                 <br/>
-                                but <code class="adofai">"XR-X" * "12-X"</code> will first try to change the angle of every tile, <br/>
+                                but <code class="adofai">"XR-X" ∘ "12-X"</code> will first try to change the angle of every tile, <br/>
                                 then add triangles which will not be modified by the angle change process thats already finished. <br/>
                             </section>
                         </section> <section>
