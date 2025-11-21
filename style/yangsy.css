@@ -85,11 +85,16 @@ a.light:hover {
     text-shadow: 0.05em 0.05em 0em #AAF;
 }
 del.heimu {
-    color: #444;
-    background-color: #444;
+    background-color: #0005;
+    text-decoration-line: none;
+}
+del.heimu:not(del:hover), del.heimu:not(del:hover) * {
+    color: #5550;
+    background-color: #555;
+    text-shadow: unset;
 }
 del.huhua {
-    color: #AAA;
+    opacity: 0.375;
 }
 abbr{
     color: inherit;
@@ -128,6 +133,12 @@ ul.uncheck {
 }
 ol {
     list-style-type: decimal;
+}
+ol.levels {
+    list-style-type: decimal;
+}
+ol.levels li:last-child {
+    list-style-type: "X. ";
 }
 ol.zero {
     list-style-type: decimal-leading-zero;
