@@ -1,4 +1,4 @@
-# Q&A between [@Jack-O_hedgehog](https://www.youtube.com/@Jack-O_hedgehog) and @Yangsy56302
+# Q&A between [@Jack-O_hedgehog](https://www.youtube.com/@Jack-O_hedgehog) & @Yangsy56302
 
 
 [**How should `"1-X"⁻¹` work?**](https://www.youtube.com/watch?v=lrBwA4wsXsY&lc=Ugxby0cdVR6tpTj5Fg14AaABAg)
