@@ -8,7 +8,7 @@ body {
     background-color: #4C8;
     color: #000;
 }
-div, section, article {
+p, div, section, article {
     margin: 0.5em 0em 0.5em 0em;
     padding: 0em 2em 0em 2em;
 }
