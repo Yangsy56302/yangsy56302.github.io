@@ -119,7 +119,7 @@ const splashes = [
 
     // ADOFAI Cursed Mathematical Models
     "<a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/index.html#Functional\">Function composition</a>!",
-    "<a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/index.html#Revert\">Inverse function</a>!",
+    "<a target=\"_blank\" href=\"https://yangsy56302.github.io/adofai/cursed/index.html#^-1\">Inverse function</a>!",
     "Matrix!",
     "Lambda calculus!",
 
