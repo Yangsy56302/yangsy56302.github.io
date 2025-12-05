@@ -19,16 +19,20 @@
         <nav> <h1 id="Index">目录<sub>（<a target="_blank" href="https://yangsy56302.github.io/nav.zh.html">元</a>）</sub></h1> <ol>
             <li> <a href="#Links">外部链接</a> </li>
             <li> <a href="#Mechanism">魔改机制</a> <ol>
-                <li> <a href="#Basics">基础概念</a> <ol>
-                    <li><a href="#ButStatement">但式</a> </li>
+                <li> <a href="#Curse">魔改，条件，操作</a> </li>
+                <li> <a href="#But">但式</a> </li>
+                <li> <a href="#Format">格式，提示，当前，后继</a> </li>
+                <li> <a href="#Countdown">倒计时</a> </li>
+                <li> <a href="#*">乘法，复合，顺序</a> </li>
+                <li> <a href="#Keywords">关键词</a> <ol>
+                    <li> <a href="#None">空</a> </li>
+                    <li> <a href="#...">…</a> </li>
+                    <li> <a href="#StopIteration">迭代终止</a> </li>
                 </ol> </li>
-                <li> <a href="#Formats">文本格式</a> <ol>
-                    <li><a href="#Keywords">关键词</a> </li>
-                </ol> </li>
-                <li> <a href="#MetaMechanism">元机制</a> <ol>
-                    <li> <a href="#^-1">逆向魔改</a> </li>
-                    <li> <a href="#Meta">元魔改</a> </li>
-                </ol> </li>
+                <li> <a href="#_">实例</a> </li>
+                <li> <a href="#^">迭代函数</a> </li>
+                <li> <a href="#^-1">反函数</a> </li>
+                <li> <a href="#Meta">元</a> </li>
             </ol> </li>
         </ol> </nav>
         <div>
@@ -70,190 +74,213 @@
                 <section><a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
                     下文中，中旋默认按0°角处理。
                 </a></section>
-                <article id="Basics"> <h3>基础概念</h3>
-                    <section>
-                        <strong>魔改 (<i>Curse</i>)</strong>是一种可以作用在冰与火之舞关卡上
-                        并对其中满足某些<strong>条件 (<i>Condition</i>)</strong>的部分
-                        执行对应的某种变换<strong>操作 (<i>Action</i>)</strong>的对象。
-                    </section>
-                    <section>
+                <article id="Curse"> <h3>什么是魔改？</h3>
+                    <p>
+                        <strong>魔改（<i>Curse</i>）</strong>是一种可以作用在冰与火之舞关卡上
+                        并对其中满足某些<strong>条件（<i>Condition</i>）</strong>的部分
+                        执行对应的某种变换<strong>操作（<i>Action</i>）</strong>的对象。
+                    </p> <p>
                         一个魔改通常会绑定于一个冰与火之舞关卡之上，并将其关卡标识符（稍作修改后）作为魔改的标识符。<br/>
                         也存在不绑定于关卡的魔改效果，例如小绿君的颜色魔改系列。
-                    </section>
-                    <article id="ButStatement"> <h4>但式</h4> <section>
-                        对魔改效果的简要描述称为<strong>但式</strong>。<br/>
-                        但式通常会写在其所属关卡的标题结尾，例如：
-                        <div class="adofai">
-                            <a target="_blank" href="crab/index.zh.html#1-X">1-X?</a> 冰与火之舞<i>但音乐变得很不对劲</i><br/>
-                            <a target="_blank" href="crab/index.zh.html#2-X">2-X?</a> 弱拍<i>之略微加长版</i><br/>
-                        </div>
-                        本站推荐使用以下关卡标题格式：
-                        <div class="adofai">
-                            <i>{关卡ID}</i> <i>{关卡标题}</i>，但<i>{魔改效果简述}</i><br/>
-                            <i>{level ID}</i> <i>{level title}</i> but <i>{curse effect introduction}</i><br/>
-                        </div>
-                        魔改的实际效果可能会与但式所述的效果有一定差距。<br/>
-                    </section> </article>
-                    <section>
+                    </p> <p>
                         魔改效果的起效时间先后顺序<strong>并不是</strong>生效顺序，也不存在直接关系。
-                    </section>
-                </article>
-                <article id="Formats"> <h3>文本格式</h3>
-                    <section>
-                        在拥有多个魔改效果的关卡中，可以在屏幕底部添加两行文本装饰作为提示：第一行是正在生效的魔改，第二行则是即将生效的魔改。<br/>
-                        <div class="adofai">当前魔改：<a href="string/e.zh.html#12-X">"12-X"</a><br/>后继魔改：<a href="string/e.zh.html#XT-X">"XT-X"</a></div>
-                        另外，在仅包括某单一系列的魔改效果时，可以使用以下记录方式省略魔改系列标识符：
-                        <div class="adofai">当前文字魔改：<a href="string/e.zh.html#12-X">12-X</a><br/>后继文字魔改：<a href="string/e.zh.html#XT-X">XT-X</a></div>
-                        提示文本不应随着镜头的变化而改变位置或大小，否则将无法起到提示作用。<em>估计短时间内也没人看得懂……</em>
-                    </section> <section>
-                        魔改效果更换前会进行倒计时（从 3 到 0 ，含两端）：倒计时预计降到 -1 的那一瞬间，就是魔改更换的时刻。<br/>
+                    </p>
+                </article> <article id="But"> <h3>但式</h3>
+                    <p>
+                        对魔改效果的简要描述称为<strong>但式（<i>But Statement</i>）</strong>。<br/>
+                        但式通常会写在其所属关卡的标题结尾，例如：
+                    </p> <div class="adofai">
+                        <a target="_blank" href="crab/index.zh.html#1-X">1-X?</a> 冰与火之舞<i>但音乐变得很不对劲</i><br/>
+                        <a target="_blank" href="crab/index.zh.html#2-X">2-X?</a> 弱拍<i>之略微加长版</i><br/>
+                    </div> <p>
+                        本站推荐使用以下关卡标题格式：
+                    </p> <div class="adofai">
+                        <i>{关卡ID}</i> <i>{关卡标题}</i>，但<i>{魔改效果简述}</i><br/>
+                        <i>{level ID}</i> <i>{level title}</i> but <i>{curse effect introduction}</i><br/>
+                    </div> <p>
+                        魔改的实际效果可能会与但式所述的效果有一定差距。
+                    </p>
+                </article> <article id="Format"> <h3>如何以文本格式记录魔改？</h3>
+                    <p>
+                        玩家将体验到的魔改，包括<strong>当前（<i>Current</i>）</strong>正在生效的魔改以及<strong>后继（<i>Next</i>）</strong>即将生效的魔改，
+                        可以通过在屏幕底部添加两行文本装饰以<strong>提示（<i>Hint</i>）</strong>。
+                    </p> <div class="adofai">
+                        当前魔改：<a href="string/e.zh.html#12-X">"12-X"</a><br/>
+                        后继魔改：<a href="string/e.zh.html#XT-X">"XT-X"</a>
+                    </div> <p>
+                        提示文本不应随着镜头的变化而改变位置或大小，否则将无法起到提示作用。
+                        <em>虽说本来也没多少人能看懂就是了……</em>
+                    </p>
+                </article> <article id="Countdown"> <h3>倒计时</h3>
+                    <p>
+                        魔改效果更换前会进行<strong>倒计时（<i>Countdown</i>）</strong>。
+                    </p> <p>
+                        倒计时从 <code>3</code> 开始，并以相等时间间隔每次减少 <code>1</code>。
+                        倒计时预计降到 <code>-1</code> 的那一瞬间，就是魔改更换的时刻。
+                    </p> <p>
                         倒计时通常情况下位于<em><del>行尾</del></em>全角冒号之前，被半角括号括起，并仅在左括号之前多出一个半角空格：
-                        <div class="adofai">
-                            当前魔改：<a href="string/e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (3)：<a href="string/e.zh.html#5-X">"5-X"</a><br/><br/>
-                            当前魔改：<a href="string/e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (2)：<a href="string/e.zh.html#5-X">"5-X"</a><br/><br/>
-                            当前魔改：<a href="string/e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (1)：<a href="string/e.zh.html#5-X">"5-X"</a><br/><br/>
-                            当前魔改：<a href="string/e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (0)：<a href="string/e.zh.html#5-X">"5-X"</a><br/><br/>
-                            当前魔改：<a href="string/e.zh.html#5-X">"5-X"</a><br/>后继魔改：<a href="string/e.zh.html#5-X">"2-X"</a>
-                        </div><br/>
-                    </section> <section>
+                    </p> <div class="adofai">
+                        当前魔改：<a href="string/e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (3)：<a href="string/e.zh.html#5-X">"5-X"</a><br/><br/>
+                        当前魔改：<a href="string/e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (2)：<a href="string/e.zh.html#5-X">"5-X"</a><br/><br/>
+                        当前魔改：<a href="string/e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (1)：<a href="string/e.zh.html#5-X">"5-X"</a><br/><br/>
+                        当前魔改：<a href="string/e.zh.html#ML-X">"ML-X"</a><br/>后继魔改 (0)：<a href="string/e.zh.html#5-X">"5-X"</a><br/><br/>
+                        当前魔改：<a href="string/e.zh.html#5-X">"5-X"</a><br/>后继魔改：<a href="string/e.zh.html#5-X">"2-X"</a>
+                    </div>
+                </article> <article id="*"> <h3>同时施加多个魔改效果</h3>
+                    <div class="bar">
+                        使用 <strong>加号</strong> <code class="adofai">+</code> 
+                        表示魔改效果从左到右依次生效的记录方法<strong>已被弃用！</strong>
+                    </div> <p>
                         <strong>乘号</strong> <code class="adofai">*</code> 可用于表示多个魔改效果<strong>以从左到右的顺序</strong>依次生效。<br/>
+                    </p> <p>
                         <strong><a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">函数组合</a>符号</strong>
                         <code class="adofai">∘</code> 可用于表示多个魔改效果<strong>以从右到左的顺序</strong>依次生效。<br/>
-                        <section>
+                    </p> <section>
+                        <p>
                             此处给出一个示例：
-                            <div class="adofai">
-                                当前魔改：<a href="string/e.zh.html#XR-X">"XR-X"</a> * <a href="string/e.zh.html#12-X">"12-X"</a><br/>
-                                后继魔改：<a href="string/e.zh.html#XR-X">"XR-X"</a> ∘ <a href="string/e.zh.html#12-X">"12-X"</a>
-                            </div> <br/>
-                            <section>
-                                前者首先使用<a href="string/e.zh.html#XR-X">"XR-X"</a>为直角添加三角形，其次使用<a href="string/e.zh.html#12-X">"12-X"</a>互换锐角与钝角，<br/>
-                                因此<a href="string/e.zh.html#XR-X">"XR-X"</a>所添加的三角形由于受到<a href="string/e.zh.html#12-X">"12-X"</a>的影响不再保持三角形的形态；<br/>
-                                <br/>
-                                后者首先使用<a href="string/e.zh.html#12-X">"12-X"</a>互换锐角与钝角，其次使用<a href="string/e.zh.html#XR-X">"XR-X"</a>为直角添加三角形，<br/>
-                                因此<a href="string/e.zh.html#XR-X">"XR-X"</a>所添加的三角形不会受到<a href="string/e.zh.html#12-X">"12-X"</a>的影响，仍保持三角形的形态。<br/>
-                            </section>
-                        </section> <section>
-                            使用函数嵌套的方式也可以指定魔改生效顺序：<br/>
-                            最内侧的魔改效果会首先生效，而最靠左侧的魔改效果会在最后生效。
-                            <div class="adofai">
-                                当前关卡：<a href="string/e.zh.html#12-X">"12-X"</a>( <a href="string/e.zh.html#XR-X">"XR-X"</a>( XC-X ) )<br/>
-                                后继关卡：<a href="string/e.zh.html#XR-X">"XR-X"</a>( <a href="string/e.zh.html#12-X">"12-X"</a>( XC-X ) )
-                            </div>
-                            然而，过度使用函数嵌套会导致大量括号累积，从而使魔改提示更加难以解析。
-                        </section> <section>
-                            使用 <strong>加号</strong> <code class="adofai">+</code> 表示魔改效果从左到右依次生效的<strong>顺序式表示法已被弃用！</strong>
-                        </section>
-                    </section>
-                    <article id="Keywords"> <h4>关键词</h4> <dl>
-                        <dt>空 <a target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></dt> <dd>
+                        </p> <div class="adofai">
+                            当前魔改：<a href="string/e.zh.html#XR-X">"XR-X"</a> * <a href="string/e.zh.html#12-X">"12-X"</a><br/>
+                            后继魔改：<a href="string/e.zh.html#XR-X">"XR-X"</a> ∘ <a href="string/e.zh.html#12-X">"12-X"</a>
+                        </div> <p>
+                            前者首先使用<a href="string/e.zh.html#XR-X">"XR-X"</a>为直角添加三角形，其次使用<a href="string/e.zh.html#12-X">"12-X"</a>互换锐角与钝角，<br/>
+                            因此<a href="string/e.zh.html#XR-X">"XR-X"</a>所添加的三角形由于受到<a href="string/e.zh.html#12-X">"12-X"</a>的影响不再保持三角形的形态；<br/>
+                        </p> <p>
+                            后者首先使用<a href="string/e.zh.html#12-X">"12-X"</a>互换锐角与钝角，其次使用<a href="string/e.zh.html#XR-X">"XR-X"</a>为直角添加三角形，<br/>
+                            因此<a href="string/e.zh.html#XR-X">"XR-X"</a>所添加的三角形不会受到<a href="string/e.zh.html#12-X">"12-X"</a>的影响，仍保持三角形的形态。<br/>
+                        </p>
+                    </section> <p>
+                        使用函数嵌套的方式也可以指定魔改生效顺序：<br/>
+                        最内侧的魔改效果会首先生效，而最靠左侧的魔改效果会在最后生效。
+                    </p> <div class="adofai">
+                        当前关卡：<a href="string/e.zh.html#12-X">"12-X"</a>( <a href="string/e.zh.html#XR-X">"XR-X"</a>( XC-X ) )<br/>
+                        后继关卡：<a href="string/e.zh.html#XR-X">"XR-X"</a>( <a href="string/e.zh.html#12-X">"12-X"</a>( XC-X ) )
+                    </div> <p>
+                        然而，过度使用函数嵌套会导致大量括号累积，从而使魔改提示更加难以解析。
+                    </p>
+                </article> <article id="Keywords"> <h4>关键词</h4> <dl>
+                    <dt id="None">空 <a target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></dt> <dd>
+                        <p>
                             特殊魔改效果，不造成实质性影响。
-                            <div class="adofai">
-                                当前魔改：空
-                            </div>
-                        </dd>
-                        <dt>省略号 <a target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">…</a></dt> <dd>
+                        </p> <div class="adofai">
+                            当前魔改：<a href="#None">空</a>
+                        </div>
+                    </dd>
+                    <dt id="...">省略号 <a target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">…</a></dt> <dd>
+                        <p>
                             通常会单独出现在后继魔改中以用于表达<q>请稍候</q>。
-                            <div class="adofai">
-                                后继魔改：…
-                            </div>
+                        </p> <div class="adofai">
+                            后继魔改：<a href="#...">…</a>
+                        </div> <p>
                             有时也可用作<q>需要更多信息</q>：
-                            当魔改提示的其中一部分长时间保持不变，而另一部分变化频繁时，
-                            省略号可用于代表在其他位置单独列出的变化频繁的那部分魔改。
-                            <div class="adofai">
-                                当前魔改：<a href="string/e.zh.html#12-X">"12-X"</a> * <a href="string/e.zh.html#12-X">"12-X"</a><br/>
-                                后继魔改：<a href="string/e.zh.html#12-X">"12-X"</a> * … * <a href="string/e.zh.html#12-X">"12-X"</a>
-                            </div>
-                        </dd>
-                        <dt>迭代终止 <a target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></dt> <dd>
+                        当魔改提示的其中一部分长时间保持不变，而另一部分变化频繁时，
+                        省略号可用于代表在其他位置单独列出的变化频繁的那部分魔改。
+                        </p> <div class="adofai">
+                            当前魔改：<a href="string/e.zh.html#12-X">"12-X"</a> * <a href="string/e.zh.html#12-X">"12-X"</a><br/>
+                            后继魔改：<a href="string/e.zh.html#12-X">"12-X"</a> * … * <a href="string/e.zh.html#12-X">"12-X"</a>
+                        </div>
+                    </dd>
+                    <dt id="StopIteration">迭代终止 <a target="_blank" href="https://docs.python.org/3/library/exceptions.html#StopIteration">StopIteration</a></dt> <dd>
+                        <p>
                             在关卡结束之前，魔改效果不会再次更换，玩家现在可以忽略魔改提示，而将注意力完全放在谱面上了。
-                            <div class="adofai">
-                                后继魔改：迭代终止
-                            </div>
-                        </dd>
-                    </dl> </article>
-                </article>
-                <article id="MetaMechanism"> <h3>元机制</h3>
-                    <section id="_">
-                        如果想具体描述多个相同ID的魔改是否为同一实例，请使用下标：
-                        <div class="adofai">
-                            当前魔改：<a href="string/e.zh.html#3-X">"3-X"</a><sub>1</sub><br/>
-                            后继魔改：<a href="string/e.zh.html#3-X">"3-X"</a><sub>2</sub>
+                        </p> <div class="adofai">
+                            后继魔改：<a href="#StopIteration">迭代终止</a>
                         </div>
-                        <div class="adofai">
-                            当前魔改：<a href="string/e.zh.html#3-X">"3-X"</a><span class="_">_1</span><br/>
-                            后继魔改：<a href="string/e.zh.html#3-X">"3-X"</a><span class="_">_2</span>
-                        </div>
+                    </dd>
+                </dl> </article> <article id="_"> <h3>同一魔改效果的不同实例</h3>
+                    <p>
+                        施加一个魔改效果其实是在施加魔改效果的一个<strong>实例（<i>Instance</i>）</strong>。<br/>
+                        <strong>下标</strong>可用于显式指出多个魔改效果是否为同一实例。
+                    </p> <div class="adofai">
+                        当前魔改：<a href="crab/index.zh.html#3-X">12-X?</a><sub>1</sub><br/>
+                        后继魔改：<a href="crab/index.zh.html#3-X">12-X?</a><sub>2</sub>
+                    </div> <div class="adofai">
+                        当前魔改：<a href="crab/index.zh.html#3-X">12-X?</a><span class="_">_1</span><br/>
+                        后继魔改：<a href="crab/index.zh.html#3-X">12-X?</a><span class="_">_2</span>
+                    </div> <p>
                         <em>（感谢 <a target="_blank" href="https://steamcommunity.com/profiles/76561199480231514">Regularly</a> 提供的表述格式！）</em>
-                    </section>
-                    <section id="^">
-                        连续且重复的魔改效果可记作对函数的幂运算：
-                        <div class="adofai">
-                            当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a>
-                                * <a href="string/e.zh.html#XS-X">"XS-X"</a>
-                                * <a href="string/e.zh.html#XS-X">"XS-X"</a><br/>
-                            后继魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai ^">3</span></sup><br/>
-                            后继魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a> <span class="adofai ^">^ 3</span>
-                        </div>
-                    </section> 
-                    <article id="^-1"> <h4>逆向魔改</h4>
-                        <section>
-                            <strong>逆向魔改<em>（又名逆魔改）</em></strong> ，简单来说，就是反推出魔改效果“生效”前的谱面片段。
-                        </section> <section>
-                            <strong>逆向魔改生效需要额外前置条件：</strong>某个假设中的谱面片段，可以通过使用对应的正向魔改，转为将要被逆向魔改的谱面片段。<br/>
-                            <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
-                                即使不满足前置条件，魔改也可以被使用，但效果在条件重新满足前将不会实际发挥作用。
-                            </a>
-                        </section> <section>
-                            逆向魔改可以通过将减号 <code class="adofai">-</code> 改为加号 <code id="+" class="adofai +">+</code> 来表示，如果可能的话：
-                            <div class="adofai">
-                                当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><br/>
-                                后继魔改：<a href="string/e.zh.html#XS-X">"XS<span class="adofai +">+</span>X"</a>
-                            </div>
-                            <section>
-                                在已被弃用的顺序式表示法中，逆向魔改曾通过将减号 <code id="-" class="adofai -">-</code> 置于开头来表示：
-                                <div class="adofai">
-                                    当前魔改：<span class="adofai -">-</span> <a href="string/e.zh.html#XC-X">"XC-X"</a><br/>
-                                    后继魔改：<a href="string/e.zh.html#XC-X">"XC-X"</a>
-                                        <span class="adofai -">-</span> <a href="string/e.zh.html#XC-X">"XC-X"</a>
-                                </div>
-                            </section> <section>
-                                以下是一种由于确实方便而未被弃用的<a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">
-                                    通过正负号来缩写相邻且互逆的魔改
-                                </a>的表示法：
-                                <div class="adofai">
-                                    当前魔改：<a href="string/e.zh.html#XC-X">"XC-X"</a>
-                                        <span class="adofai +">-</span> <a href="string/e.zh.html#XC-X">"XC-X"</a><br/>
-                                    当前魔改：<a href="string/e.zh.html#XC-X">"XC-X"</a>
-                                        * <a href="string/e.zh.html#XC-X">"XC-X"</a><sup><span class="adofai -">-1</span></sup><br/>
-                                    当前魔改：<span class="adofai +-">&plusmn;</span> <a href="string/e.zh.html#XC-X">"XC-X"</a>
-                                </div>
-                                <div class="adofai">
-                                    当前魔改：<span class="adofai +">-</span> <a href="string/e.zh.html#XC-X">"XC-X"</a>
-                                        + <a href="string/e.zh.html#XC-X">"XC-X"</a><br/>
-                                    当前魔改：<a href="string/e.zh.html#XC-X">"XC-X"</a><sup><span class="adofai -">-1</span></sup>
-                                        * <a href="string/e.zh.html#XC-X">"XC-X"</a><br/>
-                                    当前魔改：<span class="adofai -+">&mnplus;</span> <a href="string/e.zh.html#XC-X">"XC-X"</a>
-                                </div>
-                                <em>（感谢 DragonFire28 <a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">提议的文本颜色</a>！）</em>
-                            </section>
-                            逆向魔改也可以使用函数的幂运算来表示：
-                            <div class="adofai">
-                                当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup>
-                                当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a> <span class="adofai ^">^ <span class="adofai -">-1</span></span></sup>
-                            </div>
-                            <div class="adofai">
-                                当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup>
-                                    * <a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup>
-                                    * <a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup><br/>
-                                当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-</span>3</span></sup>
-                            </div>
-                        </section> <section>
-                            逆向魔改所导致的可能性有很多，其中很大一部分也没那么直观。
-                        </section>
-                    </article>
-                    <article id="Meta"> <h4>元魔改</h4>
+                    </p> <p>
+                        魔改实例在首次出现时会被初始化。<br/>
+                        魔改实例即使在首次消失后也可被复用，然而默认行为是，
+                        如果某个没有下标的魔改实例首次在当前魔改中消失，后继魔改就不会再使用那个魔改实例。
+                    </p> <div class="adofai">
+                        后继魔改：<a href="crab/index.zh.html#12-X">12-X?</a> # 实例 a<br/>
+                        后继魔改：<a href="crab/index.zh.html#12-X">12-X?</a>
+                            * <a href="crab/index.zh.html#XR-X">XR-X?</a> # 实例 a * 实例 x<br/>
+                        后继魔改：<a href="crab/index.zh.html#XR-X">XR-X?</a> # 实例 x<br/>
+                        后继魔改：<a href="crab/index.zh.html#12-X">12-X?</a> # 实例 b<br/>
+                        后继魔改：<a href="crab/index.zh.html#12-X">12-X?</a><sub>1</sub> # 实例 1<br/>
+                        后继魔改：<a href="crab/index.zh.html#12-X">12-X?</a> # 实例 c<br/>
+                        后继魔改：<a href="crab/index.zh.html#12-X">12-X?</a><sub>1</sub>
+                            * <a href="crab/index.zh.html#12-X">12-X?</a> # 实例 1 * 实例 c<br/>
+                        后继魔改：<a href="crab/index.zh.html#12-X">12-X?</a>
+                            * <a href="crab/index.zh.html#12-X">12-X?</a> # 实例 c * 实例 d<br/>
+                    </div> <p>
+                        某些魔改效果可能需要存储一些用于计算的临时数据，例如，
+                        <code class="adofai"><a href="crab/index.html#12-X">12-X?</a></code> 存储所有自魔改效果起效以来曾经经过的的独特循环。<br/>
+                        临时数据会互不干扰地被分别存储在每个魔改实例内部。
+                    </p>
+                </article> <article id="^"> <h3>迭代魔改</h3>
+                    <div class="adofai">
+                        当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a>
+                            * <a href="string/e.zh.html#XS-X">"XS-X"</a>
+                            * <a href="string/e.zh.html#XS-X">"XS-X"</a><br/>
+                        后继魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai ^">3</span></sup><br/>
+                        后继魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a> <span class="adofai ^">^ 3</span>
+                    </div>
+                </article> <article id="^-1"> <h4>反魔改</h4>
+                    <p>
+                        <strong>反<em>（<i>Inverse</i>）</em></strong>基本就是反推出魔改效果生效前的情形。
+                    </p> <p>
+                        <strong>反魔改生效需要额外前置条件：</strong>某个假设中的谱面片段，可以通过使用对应的正向魔改，转为将要被反魔改的谱面片段。<br/>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
+                            即使不满足前置条件，魔改也可以被使用，但效果在条件重新满足前将不会实际发挥作用。
+                        </a>
+                    </p> <p>
+                        反魔改可以通过将减号 <code class="adofai">-</code> 改为加号 <code id="+" class="adofai +">+</code> 来表示，如果可能的话：
+                    </p> <div class="adofai">
+                        当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><br/>
+                        后继魔改：<a href="string/e.zh.html#XS-X">"XS<span class="adofai +">+</span>X"</a>
+                    </div> <p>
+                        在已被弃用的顺序式表示法中，反魔改曾通过将减号 <code id="-" class="adofai -">-</code> 置于开头来表示：
+                    </p> <div class="adofai">
+                        当前魔改：<span class="adofai -">-</span> <a href="string/e.zh.html#XC-X">"XC-X"</a><br/>
+                        后继魔改：<a href="string/e.zh.html#XC-X">"XC-X"</a>
+                            <span class="adofai -">-</span> <a href="string/e.zh.html#XC-X">"XC-X"</a>
+                    </div> <p>
+                        以下是一种由于确实方便而未被弃用的<a target="_blank" href="https://www.youtube.com/watch?v=riC7nUC-vVo&lc=UgzxEiXw7sfbgvxZ5yl4AaABAg">
+                            通过正负号来缩写相邻且互逆的魔改
+                        </a>的表示法：
+                    </p> <div class="adofai">
+                        当前魔改：<a href="string/e.zh.html#XC-X">"XC-X"</a>
+                            <span class="adofai +">-</span> <a href="string/e.zh.html#XC-X">"XC-X"</a><br/>
+                        当前魔改：<a href="string/e.zh.html#XC-X">"XC-X"</a>
+                            * <a href="string/e.zh.html#XC-X">"XC-X"</a><sup><span class="adofai -">-1</span></sup><br/>
+                        当前魔改：<span class="adofai +-">&plusmn;</span> <a href="string/e.zh.html#XC-X">"XC-X"</a>
+                    </div> <div class="adofai">
+                        当前魔改：<span class="adofai +">-</span> <a href="string/e.zh.html#XC-X">"XC-X"</a>
+                            + <a href="string/e.zh.html#XC-X">"XC-X"</a><br/>
+                        当前魔改：<a href="string/e.zh.html#XC-X">"XC-X"</a><sup><span class="adofai -">-1</span></sup>
+                            * <a href="string/e.zh.html#XC-X">"XC-X"</a><br/>
+                        当前魔改：<span class="adofai -+">&mnplus;</span> <a href="string/e.zh.html#XC-X">"XC-X"</a>
+                    </div> <p>
+                        <em>（感谢 DragonFire28 <a target="_blank" href="https://discord.com/channels/1374995472552562760/1382682196413780030/1383443000197382256">提议的文本颜色</a>！）</em>
+                    </p> <p>
+                        反魔改也可以使用函数的幂运算来表示：
+                    </p> <div class="adofai">
+                        当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup>
+                        当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a> <span class="adofai ^">^ <span class="adofai -">-1</span></span></sup>
+                    </div> <div class="adofai">
+                        当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup>
+                            * <a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup>
+                            * <a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup><br/>
+                        当前魔改：<a href="string/e.zh.html#XS-X">"XS-X"</a><sup><span class="adofai -">-</span>3</span></sup>
+                    </div> <p>
+                        反魔改所导致的可能性有很多，其中很大一部分也没那么直观。（待补）
+                    </p>
+                </article> <article id="Meta"> <h4>元魔改</h4>
+                    <p>
                         在特定情况下，被施加魔改效果的对象可以不是关卡。（待补）
-                    </article>
+                    </p>
                 </article>
             </article>
         </div>

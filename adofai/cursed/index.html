@@ -75,7 +75,8 @@
                 <article id="Curse"> <h3>What is Curse?</h3>
                     <p>
                         <strong>Curse</strong> is a type of object that can be applied on ADOFAI Levels
-                        which performs the corrsponding transform <i>action</i> for parts that meets certain <i>conditions</i>.
+                        which performs the corrsponding transform <i>action</i> 
+                        for parts that meets certain <i>conditions</i>.
                     </p> <p>
                         A curse is usually binded with a certain ADOFAI level, and use the (slightly modified) ID of the level as the ID of the curse. <br/>
                         Curse effects that don't binds to levels also exists, for example, Color Curse Series by 小绿君. 
@@ -88,8 +89,8 @@
                         A brief introduction to describe a curse effect is called a <strong>but statement</strong>. <br/>
                         But statements are usually written after the title of the level that the curse effect belongs to, for example:
                     </p> <div class="adofai">
-                        <a target="_blank" href="crab/index.zh.html#1-X">1-X?</a> A Dance of Fire and Ice <i>but the music is cursed</i><br/>
-                        <a target="_blank" href="crab/index.zh.html#2-X">2-X?</a> Offbeats <i>but it's a little longer</i><br/>
+                        <a target="_blank" href="crab/index.html#1-X">1-X?</a> A Dance of Fire and Ice <i>but the music is cursed</i><br/>
+                        <a target="_blank" href="crab/index.html#2-X">2-X?</a> Offbeats <i>but it's a little longer</i><br/>
                     </div> <p>
                         This website recommends using the following level title format:
                     </p> <div class="adofai">
@@ -107,21 +108,13 @@
                     </div> <p>
                         The tips shouldn't move or rotate with the camera, or they will not have a prompt effect. <br/>
                         <em>Although it's already not understandable for most of the viewers...</em>
-                    </p> <p>
-                        In addition, if the curse effects are all from 1 single series, maybe try this: 
-                    </p> <div class="adofai">
-                        Current curse by Yangsy56302: <a href="string/e.html#12-X">12-X</a><br/>
-                        Next curse by Yangsy56302: <a href="string/e.html#XT-X">XT-X</a>
-                    </div> <div class="adofai">
-                        Current string curse: <a href="string/e.html#12-X">12-X</a><br/>
-                        Next string curse: <a href="string/e.html#XT-X">XT-X</a>
-                    </div>
+                    </p>
                 </article> <article id="Countdown"> <h3>Countdown</h3>
                     <p>
                         <strong>Countdown</strong> is the most commonly used method to inform players when the curse effect will be changed.
                     </p> <p>
                         The countdown starts with <code>3</code>, decreases by <code>1</code> in equal interval time. <br/>
-                        The curse effects will be updated <strong>at the exact same time</strong> when the number should be counted down to <code>-1</code>. <br/>
+                        The curse effects will be updated <strong>at the exact same time</strong> when the number should be counted down to <code>-1</code>. 
                     </p> <p>
                         Each number should also poduce a noticable hitsound without ambiguity, usually the same sound for paused beat countdowns.
                     </p> <p>
@@ -201,7 +194,7 @@
                 </dl> </article> <article id="_"> <h3>Multiple instances of the same curse effect</h3>
                     <p>
                         Applying a curse is actually applying an <strong>instance</strong> of the curse. <br/>
-                        <strong>Subscripts</strong> are used to explicitly indicate that if multiple curses with same ID are the same instance or not.
+                        <strong>Subscripts</strong> are used to explicitly indicate that if multiple curses are the same instance or not.
                     </p> <div class="adofai">
                         Current curse: <a href="crab/index.html#12-X">12-X?</a><sub>1</sub><br/>
                         Next curse: <a href="crab/index.html#12-X">12-X?</a><sub>2</sub>
@@ -213,7 +206,7 @@
                     </p> <p>
                         Curse instance are initialized at its first appearance. <br/>
                         Curse instance are still able to be reused after its first disappearance, however the default behavior is that, 
-                        whenever a curse stops appearing inside current curse, the next curse would have a differnet instance of that curse. <br/>
+                        if a curse instance without subscript stops appearing inside current curse, the next curse wouldn't use that instance of that curse. 
                     </p> <div class="adofai">
                         Next curse: <a href="crab/index.html#12-X">12-X?</a> # instance a<br/>
                         Next curse: <a href="crab/index.html#12-X">12-X?</a>
@@ -225,16 +218,12 @@
                         Next curse: <a href="crab/index.html#12-X">12-X?</a><sub>1</sub>
                             * <a href="crab/index.html#12-X">12-X?</a> # instance 1 * instance c<br/>
                         Next curse: <a href="crab/index.html#12-X">12-X?</a>
-                            * <a href="crab/index.html#12-X">12-X?</a> # undefined behavior: cannot be sure which is instance c and which is instance d<br/>
+                            * <a href="crab/index.html#12-X">12-X?</a> # instance c * instance d<br/>
                     </div> <p>
                         Some curse may have needs to store some temporary data used for calculations, for example, 
                         <code class="adofai"><a href="crab/index.html#12-X">12-X?</a></code> store all unique loop has been played since the effect starts. <br/>
-                        Temporary data are stored inside each curse instance seperately. <br/>
-                        To avoid chaos, curse instance cannot curse objects already been cursed by themselves. <br/>
-                    </p> <div class="adofai">
-                        Current curse: <a href="crab/index.html#12-X">12-X?</a><sub>1</sub>
-                            * <a href="crab/index.html#12-X">12-X?</a><sub>1</sub> # undefined behavior<br/>
-                    </div>
+                        Temporary data are stored inside each curse instance seperately. 
+                    </p>
                 </article> <article id="^"> <h3>Iterating curses</h3>
                     <div class="adofai">
                         Current curse: <a href="string/e.html#XS-X">"XS-X"</a>
@@ -295,9 +284,11 @@
                             * <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup><br/>
                         Current curse: <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai -">-</span>3</span></sup>
                     </div> <p>
-                        Using an inversed curse may produces many possibilities of results which is totally different with the original section, or does not match expectations at all.
+                        Using an inversed curse may produces many possibilities of results 
+                        which is totally different with the original section, 
+                        or does not match expectations at all. (TBC)
                     </p>
-                </article> <article id="Meta"> <h3>Meta</h3>
+                </article> <article id="Meta"> <h3>Metacurse</h3>
                     <p>
                         In specific situations, the curse-applied object could be a non-level being. (TBC)
                     </p>
