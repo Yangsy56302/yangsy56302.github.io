@@ -21,6 +21,7 @@
                 <li> <a href="#But">But</a> </li>
                 <li> <a href="#Format">Format, Hint, Current, Next</a> </li>
                 <li> <a href="#Countdown">Countdown</a> </li>
+                <li> <a href="#Function">Function</a> </li>
                 <li> <a href="#*">Multiply, Compose, Order</a> </li>
                 <li> <a href="#Keywords">Keywords</a> <ol>
                     <li> <a href="#None">None</a> </li>
@@ -74,11 +75,11 @@
                 <p> <a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
                     In the following content, midspins will be considered as 0° angle.
                 </a> </p>
-                <article id="Curse"> <h3>What is Curse?</h3>
+                <article id="Curse"> <h3>What is curse?</h3>
                     <p>
-                        <strong>Curse</strong> is a type of object that can be applied on ADOFAI Levels
-                        which performs the corrsponding transform <i>action</i> 
-                        for parts that meets certain <i>conditions</i>.
+                        <b>Curse</b> is a type of object that can be applied on ADOFAI Levels
+                        which performs the corrsponding transform <b>action</b> 
+                        for parts that meets certain <b>conditions</b>.
                     </p> <p>
                         A curse is usually binded with a certain ADOFAI level, and use the (slightly modified) ID of the level as the ID of the curse. <br/>
                         Curse effects that don't binds to levels also exists, for example, Color Curse Series by 小绿君. 
@@ -86,9 +87,9 @@
                         The time order of curse effects <strong>IS NOT</strong> the affect order of curse effects, 
                         and there's no direct relationship between them. 
                     </p>
-                </article> <article id="But"> <h3>But Statement</h3>
+                </article> <article id="But"> <h3>To describe a curse: But statement</h3>
                     <p>
-                        A brief introduction to describe a curse effect is called a <strong>but statement</strong>. <br/>
+                        A brief introduction to describe a curse effect is called a <b>but statement</b>. <br/>
                         But statements are usually written after the title of the level that the curse effect belongs to, for example:
                     </p> <div class="adofai">
                         <a target="_blank" href="crab/index.html#1-X">1-X?</a> A Dance of Fire and Ice <i>but the music is cursed</i><br/>
@@ -100,10 +101,10 @@
                     </div> <p>
                         The actual effect might be different between what the but statement describes. <br/>
                     </p>
-                </article> <article id="Format"> <h3>How to describe curses</h3>
+                </article> <article id="Format"> <h3>To describe a cursed level: Curse hints</h3>
                     <p>
-                        The curses the player experiences, including the <strong>current</strong> and the <strong>next</strong>, 
-                        could be tipped by using text decorations on the bottom of the interface called <strong>curse hints</strong> or <strong>curse prompts</strong>. 
+                        The curses the player experiences, including the <b>current</b> and the <b>next</b>, 
+                        could be tipped by using text decorations on the bottom of the interface called <b>curse hints</b> or <b>curse prompts</b>. 
                     </p> <div class="adofai">
                         Current curse: <a href="string/e.html#12-X">"12-X"</a><br/>
                         Next curse: <a href="string/e.html#XT-X">"XT-X"</a>
@@ -113,7 +114,7 @@
                     </p>
                 </article> <article id="Countdown"> <h3>Countdown</h3>
                     <p>
-                        <strong>Countdown</strong> is the most commonly used method to inform players when the curse effect will be changed.
+                        <b>Countdown</b> is the most commonly used method to inform players when the curse effect will be changed.
                     </p> <p>
                         The countdown starts with <code>3</code>, decreases by <code>1</code> in equal interval time. <br/>
                         The curse effects will be updated <strong>at the exact same time</strong> when the number should be counted down to <code>-1</code>. 
@@ -128,15 +129,83 @@
                         Current curse: <a href="string/e.html#ML-X">"ML-X"</a><br/>Next curse (0): <a href="string/e.html#5-X">"5-X"</a><br/><br/>
                         Current curse: <a href="string/e.html#5-X">"5-X"</a><br/>Next curse: <a href="string/e.html#5-X">"2-X"</a>
                     </div>
+                </article> <article id="Function"> <h3>Functions like functions</h3>
+                    <p>
+                        Function: <ul>
+                            <li>get a number</li>
+                            <li>modify that number</li>
+                            <li>return a modified number</li>
+                        </ul>
+                    </p> <p>
+                        Curse: <ul>
+                            <li>get a level</li>
+                            <li>curse that level</li>
+                            <li>return a cursed level</li>
+                        </ul>
+                    </p> <p>
+                        They are just so alike, that it's actually possible to treat curses like <b>functions</b>, for example:
+                    </p> <div class="adofai">
+                        <a href="crab/index.html#B-X">B-X? Please Stop Playing My Levels</a><br/>
+                        Current curse: <a href="crab/index.html#1-X">1-X?</a>
+                    </div> <p>
+                        is equivalent to:
+                    </p> <div class="adofai">
+                        Current level: <a href="crab/index.html#1-X">1-X?</a> ( B-X )
+                    </div> <p>
+                        However, this cannot explain that some curses may return different results, even if the inputs are the same. 
+                    </p> <section>
+                        <p>
+                        For example, <code class="adofai"><a href="crab/index.html#2-X">2-X?</a></code> 
+                        could also repeats the near-ending section of <code class="adofai"><a href="crab/index.html#B-X">B-X? Please Stop Playing My Levels</a></code> 
+                        by 2 more times, instead of just 1 more time that we have.
+                        </p> <p>
+                            This results in:
+                        </p> <div class="adofai">
+                            Current level: <a href="crab/index.html#2-X">2-X?</a> ( B-X )
+                        </div> <p>
+                            is <b>NOT</b> equal to:
+                        </p> <div class="adofai">
+                            Current level: <a href="crab/index.html#2-X">2-X?</a> ( B-X )
+                        </div>
+                    </section> <p>
+                        To solve this problem, one way is to change the outputs of curses, 
+                        from a single level, to a <a target="_blank" href="https://en.wikipedia.org/wiki/Set_(mathematics)">set</a> of levels:
+                    </p> <div class="adofai">
+                        <a href="crab/index.html#2-X">2-X?</a> ( B-X ) &rarr; {
+                            B-X extended by 1 more times, 
+                            B-X extended by 2 more times, 
+                            B-X extended by 3 more times,
+                            etc.
+                        }
+                    </div> <p>
+                        And the cursed level that we have is one of them inside.
+                    </p> <p>
+                        We'll also change the outputs to a set of levels:
+                    </p> <div class="adofai">
+                        <a href="crab/index.html#6-X">6-X?</a> ( {
+                            B-X extended by 1 more times, 
+                            B-X extended by 2 more times, 
+                            B-X extended by 3 more times,
+                            etc.
+                        } )
+                    </div> <p>
+                        So <code class="adofai"><a href="crab/index.html#2-X">2-X?</a> ( B-X )</code> 
+                        is now an abbreviation of <code class="adofai"><a href="crab/index.html#2-X">2-X?</a> ( { B-X } )</code> .
+                    </p> <div class="bar">
+                        Not to be confused with <a target="_blank" href="https://sites.google.com/view/a-dance-of-fire-and-ice-curses/list-of-curse-series/n-x-curses">KirbyCreep's curses</a>, 
+                        which is usually noted as <code class="adofai">{N-X}</code>.
+                    </div> <p>
+                        This isn't only for consistency, but also because that it would be really convenient to define concepts, for example:
+                    </p>
                 </article> <article id="*"> <h3>Applying Multiple Curses At Once</h3>
                     <div class="bar">
-                        The notation method that uses <strong>plus sign</strong> <code class="adofai">+</code> 
+                        The notation method that use <b>plus signs</b> <code class="adofai">+</code> 
                         to represent that multiple curses takes effect in order from left to right <strong>has been DEPRECATED! </strong>
                     </div> <p>
-                        <strong>Multiplication signs</strong> <code class="adofai">*</code> are used to present that
+                        <b>Multiplication signs</b> <code class="adofai">*</code> are used to present that
                         multiple curses takes effect <strong>in order from left to right</strong>. <br/>
-                        <strong><a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">Function composition</a>
-                        signs</strong> <code class="adofai">∘</code> are used to present that
+                        <b><a target="_blank" href="https://en.wikipedia.org/wiki/Function_composition">Function composition</a>
+                        signs</b> <code class="adofai">∘</code> are used to present that
                         multiple curses takes effect <strong>in order from right to left</strong>.
                     </p> <section>
                         <p>
@@ -154,8 +223,7 @@
                             then add triangles which will not be modified by the angle change process thats already finished. 
                         </p>
                     </section> <p>
-                        Nesting curse functions is another way to specify the curse order: <br/>
-                        The innermost function will take effect first, and the leftmost function will take effect last. 
+                        Nesting curse functions is another way to specify the curse order: 
                     </p> <div class="adofai">
                         Current level: <a href="string/e.html#12-X">"12-X"</a>( <a href="string/e.html#XR-X">"XR-X"</a>( XC-X ) )<br/>
                         Next level: <a href="string/e.html#XR-X">"XR-X"</a>( <a href="string/e.html#12-X">"12-X"</a>( XC-X ) )
@@ -195,8 +263,8 @@
                     </dd>
                 </dl> </article> <article id="_"> <h3>Multiple instances of the same curse effect</h3>
                     <p>
-                        Applying a curse is actually applying an <strong>instance</strong> of the curse. <br/>
-                        <strong>Subscripts</strong> are used to explicitly indicate that if multiple curses are the same instance or not.
+                        Applying a curse is actually applying an <b>instance</b> of the curse. <br/>
+                        <b>Subscripts</b> are used to explicitly indicate that if multiple curses are the same instance or not.
                     </p> <div class="adofai">
                         Current curse: <a href="crab/index.html#12-X">12-X?</a><sub>1</sub><br/>
                         Next curse: <a href="crab/index.html#12-X">12-X?</a><sub>2</sub>
@@ -236,8 +304,8 @@
                     </div>
                 </article> <article id="^-1"> <h3>Inversed Curses</h3>
                     <p>
-                        <strong>Inverse</strong> is basically a method to "inverse" the effect of a curse. <br/>
-                        Also known as <strong>Revert / Invert / Negate / Anti</strong> .
+                        <b>Inverse</b> is basically a method to "inverse" the effect of a curse. <br/>
+                        Also known as <b>Revert / Invert / Negate / Anti</b> .
                     </p> <p>
                         An extra condition is that part is possible to have an inversed version 
                         which is possible to form the current part if you use the original curse to it; <br/>
