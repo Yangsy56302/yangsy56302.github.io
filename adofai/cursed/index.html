@@ -168,7 +168,7 @@
                             Current level: <a href="crab/index.html#2-X">2-X?</a> ( B-X )
                         </div>
                     </section> <p>
-                        To solve this problem, one way is to change the outputs of curses, 
+                        To solve this problem, one way is to change the output of curses, 
                         from a single level, to a <a target="_blank" href="https://en.wikipedia.org/wiki/Set_(mathematics)">set</a> of levels:
                     </p> <div class="adofai">
                         <a href="crab/index.html#2-X">2-X?</a> ( B-X ) &rarr; {
@@ -180,21 +180,48 @@
                     </div> <p>
                         And the cursed level that we have is one of them inside.
                     </p> <p>
-                        We'll also change the outputs to a set of levels:
-                    </p> <div class="adofai">
-                        <a href="crab/index.html#6-X">6-X?</a> ( {
-                            B-X extended by 1 more times, 
-                            B-X extended by 2 more times, 
-                            B-X extended by 3 more times,
-                            etc.
-                        } )
-                    </div> <p>
-                        So <code class="adofai"><a href="crab/index.html#2-X">2-X?</a> ( B-X )</code> 
-                        is now an abbreviation of <code class="adofai"><a href="crab/index.html#2-X">2-X?</a> ( { B-X } )</code> .
-                    </p> <div class="bar">
-                        Not to be confused with <a target="_blank" href="https://sites.google.com/view/a-dance-of-fire-and-ice-curses/list-of-curse-series/n-x-curses">KirbyCreep's curses</a>, 
-                        which is usually noted as <code class="adofai">{N-X}</code>.
-                    </div> <p>
+                        This also solves some other problems below: <dl>
+                            <dt>Some curses weren't well-defined, so there's thousands of results in thousands of cursed ones' perspective</dt> <dd>
+                                <del class="heimu" title="actually it might better to keep this fandom compact, since bigger fandom brings bigger problem">sadly there's no thousands of cursed ones for now :(</del><br/>
+                                All of them are in the output set. You are free to ignore results you don't agree.
+                            </dd>
+                            <dt>Some curses weren't well-defined, so they just cannot produce any valid results for certain situations</dt> <dd>
+                                The output should be the <a target="_blank" href="https://en.wikipedia.org/wiki/Empty_set">empty set</a> <code>∅</code>. 
+                            </dd>
+                        </dl>
+                    </p> <p>
+                        We'll also change the input to a set of levels via a few definitions:
+                    </p> <section>
+                        <p>
+                            Cursing a single level is the same as cursing a set which only contains that level. <br/>
+                            For example, 
+                            <code class="adofai"><a href="crab/index.html#2-X">2-X?</a> ( B-X )</code> 
+                            is equal to 
+                            <code class="adofai"><a href="crab/index.html#2-X">2-X?</a> ( { B-X } )</code> . 
+                        </p> <div class="bar">
+                            Not to be confused with <a target="_blank" href="https://sites.google.com/view/a-dance-of-fire-and-ice-curses/list-of-curse-series/n-x-curses">KirbyCreep's curses</a>, 
+                            which is noted as <code class="adofai">{N-X}</code> 
+                            <del class="huhua" title="...are we still be able to use another set of notation sign to repersent KirbyCreep's curses?">due to my mistake</del>.
+                        </div> <p>
+                            Cursing a set which contains multiple levels is the same as 
+                            cursing each level individually then merge the results into one set. <br/>
+                            For example: 
+                        </p> <div class="adofai">
+                            <a href="crab/index.html#5-X">5-X?</a> (
+                                { 5-X, 11-X, XC-X }
+                            )
+                        </div> <p>
+                            is equal to 
+                        </p> <div class="adofai">
+                            <a href="crab/index.html#5-X">5-X?</a> ( 5-X )
+                            ∪ <a href="crab/index.html#5-X">5-X?</a> ( 11-X )
+                            ∪ <a href="crab/index.html#5-X">5-X?</a> ( XC-X )
+                        </div> <p>
+                            Or in other words, curse evaluation 
+                            <a target="_blank" href="https://en.wikipedia.org/wiki/Distributive_property">distributes</a> over 
+                            <a target="_blank" href="https://en.wikipedia.org/wiki/Union_(set_theory)">union operation</a> . 
+                        </p>
+                    </section> <p>
                         This isn't only for consistency, but also because that it would be really convenient to define concepts, for example:
                     </p>
                 </article> <article id="*"> <h3>Applying Multiple Curses At Once</h3>
@@ -233,14 +260,15 @@
                 </article> <article id="Keywords"> <h3>Keywords</h3> <dl>
                     <dt id="None"><a target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></dt> <dd>
                         <p>
-                            Special curse effect that doesn't do anything actually. 
+                            The <a target="_blank" href="https://en.wikipedia.org/wiki/Identity_function">identity curse</a>, 
+                            or in other words, <code class="adofai">None(x) = x</code>. 
                         </p> <div class="adofai">
                             Current curse: <a href="#None">None</a>
                         </div>
                     </dd>
                     <dt id="..."><a target="_blank" href="https://docs.python.org/3/library/constants.html#Ellipsis">...</a></dt> <dd>
                         <p>
-                            Usually lonely appears at Next curse to represent "please wait". 
+                            Usually lonely appears at next curse to represent "please wait". 
                         </p> <div class="adofai">
                             Next curse: <a href="#...">...</a>
                         </div> <p>
@@ -304,8 +332,9 @@
                     </div>
                 </article> <article id="^-1"> <h3>Inversed Curses</h3>
                     <p>
-                        <b>Inverse</b> is basically a method to "inverse" the effect of a curse. <br/>
-                        Also known as <b>Revert / Invert / Negate / Anti</b> .
+                        The definition of <b>inverse</b> for curses is similar to the definition of <a target="_blank" href="https://en.wikipedia.org/wiki/Inverse_function">inverse</a> for functions, 
+                        except that 
+                        This concept was named as <b>revert / invert / negate / anti-</b> .
                     </p> <p>
                         An extra condition is that part is possible to have an inversed version 
                         which is possible to form the current part if you use the original curse to it; <br/>
