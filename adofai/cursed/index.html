@@ -71,7 +71,7 @@
                     Mainly for download usage.
                 </dd>
             </dl> </section>
-            <article id="Mechanism"> <h2>Curse Mechanism</h2>
+            <article id="Mechanism"> <h2>Curse mechanism</h2>
                 <p> <a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
                     In the following content, midspins will be considered as 0° angle.
                 </a> </p>
@@ -219,12 +219,13 @@
                         </div> <p>
                             Or in other words, curse evaluation 
                             <a target="_blank" href="https://en.wikipedia.org/wiki/Distributive_property">distributes</a> over 
-                            <a target="_blank" href="https://en.wikipedia.org/wiki/Union_(set_theory)">union operation</a> . 
+                            <a target="_blank" href="https://en.wikipedia.org/wiki/Union_(set_theory)">union operation</a> 
+                            <strong>(except for empty set)</strong> . 
                         </p>
                     </section> <p>
                         This isn't only for consistency, but also because that it would be really convenient to define concepts, for example:
                     </p>
-                </article> <article id="*"> <h3>Applying Multiple Curses At Once</h3>
+                </article> <article id="*"> <h3>Applying multiple curses at once</h3>
                     <div class="bar">
                         The notation method that use <b>plus signs</b> <code class="adofai">+</code> 
                         to represent that multiple curses takes effect in order from left to right <strong>has been DEPRECATED! </strong>
@@ -330,26 +331,44 @@
                         Current curse: <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai ^">3</span></sup><br/>
                         Current curse: <a href="string/e.html#XS-X">"XS-X"</a> <span class="adofai ^">^ 3</span>
                     </div>
-                </article> <article id="^-1"> <h3>Inversed Curses</h3>
-                    <p>
-                        The definition of <b>inverse</b> for curses is similar to the definition of <a target="_blank" href="https://en.wikipedia.org/wiki/Inverse_function">inverse</a> for functions, 
-                        except that 
-                        This concept was named as <b>revert / invert / negate / anti-</b> .
+                </article> <article id="^-1"> <h3>Inversed curses</h3>
+                    <div class="bar">
+                        This concept was named as <b>revert / invert / negate / anti</b> .
+                    </div> <p>
+                        The <b>inverse</b> for curses is similar yet different to 
+                        the <a target="_blank" href="https://en.wikipedia.org/wiki/Inverse_function">inverse</a> for functions. 
                     </p> <p>
-                        An extra condition is that part is possible to have an inversed version 
-                        which is possible to form the current part if you use the original curse to it; <br/>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">
-                            Otherwise, you can still use them, but it won't do anything when the preconditions no longer mets, until it mets again.
-                        </a>
+                        For each curse <code class="adofai">C</code>, its inverse <code class="adofai">C<sup><span class="adofai -">-1</span></sup></code> exists, 
+                        that for each level <code class="adofai">L</code> and <code class="adofai">L<sub>C</sub></code>, 
+                        <br/>
+                        <code class="adofai">L<sub>C</sub> ∈ C ( L )</code> is logically equivalent to 
+                        <code class="adofai">L ∈ C<sup><span class="adofai -">-1</span></sup> ( L<sub>C</sub> )</code>. 
+                    </p> <p>
+                        The difference is that the inverse for functions uses <code>=</code> instead of <code>∈</code>. 
+                    </p> <p>
+                        Inverse-cursing a level which is impossible to get inside all the outputs of the corresponding curse 
+                        would produce the empty set <code>∅</code>.
+                    </p> <p>
+                        To avoid these situations in actual cursed level making progress, 
+                        you can overwrite the output using the input, like <a href="#None">the curse didn't do anything</a>. <br/>
+                        <em>( Thanks PyrotechnicTriforce for <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">the idea</a>! )</em>
+                        <br/>
+                        <em>( TODO: there's a way to define it but it requires concepts woould introduce inside the <a href="#Meta">metacurse article</a> )</em>
+                    </p> <p>
+                        Using an inversed curse often produces massive amount of possible results <br/>(
+                            <code><a class="light" target="_blank" href="https://en.wikipedia.org/wiki/Big_O_notation">O(2<sup>n</sup>)</a></code>, 
+                            <code>O(n!)</code>, 
+                            even <code>O(&infin;)</code> theoredically
+                        ) .
                     </p> <p>
                         Inversed curses can be represented changing the <code class="adofai">-</code> sign 
-                        to the <code id="+" class="adofai +">+</code> sign in the ID of the corresponding curse, if possible: 
+                        to the <code id="+" class="adofai"><span class="adofai +">+</span></code> sign in the ID of the corresponding curse, if possible: 
                     </p> <div class="adofai">
                         Current curse: <a href="string/e.html#XS-X">"XS-X"</a><br/>
                         Next curse: <a href="string/e.html#XS-X">"XS<span class="adofai +">+</span>X"</a>
                     </div> <p>
-                        In the deprecated sequential format, 
-                        Inversed curses could also be represented by inserting the <code id="-" class="adofai -">-</code> sign at the beginning of the ID: 
+                        In the deprecated sequential format, Inversed curses could also be represented by inserting the 
+                        <code id="-" class="adofai"><span class="adofai -">-</span></code> sign at the beginning of the ID: 
                     </p> <div class="adofai">
                         Current curse: <span class="adofai -">-</span> <a href="string/e.html#XC-X">"XC-X"</a><br/>
                         Next curse: <a href="string/e.html#XC-X">"XC-X"</a>
@@ -382,11 +401,7 @@
                             * <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup>
                             * <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai -">-1</span></sup><br/>
                         Current curse: <a href="string/e.html#XS-X">"XS-X"</a><sup><span class="adofai -">-</span>3</span></sup>
-                    </div> <p>
-                        Using an inversed curse may produces many possibilities of results 
-                        which is totally different with the original section, 
-                        or does not match expectations at all. (TBC)
-                    </p>
+                    </div>
                 </article> <article id="Meta"> <h3>Metacurse</h3>
                     <p>
                         In specific situations, the curse-applied object could be a non-level being. (TBC)
