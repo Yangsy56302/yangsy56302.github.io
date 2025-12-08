@@ -39,6 +39,9 @@ p, div, section, article {
 #splash {
     font-family: "Aller", "Arial", "Helvetica", sans-serif;
 }
+hr {
+    border: 0.0625em solid #6A8;
+}
 .bar {
     margin: 0.5em 0em 0.5em 0em;
     padding: 0.5em 0.5em 0.5em 0.5em;
