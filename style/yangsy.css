@@ -28,7 +28,7 @@ h6 {
     font-size: 1.125em;
 }
 hr {
-    border: 0.0625em solid var(--monika-color);
+    border: 0.0625em solid light-dark(var(--monika-dark-color), var(--monika-darker-color));
 }
 p {
     font-size: 1em;
@@ -47,15 +47,12 @@ dd {
     margin: 0em 0em 1em 0em;
     padding: 0em 2em;
 }
-b {
-    color: rgb(from var(--text-color) r g b / 100%);
-}
 strong {
     color: var(--yangsy-roloc);
     font-weight: bold;
 }
 em {
-    color: rgb(from var(--text-color) r g b / 50%);
+    opacity: 62.5%;
     font-style: italic;
 }
 a {
