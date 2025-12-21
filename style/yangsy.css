@@ -1,43 +1,30 @@
+@import url("color.css");
 html {
     font-family: "Consolas", "Courier New", "SimHei", "Microsoft YaHei", monospace, sans-serif, serif;
     font-size: 16px;
 }
 h1 {
     font-size: 2.5em;
-    color: #FFF;
-}
-nav h1 {
-    font-size: 2em;
-    color: #486;
-}
-h2, dl dt {
-    color: #80F;
+    color: var(--yangsy-roloc);
 }
 h2 {
+    color: var(--yangsy-roloc);
     font-size: 2em;
 }
-h3, dl dl dt {
-    color: #60C;
-}
 h3 {
+    color: color-mix(in srgb, var(--yangsy-roloc), var(--text-color) 25%);
     font-size: 1.75em;
 }
-h4, dl dl dl dt {
-    color: #408;
-}
 h4 {
+    color: color-mix(in srgb, var(--yangsy-roloc), var(--text-color) 50%);
     font-size: 1.5em;
 }
 h5 {
-    color: #204;
-}
-h5 {
+    color: color-mix(in srgb, var(--yangsy-roloc), var(--text-color) 75%);
     font-size: 1.25em;
 }
 h6 {
-    color: #102;
-}
-h6 {
+    color: color-mix(in srgb, var(--yangsy-roloc), var(--text-color) 87.5%);
     font-size: 1.125em;
 }
 p {
@@ -50,39 +37,48 @@ dl {
 dt {
     margin: 0em 0em 0.5em 0em;
     padding: 0em;
-    color: #204;
+    color: color-mix(in srgb, var(--text-color) 50%, var(--yangsy-roloc));
 }
 dd {
     margin: 0em 0em 1em 0em;
     padding: 0em 2em;
 }
+b {
+    color: rgb(from var(--text-color) r g b / 100%);
+}
 strong {
-    color: #80F;
+    color: var(--yangsy-roloc);
     font-weight: bold;
 }
 em {
-    opacity: 0.625;
+    color: rgb(from var(--text-color) r g b / 50%);
     font-style: italic;
 }
 a {
-    color: #448;
-    text-shadow: 0.05em 0.05em 0em #AAF;
+    color: var(--link-roloc);
+    text-shadow: 0.05em 0.05em 0em var(--link-color);
     font-weight: bold;
     font-size: inherit;
 }
 a:hover {
-    color: #AAF;
-    text-shadow: 0.05em 0.05em 0em #448;
+    color: var(--link-color);
+    text-shadow: 0.05em 0.05em 0em var(--link-roloc);
+}
+a.dark {
+    color: var(--link-dark-color);
+    text-shadow: 0.05em 0.05em 0em var(--link-light-color);
+}
+a.dark:hover {
+    color: var(--link-light-color);
+    text-shadow: 0.05em 0.05em 0em var(--link-dark-color);
 }
 a.light {
-    color: #AAF;
-    text-shadow: 0.05em 0.05em 0em #448;
-    font-weight: bold;
-    font-size: inherit;
+    color: var(--link-light-color);
+    text-shadow: 0.05em 0.05em 0em var(--link-dark-color);
 }
 a.light:hover {
-    color: #448;
-    text-shadow: 0.05em 0.05em 0em #AAF;
+    color: var(--link-dark-color);
+    text-shadow: 0.05em 0.05em 0em var(--link-light-color);
 }
 del.heimu {
     background-color: #0005;
@@ -144,14 +140,14 @@ ol.zero {
     list-style-type: decimal-leading-zero;
 }
 img.a {
-    background-color: #AAF;
-    border-color: #88F;
+    background-color: var(--link-light-color);
+    border-color: var(--link-dark-color);
     border-width: 0.1em;
     border-style: outset;
 }
 img.a:hover {
-    background-color: #CCF;
-    border-color: #AAF;
+    background-color: var(--link-dark-color);
+    border-color: var(--link-light-color);
     border-style: inset;
 }
 img.icon {

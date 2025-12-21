@@ -1,0 +1,27 @@
+:root {
+    color-scheme: light dark;
+    --bg-light-color: #FFF;
+    --bg-dark-color: #111;
+    --bg-color: light-dark(var(--bg-light-color), var(--bg-dark-color));
+    --text-light-color: #000C;
+    --text-dark-color: #FFFC;
+    --text-color: light-dark(var(--text-light-color), var(--text-dark-color));
+    --yangsy-light-color: #C8F;
+    --yangsy-dark-color: #84C;
+    --yangsy-darker-color: #426;
+    --yangsy-color: light-dark(var(--yangsy-light-color), var(--yangsy-dark-color));
+    --yangsy-roloc: light-dark(var(--yangsy-dark-color), var(--yangsy-light-color));
+    --yangsy-colorer: light-dark(var(--yangsy-light-color), var(--yangsy-darker-color));
+    --yangsy-reroloc: light-dark(var(--yangsy-darker-color), var(--yangsy-light-color));
+    --monika-light-color: #8FC;
+    --monika-dark-color: #4C8;
+    --monika-darker-color: #264;
+    --monika-color: light-dark(var(--monika-light-color), var(--monika-dark-color));
+    --monika-roloc: light-dark(var(--monika-dark-color), var(--monika-light-color));
+    --monika-colorer: light-dark(var(--monika-light-color), var(--monika-darker-color));
+    --monika-reroloc: light-dark(var(--monika-darker-color), var(--monika-light-color));
+    --link-light-color: #AAF;
+    --link-dark-color: #448;
+    --link-color: light-dark(var(--link-light-color), var(--link-dark-color));
+    --link-roloc: light-dark(var(--link-dark-color), var(--link-light-color));
+}

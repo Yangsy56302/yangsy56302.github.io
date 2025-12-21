@@ -1,3 +1,4 @@
+@import url("color.css");
 @font-face {
     font-family: "Aller";
     src: url("Aller_Std_Rg.ttf") format("truetype");
@@ -29,8 +30,8 @@ body {
     align-items: stretch;
     margin: auto;
     padding: 1em 2em;
-    background-color: #4C8;
-    color: #000;
+    background-color: light-dark(var(--monika-dark-color), color-mix(in srgb, var(--monika-darker-color), #000 50%));
+    color: var(--text-color);
 }
 p, div, section, article {
     margin: 0.5em 0em 0.5em 0em;
@@ -40,23 +41,25 @@ p, div, section, article {
     font-family: "Aller", "Arial", "Helvetica", sans-serif;
 }
 hr {
-    border: 0.0625em solid #6A8;
+    border: 0.0625em solid light-dark(#6A8, #354);
 }
 .bar {
     margin: 0.5em 0em 0.5em 0em;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    border-left: 0.25em solid #C8F;
-    background-color: #C8F4;
+    --bar-color: light-dark(var(--yangsy-light-color), var(--yangsy-dark-color));
+    border-left: 0.25em solid var(--bar-color);
+    background-color: rgb(from var(--bar-color) r g b / 25%);
 }
 .baz {
     margin: 0.5em 0em 0.5em 0em;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    border: 0.25em solid #84F;
-    background-color: #84F4;
+    --baz-color: light-dark(var(--monika-dark-color), var(--yangsy-darker-color));
+    border: 0.25em solid var(--baz-color);
+    background-color: rgb(from var(--baz-color) r g b / 25%);
 }
 iframe {
     width: 100%;
-    border: 0.25em inset #4C8;
+    border: 0.25em inset var(--monika-dark-color);
 }
 aside {
     width: 20%;
@@ -71,17 +74,32 @@ nav {
     top: 0%;
     margin: 0%;
     padding: 0em 0em 0em 2em;
-    background-color: #BED;
+    background-color: light-dark(var(--monika-light-color), var(--monika-darker-color));
+    color: light-dark(var(--monika-darker-color), var(--monika-dark-color));
+}
+nav h1 {
+    font-size: 2em;
+    color: light-dark(var(--monika-darker-color), var(--monika-dark-color));
 }
 nav ol, nav ul, nav dl, nav dd {
     padding: 0em 1em;
+}
+nav a {
+    color: var(--monika-reroloc);
+    text-shadow: 0.05em 0.05em 0em var(--monika-dark-color);
+    font-weight: bold;
+    font-size: inherit;
+}
+nav a:hover {
+    color: var(--monika-dark-color);
+    text-shadow: 0.05em 0.05em 0em var(--monika-reroloc);
 }
 aside>div {
     position: sticky;
     bottom: 0%;
     margin: 0%;
     padding: 1em 2em;
-    background-color: #FFF;
+    background-color: var(--bg-color);
 }
 div.right {
     width: 80%;
@@ -98,13 +116,17 @@ header {
     width: 100%;
     padding: 0em 2em;
     overflow: auto;
-    background-color: #84F;
+    background-color: var(--yangsy-dark-color);
+}
+header h1 {
+    font-size: 2.5em;
+    color: var(--bg-light-color);
 }
 div.content {
     padding: 1em 2em;
     margin: 0%;
     width: 100%;
-    background-color: #FFF;
+    background-color: var(--bg-color);
 }
 footer {
     position: sticky;
@@ -112,5 +134,5 @@ footer {
     bottom: 0%;
     width: 100%;
     padding: 1em 2em;
-    background-color: #EDF;
+    background-color: light-dark(var(--yangsy-light-color), var(--yangsy-darker-color));
 }
