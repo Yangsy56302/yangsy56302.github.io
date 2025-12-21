@@ -27,6 +27,9 @@ h6 {
     color: color-mix(in srgb, var(--yangsy-roloc), var(--text-color) 87.5%);
     font-size: 1.125em;
 }
+hr {
+    border: 0.0625em solid var(--monika-color);
+}
 p {
     font-size: 1em;
 }

@@ -1,8 +1,9 @@
+@import url("color.css");
 body {
     margin: auto;
     padding: 0em 0em;
-    background-color: #FFF;
-    color: #000;
+    background-color: light-dark(var(--monika-dark-color), color-mix(in srgb, var(--monika-darker-color), #000 50%));
+    color: var(--text-color);
     padding: 1em 1em 1em 1em;
 }
 div, section, article {
@@ -12,12 +13,14 @@ div, section, article {
 .bar {
     margin: 0.5em 0em 0.5em 0em;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    border-left: 0.25em solid #C8F;
-    background-color: #C8F4;
+    --bar-color: light-dark(var(--yangsy-light-color), var(--yangsy-dark-color));
+    border-left: 0.25em solid var(--bar-color);
+    background-color: rgb(from var(--bar-color) r g b / 25%);
 }
 .baz {
     margin: 0.5em 0em 0.5em 0em;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    border: 0.25em solid #84F;
-    background-color: #84F4;
+    --baz-color: light-dark(var(--monika-dark-color), var(--yangsy-darker-color));
+    border: 0.25em solid var(--baz-color);
+    background-color: rgb(from var(--baz-color) r g b / 25%);
 }
