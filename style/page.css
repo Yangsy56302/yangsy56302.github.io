@@ -28,8 +28,10 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: stretch;
+    width: 100vw;
+    height: 100vh;
     margin: auto;
-    padding: 1rem 2rem;
+    padding: 0rem 0rem;
     background-color: light-dark(var(--monika-dark-color), color-mix(in srgb, var(--monika-darker-color), #000 50%));
     color: var(--text-color);
 }
@@ -68,9 +70,12 @@ aside {
     align-items: stretch;
 }
 nav {
+    position: relative;
+    height: 75vh;
     top: 0%;
     margin: 0%;
     padding: 0rem 0rem 0rem 2rem;
+    overflow: visible scroll;
     background-color: light-dark(var(--monika-light-color), var(--monika-darker-color));
     color: light-dark(var(--monika-darker-color), var(--monika-dark-color));
 }
@@ -92,10 +97,12 @@ nav a:hover {
     text-shadow: 0.05rem 0.05rem 0rem var(--monika-reroloc);
 }
 aside>div {
-    position: sticky;
+    position: relative;
+    height: 25vh;
     bottom: 0%;
     margin: 0%;
     padding: 1rem 2rem;
+    overflow: visible scroll;
     background-color: var(--bg-color);
 }
 div.right {
@@ -108,11 +115,9 @@ div.right {
 }
 header {
     position: relative;
-    top: 0%;
-    margin: 0%;
     width: 100%;
+    margin: 0%;
     padding: 0rem 2rem;
-    overflow: auto;
     background-color: var(--yangsy-dark-color);
 }
 header h1 {
@@ -120,16 +125,17 @@ header h1 {
     color: var(--bg-light-color);
 }
 div.content {
-    padding: 1rem 2rem;
-    margin: 0%;
+    position: relative;
     width: 100%;
+    overflow: visible scroll;
+    margin: 0%;
+    padding: 1rem 2rem;
     background-color: var(--bg-color);
 }
 footer {
-    position: sticky;
-    margin: 0%;
-    bottom: 0%;
+    position: relative;
     width: 100%;
+    margin: 0%;
     padding: 1rem 2rem;
     background-color: light-dark(var(--yangsy-light-color), var(--yangsy-darker-color));
 }
