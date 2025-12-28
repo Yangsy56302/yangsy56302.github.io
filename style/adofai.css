@@ -1,21 +1,11 @@
-@font-face {
-    font-family: "godoMaum";
-    src: url("godoMaum.ttf") format("truetype");
-    size-adjust: 135%;
-}
-@font-face {
-    font-family: "16FontSeto";
-    src: url("16FontSeto.ttf") format("truetype");
-}
-@font-face {
-    font-family: "HappyZcool";
-    src: url("HappyZcool.ttf") format("truetype");
-}
+@import url("font/godoMaum.css");
+/*
 body.tutotile {
     background-image: url("tutotile.png");
     background-repeat: repeat;
     background-attachment: fixed;
 }
+*/
 .adofai {
     background-color: #336;
     color: #AAC;
