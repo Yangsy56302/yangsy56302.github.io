@@ -45,8 +45,8 @@ dt {
     color: color-mix(in srgb, var(--text-colors) 50%, var(--yangsy-light-rolocs));
 }
 dd {
-    margin: 0rem 0rem 1rem 0rem;
-    padding: 0rem 2rem;
+    margin: 0rem;
+    padding: 0rem;
 }
 strong {
     color: var(--yangsy-light-rolocs);
@@ -191,4 +191,13 @@ img.iconhw {
 }
 *[title] {
     text-decoration: dotted underline;
+}
+del[title] {
+    text-decoration: dotted line-through;
+}
+del.heimu[title] {
+    text-decoration: dotted underline;
+}
+del.huhua[title] {
+    text-decoration: dotted line-through;
 }

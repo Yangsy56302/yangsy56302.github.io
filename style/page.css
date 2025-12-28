@@ -62,7 +62,7 @@ nav h1 {
     font-size: 2rem;
     color: var(--monika-dark-rolocs);
 }
-nav ol, nav ul, nav dl, nav dd {
+nav ol, nav ul, nav dl {
     padding: 0rem 1rem;
 }
 nav a {
