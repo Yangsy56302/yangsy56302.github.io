@@ -68,6 +68,18 @@ a.light {
     --a-fg-colors: var(--link-light-color);
     --a-bg-colors: var(--link-dark-color);
 }
+a[href^="http"] {
+    --a-fg-colors: var(--monika-rolocs);
+    --a-bg-colors: var(--monika-colors);
+}
+a[href^="http"].dark {
+    --a-fg-colors: var(--monika-dark-color);
+    --a-bg-colors: var(--monika-light-color);
+}
+a[href^="http"].light {
+    --a-fg-colors: var(--monika-light-color);
+    --a-bg-colors: var(--monika-dark-color);
+}
 a {
     color: var(--a-fg-colors);
     text-shadow: 0.0625rem 0.0625rem 0rem var(--a-bg-colors);
@@ -177,6 +189,6 @@ img.iconhw {
 .nobr {
     word-wrap: nowrap;
 }
-.annotated {
+*[title] {
     text-decoration: dotted underline;
 }
