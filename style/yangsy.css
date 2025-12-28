@@ -94,7 +94,7 @@ a:active {
     color: var(--a-fg-colors);
     text-shadow: -0.0625rem -0.0625rem 0rem var(--a-bg-colors);
 }
-img a {
+img.a {
     --button-bg-colors: var(--link-colors);
     --button-fg-colors: var(--link-rolocs);
 }
