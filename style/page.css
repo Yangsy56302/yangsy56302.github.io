@@ -9,8 +9,8 @@ body {
     height: 100vh;
     margin: auto;
     padding: 0rem 0rem;
-    background-color: light-dark(var(--monika-dark-color), color-mix(in srgb, var(--monika-darker-color), #000 50%));
-    color: var(--text-color);
+    background-color: light-dark(var(--monika-medium-color), color-mix(in srgb, var(--monika-dark-color), #000 50%));
+    color: var(--text-colors);
 }
 p, div, section, article {
     margin: 0.5rem 0rem 0.5rem 0rem;
@@ -22,20 +22,22 @@ p, div, section, article {
 .bar {
     margin: 0.5rem 0rem 0.5rem 0rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    --bar-color: light-dark(var(--yangsy-light-color), var(--yangsy-dark-color));
+    --bar-color: var(--yangsy-light-colors);
+    box-sizing: border-box;
     border-left: 0.25rem solid var(--bar-color);
     background-color: rgb(from var(--bar-color) r g b / 25%);
 }
 .baz {
     margin: 0.5rem 0rem 0.5rem 0rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    --baz-color: light-dark(var(--monika-dark-color), var(--yangsy-darker-color));
+    --baz-color: var(--monika-dark-colors);
+    box-sizing: border-box;
     border: 0.25rem solid var(--baz-color);
     background-color: rgb(from var(--baz-color) r g b / 25%);
 }
 iframe {
     width: 100%;
-    border: 0.25rem inset var(--monika-dark-color);
+    border: 0.25rem inset var(--monika-medium-color);
 }
 aside {
     width: 20%;
@@ -53,25 +55,19 @@ nav {
     margin: 0%;
     padding: 0rem 0rem 0rem 2rem;
     overflow: visible scroll;
-    background-color: light-dark(var(--monika-light-color), var(--monika-darker-color));
-    color: light-dark(var(--monika-darker-color), var(--monika-dark-color));
+    background-color: var(--monika-colors);
+    color: var(--monika-dark-rolocs);
 }
 nav h1 {
     font-size: 2rem;
-    color: light-dark(var(--monika-darker-color), var(--monika-dark-color));
+    color: var(--monika-dark-rolocs);
 }
 nav ol, nav ul, nav dl, nav dd {
     padding: 0rem 1rem;
 }
 nav a {
-    color: var(--monika-reroloc);
-    text-shadow: 0.05rem 0.05rem 0rem var(--monika-dark-color);
-    font-weight: bold;
-    font-size: inherit;
-}
-nav a:hover {
-    color: var(--monika-dark-color);
-    text-shadow: 0.05rem 0.05rem 0rem var(--monika-reroloc);
+    --a-fg-colors: var(--monika-rolocs);
+    --a-bg-colors: var(--monika-medium-color);
 }
 aside>div {
     position: relative;
@@ -80,7 +76,7 @@ aside>div {
     margin: 0%;
     padding: 1rem 2rem;
     overflow: visible scroll;
-    background-color: var(--bg-color);
+    background-color: var(--bg-colors);
 }
 div.right {
     width: 80%;
@@ -95,7 +91,7 @@ header {
     width: 100%;
     margin: 0%;
     padding: 0rem 2rem;
-    background-color: var(--yangsy-dark-color);
+    background-color: var(--yangsy-medium-color);
 }
 header h1 {
     font-size: 2.5rem;
@@ -107,12 +103,12 @@ div.content {
     overflow: visible scroll;
     margin: 0%;
     padding: 1rem 2rem;
-    background-color: var(--bg-color);
+    background-color: var(--bg-colors);
 }
 footer {
     position: relative;
     width: 100%;
     margin: 0%;
     padding: 1rem 2rem;
-    background-color: light-dark(var(--yangsy-light-color), var(--yangsy-darker-color));
+    background-color: var(--yangsy-colors);
 }

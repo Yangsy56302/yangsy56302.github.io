@@ -6,30 +6,30 @@ html {
 }
 h1 {
     font-size: 2.5rem;
-    color: var(--yangsy-roloc);
+    color: var(--yangsy-light-rolocs);
 }
 h2 {
-    color: var(--yangsy-roloc);
+    color: var(--yangsy-light-rolocs);
     font-size: 2rem;
 }
 h3 {
-    color: color-mix(in srgb, var(--yangsy-roloc), var(--text-color) 25%);
+    color: color-mix(in srgb, var(--yangsy-light-rolocs), var(--text-colors) 25%);
     font-size: 1.75rem;
 }
 h4 {
-    color: color-mix(in srgb, var(--yangsy-roloc), var(--text-color) 50%);
+    color: color-mix(in srgb, var(--yangsy-light-rolocs), var(--text-colors) 50%);
     font-size: 1.5rem;
 }
 h5 {
-    color: color-mix(in srgb, var(--yangsy-roloc), var(--text-color) 75%);
+    color: color-mix(in srgb, var(--yangsy-light-rolocs), var(--text-colors) 75%);
     font-size: 1.25rem;
 }
 h6 {
-    color: color-mix(in srgb, var(--yangsy-roloc), var(--text-color) 87.5%);
+    color: color-mix(in srgb, var(--yangsy-light-rolocs), var(--text-colors) 87.5%);
     font-size: 1.125rem;
 }
 hr {
-    border: 0.0625em solid light-dark(var(--monika-dark-color), var(--monika-darker-color));
+    border: 0.0625em solid --monika-dark-colors;
 }
 p {
     font-size: 1rem;
@@ -42,14 +42,14 @@ dt {
     font-weight: bold;
     margin: 0rem 0rem 0.5rem 0rem;
     padding: 0rem;
-    color: color-mix(in srgb, var(--text-color) 50%, var(--yangsy-roloc));
+    color: color-mix(in srgb, var(--text-colors) 50%, var(--yangsy-light-rolocs));
 }
 dd {
     margin: 0rem 0rem 1rem 0rem;
     padding: 0rem 2rem;
 }
 strong {
-    color: var(--yangsy-roloc);
+    color: var(--yangsy-light-rolocs);
     font-weight: bold;
 }
 em {
@@ -57,30 +57,55 @@ em {
     font-style: italic;
 }
 a {
-    color: var(--link-roloc);
-    text-shadow: 0.05rem 0.05rem 0rem var(--link-color);
+    --a-fg-colors: var(--link-rolocs);
+    --a-bg-colors: var(--link-colors);
+}
+a.dark {
+    --a-fg-colors: var(--link-dark-color);
+    --a-bg-colors: var(--link-light-color);
+}
+a.light {
+    --a-fg-colors: var(--link-light-color);
+    --a-bg-colors: var(--link-dark-color);
+}
+a {
+    color: var(--a-fg-colors);
+    text-shadow: 0.0625rem 0.0625rem 0rem var(--a-bg-colors);
     font-weight: bold;
     font-size: inherit;
 }
 a:hover {
-    color: var(--link-color);
-    text-shadow: 0.05rem 0.05rem 0rem var(--link-roloc);
+    color: var(--a-bg-colors);
+    text-shadow: 0.0625rem 0.0625rem 0rem var(--a-fg-colors);
 }
-a.dark {
-    color: var(--link-dark-color);
-    text-shadow: 0.05rem 0.05rem 0rem var(--link-light-color);
+a:active {
+    color: var(--a-fg-colors);
+    text-shadow: -0.0625rem -0.0625rem 0rem var(--a-bg-colors);
 }
-a.dark:hover {
-    color: var(--link-light-color);
-    text-shadow: 0.05rem 0.05rem 0rem var(--link-dark-color);
+img a {
+    --button-bg-colors: var(--link-colors);
+    --button-fg-colors: var(--link-rolocs);
 }
-a.light {
-    color: var(--link-light-color);
-    text-shadow: 0.05rem 0.05rem 0rem var(--link-dark-color);
+button {
+    --button-bg-colors: var(--monika-colors);
+    --button-fg-colors: var(--monika-rolocs);
 }
-a.light:hover {
-    color: var(--link-dark-color);
-    text-shadow: 0.05rem 0.05rem 0rem var(--link-light-color);
+img.a, button {
+    border: none;
+    background-color: var(--button-bg-colors);
+    color: var(--button-fg-colors);
+    box-shadow: 0.125rem 0.125rem var(--button-fg-colors);
+}
+img.a:hover, button:hover {
+    background-color: var(--button-fg-colors);
+    color: var(--button-bg-colors);
+    box-shadow: 0.125rem 0.125rem var(--button-bg-colors);
+}
+img.a:active, button:active {
+    box-shadow: -0.125rem -0.125rem var(--button-fg-colors);
+}
+img.a:hover:active, button:hover:active {
+    box-shadow: -0.125rem -0.125rem var(--button-bg-colors);
 }
 del.heimu {
     background-color: #0005;
@@ -140,17 +165,6 @@ ol.levels li:last-child {
 }
 ol.zero {
     list-style-type: decimal-leading-zero;
-}
-img.a {
-    background-color: var(--link-light-color);
-    border-color: var(--link-dark-color);
-    border-width: 0.1rem;
-    border-style: outset;
-}
-img.a:hover {
-    background-color: var(--link-dark-color);
-    border-color: var(--link-light-color);
-    border-style: inset;
 }
 img.icon {
     width: 1rem;
