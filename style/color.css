@@ -1,5 +1,4 @@
 :root {
-    color-scheme: light dark;
     --bg-light-color: #FFF;
     --bg-dark-color: #111;
     --bg-colors: light-dark(var(--bg-light-color), var(--bg-dark-color));

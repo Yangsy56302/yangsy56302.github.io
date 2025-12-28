@@ -7,7 +7,6 @@ body.tutotile {
 }
 */
 :root {
-    color-scheme: light dark;
     --tuto-bg-light-color: #303363;
     --tuto-bg-dark-color: #101121;
     --tuto-shadow-color: #000A;

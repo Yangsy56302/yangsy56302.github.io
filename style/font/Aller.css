@@ -1,24 +1,24 @@
 @font-face {
     font-family: "Aller";
-    src: url("Aller_Std_Rg.ttf") format("truetype");
+    src: url("aller/Aller_Std_Rg.ttf") format("truetype");
     font-weight: unset;
     font-style: unset;
 }
 @font-face {
     font-family: "Aller";
-    src: url("Aller_Std_Bd.ttf") format("truetype");
+    src: url("aller/Aller_Std_Bd.ttf") format("truetype");
     font-weight: bold;
     font-style: unset;
 }
 @font-face {
     font-family: "Aller";
-    src: url("Aller_Std_It.ttf") format("truetype");
+    src: url("aller/Aller_Std_It.ttf") format("truetype");
     font-weight: unset;
     font-style: italic;
 }
 @font-face {
     font-family: "Aller";
-    src: url("Aller_Std_BdIt.ttf") format("truetype");
+    src: url("aller/Aller_Std_BdIt.ttf") format("truetype");
     font-weight: bold;
     font-style: italic;
 }
