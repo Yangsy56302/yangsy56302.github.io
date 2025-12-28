@@ -6,14 +6,47 @@ body.tutotile {
     background-attachment: fixed;
 }
 */
+:root {
+    color-scheme: light dark;
+    --tuto-bg-light-color: #303363;
+    --tuto-bg-dark-color: #101121;
+    --tuto-bg-color: light-dark(var(--tuto-bg-light-color), var(--tuto-bg-dark-color));
+    --tuto-fg-light-color: #A0AACA;
+    --tuto-fg-dark-color: #8088B8;
+    --tuto-fg-color: light-dark(var(--tuto-fg-light-color), var(--tuto-fg-dark-color));
+    --tuto-a-light-color: #D0DDFD;
+    --tuto-a-dark-color: #B0BBEB;
+    --tuto-a-color: light-dark(var(--tuto-a-light-color), var(--tuto-a-dark-color));
+    --red-light-color: #F55;
+    --red-dark-color: #C44;
+    --red-color: light-dark(var(--red-light-color), var(--red-dark-color));
+    --orange-light-color: #FA5;
+    --orange-dark-color: #C84;
+    --orange-color: light-dark(var(--gold-light-color), var(--gold-dark-color));
+    --yellow-light-color: #FF5;
+    --yellow-dark-color: #CC4;
+    --yellow-color: light-dark(var(--yellow-light-color), var(--yellow-dark-color));
+    --green-light-color: #5F5;
+    --green-dark-color: #4C4;
+    --green-color: light-dark(var(--green-light-color), var(--green-dark-color));
+    --cyan-light-color: #5FF;
+    --cyan-dark-color: #4CC;
+    --cyan-color: light-dark(var(--cyan-light-color), var(--cyan-dark-color));
+    --blue-light-color: #55F;
+    --blue-dark-color: #44C;
+    --blue-color: light-dark(var(--blue-light-color), var(--blue-dark-color));
+    --magenta-light-color: #F5F;
+    --magenta-dark-color: #C4C;
+    --magenta-color: light-dark(var(--magenta-light-color), var(--magenta-dark-color));
+}
 .adofai {
-    background-color: #336;
-    color: #AAC;
+    background-color: var(--tuto-bg-color);
+    color: var(--tuto-fg-color);
     font-family: "godoMaum", "16FontSeto", "HappyZcool", "Consolas", "Courier New", monospace, sans-serif, serif;
     text-shadow: 0.1rem 0.1rem 0rem #000A;
 }
 .adofai a {
-    color: #FFF;
+    color: var(--tuto-a-color);
     font-weight: inherit;
     text-shadow: inherit;
     text-decoration: none;
@@ -34,22 +67,22 @@ code.adofai {
     font-weight: unset;
 }
 .adofai .\/, .adofai .\-, .adofai .\+ {
-    color: #F55;
+    color: var(--red-color);
     text-shadow: inherit inherit #6006;
 }
 .adofai .\+\-, .adofai .\-\+, .adofai .\*\/, .adofai .\/\* {
-    color: #FA5;
+    color: var(--orange-color);
     text-shadow: inherit inherit #6006;
 }
 .adofai .\* {
-    color: #5F5;
+    color: var(--green-color);
     text-shadow: inherit inherit #0606;
 }
 .adofai sup, .adofai .\^ {
-    color: #5FF;
+    color: var(--cyan-color);
     text-shadow: inherit inherit #0606;
 }
 .adofai sub, .adofai ._ {
-    color: #F5F;
+    color: var(--magenta-color);
     text-shadow: inherit inherit #0606;
 }
