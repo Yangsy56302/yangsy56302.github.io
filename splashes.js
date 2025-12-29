@@ -151,31 +151,31 @@ const splashes = [
 ];
 
 function replaceSplash(splash) {
-    splash.replaceAll(
-        /\{([\w]+-[\w]+)\?\}/, 
+    splash = splash.replace(
+        /\{([\w]+-[\w]+)\?\}/g, 
         `<a target="_blank" href="{root}/adofai/cursed/crab/index.html#$1">`
     );
-    splash.replaceAll(
-        /\{([\w]+-[\w]+)\?'\}/, 
+    splash = splash.replace(
+        /\{([\w]+-[\w]+)\?'\}/g, 
         `<a target="_blank" href="{root}/adofai/cursed/crab/shifted.html#$1">`
     );
-    splash.replaceAll(
-        /\{([\w]+-[\w]+)\*\}/, 
+    splash = splash.replace(
+        /\{([\w]+-[\w]+)\*\}/g, 
         `<a target="_blank" href="{root}/adofai/cursed/landmine/e.html#$1">`
     );
-    splash.replaceAll(
-        /\{([^ ]+) L\*\}/, 
+    splash = splash.replace(
+        /\{([^ ]+) L\*\}/g, 
         `<a target="_blank" href="{root}/adofai/cursed/landmine/a.html#$1">`
     );
-    splash.replaceAll(
-        /\{"([\w]+-[\w]+)"\}/, 
+    splash = splash.replace(
+        /\{"([\w]+-[\w]+)"\}/g, 
         `<a target="_blank" href="{root}/adofai/cursed/string/e.html#$1">`
     );
-    splash.replaceAll(
-        /\{([^ ]+) "L"\}/, 
-        `{$1 "L"}`
+    splash = splash.replace(
+        /\{([^ ]+) "L"\}/g, 
+        `<a target="_blank" href="{root}/adofai/cursed/string/a.html#$1">`
     );
-    splash.replaceAll(`{root}`, `https://yangsy56302.github.io`);
+    splash = splash.replaceAll(`{root}`, `https://yangsy56302.github.io`);
     return splash;
 }
 function randomSplash() {
