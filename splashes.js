@@ -150,7 +150,7 @@ const splashes = [
     `!<a target="_blank" href="{root}/404.html">404</a> not Not Found!`,
 ];
 
-function replaceSplash(str) {
+function replaceSplash(splash) {
     splash.replaceAll(
         /\{([\w]+-[\w]+)\?\}/, 
         `<a target="_blank" href="{root}/adofai/cursed/crab/index.html#$1">`
@@ -176,7 +176,7 @@ function replaceSplash(str) {
         `{$1 "L"}`
     );
     splash.replaceAll(`{root}`, `https://yangsy56302.github.io`);
-    return str;
+    return splash;
 }
 function randomSplash() {
     let splash = splashes[Math.floor(Math.random() * splashes.length)];
