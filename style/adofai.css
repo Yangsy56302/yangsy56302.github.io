@@ -33,11 +33,14 @@ body.tutotile {
     text-shadow: inherit;
     text-decoration: none;
 }
+.adofai a[title] {
+    text-decoration: dotted underline;
+}
 .adofai a:hover {
     text-decoration: solid underline;
 }
-.adofai .annotated {
-    text-decoration: dotted underline;
+.adofai a:active {
+    text-shadow: -0.1rem -0.1rem 0rem #000A;
 }
 div.adofai {
     margin: 0.25rem 2rem 0.25rem 2rem;

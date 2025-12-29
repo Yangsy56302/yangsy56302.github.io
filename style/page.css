@@ -41,7 +41,7 @@ nav {
     overflow: visible scroll;
     background-color: var(--monika-colors);
     color: var(--monika-medium-color);
-    --title-colors: var(--monika-rolocs);
+    --title-colors: var(--monika-dark-rolocs);
 }
 nav h1 {
     font-size: 2rem;
