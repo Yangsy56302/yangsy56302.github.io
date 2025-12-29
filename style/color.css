@@ -17,8 +17,8 @@
     --yangsy-dark-colors: light-dark(var(--yangsy-medium-color), var(--yangsy-dark-color));
     --yangsy-dark-rolocs: light-dark(var(--yangsy-dark-color), var(--yangsy-medium-color));
 
-    --title-color: var(--yangsy-rolocs);
-    --title-color2: var(--text-colors);
+    --title-colors: var(--yangsy-rolocs);
+    --title-colors2: var(--text-colors);
 
     --monika-light-color: #8FC;
     --monika-medium-color: #4C8;

@@ -12,7 +12,6 @@ body.tutotile {
     --tuto-bg-shadow-color: #000A;
     --tuto-bg-color: light-dark(var(--tuto-bg-light-color), var(--tuto-bg-dark-color));
 
-
     --tuto-fg-light-color: #A0AACA;
     --tuto-fg-dark-color: #8088B8;
     --tuto-fg-color: light-dark(var(--tuto-fg-light-color), var(--tuto-fg-dark-color));
@@ -24,7 +23,7 @@ body.tutotile {
     --red-light-color: #F55;
     --red-dark-color: #C44;
     --red-shadow-color: #6006;
-    --red-colorss: light-dark(var(--red-light-color), var(--red-dark-color));
+    --red-colors: light-dark(var(--red-light-color), var(--red-dark-color));
 
     --orange-light-color: #FA5;
     --orange-dark-color: #C84;
