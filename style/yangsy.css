@@ -1,9 +1,21 @@
 @import url("color.css");
+@import url("font/Aller.css");
+/* roots */
 html {
     font-family: "Consolas", "Courier New", "SimHei", "Microsoft YaHei", monospace, sans-serif, serif;
     font-size: 16px;
     scroll-behavior: smooth;
 }
+body {
+    background-color: light-dark(var(--monika-medium-color), color-mix(in srgb, var(--monika-dark-color), #000 50%));
+    color: var(--text-colors);
+}
+/* global margin and padding */
+p, div, section, article {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    padding: 0rem 2rem 0rem 2rem;
+}
+/* title */
 h1 {
     color: var(--title-colors);
     font-size: 2.5rem;
@@ -25,14 +37,85 @@ h5 {
     font-size: 1.25rem;
 }
 h6 {
-    color: color-mix(in srgb, var(--title-colors), var(--title-colors2) 87.5%);
-    font-size: 1.125rem;
+    color: color-mix(in srgb, var(--title-colors), var(--title-colors2) 50%);
+    font-size: 1rem;
 }
 hr {
     border: 0.0625em solid var(--monika-dark-colors);
 }
+/* basic formats */
 p {
     font-size: 1rem;
+}
+strong {
+    color: var(--title-colors);
+    font-weight: bold;
+}
+em {
+    opacity: 62.5%;
+    font-style: italic;
+}
+/* hei1 mu4 and hu2 hua4 */
+del.heimu {
+    background-color: #0005;
+    text-decoration-line: none;
+}
+del.heimu:not(del:hover), del.heimu:not(del:hover) * {
+    color: #5550;
+    background-color: #555;
+    text-shadow: unset;
+}
+del.huhua {
+    opacity: 0.375;
+}
+/* other formats */
+abbr{
+    color: inherit;
+    font-size: inherit;
+}
+code, var {
+    font-family: 'Courier New', Courier, 'Consolas', monospace;
+    background-color: #000;
+    font-size: inherit;
+    padding: 0.125rem 0.25rem;
+}
+code a, var a {
+    text-shadow: none;
+}
+code {
+    font-style: normal;
+    color: #AAA;
+}
+code strong {
+    color: #FFF;
+}
+var {
+    color: #F5A;
+}
+var strong {
+    color: #F8C;
+}
+/* list */
+ul {
+    list-style-type: disc;
+}
+ul.checked {
+    list-style-type: disc;
+}
+ul.uncheck {
+    list-style-type: circle;
+}
+ol {
+    list-style-type: decimal;
+}
+ol.levels {
+    list-style-type: decimal;
+}
+ol.levels li:last-child {
+    list-style-type: "X. ";
+}
+ol.zero {
+    list-style-type: decimal-leading-zero;
 }
 dl {
     margin: 0.5rem 0rem 1rem 0rem;
@@ -48,14 +131,20 @@ dd {
     margin: 0rem;
     padding: 0rem;
 }
-strong {
-    color: var(--title-colors);
-    font-weight: bold;
+/* description */
+*[title] {
+    text-decoration: dotted underline;
 }
-em {
-    opacity: 62.5%;
-    font-style: italic;
+del[title] {
+    text-decoration: dotted line-through;
 }
+del.heimu[title] {
+    text-decoration: dotted underline;
+}
+del.huhua[title] {
+    text-decoration: dotted line-through;
+}
+/* link */
 a {
     --a-fg-colors: var(--link-rolocs);
     --a-bg-colors: var(--link-colors);
@@ -98,6 +187,7 @@ img.a {
     --button-bg-colors: var(--link-colors);
     --button-fg-colors: var(--link-rolocs);
 }
+/* button */
 button {
     --button-bg-colors: var(--monika-colors);
     --button-fg-colors: var(--monika-rolocs);
@@ -119,65 +209,6 @@ img.a:active, button:active {
 img.a:hover:active, button:hover:active {
     box-shadow: -0.125rem -0.125rem var(--button-bg-colors);
 }
-del.heimu {
-    background-color: #0005;
-    text-decoration-line: none;
-}
-del.heimu:not(del:hover), del.heimu:not(del:hover) * {
-    color: #5550;
-    background-color: #555;
-    text-shadow: unset;
-}
-del.huhua {
-    opacity: 0.375;
-}
-abbr{
-    color: inherit;
-    font-size: inherit;
-}
-code, var {
-    font-family: 'Courier New', Courier, 'Consolas', monospace;
-    background-color: #000;
-    font-size: inherit;
-    padding: 0.125rem 0.25rem;
-}
-code a, var a {
-    text-shadow: none;
-}
-code {
-    font-style: normal;
-    color: #AAA;
-}
-code strong {
-    color: #FFF;
-}
-var {
-    color: #F5A;
-}
-var strong {
-    color: #F8C;
-}
-ul {
-    list-style-type: disc;
-}
-ul.checked {
-    list-style-type: disc;
-}
-ul.uncheck {
-    list-style-type: circle;
-}
-ol {
-    list-style-type: decimal;
-}
-ol.levels {
-    list-style-type: decimal;
-}
-ol.levels li:last-child {
-    list-style-type: "X. ";
-}
-ol.zero {
-    list-style-type: decimal-leading-zero;
-}
 img.icon {
     width: 1em;
     height: 1em;
@@ -186,21 +217,7 @@ img.iconhw {
     width: 0.5em;
     height: 0.5em;
 }
-.nobr {
-    word-wrap: nowrap;
-}
-*[title] {
-    text-decoration: dotted underline;
-}
-del[title] {
-    text-decoration: dotted line-through;
-}
-del.heimu[title] {
-    text-decoration: dotted underline;
-}
-del.huhua[title] {
-    text-decoration: dotted line-through;
-}
+/* container */
 .bar {
     margin: 0.5rem 0rem 0.5rem 0rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -217,4 +234,100 @@ del.huhua[title] {
     border: 0.25rem solid var(--baz-color);
     background-color: rgb(from var(--baz-color) r g b / 25%);
     --title-colors: var(--monika-rolocs);
+}
+iframe {
+    width: 100%;
+    border: 0.25rem inset var(--monika-medium-color);
+}
+/* layout */
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 0rem 0rem;
+}
+aside {
+    width: 20%;
+    min-height: 100vh;
+    margin: 0%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+nav {
+    position: relative;
+    height: 75vh;
+    top: 0%;
+    margin: 0%;
+    padding: 0rem 0rem 0rem 2rem;
+    overflow: visible scroll;
+    background-color: var(--monika-colors);
+    color: var(--monika-rolocs);
+    --title-colors: var(--monika-rolocs);
+}
+nav h1 {
+    font-size: 2rem;
+}
+nav a {
+    --a-fg-colors: var(--monika-rolocs);
+    --a-bg-colors: var(--monika-colors);
+}
+nav strong {
+    color: var(--monika-medium-color);
+}
+nav ol, nav ul, nav dl {
+    padding: 0rem 1rem;
+}
+aside>div {
+    position: relative;
+    height: 25vh;
+    bottom: 0%;
+    margin: 0%;
+    padding: 1rem 2rem;
+    overflow: visible scroll;
+    background-color: var(--bg-colors);
+}
+div.right {
+    width: 80%;
+    height: 100vh;
+    margin: 0%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+header {
+    position: relative;
+    width: 100%;
+    margin: 0%;
+    padding: 0rem 2rem;
+    background-color: var(--yangsy-medium-color);
+}
+header h1 {
+    font-size: 2.5rem;
+    color: var(--bg-light-color);
+}
+div.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible scroll;
+    margin: 0%;
+    padding: 1rem 2rem;
+    background-color: var(--bg-colors);
+}
+footer {
+    position: relative;
+    width: 100%;
+    margin: 0%;
+    padding: 1rem 2rem;
+    background-color: var(--yangsy-colors);
+}
+#splash {
+    font-family: "Aller", "Arial", "Helvetica", sans-serif;
 }
