@@ -40,8 +40,8 @@ nav {
     padding: 0rem 0rem 0rem 2rem;
     overflow: visible scroll;
     background-color: var(--monika-colors);
-    color: var(--monika-medium-color);
-    --title-colors: var(--monika-light-rolocs);
+    color: var(--monika-rolocs);
+    --title-colors: var(--monika-rolocs);
 }
 nav h1 {
     font-size: 2rem;
