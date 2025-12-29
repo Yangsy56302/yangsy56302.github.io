@@ -1,7 +1,8 @@
 const splashes = [
     // technical
-    // "* insert random splashes here *`,
+    `* insert random splashes here *`,
     `test message pls ingore`,
+    `...!`,
     
     // uncategorized
 

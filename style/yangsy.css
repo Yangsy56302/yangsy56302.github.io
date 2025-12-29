@@ -216,5 +216,5 @@ del.huhua[title] {
     box-sizing: border-box;
     border: 0.25rem solid var(--baz-color);
     background-color: rgb(from var(--baz-color) r g b / 25%);
-    --title-colors: var(--monika-dark-rolocs);
+    --title-colors: var(--monika-light-rolocs);
 }
