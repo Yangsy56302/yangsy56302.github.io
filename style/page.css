@@ -46,6 +46,10 @@ nav {
 nav h1 {
     font-size: 2rem;
 }
+nav a {
+    --a-fg-colors: var(--monika-rolocs);
+    --a-bg-colors: var(--monika-colors);
+}
 nav strong {
     color: var(--monika-medium-color);
 }
