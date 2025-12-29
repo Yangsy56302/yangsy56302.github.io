@@ -1,4 +1,5 @@
 @import url("font/godoMaum.css");
+@import url("color.css");
 /*
 body.tutotile {
     background-image: url("tutotile.png");
@@ -19,41 +20,6 @@ body.tutotile {
     --tuto-a-light-color: #FFFFFF;
     --tuto-a-dark-color: #C0CCDC;
     --tuto-a-color: light-dark(var(--tuto-a-light-color), var(--tuto-a-dark-color));
-
-    --red-light-color: #F55;
-    --red-dark-color: #C44;
-    --red-shadow-color: #6006;
-    --red-colors: light-dark(var(--red-light-color), var(--red-dark-color));
-
-    --orange-light-color: #FA5;
-    --orange-dark-color: #C84;
-    --orange-shadow-color: #6306;
-    --orange-colors: light-dark(var(--gold-light-color), var(--gold-dark-color));
-
-    --yellow-light-color: #FF5;
-    --yellow-dark-color: #CC4;
-    --yellow-shadow-color: #6606;
-    --yellow-colors: light-dark(var(--yellow-light-color), var(--yellow-dark-color));
-
-    --green-light-color: #5F5;
-    --green-dark-color: #4C4;
-    --green-shadow-color: #0606;
-    --green-colors: light-dark(var(--green-light-color), var(--green-dark-color));
-
-    --cyan-light-color: #5FF;
-    --cyan-dark-color: #4CC;
-    --cyan-shadow-color: #0666;
-    --cyan-colors: light-dark(var(--cyan-light-color), var(--cyan-dark-color));
-
-    --blue-light-color: #55F;
-    --blue-dark-color: #44C;
-    --blue-shadow-color: #0066;
-    --blue-colors: light-dark(var(--blue-light-color), var(--blue-dark-color));
-
-    --magenta-light-color: #F5F;
-    --magenta-dark-color: #C4C;
-    --magenta-shadow-color: #6066;
-    --magenta-colors: light-dark(var(--magenta-light-color), var(--magenta-dark-color));
 }
 .adofai {
     background-color: var(--tuto-bg-color);
@@ -83,22 +49,37 @@ code.adofai {
     font-weight: unset;
 }
 .adofai .\/, .adofai .\-, .adofai .\+ {
-    color: var(--red-colors);
+    color: var(--red-dark-colors);
     text-shadow: inherit inherit var(--red-shadow-color);
 }
 .adofai .\+\-, .adofai .\-\+, .adofai .\*\/, .adofai .\/\* {
-    color: var(--orange-colors);
+    color: var(--orange-dark-colors);
     text-shadow: inherit inherit var(--orange-shadow-color);
 }
 .adofai .\* {
-    color: var(--green-colors);
+    color: var(--green-dark-colors);
     text-shadow: inherit inherit var(--green-shadow-color);
 }
 .adofai sup, .adofai .\^ {
-    color: var(--cyan-colors);
+    color: var(--cyan-dark-colors);
     text-shadow: inherit inherit var(--cyan-shadow-color);
 }
 .adofai sub, .adofai ._ {
-    color: var(--magenta-colors);
+    color: var(--magenta-dark-colors);
     text-shadow: inherit inherit var(--magenta-shadow-color);
+}
+span.fire {
+    color: var(--red-color);
+}
+span.ice {
+    color: var(--blue-color);
+}
+span.cursed {
+    color: var(--magenta-color);
+}
+span.fire.cursed {
+    color: var(--yellow-color);
+}
+span.ice.cursed {
+    color: var(--cyan-color);
 }
