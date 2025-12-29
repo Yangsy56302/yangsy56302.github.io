@@ -6,7 +6,6 @@ const splashes = [
     // uncategorized
 
     // ADOFAI
-
     `A Dance of Fire and Ice!`,
     `Playing it Straight!`,
     `North and South are Always Off Beat!`,
@@ -87,23 +86,23 @@ const splashes = [
     `*{"PA-X"}high-pitched water drop sound</a>*`,
     `{"XR-X"}Triangular</a>, inconsistent, complicated, difficult and cute rabbits!`,
     `The 99th civilization at Proxima Centauri b was doomed because {"XN-X"}3 planets appeared in the sky on their planet at the same time</a>!`,
-    `Subscribe to <a target="_blank" href="https://www.youtube.com/@OokamiOkoku">Ouka Miko</a>!`,
+    `Subscribe to <a target="_blank" href="https://www.youtube.com/@櫻歌実恋_OukaMiko">Ouka Miko</a>!`,
     `{"XS-X"}Delayed</a> by 1 tile!`,
     `Since we already had tutorial for curses, why don't we try to make {"XO-1"}curses for tutorial</a>?`,
     `{"6-X"}PAUSE</a>: {"XI-X"}Limited Edition</a>!`,
     `{"XI-X"}1 Go!</a>`,
     `All the straight tiles are {"XT-X"}missing</a>!`,
     `{"T4-X"}Midspin</a> 2 Win!`,
-    // "Non-Explosive Memes!`,
-    `{Arbitrary_Character "L"}Arbitrary Character</a>!`,
-    `Nobody said that a level must choose at most one between {"XS-X"}becoming a curse</a> and {Actions "L"}being cursed</a>, so yeah!`,
-    `{Party_of_stiripS "L"}Party of !stiripS</a>`,
-    `{D_is_isinstance "L"}D is isinstance</a>!`, 
-    `{EMCLL "L"}EEEEVEN MOMOMORE CURSED LED LEVELS</a>!`,
-    `{14G10R "L"}1 4 Got 10 →</a>!`,
-    `Hope you guys still feels like a piece of cake to {Git0 "L"}deal with fundamental math operations quickly</a>!`, 
-    `{Define_Interaction "L"}Define Interaction</a>!`,
-    `{Novel_Feature "L"}Novel Feature</a>!`,
+    `{aXO-Xvc "L"}Non-Explosive Memes</a>!`,
+    `{a12-X "L"}Arbitrary Character</a>!`,
+    `Nobody said that a level must choose at most one between {"XS-X"}becoming a curse</a> and {aXT-X "L"}being cursed</a>, so yeah!`,
+    `{aXS-X "L"}Party of </a>!{aXS-X "L"}stiripS</a>`,
+    `{aPA-X "L"}D is isinstance</a>!`, 
+    `{aMO-X "L"}EEEEVEN MOMOMORE CURSED LED LEVELS</a>!`,
+    `{aXI-X "L"}1 4 Got 10 →</a>!`,
+    `Hope you guys still feels like a piece of cake to {aXI-X "L"}deal with fundamental math operations quickly</a>!`, 
+    `{aT5-X "L"}Define Interaction</a>!`,
+    `{aNF-X "L"}Novel Feature</a>!`,
 
     // ADOFAI Cursed
     `Exclamation mark!`,
