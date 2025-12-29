@@ -179,12 +179,12 @@ ol.zero {
     list-style-type: decimal-leading-zero;
 }
 img.icon {
-    width: 1rem;
-    height: 1rem;
+    width: 1em;
+    height: 1em;
 }
 img.iconhw {
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.5em;
+    height: 0.5em;
 }
 .nobr {
     word-wrap: nowrap;
