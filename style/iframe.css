@@ -13,14 +13,14 @@ div, section, article {
 .bar {
     margin: 0.5rem 0rem 0.5rem 0rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    --bar-color: var(--yangsy-light-colors)
+    --bar-color: var(--yangsy-light-colors);
     border-left: 0.25rem solid var(--bar-color);
     background-color: rgb(from var(--bar-color) r g b / 25%);
 }
 .baz {
     margin: 0.5rem 0rem 0.5rem 0rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    --baz-color: var(--yangsy-dark-colors)
+    --baz-color: var(--yangsy-dark-colors);
     border: 0.25rem solid var(--baz-color);
     background-color: rgb(from var(--baz-color) r g b / 25%);
 }

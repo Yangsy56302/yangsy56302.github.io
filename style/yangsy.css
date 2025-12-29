@@ -5,31 +5,31 @@ html {
     scroll-behavior: smooth;
 }
 h1 {
+    color: var(--title-color);
     font-size: 2.5rem;
-    color: var(--yangsy-light-rolocs);
 }
 h2 {
-    color: var(--yangsy-light-rolocs);
+    color: var(--title-color);
     font-size: 2rem;
 }
 h3 {
-    color: color-mix(in srgb, var(--yangsy-light-rolocs), var(--text-colors) 25%);
+    color: color-mix(in srgb, var(--title-color), var(--title-color2) 25%);
     font-size: 1.75rem;
 }
 h4 {
-    color: color-mix(in srgb, var(--yangsy-light-rolocs), var(--text-colors) 50%);
+    color: color-mix(in srgb, var(--title-color), var(--title-color2) 50%);
     font-size: 1.5rem;
 }
 h5 {
-    color: color-mix(in srgb, var(--yangsy-light-rolocs), var(--text-colors) 75%);
+    color: color-mix(in srgb, var(--title-color), var(--title-color2) 75%);
     font-size: 1.25rem;
 }
 h6 {
-    color: color-mix(in srgb, var(--yangsy-light-rolocs), var(--text-colors) 87.5%);
+    color: color-mix(in srgb, var(--title-color), var(--title-color2) 87.5%);
     font-size: 1.125rem;
 }
 hr {
-    border: 0.0625em solid --monika-dark-colors;
+    border: 0.0625em solid var(--monika-dark-colors);
 }
 p {
     font-size: 1rem;
@@ -42,14 +42,14 @@ dt {
     font-weight: bold;
     margin: 0rem 0rem 0.5rem 0rem;
     padding: 0rem;
-    color: color-mix(in srgb, var(--text-colors) 50%, var(--yangsy-light-rolocs));
+    color: color-mix(in srgb, var(--title-color), var(--title-color2) 50%);
 }
 dd {
     margin: 0rem;
     padding: 0rem;
 }
 strong {
-    color: var(--yangsy-light-rolocs);
+    color: var(--title-color);
     font-weight: bold;
 }
 em {
@@ -200,4 +200,21 @@ del.heimu[title] {
 }
 del.huhua[title] {
     text-decoration: dotted line-through;
+}
+.bar {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    --bar-color: var(--yangsy-light-colors);
+    box-sizing: border-box;
+    border-left: 0.25rem solid var(--bar-color);
+    background-color: rgb(from var(--bar-color) r g b / 25%);
+}
+.baz {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    --baz-color: var(--monika-dark-colors);
+    box-sizing: border-box;
+    border: 0.25rem solid var(--baz-color);
+    background-color: rgb(from var(--baz-color) r g b / 25%);
+    --title-color: var(--monika-rolocs);
 }

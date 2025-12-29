@@ -8,39 +8,49 @@ body.tutotile {
 */
 :root {
     --tuto-bg-light-color: #303363;
-    --tuto-bg-dark-color: #101121;
-    --tuto-shadow-color: #000A;
+    --tuto-bg-dark-color: #202242;
+    --tuto-bg-shadow-color: #000A;
     --tuto-bg-color: light-dark(var(--tuto-bg-light-color), var(--tuto-bg-dark-color));
+
+
     --tuto-fg-light-color: #A0AACA;
     --tuto-fg-dark-color: #8088B8;
     --tuto-fg-color: light-dark(var(--tuto-fg-light-color), var(--tuto-fg-dark-color));
+
     --tuto-a-light-color: #FFFFFF;
-    --tuto-a-dark-color: #A0AACA;
+    --tuto-a-dark-color: #C0CCDC;
     --tuto-a-color: light-dark(var(--tuto-a-light-color), var(--tuto-a-dark-color));
+
     --red-light-color: #F55;
     --red-dark-color: #C44;
     --red-shadow-color: #6006;
     --red-colorss: light-dark(var(--red-light-color), var(--red-dark-color));
+
     --orange-light-color: #FA5;
     --orange-dark-color: #C84;
     --orange-shadow-color: #6306;
     --orange-colors: light-dark(var(--gold-light-color), var(--gold-dark-color));
+
     --yellow-light-color: #FF5;
     --yellow-dark-color: #CC4;
     --yellow-shadow-color: #6606;
     --yellow-colors: light-dark(var(--yellow-light-color), var(--yellow-dark-color));
+
     --green-light-color: #5F5;
     --green-dark-color: #4C4;
     --green-shadow-color: #0606;
     --green-colors: light-dark(var(--green-light-color), var(--green-dark-color));
+
     --cyan-light-color: #5FF;
     --cyan-dark-color: #4CC;
     --cyan-shadow-color: #0666;
     --cyan-colors: light-dark(var(--cyan-light-color), var(--cyan-dark-color));
+
     --blue-light-color: #55F;
     --blue-dark-color: #44C;
     --blue-shadow-color: #0066;
     --blue-colors: light-dark(var(--blue-light-color), var(--blue-dark-color));
+
     --magenta-light-color: #F5F;
     --magenta-dark-color: #C4C;
     --magenta-shadow-color: #6066;

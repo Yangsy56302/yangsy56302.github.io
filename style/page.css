@@ -19,22 +19,6 @@ p, div, section, article {
 #splash {
     font-family: "Aller", "Arial", "Helvetica", sans-serif;
 }
-.bar {
-    margin: 0.5rem 0rem 0.5rem 0rem;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    --bar-color: var(--yangsy-light-colors);
-    box-sizing: border-box;
-    border-left: 0.25rem solid var(--bar-color);
-    background-color: rgb(from var(--bar-color) r g b / 25%);
-}
-.baz {
-    margin: 0.5rem 0rem 0.5rem 0rem;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    --baz-color: var(--monika-dark-colors);
-    box-sizing: border-box;
-    border: 0.25rem solid var(--baz-color);
-    background-color: rgb(from var(--baz-color) r g b / 25%);
-}
 iframe {
     width: 100%;
     border: 0.25rem inset var(--monika-medium-color);
@@ -56,18 +40,17 @@ nav {
     padding: 0rem 0rem 0rem 2rem;
     overflow: visible scroll;
     background-color: var(--monika-colors);
-    color: var(--monika-dark-rolocs);
+    color: var(--monika-medium-color);
+    --title-color: var(--monika-rolocs);
 }
 nav h1 {
     font-size: 2rem;
-    color: var(--monika-dark-rolocs);
+}
+nav strong {
+    color: var(--monika-medium-color);
 }
 nav ol, nav ul, nav dl {
     padding: 0rem 1rem;
-}
-nav a {
-    --a-fg-colors: var(--monika-rolocs);
-    --a-bg-colors: var(--monika-medium-color);
 }
 aside>div {
     position: relative;
