@@ -18,9 +18,12 @@
         <nav> <h1 id="Index">Index<sub> (<a target="_blank" href="https://yangsy56302.github.io/nav.html">meta</a>)</sub></h1> <ol>
             <li> <a href="#Tile">Tile</a> <ol>
                 <li> <a href="#Direction">Direction</a> </li>
-                <li> <a href="#Angle">Angle</a> </li>
-                <li> <a href="#Turnaround">Turnaround</a> </li>
-                <li> <a href="#Midspin">Midspin</a> </li>
+                <li> <a href="#Angle">Angle</a> <ol>
+                    <li> <a href="#OriginalAngle">Original Angle</a> </li>
+                    <li> <a href="#DirectionalAngle">Directional Angle</a> </li>
+                    <li> <a href="#ExtendedAngle">Extended Angle</a> </li>
+                    <li> <a href="#GameplayAngle">Gameplay Angle</a> </li>
+                </ol> </li>
             </ol> </li>
             <li> <a href="#Actions">Actions</a> <ol>
                 <li> <a href="#SetSpeed">SetSpeed</a> </li>
@@ -64,18 +67,19 @@
             Concept definitions for ADO<span style="color: var(--cyan-light-color);">F</span>A<span style="color: var(--yellow-light-color);">I</span> objects</span>
         </h1> </header>
         <div class="content">
-            <p> <a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
-                In the following content, midspins will be considered as 0° angle.
-            </a> </p>
-            <article id="Tile"> <h3>Tile</h3>
+            <div class="bar"> <p>
+                This is not (and almost impossible to be) a set of standard definitions that everyone must follow. <br/>
+                This is just one set of definitions to attempt to disambiguate when communicating between different people using different definitions. 
+            </p> </div>
+            <article id="Tile"> <h2>Tile</h2>
                 <p>
                     The concept of <b>tile</b> is trivial, but the details are not.
                 </p> <p>
-                    Each tile has a tile number starts from 0 <em>(so the "first" tile is technically the zeroth tile)</em>. 
-                </p> <article id="Direction"> <h4>Direction</h4>
+                    Each tile has a tile number starts from <code>0</code> <em>(so the "first" tile is technically the zeroth tile)</em>. 
+                </p> <article id="Direction"> <h3>Direction</h3>
                     <p>
                         The concept of <b>direction</b> is also trivial. <br/>
-                        Also just in case you don't know, 0° is right, and 90° is up.
+                        Also just in case you don't know, <code>0°</code> is right, and <code>90°</code> is up.
                     </p> <p>
                     <section id="AbsoluteDirection"> <h4>Absolute Direction</h4>
                         <p>
@@ -86,18 +90,55 @@
                             and ends at the center point of itself. 
                         </p> <p>
                             ADOFAI stores tile angle data using absolute direction in degrees 
-                            (exceptions are midspins, since their absolute direction are the same with turnarounds, they use the hardcoded value of 999). 
+                            (exceptions are midspins, since their absolute direction are the same with turnarounds, they use the hardcoded value of <code>999</code>). 
                         </p>
                     </section> <section id="RelativeDirection"> <h4>Relative Direction</h4>
                         <p>
                             The <b>relative tile direction</b> of a tile is the same as the absolute tile direction, 
-                            except that selected | previous tile is now considered as 0°.
+                            except that selected | previous tile is now considered as <code>0°</code>. 
                         </p>
                     </section> 
-                </article> <article id="Angle"> <h4>Angle</h4>
+                </article> <article id="Angle"> <h3>Angle</h3>
                     <p>
-                        The <b>angle</b>
-                    </p>
+                        The <b>angle</b> of a tile depends on: <ul>
+                            <li> whenever Twirls are considered <em>(true by default)</em> </li>
+                            <li> whenever Multi Planets are considered <em>(false by default)</em> </li>
+                            <li> whenever Paused Beats are considered </li>
+                            <li> whenever extra hold loops are considered </li>
+                        </ul>
+                    </p> <section id="OriginalAngle"> <h4>Original Angle</h4>
+                        <p>
+                            The <b>original angle</b> would ignore all of above. 
+                        </p> <p>
+                            Turnarounds' original angle are <code>360°</code>, and midspins' original angle are <code>0°</code>. 
+                        </p>
+                    </section> <section id="DirectionalAngle"> <h4>Directional Angle</h4>
+                        <p>
+                            The <b>directional angle</b> would only consider Twirls: <br/>
+                        </p> <p>
+                            it's the same as the original angle by default, <br/>
+                            and <code>360° - <var>{OriginalAngle}</var></code> if the planet is rotating counter-clockwise 
+                            and the tile isn't turnarounds nor midspins. 
+                        </p>
+                    </section> <section id="ExtendedAngle"> <h4>Extended Angle</h4>
+                        <p>
+                            The <b>extended angle</b> would also consider Paused Beats and extra hold loops: 
+                        </p> <p>
+                            <code>
+                                <var>{ExtendedAngle}</var> = 
+                                <var>{DirectionalAngle}</var> 
+                                + 180° * <var>{PausedBeat.Duration}</var> 
+                                + 360° * <var>{Hold.ExtraHoldLoops}</var>
+                            </code>
+                        </p>
+                    </section> <section id="GameplayAngle"> <h4>Gameplay Angle</h4>
+                        <p>
+                            The <b>gameplay angle</b> would also consider Multi Planets: 
+                        </p> <p>
+                            <code><var>{GameplayAngle}</var> = <var>{ExtendedAngle}</var> - <var>{MultiPlanetAngle}</var></code> , where <br/>
+                            <code><var>{MultiPlanetAngle}</var> = (<var>{NumberOfPlanets}</var> - 2) * 180° / <var>{NumberOfPlanets}</var></code>
+                        </p>
+                    </section>
                 </article>
             </article>
         </div>
