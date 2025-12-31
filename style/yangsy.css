@@ -12,17 +12,17 @@ body {
 }
 /* global margin and padding */
 div, section, article, dl {
-    margin: 0.5rem 0rem 0.5rem 0rem;
-    padding: 0rem 2rem 0rem 2rem;
+    margin: 0.5rem 0rem;
+    padding: 0rem 2rem;
 }
 p, dd {
-    margin: 0.5rem 0rem 0.5rem 0rem;
-    padding: 0rem 0rem 0rem 0rem;
+    margin: 0.5rem 0rem;
+    padding: 0rem;
 }
 /* title */
 h2, h3, h4, h5, h6 {
-    margin: 0.5em 0em 0.5em 0em;
-    padding: 0rem 0rem 0rem 0rem;
+    margin: 0.5em 0em;
+    padding: 0rem;
 }
 h1 {
     color: var(--title-colors);
@@ -215,16 +215,16 @@ img.iconhw {
 }
 /* container */
 .bar {
-    margin: 0.5rem 0rem 0.5rem 0rem;
-    padding: 1px 0.5rem 1px 0.5rem;
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
     --bar-color: var(--yangsy-light-colors);
     box-sizing: border-box;
     border-left: 0.25rem solid var(--bar-color);
     background-color: rgb(from var(--bar-color) r g b / 25%);
 }
 .baz {
-    margin: 0.5rem 0rem 0.5rem 0rem;
-    padding: 1px 0.5rem 1px 0.5rem;
+    margin: 0.5rem 0rem;
+    padding: 1px 0.5rem;
     --baz-color: var(--monika-dark-colors);
     box-sizing: border-box;
     border: 0.25rem solid var(--baz-color);
