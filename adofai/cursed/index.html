@@ -203,7 +203,7 @@
                         We'll also change the input to a set of levels via a few definitions:
                     </p> <section>
                         <p>
-                            Cursing a single level is the same as cursing a set which only contains that level. <br/>
+                            Cursing a set which only contains a single level is the same as cursing that level. <br/>
                             For example, 
                             <code class="adofai"><a href="crab/index.html#2-X">2-X?</a> ( B-X )</code> 
                             is equal to 
@@ -227,10 +227,12 @@
                             ∪ <a href="crab/index.html#5-X">5-X?</a> ( 11-X )
                             ∪ <a href="crab/index.html#5-X">5-X?</a> ( XC-X )
                         </div> <p>
-                            Or in other words, curse evaluation 
+                            Cursing the empty set outputs the complement set of the output set with the universe set as the input set.
+                        </p> <p>
+                            Corollary: Curse evaluation 
                             <a target="_blank" href="https://en.wikipedia.org/wiki/Distributive_property">distributes</a> over 
-                            <a target="_blank" href="https://en.wikipedia.org/wiki/Union_(set_theory)">union operation</a> 
-                            <strong>(except for empty set)</strong> . 
+                            <a target="_blank" href="https://en.wikipedia.org/wiki/Union_(set_theory)">union operation</a>, 
+                            as long as none of the input sets are empty. 
                         </p>
                     </section> <p>
                         This isn't only for consistency, but also because that it would be really helpful to define concepts, for example:
