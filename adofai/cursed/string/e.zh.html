@@ -30,7 +30,7 @@
                 <a href="#XC-X">"XC-X"</a> <a href="#RJ-X">"RJ-X"</a><br/>
                 <a href="#XH-X">"XH-X"</a> <a href="#XN-X">"XN-X"</a><br/>
                 <a href="#PA-X">"PA-X"</a> <a href="#XM-X">"XM-X"</a><br/>
-                <a href="#XS-X">"XS-X"</a><br/>
+                <a href="#XS-X">"XS-X"</a> <a href="#AR-X">"AR-X"</a><br/>
             </dd>
             <dt>挑战世界</dt> <dd>
                 世界 "XO" ：<br/><span>
@@ -143,6 +143,31 @@
                 </dt> <dd>
                     反转旋转方向，但保持节奏不变。
                 </dd>
+                <hr/> <section>
+                    <p>
+                        对于每个满足 <code><var>θ</var> % 90° ≠ 0°</code> 的角度 <code><var>θ</var></code> ，<br/>
+                        其可表示成 <code><var>x</var> + <var>a</var> * 90° + <var>b</var> * 180°</code> 的形式，<br/>
+                        其中 <code>0° < <var>x</var> < 90°</code> ，<code><var>a</var> ∈ {0, 1}</code> ，<code><var>b</var> ∈ {0, 1}</code> 。
+                    </p>
+                    <dt id="5-X'1">
+                        "5-X'1" 午夜列车，但内角→锐角，外角→钝角
+                    </dt> <dd>
+                        对于每块地砖，若其角度符合以上所述条件，将 <code><var>a</var></code> 的值设为 <code><var>b</var></code> 的值。
+                    </dd>
+                    <dt id="5-X'2">
+                        "5-X'2" 午夜列车，但锐角→内角，钝角→外角
+                    </dt> <dd>
+                        对于每块地砖，若其角度符合以上所述条件，将 <code><var>b</var></code> 的值设为 <code><var>a</var></code> 的值。
+                    </dd>
+                    <dt id="5-X'3">
+                        "5-X'3" 午夜列车，但锐钝角⇄内外角
+                    </dt> <dd>
+                        对于每块地砖，若其角度符合以上所述条件，将 <code><var>a</var></code> 的值与 <code><var>b</var></code> 的值互换。
+                    </dd>
+                    <div class="bar">
+                        关于引入以上三个魔改效果的关卡的详细信息，请见<a href="a.zh.html#a5-X">午夜列车，但它包括三个新的魔改效果</a>。
+                    </div>
+                </section> <hr/>
                 <dt id="6-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3220874181"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam 创意工坊"/></a>
                     "6-X" 脉冲，但每一块砖都有一拍暂停缓冲
@@ -289,6 +314,21 @@
                 </dt> <dd>
                     <em>（所添加的中旋可以为任何角度，包括那些会导致星球额外旋转的角度）</em>
                 </dd>
+                <dt id="RJ-X'1">
+                    <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3615793250"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam 创意工坊"/></a>
+                    "RJ-X'1" 恐惧孳生，但多押与旋转互换身份
+                </dt> <dd>
+                    设某块地板的旋转事件数量为 <code>T</code> ，额外按键数量为 <code>M</code> ，则对受影响的每块地板，将其 <code>T</code> 与 <code>M</code> 的值互换。
+                    <section class="baz">
+                        <p>
+                            尽管编辑器无法在一块地砖上设置多个旋转事件，但直接编辑<code>*.adofai</code>文件可以做到。
+                        </p> <p>
+                            多旋转按预期工作：奇数个旋转更改星球旋转方向，偶数个旋转不更改星球旋转方向。
+                        </p> <p>
+                            若不想堆叠旋转事件（例如后续所使用的魔改的定义未能考虑到如何处理堆叠旋转事件的情形），可以将奇数个旋转改为有旋转，偶数个旋转改为无旋转。
+                        </p>
+                    </section>
+                </dd>
                 <dt id="XN-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3229371005"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam 创意工坊"/></a>
                     "XN-X" 海王星外天体，但这是个三体问题
@@ -305,6 +345,11 @@
                     "XM-X" Miko Skip，但发卡弯与中旋互换身份
                 </dt> <dd>
                     允许连续中旋出现。<em>根据冰与火之舞的默认游戏机制，两个相邻的中旋会相互抵消，所以不用担心会出现多押，至少这里如此。</em>
+                </dd>
+                <dt id="AR-X">
+                    "AR-X" Libertas，但闭合弯在其弯曲到π的位置终止
+                </dt> <dd>
+                    
                 </dd>
             </dl> </section>
             <section> <h2>挑战世界</h2> <dl>
@@ -363,6 +408,12 @@
                     "MN-X" 午夜漫游者（cnsouka Remix），但中旋从来就没有存在过
                 </dt> <dd>
                     <em><q>能不用中旋，就不用中旋。</q></em>
+                </dd>
+                <dt id="MN-X'1">
+                    <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3669600975"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam 创意工坊"/></a>
+                    "MN-X'1" 午夜漫游者（cnsouka Remix），但中旋会抵消掉其后的一块相同朝向的地砖
+                </dt> <dd>
+                    谱面中出现的每个中旋都会<strong>移除</strong>掉之后的一块朝向与该中旋所指的方向相同的地砖（如果存在）。
                 </dd>
                 <dt id="ML-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3227269108"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam 创意工坊"/></a>

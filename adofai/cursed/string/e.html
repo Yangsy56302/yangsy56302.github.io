@@ -30,7 +30,7 @@
                 <a href="#XC-X">"XC-X"</a> <a href="#RJ-X">"RJ-X"</a><br/>
                 <a href="#XH-X">"XH-X"</a> <a href="#XN-X">"XN-X"</a><br/>
                 <a href="#PA-X">"PA-X"</a> <a href="#XM-X">"XM-X"</a><br/>
-                <a href="#XS-X">"XS-X"</a><br/>
+                <a href="#XS-X">"XS-X"</a> <a href="#AR-X">"AR-X"</a><br/>
             </dd>
             <dt>Challenge Worlds</dt> <dd>
                 World "XO" : <br/><span>
@@ -145,6 +145,31 @@
                 </dt> <dd>
                     The planets are in the wrong orientation, yet the chart plays the exact same as it did before.
                 </dd>
+                <hr/> <section>
+                    <p>
+                        For each angle <code><var>θ</var></code> that <code><var>θ</var> % 90° ≠ 0°</code> , <br/>
+                        it can be expressed in the form of <code><var>x</var> + <var>a</var> * 90° + <var>b</var> * 180°</code> , <br/>
+                        which <code>0° < <var>x</var> < 90°</code> , <code><var>a</var> ∈ {0, 1}</code> , <code><var>b</var> ∈ {0, 1}</code> .
+                    </p>
+                    <dt id="5-X'1">
+                        "5-X'1" The Midnight Train but internal&rarr;acute, external&rarr;obtuse
+                    </dt> <dd>
+                        For each tile, if its angle meets the condition above, set the value of <code><var>a</var></code> with the value of <code><var>b</var></code> .
+                    </dd>
+                    <dt id="5-X'2">
+                        "5-X'2" The Midnight Train but acute&rarr;internal, obtuse&rarr;external
+                    </dt> <dd>
+                        For each tile, if its angle meets the condition above, set the value of <code><var>b</var></code> with the value of <code><var>a</var></code> .
+                    </dd>
+                    <dt id="5-X'3">
+                        "5-X'3" The Midnight Train but acute, obtuse &rlarr; internal, external
+                    </dt> <dd>
+                        For each tile, if its angle meets the condition above, swap the value of <code><var>a</var></code> and the value of <code><var>b</var></code> .
+                    </dd>
+                    <div class="bar">
+                        For more information about the level that includes those 3 curse effects above, see <a href="a.html#a5-X">The Midnight Train but it includes 3 new curse effects</a> .
+                    </div>
+                </section> <hr/>
                 <dt id="6-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3220874181"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam Workshop"/></a>
                     "6-X" PULSE but there is a 1 beat PAUSE on every tile
@@ -292,6 +317,23 @@
                 </dt> <dd>
                     <em>(any angle for the midspin is acceptable, including for those that cause the planet to spin extra loops)</em>
                 </dd>
+                <dt id="RJ-X'1">
+                    <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3615793250"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam 创意工坊"/></a>
+                    "RJ-X'1" Fear Grows but the multitaps and the twirls are swapped
+                </dt> <dd>
+                    For each tile be affected, swap the value of its twirl event count <code>T</code> and its extra tap count <code>M</code> .
+                    <section class="baz">
+                        <p>
+                            Although editor cannot put multiple twirl events on a single tile, editing <code>*.adofai</code> file directly can.
+                        </p> <p>
+                            Multitwirl works as intended: odd number of twirls changes the rotation direction of the planet rotation, even number of twirls doesn't.
+                        </p> <p>
+                            For situations that don't want to stack twirl events 
+                            (for example the latter curses' definition aren't well-defined to deal with stacked twirls), 
+                            change odd number of twirls to 1 twirl, even number of twirls to no twirls.
+                        </p>
+                    </section>
+                </dd>
                 <dt id="XN-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3229371005"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam Workshop"/></a>
                     "XN-X" Trans-Neptunian Object but it's a three-body problem
@@ -308,6 +350,11 @@
                     "XM-X" Miko Skip but i swapped the u-turns and the midspins
                 </dt> <dd>
                     Continuously midspins is possible, and they will follow ADOFAI's default behavior.
+                </dd>
+                <dt id="AR-X">
+                    "AR-X" Libertas but closed bends end at where they bends to π
+                </dt> <dd>
+                    
                 </dd>
             </dl> </section>
             <section> <h2>Challenge Worlds</h2> <dl>
@@ -368,6 +415,12 @@
                     "MN-X" Night Wander (cnsouka Remix) but it is in the "midspin not found" state
                 </dt> <dd>
                     Replace each midspin to non-midspin tile, without changing the rhythm.
+                </dd>
+                <dt id="MN-X'1">
+                    <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3669600975"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam 创意工坊"/></a>
+                    "MN-X'1" Night Wander (cnsouka Remix) but each midspin cancel out an later tile facing the same direction
+                </dt> <dd>
+                    Each midspin will <strong>remove</strong> an later tile that facing the same direction as the midspin faces, if such a tile exists.
                 </dd>
                 <dt id="ML-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3227269108"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam Workshop"/></a>
