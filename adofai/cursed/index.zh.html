@@ -33,7 +33,7 @@
                 <li> <a href="#^">迭代魔改</a> </li>
                 <li> <a href="#+">反魔改</a> </li>
                 <li> <a href="#^-1">逆魔改</a> </li>
-                <li> <a href="#Meta">元</a> </li>
+                <li> <a href="#Meta">元魔改</a> </li>
             </ol> </li>
         </ol> </nav>
         <div>
@@ -411,7 +411,7 @@
                     </p> <p>
                         某些魔改的逆魔改是其自身，换言之，
                         <code class="adofai">L<sub>C</sub> ∈ C ( L )</code> 等价于 
-                        <code class="adofai">L ∈ C ( L<sub>C</sub> )</code>。
+                        <code class="adofai">L ∈ C ( L<sub>C</sub> )</code>。<br/>
                         这些魔改就像硬币翻转器，总是完美地将硬币翻转到另一面，因此使用它们两次就好像<a href="#None">无事发生</a>一样。
                     </p> <hr/> <p>
                         逆魔改一个不可能被魔改出的关卡会将空集<code>∅</code>作为返回的输出集合。
@@ -427,10 +427,85 @@
                             理论上甚至可以达到<code>O(&infin;)</code>
                         ）。
                     </p>
-                </article> <article id="Meta"> <h4>元魔改</h4>
+                </article> <article id="Meta"> <h3>元魔改</h3>
                     <p>
-                        在特定情况下，被施加魔改效果的对象可以不是关卡。（待补）
-                    </p>
+                        设存在一个关卡<code class="adofai">L</code>，以及两个魔改<code class="adofai">C</code>和<code class="adofai">M</code>，<br/>
+                        其中魔改<code class="adofai">C</code>用于魔改关卡<code class="adofai">L</code>，<br/>
+                        而魔改<code class="adofai">M</code>用于对<code class="adofai">C</code>造成影响。
+                    </p> <p>
+                        目前，魔改社区中存在的元魔改定义方法如下所示：
+                    </p> <dl>
+                        <hr/> <dt>
+                            对关卡<code class="adofai">L</code>应用被魔改<code class="adofai">M</code>所魔改的魔改<code class="adofai">C</code><br/>
+                            （<code class="adofai">当前魔改：M ( C )</code> <code class="adofai">L → M ( C ) ( L )</code>）
+                        </dt> <dd>
+                            <p>
+                                这是本站推荐的元魔改定义方法。<br/>
+                                既然魔改的输入应为要被其影响的对象，影响魔改的魔改<code class="adofai">M</code>自然就应当将要被其影响的魔改<code class="adofai">C</code>作为输入。
+                            </p> <p>
+                                缺点是，由于元魔改作为魔改，其输出也是魔改的集合，就需要额外定义将魔改的集合应用在元素上的行为：
+                            </p> <section>
+                                <p>
+                                    使用包括多个魔改的集合等价于使用该集合中的每个魔改的结果的并集。例如：
+                                </p> <div class="adofai">
+                                    {
+                                        <a href="crab/index.zh.html#5-X">5-X?</a>, 
+                                        <a href="crab/index.zh.html#11-X">11-X?</a>, 
+                                        <a href="crab/index.zh.html#XC-X">XC-X?</a>
+                                    } ( 5-X )
+                                </div> <p>
+                                    等价于
+                                </p> <div class="adofai">
+                                    <a href="crab/index.zh.html#5-X">5-X?</a> ( 5-X )
+                                    ∪ <a href="crab/index.zh.html#11-X">11-X?</a> ( 5-X )
+                                    ∪ <a href="crab/index.zh.html#XC-X">XC-X?</a> ( 5-X )
+                                </div> <p>
+                                    使用空集作为魔改集合时，无论被魔改的集合是否为空，输出集合都为空集<sup>[需要证明]</sup>。
+                                </p>
+                            </section> <p>
+                                本站假定元魔改均以此方式运作。
+                            </p>
+                        </dd> <hr/> <dt>
+                            对关卡<code class="adofai">L</code>应用魔改<code class="adofai">C</code>之后再应用魔改<code class="adofai">M</code><br/>
+                            （<code class="adofai">当前魔改：C * M</code> <code class="adofai">L → M ( C ( L ) )</code>）
+                        </dt> <dd>
+                            <p>
+                                这种元魔改定义方法避免了难以阅读魔改提示和定义魔改集合魔改关卡的麻烦，<br/>
+                                代价是牺牲了元魔改的独特性和部分合理性。
+                            </p> <p>
+                                由于<code class="adofai">M</code>得到的输入并非<code class="adofai">C</code>本身，而是其输出集合，<br/>
+                                <code class="adofai">M</code>无法直接得知<code class="adofai">C</code>具体是什么魔改，以及被魔改前的元素的具体内容。
+                            </p> <p>
+                                尽管<code class="adofai">M</code>技术上可以通过读取魔改提示以间接确定前者，并基于此使用<code class="adofai">C<sup><span class="-">-</span>1</sup></code>去魔改其输入集合以间接得到后者的超集，<br/>
+                                但这一套操作下来确实要比将<code class="adofai">C</code>直接扔给<code class="adofai">M</code>处理要繁琐得多，更何况逆魔改还会产生副作用。
+                            </p> <p>
+                                取决于<code class="adofai">M</code>的定义，在使用任意魔改之前就先使用<code class="adofai">M</code>也可能导致其产生未定义行为。
+                            </p>
+                        </dd> <hr/> <dt>
+                            对关卡<code class="adofai">L</code>应用魔改<code class="adofai">C</code>之前先应用魔改<code class="adofai">M</code><br/>
+                            （<code class="adofai">当前魔改：M * C</code> <code class="adofai">L → C ( M ( L ) )</code>）
+                        </dt> <dd>
+                            <p>
+                                这是所有元魔改定义方法中最离谱的那个。
+                            </p> <p>
+                                <code class="adofai">C</code>本身无法在<code class="adofai">M</code>生效时就被其影响，<br/>
+                                因为此时<code class="adofai">C</code>不仅没有输出结果，也没有从<code class="adofai">M</code>拿到输入，更没有被输入到<code class="adofai">M</code>中，甚至可能还没来得及存在，又或许甚至压根就不存在。
+                            </p> <p>
+                                <code class="adofai">C</code>本身也无法在其自身生效时才被<code class="adofai">M</code>影响，<br/>
+                                因为此时已经完成了其魔改过程的<code class="adofai">M</code>无法再对其他任何元素主动造成影响。
+                            </p> <p>
+                                综上所述，<code class="adofai">M</code>不可能对<code class="adofai">C</code>本身造成影响。对<code class="adofai">C</code>的输出结果造成影响同样不可能，推理过程类似。
+                            </p> <p>
+                                <code class="adofai">M</code>可能的运作方式只剩下一种：其输出结果在被<code class="adofai">C</code>魔改后符合其设计。然而：<ul>
+                                    <li>无法确保这样的流程对于每个<code class="adofai">M</code>魔改和每个<code class="adofai">C</code>都存在；</li>
+                                    <li>无法确保在<code class="adofai">M</code>即为最后一个魔改的情况下给出合理的结果；</li>
+                                    <li>无法确保<code class="adofai">M</code>在生效时就可以获取<code class="adofai">C</code>是什么魔改的信息。</li>
+                                </ul>
+                            </p> <p>
+                                省流：别。
+                            </p>
+                        </dd>
+                    </dl>
                 </article>
             </article>
         </div>

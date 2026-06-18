@@ -26,6 +26,8 @@ body.tutotile {
     color: var(--tuto-fg-color);
     font-family: "godoMaum", "16FontSeto", "HappyZcool", "Consolas", "Courier New", monospace, sans-serif, serif;
     text-shadow: 0.1rem 0.1rem 0rem #000A;
+    font-weight: normal;
+    font-style: normal;
 }
 .adofai a {
     color: var(--tuto-a-color);
@@ -46,9 +48,6 @@ div.adofai {
     padding: 1rem 1rem;
     text-wrap: nowrap;
     overflow: auto;
-}
-code.adofai {
-    font-weight: unset;
 }
 .adofai .\/, .adofai .\-, .adofai .\+ {
     color: var(--red-dark-colors);

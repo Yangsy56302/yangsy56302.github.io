@@ -453,8 +453,93 @@
                     </p>
                 </article> <article id="Meta"> <h3>Metacurse</h3>
                     <p>
-                        In specific situations, the curse-applied object could be a non-level being. (TBC)
-                    </p>
+                        Say there exists a level<code class="adofai">L</code> and 2 curses <code class="adofai">C</code>和<code class="adofai">M</code>, <br/>
+                        which curse <code class="adofai">C</code> is to curse level <code class="adofai">L</code>, <br/>
+                        while curse <code class="adofai">M</code> is to modify <code class="adofai">C</code>. 
+                    </p> <p>
+                        Methods to define metacurses that currently get used by the community for now are shown below: 
+                    </p> <dl>
+                        <hr/> <dt>
+                            Apply <code class="adofai">L</code> with <code class="adofai">C</code> cursed by <code class="adofai">M</code><br/>
+                            (<code class="adofai">Current curse: M ( C )</code> <code class="adofai">L → M ( C ) ( L )</code>)
+                        </dt> <dd>
+                            <p>
+                                This is the method this site recommands. <br/>
+                                Since the input of a curse should be the thing that gets modified, 
+                                curse <code class="adofai">M</code> that modifies curses should use the curse <code class="adofai">C</code> that will get modified as input. 
+                            </p> <p>
+                                The downside is, as a curse, metacurse also output a set of cursed curses, so there's need to define the behavior that curse things with a set of curses: 
+                            </p> <section>
+                                <p>
+                                    Cursing a level using a set which contains multiple curses is the same as 
+                                    using each curse to curse that level individually then merge the results into one set. 
+                                    For example: 
+                                </p> <div class="adofai">
+                                    {
+                                        <a href="crab/index.html#5-X">5-X?</a>, 
+                                        <a href="crab/index.html#11-X">11-X?</a>, 
+                                        <a href="crab/index.html#XC-X">XC-X?</a>
+                                    } ( 5-X )
+                                </div> <p>
+                                    is equivalent to
+                                </p> <div class="adofai">
+                                    <a href="crab/index.html#5-X">5-X?</a> ( 5-X )
+                                    ∪ <a href="crab/index.html#11-X">11-X?</a> ( 5-X )
+                                    ∪ <a href="crab/index.html#XC-X">XC-X?</a> ( 5-X )
+                                </div> <p>
+                                    Using the empty set as the curse set outputs the empty set, no matter if the set gets cursed is empty or not<sup>[Needs Proof]</sup>. 
+                                </p>
+                            </section> <p>
+                                This site assumes metacurses all works in this way. 
+                            </p>
+                        </dd> <hr/> <dt>
+                            Apply <code class="adofai">L</code> with <code class="adofai">C</code> before <code class="adofai">M</code><br/>
+                            (<code class="adofai">Current curse: C * M</code> <code class="adofai">L → M ( C ( L ) )</code>)
+                        </dt> <dd>
+                            <p>
+                                This method avoids the inconvenient of reading the curse hint and defining to curse things using a curse set, 
+                                as the cost of the uniqueness and reasonableness for metacurses. 
+                            </p> <p>
+                                Since the input <code class="adofai">M</code> gets isn't the <code class="adofai">C</code> itself, it's its output set instead, <br/>
+                                <code class="adofai">M</code> can't directly know what curse <code class="adofai">C</code> is, and the contents before getting cursed.
+                            </p> <p>
+                                Although <code class="adofai">M</code> techincally can get the curse by reading the curse hint, 
+                                and get the superset of contents by applying <code class="adofai">C<sup><span class="-">-</span>1</sup></code> to its input, <br/>
+                                but this is indeed more complicated than just throwing <code class="adofai">C</code> to <code class="adofai">M</code> to deal with, 
+                                not to mention that cure also has side-effects.
+                            </p> <p>
+                                Depends on <code class="adofai">M</code>'s definition, 
+                                using <code class="adofai">M</code> before using other curses first may also cause undefined behavior.
+                            </p>
+                        </dd> <hr/> <dt>
+                            Apply <code class="adofai">L</code> with <code class="adofai">C</code> after <code class="adofai">M</code><br/>
+                            (<code class="adofai">Current curse: M * C</code> <code class="adofai">L → C ( M ( L ) )</code>)
+                        </dt> <dd>
+                            <p>
+                                This is the most unreasonable one.
+                            </p> <p>
+                                <code class="adofai">C</code> itself cannot gets modified when <code class="adofai">M</code> is taking effect, <br/>
+                                Because at this time, <code class="adofai">C</code> does not have any result, nor it does gets any input from <code class="adofai">M</code>, 
+                                nor it gets inputed into <code class="adofai">M</code>, it even might not existed yet, or even at all.
+                            </p> <p>
+                                <code class="adofai">C</code> itself cannot gets modified when itself s taking effect, <br/>
+                                Because at this time, <code class="adofai">M</code> has already done with its curse progress, and cannot actively do anything to anything else.
+                            </p> <p>
+                                Therefore, <code class="adofai">M</code> is impossible to impact <code class="adofai">C</code> itself. 
+                                This conclusion works the same as the output of <code class="adofai">C</code> using similar steps to proof. 
+                            </p> <p>
+                                Only 1 way that how <code class="adofai">M</code> might work left: 
+                                its own output works as intended after being cursed by <code class="adofai">C</code>. 
+                                However: <ul>
+                                    <li>Cannot ensure the curse process exists for every <code class="adofai">M</code> and <code class="adofai">C</code>; </li>
+                                    <li>Cannot ensure an reasonable result exists when <code class="adofai">M</code> is the final curse; </li>
+                                    <li>Cannot ensure that <code class="adofai">M</code> can get what curse <code class="adofai">C</code> is when it takes effect. </li>
+                                </ul>
+                            </p> <p>
+                                TL;DR: Don't.
+                            </p>
+                        </dd>
+                    </dl>
                 </article>
             </article>
         </div>
