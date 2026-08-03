@@ -316,6 +316,9 @@ footer {
     background-color: var(--yangsy-colors);
 }
 @media (orientation: landscape) {
+    html {
+        font-size: 100%;
+    }
     body {
         flex-flow: row nowrap;
     }
@@ -339,6 +342,9 @@ footer {
     }
 }
 @media (orientation: portrait) {
+    html {
+        font-size: 1.5625vh;
+    }
     body {
         flex-flow: column-reverse nowrap;
     }
