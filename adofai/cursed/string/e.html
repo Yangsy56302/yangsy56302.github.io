@@ -888,8 +888,12 @@
                                 <dt><var>{obj}</var></dt> <dd>
                                     The object to be affected.<br/>
                                     If it's a level <em>(or a level section)</em>, both of the world ID and level ID would be considered as numerical values, but not if it's a curse.<br/>
-                                    Every number inside the but statement, even in other forms ("<ruby>5<rt>Five</rt></ruby>", "<ruby>6<rt>Sixth</rt></ruby>",
-                                    "<ruby>3<rt>Triple</rt></ruby> Planets", "<ruby>1<rt>a</rt></ruby> <ruby>2<rt>pair</rt></ruby> of"), <strong>DOES COUNTS.</strong><br/>
+                                    Every number inside the but statement, even in other forms ( <ul>
+                                        <li> "<ruby>Five<rt style="font-size: unset;">5</rt></ruby>", </li>
+                                        <li> "<ruby>Sixth<rt style="font-size: unset;">6</rt></ruby>", </li>
+                                        <li> "<ruby>Triple<rt style="font-size: unset;">3</rt></ruby> Planets", </li>
+                                        <li> "<ruby>a<rt style="font-size: unset;">1</rt></ruby> <ruby>pair<rt style="font-size: unset;">2</rt></ruby> of", </li>
+                                    </ul>), <strong>DOES COUNTS.</strong><br/>
                                     <em>(one of the exception is 0; it depends. same as 1, but it's more certainly to be counted)</em>
                                 </dd>
                             </dl> </section>
@@ -945,14 +949,14 @@
                     </div>
                     Remember when I said <a href="../index.html#Basics"><q>Curse effects is a section-to-section mapping</q></a>?<br/>
                     This one is special: It's a <strong>curse-to-curse</strong> mapping!<br/>
-                    As a result, T5-X adofai <strong>cannot</strong> be applied to level sections. It can only be applied to <strong>curses</strong>.<br/>
-                    More specifically, T5-X takes 3...
+                    As a result, "T5-X" <strong>cannot</strong> be applied to level sections. It can only be applied to <strong>curses</strong>.<br/>
+                    More specifically, "T5-X" takes 3...
                     <section class="baz"> <h6>Parameters:</h6> <dl>
                         <dt><var>{old}</var></dt> <dd>The old substring <em>(it basically means <q>text clip</q>)</em> to be replaced; </dd>
                         <dt><var>{new}</var></dt> <dd>The new substring to be used for replacement; </dd>
                         <dt><var>{curse}</var></dt> <dd>The curse effect that will be modified. </dd>
                     </dl> </section>
-                    and return a new <em>(and temporary)</em> curse effect based on <var>{curse}</var>,
+                    and returns a set of new <em>(and temporary)</em> curse effects based on <var>{curse}</var>,
                     with the but statement that all the <var>{old}</var> are replaced to <var>{new}</var>.
                     <div class="adofai">
                         Current curse: "T5-X"<sub>(
@@ -965,13 +969,6 @@
                     and must be different between <var>{curse}</var> (even when they have the same but statement).
                 </dd>
             </dl> </section>
-            <!-- <article id="NonLevelEffects"> <h2>Non-level Effects</h2> <dl>
-                It is possible <em>(but not recommended due to copyright issues)</em> to have a crossover with other works:
-                <div>
-                    <a target="_blank" href="https://ddlc.moe/">Doki Doki Literature Club!</a> can be also included in XH-X,<br/>
-                    <a target="_blank" href="https://bluearchive.nexon.com/">Blue Archive</a> can be also included in XR-X.<br/>
-                </div>
-            </dl> </article> -->
         </div>
         <footer>
             <button id="randomSplash">↻</button> <span id="splash">...!</span>

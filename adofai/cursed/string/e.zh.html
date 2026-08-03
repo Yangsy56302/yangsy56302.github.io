@@ -865,8 +865,12 @@
                                 <dt><var>{obj}</var></dt> <dd>
                                     将受到影响的对象。<br/>
                                     对于关卡<em>（或关卡片段）</em>，世界编号和关卡编号均会被作为数值处理，对于魔改而言则不会。<br/>
-                                    任何作为魔改描述一部分的数值，即使以其他方式记录（“<ruby>5<rt>五</rt></ruby>”，“第<ruby>6<rt>六</rt></ruby>”，
-                                    “<ruby>3<rt>三</rt></ruby>球”，“<ruby>1<rt>一</rt></ruby><ruby>2<rt>对</rt></ruby>”），<strong>都可能会受到影响</strong>。<br/>
+                                    任何作为魔改描述一部分的数值，即使以其他方式记录（<ul>
+                                        <li> “<ruby>五<rt style="font-size: unset;">5</rt></ruby>”， </li>
+                                        <li> “第<ruby>六<rt style="font-size: unset;">6</rt></ruby>”， </li>
+                                        <li> “<ruby>三<rt style="font-size: unset;">3</rt></ruby>球”， </li>
+                                        <li> “<ruby>一<rt style="font-size: unset;">1</rt></ruby><ruby>对<rt style="font-size: unset;">2</rt></ruby>”</ul>， </li>
+                                    ），<strong>都可能会受到影响</strong>。<br/>
                                     <em>（其中一个例外是0，这取决于很多因素；1也类似，但多数情况下1都应该算数）</em>
                                 </dd>
                             </dl> </section>
@@ -922,7 +926,7 @@
                         关于该关卡所使用的魔改效果的详细信息，请见<a href="a.zh.html#eT5-X">此处</a>。
                     </div>
                     还记得我之前说过<a href="#Basics"><q>魔改效果是从谱面片段到谱面片段的映射</q></a>吗？<br/>
-                    T5-X的文字魔改效果是个例外：它是从<strong>魔改效果到魔改效果</strong>的映射！<br/>
+                    "T5-X"是个例外：它是从<strong>魔改效果到魔改效果</strong>的映射！<br/>
                     因此，它<strong>无法</strong>直接作用于谱面片段，只能作用在其他<strong>魔改效果</strong>的上方。<br/>
                     更具体一点的话，"T5-X"接受三个……
                     <section class="baz"> <h6>参数：</h6> <dl>
@@ -930,7 +934,7 @@
                         <dt><var>{new}</var></dt> <dd>将要用于替换的子字符串；</dd>
                         <dt><var>{curse}</var></dt> <dd>将要被更改的魔改效果。</dd>
                     </dl> </section>
-                    并返回一个崭新<em>（且临时）</em>的，基于<var>{curse}</var>的魔改效果，
+                    并返回一组崭新<em>（且临时）</em>的，基于<var>{curse}</var>的魔改效果，
                     其但式中所有的关键词<var>{old}</var>都被替换成了<var>{new}</var>。
                     <div class="adofai">
                         当前魔改："T5-X"<sub>(
@@ -942,16 +946,6 @@
                     返回值的具体效果基于对关键词替换后魔改但式的再分析，且必须与<var>{curse}</var>不同（即使但式相同）。
                 </dd>
             </dl> </section>
-            <!-- <article id="NonLevelEffects"> <h2>非关卡效果</h2>
-                <div class="bar">
-                    关于更多信息，请见《蔚蓝归档！》。
-                </div>
-                有可能<em>（但出于版权问题不建议）</em>使用魔改效果进行跨游戏联动：
-                <section>
-                    <a target="_blank" href="https://ddlc.moe/">心跳文学部！</a> 相关内容可以作为XH-X魔改的部分效果，<br/>
-                    <a target="_blank" href="https://bluearchive.nexon.com/">蔚蓝档案</a>相关内容可以作为XR-X魔改的部分效果。<br/>
-                </section>
-            </article> -->
         </div>
         <footer>
             <button id="randomSplash">↻</button> <span id="splash">...!</span>
