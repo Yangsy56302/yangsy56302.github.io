@@ -247,18 +247,21 @@ body {
     margin: auto;
     padding: 0rem 0rem;
     overflow: hidden;
+    font-size: 1rem;
 }
 aside {
     margin: 0%;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    font-size: 1rem;
 }
 nav {
     position: relative;
     margin: 0%;
     padding: 0rem 0rem 0rem 2rem;
     overflow: visible scroll;
+    font-size: 1rem;
     background-color: var(--monika-colors);
     color: var(--monika-rolocs);
     --title-colors: var(--monika-rolocs);
@@ -281,6 +284,7 @@ aside>div {
     margin: 0%;
     padding: 1rem 2rem;
     overflow: visible scroll;
+    font-size: 1rem;
     background-color: var(--bg-colors);
 }
 div.right {
@@ -288,6 +292,7 @@ div.right {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 1rem;
 }
 header {
     position: relative;
@@ -307,6 +312,7 @@ div.content {
     overflow: visible scroll;
     margin: 0%;
     padding: 1rem 2rem;
+    font-size: 1rem;
     background-color: var(--bg-colors);
 }
 footer {
@@ -314,6 +320,7 @@ footer {
     width: 100%;
     margin: 0%;
     padding: 1rem 2rem;
+    font-size: 1rem;
     background-color: var(--yangsy-colors);
 }
 @media (orientation: landscape) {
@@ -329,11 +336,11 @@ footer {
         min-height: 100vh;
     }
     nav {
-        height: 75vh;
+        height: 75%;
         top: 0%;
     }
     aside>div {
-        height: 25vh;
+        height: 25%;
         bottom: 0%;
     }
     div.right {
@@ -355,11 +362,11 @@ footer {
         min-width: 100vw;
     }
     nav {
-        width: 50vw;
+        width: 50%;
         left: 0%;
     }
     aside>div {
-        width: 50vw;
+        width: 50%;
         right: 0%;
     }
     div.right {
