@@ -8,6 +8,7 @@ html {
 body {
     background-color: light-dark(var(--monika-medium-color), color-mix(in srgb, var(--monika-dark-color), #000 50%));
     color: var(--text-colors);
+    font-size: 1rem;
 }
 /* global margin and padding */
 div, section, article, dl {
@@ -324,7 +325,7 @@ footer {
     }
     aside {
         flex-flow: column nowrap;
-        width: 20%;
+        width: 20vw;
         min-height: 100vh;
     }
     nav {
@@ -337,7 +338,7 @@ footer {
     }
     div.right {
         flex-flow: column nowrap;
-        width: 80%;
+        width: 80vw;
         height: 100vh;
     }
 }
@@ -350,7 +351,7 @@ footer {
     }
     aside {
         flex-flow: row nowrap;
-        height: 20%;
+        height: 20vh;
         min-width: 100vw;
     }
     nav {
@@ -364,7 +365,7 @@ footer {
     div.right {
         flex-flow: column nowrap;
         width: 100vw;
-        height: 80%;
+        height: 80vh;
     }
 }
 #splash {
