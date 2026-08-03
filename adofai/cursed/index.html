@@ -70,11 +70,11 @@
                 </dt> <dd>
                     Recommended.
                 </dd>
-                <dt> <a target="_blank" href="https://dragonfire28-8271.github.io/curselist/">
+                <!-- <dt> <a target="_blank" href="https://dragonfire28-8271.github.io/curselist/">
                     ADOFAI Curse List Records</a> by DragonFire28
                 </dt> <dd>
-                    Font might be too small to see.
-                </dd>
+                    Font might be too small to see. The owner cannot login into GitHub due to some reasons, therefore list update is paused.
+                </dd> -->
                 <dt> <a target="_blank" href="https://archive.aclcc.top/">
                     ACLCC Website</a> by ACLCC Website Team
                 </dt> <dd>
@@ -82,9 +82,12 @@
                 </dd>
             </dl> </section>
             <article id="Mechanism"> <h2>Curse mechanism</h2>
-                <p> <a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
+                <!-- <div> <a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
                     In the following content, midspins will be considered as 0° angle.
-                </a> </p>
+                </a> </div> -->
+                <div class="bar">
+                    Special thanks to <a target="_blank" href="https://steamcommunity.com/profiles/76561199223575134/">DongtDw</a> for contributions to complete and correcting a lot of concepts in this page.
+                </div>
                 <article id="Curse"> <h3>What is curse?</h3>
                     <p>
                         <b>Curse</b> is a type of object that can be applied on ADOFAI Levels
@@ -178,8 +181,9 @@
                             Current level: <a href="crab/index.html#2-X">2-X?</a> ( B-X )
                         </div>
                     </section> <hr/> <p>
-                        To solve this problem, one way is to change the output of curses, 
-                        from a single level, to a <a target="_blank" href="https://en.wikipedia.org/wiki/Set_(mathematics)">set</a> of levels:
+                        To solve this problem, one way is to treat curses as mappings from levels to cursed levels, 
+                        and change the output of curses from a single level 
+                        to a <a target="_blank" href="https://en.wikipedia.org/wiki/Set_(mathematics)">set</a> of levels:
                     </p> <div class="adofai">
                         <a href="crab/index.html#2-X">2-X?</a> ( B-X ) &rarr; {
                             B-X extended by 1 more times, 
@@ -188,23 +192,13 @@
                             etc.
                         }
                     </div> <p>
-                        And the cursed level that we have is one of them inside.
+                        And the result that we have is one of them inside.
                     </p> <hr/> <p>
-                        This also solves some other problems below: <dl>
-                            <dt>Some curses weren't well-defined, so there's thousands of results in thousands of cursed ones' perspective</dt> <dd>
-                                <del class="heimu" title="actually it might better to keep this fandom compact, since bigger fandom brings bigger problem">sadly there's no thousands of cursed ones for now :(</del><br/>
-                                All of them are in the output set. You are free to ignore results you don't agree.
-                            </dd>
-                            <dt>Some curses weren't well-defined, so they just cannot produce any valid results for certain situations</dt> <dd>
-                                The output should be the <a target="_blank" href="https://en.wikipedia.org/wiki/Empty_set">empty set</a> <code>∅</code>. 
-                            </dd>
-                        </dl>
-                    </p> <hr/> <p>
-                        We'll also change the input to a set of levels via a few definitions:
+                        Not only that, the input can also be expanded to a set of levels, via a few definitions as shown below:
                     </p> <section>
                         <p>
                             Cursing a set which only contains a single level is the same as cursing that level. <br/>
-                            For example, 
+                            For example: 
                             <code class="adofai"><a href="crab/index.html#2-X">2-X?</a> ( B-X )</code> 
                             is equal to 
                             <code class="adofai"><a href="crab/index.html#2-X">2-X?</a> ( { B-X } )</code> . 
@@ -226,17 +220,20 @@
                             <a href="crab/index.html#5-X">5-X?</a> ( 5-X )
                             ∪ <a href="crab/index.html#5-X">5-X?</a> ( 11-X )
                             ∪ <a href="crab/index.html#5-X">5-X?</a> ( XC-X )
-                        </div> <p>
-                            Cursing the empty set outputs the complement set of the output set with the universe set as the input set.
-                        </p> <p>
-                            Corollary: Curse evaluation 
-                            <a target="_blank" href="https://en.wikipedia.org/wiki/Distributive_property">distributes</a> over 
-                            <a target="_blank" href="https://en.wikipedia.org/wiki/Union_(set_theory)">union operation</a>, 
-                            as long as none of the input sets are empty. 
-                        </p>
-                    </section> <p>
-                        This isn't only for consistency, but also because that it would be really helpful to define concepts, for example:
-                    </p>
+                        </div>
+                    </section> <hr> <p>
+                        It should be noted that curse doesn't required to map every level of its <b>domain</b> to atleast 1 output of its <b>preimage</b>, <br/>
+                        similar to that the <b>image</b> (set of every defined output) 
+                        doesn't required to be equal to <b>codomain</b> (set of possible outputs if ignoring the mapping itself). 
+                    </p> <p>
+                        If an input belongs to the domain, but cannot be found in mappings (aka doesn't belongs to the preimage), 
+                        the output set of cursing this input is empty. 
+                    </p> <p>
+                        Similarly, if an output belongs to the codomain, but cannot be found in mappings (aka doesn't belongs to the image), 
+                        it belongs to the the output set of cursing empty set (or, the output of cursing the empty set is the difference of the codomain and the image). 
+                    </p> <!-- <p>
+                        This isn't only to keep the consistency, but would also be really helpful to define later concepts, such as:
+                    </p> -->
                 </article> <article id="*"> <h3>Applying multiple curses at once</h3>
                     <div class="bar">
                         The notation method that use <b>plus signs</b> <code class="adofai">+</code> 
@@ -279,7 +276,7 @@
                 </article> <article id="Keywords"> <h3>Keywords</h3> <dl>
                     <dt id="None"><a target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></dt> <dd>
                         <p>
-                            The <a target="_blank" href="https://en.wikipedia.org/wiki/Identity_function">identity curse</a>, 
+                            The <a target="_blank" href="https://en.wikipedia.org/wiki/Identity_function">identity mapping</a>, 
                             or in other words, <code class="adofai">None(x) = x</code>. 
                         </p> <div class="adofai">
                             Current curse: <a href="#None">None</a>
@@ -402,55 +399,63 @@
                     <div class="bar">
                         Not to be confused with <a href="#+">Anti</a>, another way to to create paired curses.
                     </div> <p>
-                        The <b>cure</b> for a curse assumes the level is cursed by that curse, 
-                        and reverts the cursed level back to its not-cursed-yet state. <br/>
-                        This concept is similar yet different to the 
-                        <a target="_blank" href="https://en.wikipedia.org/wiki/Inverse_function">inverse</a> for functions. 
-                    </p> <hr/> <section>
-                        <p>
-                            For each curse <code class="adofai">C</code>, <br/>
-                            its cure <code class="adofai">C<sup><span class="-">-1</span></sup></code> exists, <br/>
-                            that for each level <code class="adofai">L</code> and <code class="adofai">L<sub>C</sub></code>, <br/>
-                            <code class="adofai">L<sub>C</sub> ∈ C ( L )</code> is equivalent to 
-                            <code class="adofai">L ∈ C<sup><span class="-">-1</span></sup> ( L<sub>C</sub> )</code>. 
-                        </p> <p>
-                            The difference between this above and inverse for functions is that this uses <code>∈</code> instead of <code>=</code>. 
-                        </p> <p>
-                            Due to the difference above, if multiple levels can be cursed into the same cursed level, 
-                            cure the cursed level back returns all those levels in the set, so the result might not be the original level. 
-                        </p>
-                    </section> <hr/> <p>
+                        The <b>cure</b> for a curse works like to assume the level is cursed by that curse, 
+                        then recover the cursed level back to its not-cursed-yet state, <br/>
+                        therefore can be used to cancel (but cannot guarantee to cancel, reason see below) 
+                        the changes caused by its corresponding curse.
+                    </p> <p>
+                        The <b>cure</b> is defined as a new curse formed by 
+                        swapping each pair of input and output in the mapping of its corresponding curse. <br/>
+                        The domain and codomain also swaps, as same as the preimage and the image. 
+                    </p> <hr/> <p>
                         Cures should be represented via the power operation of functions: 
                     </p> <div class="adofai">
                         Current curse: <a href="crab/index.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup><br/>
-                        Current curse: <a href="crab/index.html#XH-X">XH-X?</a> <span class="^">^ <span class="-">-1</span></span></sup>
+                        Current curse: <a href="crab/index.html#XH-X">XH-X?</a><span class="^">^<span class="-">-1</span></span></sup>
                     </div> <div class="adofai">
                         Current curse: <a href="crab/index.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup>
                             * <a href="crab/index.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup>
                             * <a href="crab/index.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup><br/>
                         Current curse: <a href="crab/index.html#XH-X">XH-X?</a><sup><span class="-">-</span>3</span></sup>
                     </div> <hr/> <p>
-                        The cure of an cure is the original curse. 
-                    </p> <p>
-                        Some curses have themselves as the cure, in other words, 
-                        <code class="adofai">L<sub>C</sub> ∈ C ( L )</code> is equivalent to 
-                        <code class="adofai">L ∈ C ( L<sub>C</sub> )</code>. <br/>
-                        They acts like a coin flipper which always flip the coin into the otherside perfectly, so using them twice acts exactly like <a href="#None">nothing happens</a>. 
-                    </p> <hr/> <p>
-                        Curing a level which is impossible to get from the corresponding curse would produce the empty set <code>∅</code>.
-                    </p> <p>
-                        To avoid these situations in actual cursed level making progress, 
-                        you can overwrite the output using the input, like <a href="#None">nothing happens</a>. <br/>
-                        <em>( Thanks PyrotechnicTriforce for <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">the idea</a>! )</em>
-                        <br/>
+                        Here's some inference below:
+                    </p> <section>
+                        <p>
+                            An cure of an cure of an curse is equivalent to that curse itself.
+                        </p> <div class="adofai">
+                            (<a href="crab/index.html#8-X">8-X?</a><sup><span class="-">-1</span></sup>)<sup><span class="-">-1</span></sup>
+                                = <a href="crab/index.html#8-X">8-X?</a>
+                        </div> <p>
+                           If and only if, for all X→Y, exists Y→X in the mapping of an curse, 
+                           the cure of that curse is equivalent to the curse itself. 
+                        </p> <div class="adofai">
+                            <a href="string/index.html#XO-X">"XO-X"</a><sup><span class="-">-1</span></sup>
+                                = <a href="string/index.html#XO-X">"XO-X"</a>
+                        </div> <p>
+                            An arbitrary level set must be the subset of the cursed level set 
+                            by applying an arbitrary curse and then its cure. 
+                        </p> <div class="adofai">
+                            { 11-X } ⊆ <a href="crab/index.html#11-X">11-X?</a><sup><span class="-">-1</span></sup> (
+                                <a href="crab/index.html#11-X">11-X?</a> (
+                                    { 11-X }
+                                )
+                            )
+                        </div> <p>
+                            Curing a level which is impossible to get from the corresponding curse would cause the output set to be empty.
+                        </p>
+                    </section> <hr/> <p>
+                        In practice, if a level is impossible to get from the corresponding curse, <br/>
+                        you can remove the parts that causes the level being uncureable first, <br/>
+                        or just directly use the input as the output, like <a href="#None">nothing happens</a>. <br/>
+                        <em>( Thanks PyrotechnicTriforce for <a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">the idea</a>! )</em><br/>
                         <em>( TODO: there's a way to define it but it requires concepts woould introduce inside the <a href="#Meta">metacurse article</a> )</em>
-                    </p> <hr/> <p>
+                    </p> <!-- <p>
                         Using an cure often produces massive amount of possible results <br/>(
                             <code><a class="light" target="_blank" href="https://en.wikipedia.org/wiki/Big_O_notation">O(2<sup>n</sup>)</a></code>, 
                             <code>O(n!)</code>, 
                             even <code>O(&infin;)</code> theoredically
                         ) .
-                    </p>
+                    </p> -->
                 </article> <article id="Meta"> <h3>Metacurse</h3>
                     <p>
                         Say there exists a level <code class="adofai">L</code> and 2 curses <code class="adofai">C</code> and <code class="adofai">M</code>, <br/>
@@ -466,40 +471,56 @@
                             <p>
                                 This is the method this site recommands. <br/>
                                 Since the input of a curse should be the thing that gets modified, 
-                                curse <code class="adofai">M</code> that modifies curses should use the curse <code class="adofai">C</code> that will get modified as input. 
+                                curse <code class="adofai">M</code> that modifies curses 
+                                should use the curse <code class="adofai">C</code> that will get modified as input. <br/>
+                                This site assumes metacurses all works in this way. 
+                                Most of the curses that don't are able to be rewritten into this form. 
                             </p> <p>
-                                The downside is, as a curse, metacurse also output a set of cursed curses, so there's need to define the behavior that curse things with a set of curses: 
+                                The downside is, as a curse, metacurse also output a set of cursed curses, 
+                                so there's need to define the behavior that curse things with a set of curses: <br/>
+                                When using a set of curses as the curse, its behavior is the same as the curse 
+                                which its mapping is the union of the mappings of each curse in that curse set. 
+                            </p> <p>
+                                Here's some inference below:
                             </p> <section>
                                 <p>
-                                    Cursing a level using a set which contains multiple curses is the same as 
-                                    using each curse to curse that level individually then merge the results into one set. 
-                                    For example: 
+                                    The result of using a set of curses is the same as 
+                                    the union of the results of using each curse in that curse set.
                                 </p> <div class="adofai">
                                     {
                                         <a href="crab/index.html#5-X">5-X?</a>, 
                                         <a href="crab/index.html#11-X">11-X?</a>, 
                                         <a href="crab/index.html#XC-X">XC-X?</a>
                                     } ( 5-X )
-                                </div> <p>
-                                    is equivalent to
-                                </p> <div class="adofai">
-                                    <a href="crab/index.html#5-X">5-X?</a> ( 5-X )
+                                    = <a href="crab/index.html#5-X">5-X?</a> ( 5-X )
                                     ∪ <a href="crab/index.html#11-X">11-X?</a> ( 5-X )
                                     ∪ <a href="crab/index.html#XC-X">XC-X?</a> ( 5-X )
                                 </div> <p>
-                                    The cure of a set <code class="adofai">S</code> of curses is the same as the set of cures for each curses<sup>[Needs Proof]</sup>. 
+                                    The cure of a curse set works the same as the set of cures for each curse. 
                                 </p> <div class="adofai">
-                                    S<sup><span class="-">-1</span></sup> = { c<sup><span class="-">-1</span></sup> | c∈S }
+                                    {
+                                        <a href="crab/index.html#5-X">5-X?</a>, 
+                                        <a href="crab/index.html#11-X">11-X?</a>, 
+                                        <a href="crab/index.html#XC-X">XC-X?</a>
+                                    }<sup><span class="-">-1</span></sup>
+                                    = {
+                                        <a href="crab/index.html#5-X">5-X?</a><sup><span class="-">-1</span></sup>, 
+                                        <a href="crab/index.html#11-X">11-X?</a><sup><span class="-">-1</span></sup>, 
+                                        <a href="crab/index.html#XC-X">XC-X?</a><sup><span class="-">-1</span></sup>
+                                    }
                                 </div> <p>
-                                    Using the empty set as the curse set should outputs the empty set, no matter if the set gets cursed is empty or not<sup>[Needs Proof]</sup>. 
+                                    When using the empty set as the curse set, if the input set is empty, the output set is empty: 
                                 </p> <div class="adofai">
-                                    ∅ ( ... ) = ∅
+                                    ∅ ( { 1-X } ) = ∅<br/>
+                                    ∅ ( { 1-X, 2-X } ) = ∅
                                 </div> <p>
-                                    The cure of the empty set outputs the universal set, if and only if the input set is empty, otherwise outputs the empty set. 
-                                </p>
-                            </section> <p>
-                                This site assumes metacurses all works in this way. 
-                            </p>
+                                    Otherwise, the output set is the codomain.
+                                </p> <p>
+                                    The cure of the empty curse set is still the empty curse set.
+                                </p> <div class="adofai">
+                                    ∅<sup><span class="-">-1</span></sup> = ∅
+                                </div>
+                            </section>
                         </dd> <hr/> <dt>
                             Apply <code class="adofai">L</code> with <code class="adofai">C</code> before <code class="adofai">M</code><br/>
                             (<code class="adofai">Current curse: C * M</code> <code class="adofai">L → M ( C ( L ) )</code>)
@@ -546,7 +567,7 @@
                             </p> <p>
                                 TL;DR: Don't.
                             </p>
-                        </dd>
+                        </dd> <hr/>
                     </dl>
                 </article>
             </article>

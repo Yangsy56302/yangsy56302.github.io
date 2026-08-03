@@ -70,11 +70,11 @@
                 </dt> <dd>
                     许多外网魔改系列都在此有收录。
                 </dd>
-                <dt> <a target="_blank" href="https://dragonfire28-8271.github.io/curselist/">
+                <!-- <dt> <a target="_blank" href="https://dragonfire28-8271.github.io/curselist/">
                     ADOFAI Curse List Records</a> by DragonFire28
                 </dt> <dd>
-                    字体可能由于太小而难以阅读。
-                </dd>
+                    字体可能由于太小而难以阅读。编者出于某些原因无法登录到GitHub，因此该页面暂停更新。
+                </dd> -->
                 <dt> <a target="_blank" href="https://archive.aclcc.top/">
                     ACLCC Website</a> by ACLCC Website Team
                 </dt> <dd>
@@ -194,7 +194,7 @@
                         不仅如此，输入也可以扩展至关卡集合，定义如下：
                     </p> <section>
                         <p>
-                            魔改仅包括一个关卡的集合等价于魔改该关卡。例如，
+                            魔改仅包括一个关卡的集合等价于魔改该关卡。<br/>例如：
                             <code class="adofai"><a href="crab/index.zh.html#2-X">2-X?</a> ( B-X )</code> 
                             等价于
                             <code class="adofai"><a href="crab/index.zh.html#2-X">2-X?</a> ( { B-X } )</code> . 
@@ -202,7 +202,7 @@
                             注意：此处所标注的不是<a target="_blank" href="https://sites.google.com/view/a-dance-of-fire-and-ice-curses/list-of-curse-series/n-x-curses">KirbyCreep的魔改</a>，
                             <del class="huhua" title="……现在换个记号还来得及吗？">由于本人当时欠考虑，</del>后者现今通常使用大括号作为其魔改系列记号<code class="adofai">{N-X}</code>。
                         </div> <p>
-                            魔改包括多个关卡的集合等价于魔改其中每个关卡的结果的并集。例如：
+                            魔改包括多个关卡的集合等价于魔改其中每个关卡的结果的并集。<br/>例如：
                         </p> <div class="adofai">
                             <a href="crab/index.zh.html#5-X">5-X?</a> (
                                 { 5-X, 11-X, XC-X }
@@ -263,7 +263,7 @@
                 </article> <article id="Keywords"> <h3>关键词</h3> <dl>
                     <dt id="None">空 <a target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></dt> <dd>
                         <p>
-                            恒等函数：<code class="adofai">None(x) = x</code>。 
+                            恒等映射：<code class="adofai">None(x) = x</code>。 
                         </p> <div class="adofai">
                             当前魔改：<a href="#None">空</a>
                         </div>
@@ -395,7 +395,7 @@
                             * <a href="crab/index.zh.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup>
                             * <a href="crab/index.zh.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup><br/>
                         当前魔改：<a href="crab/index.zh.html#XH-X">XH-X?</a><sup><span class="-">-</span>3</span></sup>
-                    </div> <p>
+                    </div> <hr/> <p>
                         以下是一些推论：
                     </p> <section>
                         <p>
@@ -417,13 +417,15 @@
                                 )
                             )
                         </div> <p>
-                            在实际应用中，如果一个关卡不可能被对应的魔改魔改出来，导致逆魔改的输出集合为空，<br/>
-                            可以先将输入中导致关卡无法被逆魔改的部分移除再进行逆魔改，<br/>
-                            或者直接将输入作为输出，就好像<a href="#None">无事发生</a>一样。<br/>
-                            <em>（感谢 PyrotechnicTriforce 提供的<a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">主意</a>！）</em><br/>
-                            <em>（待补：可以用<a href="#Meta">元魔改</a>定义上述兜底行为）</em>
-                        </p>
-                    </section> <!-- <p>
+                            逆魔改一个不可能被对应的魔改魔改出来的关卡会导致逆魔改的输出集合为空。
+                        </p> 
+                    </section> <hr/> <p>
+                        在实际应用中，如果一个关卡不可能被对应的魔改魔改出来，<br/>
+                        可以先将输入中导致关卡无法被逆魔改的部分移除，<br/>
+                        或者直接将输入作为输出，就好像<a href="#None">无事发生</a>一样。<br/>
+                        <em>（感谢 PyrotechnicTriforce 提供的<a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">主意</a>！）</em><br/>
+                        <em>（待补：可以用<a href="#Meta">元魔改</a>定义上述兜底行为）</em>
+                    </p> <!-- <p>
                         逆魔改的结果数量通常多到恐怖（
                             <code><a class="light" target="_blank" href="https://en.wikipedia.org/wiki/Big_O_notation">O(2<sup>n</sup>)</a></code>，
                             <code>O(n!)</code>，
@@ -477,12 +479,12 @@
                                         <a href="crab/index.zh.html#XC-X">XC-X?</a><sup><span class="-">-1</span></sup>
                                     }
                                 </div> <p>
-                                    使用空集作为魔改集合时，如果输入集合不为空，则输出集合为空；
+                                    使用空集作为魔改集合时，如果输入集合不为空，则输出集合为空：
                                 </p> <div class="adofai">
                                     ∅ ( { 1-X } ) = ∅<br/>
                                     ∅ ( { 1-X, 2-X } ) = ∅
                                 </div> <p>
-                                    反之，空魔改集合的输出集合为其陪域，也即魔改集。
+                                    反之，输出集合为陪域。
                                 </p> <p>
                                     空魔改集合的逆仍为空魔改集合。
                                 </p> <div class="adofai">
