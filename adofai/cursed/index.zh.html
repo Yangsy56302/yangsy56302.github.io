@@ -70,11 +70,11 @@
                 </dt> <dd>
                     许多外网魔改系列都在此有收录。
                 </dd>
-                <dt> <a target="_blank" href="https://dragonfire28-8271.github.io/curselist/">
+                <!-- <dt> <a target="_blank" href="https://dragonfire28-8271.github.io/curselist/">
                     ADOFAI Curse List Records</a> by DragonFire28
                 </dt> <dd>
-                    字体可能由于太小而难以阅读。
-                </dd>
+                    字体可能由于太小而难以阅读。编者出于某些原因无法登录到GitHub，因此该页面暂停更新。
+                </dd> -->
                 <dt> <a target="_blank" href="https://archive.aclcc.top/">
                     ACLCC Website</a> by ACLCC Website Team
                 </dt> <dd>
@@ -82,9 +82,12 @@
                 </dd>
             </dl> </section>
             <article id="Mechanism"> <h2>魔改机制</h2>
-                <section><a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
+                <!-- <div class="bar"> <a target="_blank" href="https://www.youtube.com/watch?v=LRByYAzqQGs&lc=UgzW8aXFjuGrp-icbSR4AaABAg.AGn_oFGILkAAGr9S-d2IFN">
                     下文中，中旋默认按0°角处理。
-                </a></section>
+                </a> </div> -->
+                <div class="bar">
+                    在此特别感谢<a target="_blank" href="https://steamcommunity.com/profiles/76561199223575134/">是动听D温呐</a>为此页面中许多概念的完善与纠错所做出的贡献。
+                </div>
                 <article id="Curse"> <h3>什么是魔改？</h3>
                     <p>
                         <b>魔改（<i>Curse</i>）</b>是一种可以作用在冰与火之舞关卡上
@@ -177,7 +180,8 @@
                             当前关卡：<a href="crab/index.zh.html#2-X">2-X?</a> ( B-X )
                         </div>
                     </section> <hr/> <p>
-                        为解决此问题，可以将魔改所输出的类型，从单个关卡，改为关卡的集合：
+                        为解决此问题，可以将魔改视为从关卡到魔改关卡的映射，
+                        而魔改所输出的类型，也将从单个魔改关卡，改为魔改关卡的集合：
                     </p> <div class="adofai">
                         <a href="crab/index.zh.html#2-X">2-X?</a> ( B-X ) &rarr; {
                             被多重复一次的 B-X , 
@@ -187,20 +191,10 @@
                     </div> <p>
                         而最终结果则是其中的一个元素。
                     </p> <hr/> <p>
-                        这也同时解决了以下问题：<dl>
-                            <dt>某些魔改的定义不是很严谨，导致一千个魔改者心中有一千种魔改结果</dt> <dd>
-                                <del class="heimu" title="其实也挺好的 毕竟圈子越大问题就越大（参考资料：实在没必要取昵称）">然而魔改圈压根就凑不齐一千人qwq</del><br/>
-                                所有结果都属于输出集合。可以自行忽略自己所不认可的结果。
-                            </dd>
-                            <dt>某些魔改的定义不是很严谨，导致有些情况下完全无法给出合理的结果</dt> <dd>
-                                输出集合应为<a target="_blank" href="https://en.wikipedia.org/wiki/Empty_set">空集</a> <code>∅</code>。
-                            </dd>
-                        </dl>
-                    </p> <hr/> <p>
-                        输入也会改为关卡集合，定义如下：
+                        不仅如此，输入也可以扩展至关卡集合，定义如下：
                     </p> <section>
                         <p>
-                            魔改仅包括一个关卡的集合等价于魔改该关卡。例如，
+                            魔改仅包括一个关卡的集合等价于魔改该关卡。<br/>例如：
                             <code class="adofai"><a href="crab/index.zh.html#2-X">2-X?</a> ( B-X )</code> 
                             等价于
                             <code class="adofai"><a href="crab/index.zh.html#2-X">2-X?</a> ( { B-X } )</code> . 
@@ -208,7 +202,7 @@
                             注意：此处所标注的不是<a target="_blank" href="https://sites.google.com/view/a-dance-of-fire-and-ice-curses/list-of-curse-series/n-x-curses">KirbyCreep的魔改</a>，
                             <del class="huhua" title="……现在换个记号还来得及吗？">由于本人当时欠考虑，</del>后者现今通常使用大括号作为其魔改系列记号<code class="adofai">{N-X}</code>。
                         </div> <p>
-                            魔改包括多个关卡的集合等价于魔改其中每个关卡的结果的并集。例如：
+                            魔改包括多个关卡的集合等价于魔改其中每个关卡的结果的并集。<br/>例如：
                         </p> <div class="adofai">
                             <a href="crab/index.zh.html#5-X">5-X?</a> (
                                 { 5-X, 11-X, XC-X }
@@ -219,14 +213,18 @@
                             <a href="crab/index.zh.html#5-X">5-X?</a> ( 5-X )
                             ∪ <a href="crab/index.zh.html#5-X">5-X?</a> ( 11-X )
                             ∪ <a href="crab/index.zh.html#5-X">5-X?</a> ( XC-X )
-                        </div> <p>
-                            魔改以空集作为输入集合时，输出集合定义为以全集作为输入集合的输出集合的补集。
-                        </p> <p>
-                            推论：在输入集合都不为空的情况下，魔改应用对并运算满足分配律。
-                        </p>
-                    </section> <p>
-                        这不仅是为了保持一致性，也是由于这对后续的概念定义很有帮助，例如：
-                    </p>
+                        </div>
+                    </section> <hr> <p>
+                        需要注意的是，魔改并不需要为<b>定义域</b>中每个关卡都映射到至少一个输出。<br/>
+                        这类似于函数的<b>值域</b>（定义的所有输出的集合）并不需要一定等于<b>陪域</b>（忽略映射本身时可能的输出的集合）。<br/>
+                        本站称魔改映射中所有输入组成的集合为<b>参域</b>。
+                    </p> <p>
+                        如果某个输入属于定义域，但无法在魔改映射中找到（也即该输入不属于参域），则魔改该输入的输出集合为空集。
+                    </p> <p>
+                        类似的，如果某个输出属于陪域，但无法在魔改映射中找到（也即该输出不属于值域），则其属于魔改空集的输出集合（又或者，魔改空集的输出集合是陪域与值域的差集）。
+                    </p> <!-- <p>
+                        这不仅能够保持一致性，还对后续的概念定义也很有帮助，例如：
+                    </p> -->
                 </article> <article id="*"> <h3>同时施加多个魔改效果</h3>
                     <div class="bar">
                         使用 <b>加号</b> <code class="adofai">+</code> 
@@ -265,7 +263,7 @@
                 </article> <article id="Keywords"> <h3>关键词</h3> <dl>
                     <dt id="None">空 <a target="_blank" href="https://docs.python.org/3/library/constants.html#None">None</a></dt> <dd>
                         <p>
-                            恒等函数：<code class="adofai">None(x) = x</code>。 
+                            恒等映射：<code class="adofai">None(x) = x</code>。 
                         </p> <div class="adofai">
                             当前魔改：<a href="#None">空</a>
                         </div>
@@ -381,52 +379,59 @@
                     <div class="bar">
                         提示：本条目的主题不是<a href="#+">反魔改</a>，另一种生成成对魔改的方式。
                     </div> <p>
-                        魔改的<b>逆（<i>Cure</i>）</b>假设关卡被对应的魔改所魔改，并将其恢复到其未被对应的魔改所魔改的状态。<br/>
-                        此概念与反函数的概念类似，但又有所区别。
-                    </p> <hr/> <section>
-                        <p>
-                            对于任意魔改<code class="adofai">C</code>，
-                            其逆魔改<code class="adofai">C<sup><span class="-">-1</span></sup></code>存在，
-                            使得对于任意关卡<code class="adofai">L</code>和<code class="adofai">L<sub>C</sub></code>，<br/>
-                            <code class="adofai">L<sub>C</sub> ∈ C ( L )</code> 等价于 
-                            <code class="adofai">L ∈ C<sup><span class="-">-1</span></sup> ( L<sub>C</sub> )</code>。
-                        </p> <p>
-                            逆魔改与反函数的区别在于逆魔改使用<code>∈</code>而非<code>=</code>。
-                        </p> <p>
-                            由于以上区别，如果多个关卡可被魔改成同一魔改关卡，
-                            逆魔改会返回上述所有关卡的集合，因此最终结果可能并非原关卡。
-                        </p>
-                    </section> <hr/> <p>
-                        逆魔改应使用函数的幂运算来表示：
+                        魔改的<b>逆（<i>Cure</i>）</b>，也可称作<b>逆魔改</b>。<br/>
+                        其运作方式类似于假设关卡被对应的魔改所魔改，并将其恢复到其未被对应的魔改所魔改的状态，<br/>
+                        因而可以用于抵消（但不一定能保证抵消，原因见下）其对应魔改所导致的更改。
+                    </p> <p>
+                        逆魔改定义为将对应魔改的映射中每一对输入与输出互换组成的新魔改。<br/>
+                        逆魔改的定义域和陪域也会互换；参域和值域同理。
+                    </p> <hr/> <p>
+                        逆魔改使用函数的幂运算来表示：
                     </p> <div class="adofai">
                         当前魔改：<a href="crab/index.zh.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup><br/>
-                        当前魔改：<a href="crab/index.zh.html#XH-X">XH-X?</a> <span class="^">^ <span class="-">-1</span></span></sup>
+                        当前魔改：<a href="crab/index.zh.html#XH-X">XH-X?</a><span class="^">^<span class="-">-1</span></span></sup>
                     </div> <div class="adofai">
                         当前魔改：<a href="crab/index.zh.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup>
                             * <a href="crab/index.zh.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup>
                             * <a href="crab/index.zh.html#XH-X">XH-X?</a><sup><span class="-">-1</span></sup><br/>
                         当前魔改：<a href="crab/index.zh.html#XH-X">XH-X?</a><sup><span class="-">-</span>3</span></sup>
                     </div> <hr/> <p>
-                        逆魔改的逆魔改是其原始魔改。
-                    </p> <p>
-                        某些魔改的逆魔改是其自身，换言之，
-                        <code class="adofai">L<sub>C</sub> ∈ C ( L )</code> 等价于 
-                        <code class="adofai">L ∈ C ( L<sub>C</sub> )</code>。<br/>
-                        这些魔改就像硬币翻转器，总是完美地将硬币翻转到另一面，因此使用它们两次就好像<a href="#None">无事发生</a>一样。
-                    </p> <hr/> <p>
-                        逆魔改一个不可能被魔改出的关卡会将空集<code>∅</code>作为返回的输出集合。
-                    </p> <p>
-                        在实际情况中，可以将输入作为新的输出，就好像<a href="#None">无事发生</a>一样。
-                        <em>（感谢 PyrotechnicTriforce 提供的<a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">主意</a>！）</em>
-                        <br/>
+                        以下是一些推论：
+                    </p> <section>
+                        <p>
+                            一个魔改的逆魔改的逆魔改与其自身相等。
+                        </p> <div class="adofai">
+                            (<a href="crab/index.zh.html#8-X">8-X?</a><sup><span class="-">-1</span></sup>)<sup><span class="-">-1</span></sup>
+                                = <a href="crab/index.zh.html#8-X">8-X?</a>
+                        </div> <p>
+                           当且仅当一个魔改的映射集合里，对于任意X→Y，都有Y→X在集合内，那么其逆魔改与其自身相等。
+                        </p> <div class="adofai">
+                            <a href="string/index.zh.html#XO-X">"XO-X"</a><sup><span class="-">-1</span></sup>
+                                = <a href="string/index.zh.html#XO-X">"XO-X"</a>
+                        </div> <p>
+                            任意一个关卡集合必定是对其先后施加任意魔改与其逆魔改得到的魔改关卡集合的子集。
+                        </p> <div class="adofai">
+                            { 11-X } ⊆ <a href="crab/index.zh.html#11-X">11-X?</a><sup><span class="-">-1</span></sup> (
+                                <a href="crab/index.zh.html#11-X">11-X?</a> (
+                                    { 11-X }
+                                )
+                            )
+                        </div> <p>
+                            逆魔改一个不可能被对应的魔改魔改出来的关卡会导致逆魔改的输出集合为空。
+                        </p> 
+                    </section> <hr/> <p>
+                        在实际应用中，如果一个关卡不可能被对应的魔改魔改出来，<br/>
+                        可以先将输入中导致关卡无法被逆魔改的部分移除，<br/>
+                        或者直接将输入作为输出，就好像<a href="#None">无事发生</a>一样。<br/>
+                        <em>（感谢 PyrotechnicTriforce 提供的<a target="_blank" href="https://www.youtube.com/watch?v=RsIQK4JKN0E&lc=UgwDRAZH0KGgl1dH3HF4AaABAg.AGAoBd9Y4F9AGCJj5NbzSb">主意</a>！）</em><br/>
                         <em>（待补：可以用<a href="#Meta">元魔改</a>定义上述兜底行为）</em>
-                    </p> <hr/> <p>
+                    </p> <!-- <p>
                         逆魔改的结果数量通常多到恐怖（
                             <code><a class="light" target="_blank" href="https://en.wikipedia.org/wiki/Big_O_notation">O(2<sup>n</sup>)</a></code>，
                             <code>O(n!)</code>，
                             理论上甚至可以达到<code>O(&infin;)</code>
                         ）。
-                    </p>
+                    </p> -->
                 </article> <article id="Meta"> <h3>元魔改</h3>
                     <p>
                         设存在一个关卡<code class="adofai">L</code>，以及两个魔改<code class="adofai">C</code>和<code class="adofai">M</code>，<br/>
@@ -441,45 +446,57 @@
                         </dt> <dd>
                             <p>
                                 这是本站推荐的元魔改定义方法。<br/>
-                                既然魔改的输入应为要被其影响的对象，影响魔改的魔改<code class="adofai">M</code>自然就应当将要被其影响的魔改<code class="adofai">C</code>作为输入。
+                                既然魔改的输入应为要被其影响的对象，影响魔改的魔改<code class="adofai">M</code>自然就应当将要被其影响的魔改<code class="adofai">C</code>作为输入。<br/>
+                                本站假定元魔改均以此方式运作。大多数不以此方式运作的魔改也能够改写为此形式。
                             </p> <p>
-                                缺点是，由于元魔改作为魔改，其输出也是魔改的集合，就需要额外定义将魔改的集合应用在元素上的行为：
+                                缺点是，由于元魔改作为魔改，其输出也是魔改的集合，就需要额外定义将魔改的集合应用在元素上的行为：<br/>
+                                将含多个魔改的集合作为魔改使用时，其行为与其内含魔改的映射的并集所组成的魔改的行为相等。
+                            </p> <p>
+                                以下是一些推论：
                             </p> <section>
                                 <p>
-                                    使用包括多个魔改的集合等价于使用该集合中的每个魔改的结果的并集。例如：
+                                    使用含多个魔改的集合的结果等于使用该集合中的每个魔改的结果的并集。
                                 </p> <div class="adofai">
                                     {
                                         <a href="crab/index.zh.html#5-X">5-X?</a>, 
                                         <a href="crab/index.zh.html#11-X">11-X?</a>, 
                                         <a href="crab/index.zh.html#XC-X">XC-X?</a>
                                     } ( 5-X )
-                                </div> <p>
-                                    等价于
-                                </p> <div class="adofai">
-                                    <a href="crab/index.zh.html#5-X">5-X?</a> ( 5-X )
+                                    = <a href="crab/index.zh.html#5-X">5-X?</a> ( 5-X )
                                     ∪ <a href="crab/index.zh.html#11-X">11-X?</a> ( 5-X )
                                     ∪ <a href="crab/index.zh.html#XC-X">XC-X?</a> ( 5-X )
                                 </div> <p>
-                                    对含魔改的集合 <code class="adofai">S</code> 取逆与对集合中的魔改取逆相等<sup>[需要证明]</sup>。
+                                    魔改集合的逆与对集合中的所有魔改取逆等效。
                                 </p> <div class="adofai">
-                                    S<sup><span class="-">-1</span></sup> = { c<sup><span class="-">-1</span></sup> | c∈S }
+                                    {
+                                        <a href="crab/index.zh.html#5-X">5-X?</a>, 
+                                        <a href="crab/index.zh.html#11-X">11-X?</a>, 
+                                        <a href="crab/index.zh.html#XC-X">XC-X?</a>
+                                    }<sup><span class="-">-1</span></sup>
+                                    = {
+                                        <a href="crab/index.zh.html#5-X">5-X?</a><sup><span class="-">-1</span></sup>, 
+                                        <a href="crab/index.zh.html#11-X">11-X?</a><sup><span class="-">-1</span></sup>, 
+                                        <a href="crab/index.zh.html#XC-X">XC-X?</a><sup><span class="-">-1</span></sup>
+                                    }
                                 </div> <p>
-                                    使用空集作为魔改集合时，无论被魔改的集合是否为空，输出集合都应为空集<sup>[需要证明]</sup>。
+                                    使用空集作为魔改集合时，如果输入集合不为空，则输出集合为空：
                                 </p> <div class="adofai">
-                                    ∅ ( ... ) = ∅
+                                    ∅ ( { 1-X } ) = ∅<br/>
+                                    ∅ ( { 1-X, 2-X } ) = ∅
                                 </div> <p>
-                                    空集的逆会且仅会在输入集合为空集的情况下输出全集，否则会输出空集。
-                                </p>
-                            </section> <p>
-                                本站假定元魔改均以此方式运作。
-                            </p>
+                                    反之，输出集合为陪域。
+                                </p> <p>
+                                    空魔改集合的逆仍为空魔改集合。
+                                </p> <div class="adofai">
+                                    ∅<sup><span class="-">-1</span></sup> = ∅
+                                </div>
+                            </section>
                         </dd> <hr/> <dt>
                             对关卡<code class="adofai">L</code>应用魔改<code class="adofai">C</code>之后再应用魔改<code class="adofai">M</code><br/>
                             （<code class="adofai">当前魔改：C * M</code> <code class="adofai">L → M ( C ( L ) )</code>）
                         </dt> <dd>
                             <p>
-                                这种元魔改定义方法避免了难以阅读魔改提示和定义魔改集合魔改关卡的麻烦，<br/>
-                                代价是牺牲了元魔改的独特性和部分合理性。
+                                这种元魔改定义方法避免了难以阅读魔改提示和定义魔改集合魔改关卡的麻烦，代价是牺牲了元魔改的独特性和部分合理性。
                             </p> <p>
                                 由于<code class="adofai">M</code>得到的输入并非<code class="adofai">C</code>本身，而是其输出集合，<br/>
                                 <code class="adofai">M</code>无法直接得知<code class="adofai">C</code>具体是什么魔改，以及被魔改前的元素的具体内容。
@@ -512,7 +529,7 @@
                             </p> <p>
                                 省流：别。
                             </p>
-                        </dd>
+                        </dd> <hr/> 
                     </dl>
                 </article>
             </article>
