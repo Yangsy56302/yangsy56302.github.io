@@ -3,7 +3,6 @@
 /* roots */
 html {
     font-family: "Consolas", "SimHei", "Microsoft YaHei", "Courier New", "NSimsun", "Simsun", monospace, sans-serif, serif;
-    font-size: 100%;
     scroll-behavior: smooth;
 }
 body {
