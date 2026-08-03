@@ -14,7 +14,7 @@ body {
 div, section, article, dl {
     margin: 0.5rem 0rem;
     padding: 0rem 2rem;
-    font-size: inherit;
+    font-size: 1rem;
 }
 p, dd {
     margin: 0.5rem 0rem;
