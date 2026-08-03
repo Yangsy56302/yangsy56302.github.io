@@ -24,7 +24,7 @@ body.tutotile {
 .adofai {
     background-color: var(--tuto-bg-color);
     color: var(--tuto-fg-color);
-    font-family: "godoMaum", "16FontSeto", "HappyZcool", "Consolas", "Courier New", monospace, sans-serif, serif;
+    font-family: "godoMaum", "16FontSeto", "HappyZcool", "NSimsun", "Simsun", "SimHei", "Microsoft YaHei", "Consolas", "Courier New", monospace, sans-serif, serif;
     text-shadow: 0.1rem 0.1rem 0rem #000A;
     font-weight: normal;
     font-style: normal;

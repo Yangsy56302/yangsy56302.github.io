@@ -2,7 +2,7 @@
 @import url("font/Aller.css");
 /* roots */
 html {
-    font-family: "Consolas", "Courier New", "SimHei", "Microsoft YaHei", monospace, sans-serif, serif;
+    font-family: "Consolas", "Courier New", "NSimsun", "Simsun", "SimHei", "Microsoft YaHei", monospace, sans-serif, serif;
     font-size: 16px;
     scroll-behavior: smooth;
 }
@@ -79,7 +79,7 @@ abbr{
     font-size: inherit;
 }
 code, var {
-    font-family: 'Courier New', Courier, 'Consolas', monospace;
+    font-family: 'Courier New', Courier, 'Consolas', 'NSimsun', monospace;
     background-color: #000;
     font-size: inherit;
     padding: 0.25rem;
@@ -325,5 +325,5 @@ footer {
     background-color: var(--yangsy-colors);
 }
 #splash {
-    font-family: "Aller", "Arial", "Helvetica", sans-serif;
+    font-family: "Aller", "Consolas", "Courier New", "NSimsun", "Simsun", "SimHei", "Microsoft YaHei", monospace, sans-serif, serif;
 }
