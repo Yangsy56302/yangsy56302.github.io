@@ -5,10 +5,15 @@ html {
     font-family: "Consolas", "SimHei", "Microsoft YaHei", "Courier New", "NSimsun", "Simsun", monospace, sans-serif, serif;
     scroll-behavior: smooth;
 }
-body {
-    background-color: light-dark(var(--monika-medium-color), color-mix(in srgb, var(--monika-dark-color), #000 50%));
-    color: var(--text-colors);
-    font-size: 1rem;
+@media (orientation: landscape) {
+    html {
+        font-size: 100%;
+    }
+}
+@media (orientation: portrait) {
+    html {
+        font-size: 1.5625vh;
+    }
 }
 /* global margin and padding */
 div, section, article, dl {
@@ -248,6 +253,8 @@ body {
     padding: 0rem 0rem;
     overflow: hidden;
     font-size: 1rem;
+    background-color: light-dark(var(--monika-medium-color), color-mix(in srgb, var(--monika-dark-color), #000 50%));
+    color: var(--text-colors);
 }
 aside {
     margin: 0%;
@@ -324,9 +331,6 @@ footer {
     background-color: var(--yangsy-colors);
 }
 @media (orientation: landscape) {
-    html {
-        font-size: 100%;
-    }
     body {
         flex-flow: row nowrap;
     }
@@ -350,9 +354,6 @@ footer {
     }
 }
 @media (orientation: portrait) {
-    html {
-        font-size: 1.5625vh;
-    }
     body {
         flex-flow: column-reverse nowrap;
     }
