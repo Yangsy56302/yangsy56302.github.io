@@ -1,0 +1,37 @@
+---
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- if page.lang == 'zh' -%}
+{%- assign twin = page.path | remove: '.zh.html' | append: '.html' -%}
+{%- else -%}
+{%- assign twin = page.path | remove: '.html' | append: '.zh.html' -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+    {% include head.html %}
+</head>
+<body{% if page.tutotile %} class="tutotile"{% endif %}>
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true" tabindex="-1">
+    <label for="navToggle" class="nav-backdrop" aria-hidden="true" tabindex="-1"></label>
+    <aside>
+        <nav>
+            <h1 id="Index">{% if page.is_meta %}{{ page.index_label | default: t.meta_title }}{% else %}{{ t.index_title }}<sub>{{ t.meta_open }}<a target="_blank" href="{{ '/nav.html' | relative_url }}">{{ t.meta }}</a>{{ t.meta_close }}</sub>{% endif %}</h1>
+            {% if page.toc %}{{ page.toc }}{% endif %}
+        </nav>
+        <div>
+            {% include forpage.html %}
+        </div>
+    </aside>
+    <div class="right">
+        <header>
+            <label for="navToggle" class="nav-toggle-label" title="{{ t.menu }}">☰</label>
+            <h1>{{ page.header | default: page.title }}</h1>
+        </header>
+        <div class="content">
+            {{ content }}
+        </div>
+        {% include footer.html %}
+    </div>
+</body>
+</html>

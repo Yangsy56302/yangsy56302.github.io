@@ -49,6 +49,7 @@ div.adofai {
     padding: 1rem 1rem;
     font-size: 1rem;
     text-wrap: nowrap;
+    max-width: 100%;
     overflow: auto;
 }
 .adofai .\/, .adofai .\-, .adofai .\+ {

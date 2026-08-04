@@ -1,0 +1,29 @@
+<dl>
+    <dt>{{ t.for_this_page }}</dt> <dd><ul>
+        <li> <a href="#">{{ t.top }}</a> </li>
+        <li> <a href>{{ t.link }}</a> </li>
+        <li> <a target="_blank" href="https://github.com/Yangsy56302/yangsy56302.github.io/blob/main/{{ page.path }}">{{ t.github }}</a> </li>
+        <li> <a target="_blank" href download>{{ t.download }}</a> </li>
+        <li>
+            <button id="setLightMode">☉</button>
+            <button id="setAutoMode">%</button>
+            <button id="setDarkMode">☽︎</button>
+        </li>
+        <script src="{{ '/color_scheme.js' | relative_url }}"></script>
+        <!--
+        <li> <button id="reloadCSS">{{ t.reload_css }}</button> </li>
+        <script src="{{ '/reload_css.js' | relative_url }}"></script>
+        -->
+    </ul></dd>
+    {% if page.twin != false %}
+    <dt><sup>文</sup><sub>A</sub>: </dt> <dd><ul>
+        {% if page.lang == 'zh' %}
+        <li><a href="{{ twin | relative_url }}">{{ t.lang_en }}</a></li>
+        <li><strong>{{ t.lang_zh }}</strong></li>
+        {% else %}
+        <li><strong>{{ t.lang_en }}</strong></li>
+        <li><a href="{{ twin | relative_url }}">{{ t.lang_zh }}</a></li>
+        {% endif %}
+    </ul></dd>
+    {% endif %}
+</dl>
