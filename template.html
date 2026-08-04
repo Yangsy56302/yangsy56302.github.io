@@ -1,54 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="Yangsy56302">
-    <meta name="keywords" content="Yangsy56302,Yangsy0xDBEE,yangsy">
-    <meta name="description" content="Yangsy56302's Website">
-    <meta name="color-scheme" content="light dark">
-    <title>Template Page</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style/yangsy.css">
-    <link rel="stylesheet" type="text/css" href="style/page.css">
-    <link rel="stylesheet" type="text/css" href="style/adofai.css">
-    <base target="_self">
-</head>
-<body>
-    <aside>
-        <nav> <h1 id="Index">Index<sub> (<a target="_blank" href="nav.html">meta</a>)</sub></h1> <ol>
-            <li><a href="#WIP">Work in Progress</a><ol>
-                <li><a href="#ADOFAI">A Dance of Fire and Ice</a></li>
-            </ol></li>
-        </ol> </nav>
-        <div> <dl>
-            <dt>For this page: </dt> <dd><ul>
-                <li> <a href="#">Top</a> </li>
-                <li> <a href>Link</a> </li>
-                <li> <a target="_blank" href="https://github.com/Yangsy56302/yangsy56302.github.io/blob/main/template.html">GitHub</a> </li>
-                <li> <a target="_blank" href download>Download</a> </li>
-                <li>
-                    <button id="setLightMode">☉</button>
-                    <button id="setAutoMode">%</button>
-                    <button id="setDarkMode">☽︎</button>
-                </li>
-                <script src="https://yangsy56302.github.io/color_scheme.js"></script>
-                <!--
-                <li> <button id="reloadCSS">Reload Stylesheet</button> </li>
-                <script src="https://yangsy56302.github.io/reload_css.js"></script>
-                -->
-            </ul></dd>
-            <dt><sup>文</sup><sub>A</sub>: </dt> <dd><ul>
-                <li><strong>English (Any)</strong></li>
-                <li><a href="index.zh.html">中文（简体）</a></li>
-            </ul></dd>
-        </dl> </div>
-    </aside>
-    <div class="right">
-        <header> <h1>
-            Template Page
-        </h1> </header>
-        <div class="content">
-            <article id="WIP"> <h2>Work in Progress</h2>
+---
+layout: site
+lang: en
+title: "Template Page"
+keywords: "Yangsy56302,Yangsy0xDBEE,yangsy"
+description: "Yangsy56302's Website"
+adofai: true
+header: |
+  Template Page
+toc: |
+  <ol>
+  <li><a href="#WIP">Work in Progress</a><ol>
+  <li><a href="#ADOFAI">A Dance of Fire and Ice</a></li>
+  </ol></li>
+  </ol>
+---
+<article id="WIP"> <h2>Work in Progress</h2>
                 <div class="bar">
                     For <em>the top of this page</em>, see 
                     <a target="_blank" href="#">here</a>.
@@ -72,11 +38,3 @@
                     </div>
                 </article>
             </article>
-        </div>
-        <footer>
-            <button id="randomSplash">↻</button> <span id="splash">...!</span>
-            <script src="splashes.js"></script>
-        </footer>
-    </div>
-</body>
-</html>

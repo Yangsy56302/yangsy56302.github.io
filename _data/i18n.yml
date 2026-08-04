@@ -1,0 +1,31 @@
+en:
+  index_title: Index
+  meta: meta
+  meta_open: " ("
+  meta_close: ")"
+  menu: Menu
+  meta_title: Meta Index
+  for_this_page: "For this page:"
+  top: Top
+  link: Link
+  github: GitHub
+  download: Download
+  reload_css: Reload Stylesheet
+  lang_en: English (Any)
+  lang_zh: 中文（简体）
+
+zh:
+  index_title: 目录
+  meta: 元
+  meta_open: "（"
+  meta_close: "）"
+  menu: 菜单
+  meta_title: 元目录
+  for_this_page: "本页相关操作："
+  top: 回到顶部
+  link: 链接
+  github: GitHub
+  download: 下载
+  reload_css: 重新加载样式表
+  lang_en: English (Any)
+  lang_zh: 中文（简体）

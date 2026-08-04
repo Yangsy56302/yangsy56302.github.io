@@ -5,14 +5,14 @@ html {
     font-family: "Consolas", "SimHei", "Microsoft YaHei", "Courier New", "NSimsun", "Simsun", monospace, sans-serif, serif;
     scroll-behavior: smooth;
 }
-@media (orientation: landscape) {
+@media (min-width: 768px) {
     html {
         font-size: 100%;
     }
 }
-@media (orientation: portrait) {
+@media (max-width: 767.98px) {
     html {
-        font-size: 1.5625vh;
+        font-size: 100%;
     }
 }
 /* global margin and padding */
@@ -247,8 +247,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    height: 100dvh;
     margin: auto;
     padding: 0rem;
     overflow: hidden;
@@ -332,7 +333,13 @@ footer {
     font-size: 1rem;
     background-color: var(--yangsy-colors);
 }
-@media (orientation: landscape) {
+.nav-toggle {
+    display: none;
+}
+.nav-toggle-label {
+    display: none;
+}
+@media (min-width: 768px) {
     body {
         flex-flow: row nowrap;
     }
@@ -353,29 +360,81 @@ footer {
         flex-flow: column nowrap;
         width: 80vw;
         height: 100vh;
+        height: 100dvh;
     }
 }
-@media (orientation: portrait) {
+@media (max-width: 767.98px) {
     body {
-        flex-flow: column-reverse nowrap;
+        flex-flow: column nowrap;
+    }
+    .nav-toggle-label {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        width: 2.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+        user-select: none;
+        background-color: var(--monika-colors);
+        color: var(--monika-rolocs);
+        box-shadow: 0.125rem 0.125rem var(--monika-rolocs);
+    }
+    .nav-toggle-label:hover {
+        background-color: var(--monika-rolocs);
+        color: var(--monika-colors);
+        box-shadow: 0.125rem 0.125rem var(--monika-colors);
     }
     aside {
-        flex-flow: row nowrap;
-        height: 20vh;
-        min-width: 100vw;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 10;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        width: min(80vw, 24rem);
+        height: 100vh;
+        height: 100dvh;
+        padding: 0rem;
+        transform: translateX(-105%);
+        transition: transform 0.25s ease;
+    }
+    #navToggle:checked ~ aside {
+        transform: translateX(0%);
+        box-shadow: 0rem 0rem 1rem #0008;
     }
     nav {
-        width: 50%;
-        left: 0%;
+        height: 72%;
+        padding: 0rem 0rem 0rem 1rem;
+        overflow: visible scroll;
     }
     aside>div {
-        width: 50%;
-        right: 0%;
+        height: 28%;
+        overflow: visible scroll;
     }
     div.right {
         flex-flow: column nowrap;
-        width: 100vw;
-        height: 80vh;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    div.content {
+        padding: 0.75rem 1rem;
+    }
+    footer {
+        padding: 0.5rem 1rem;
+    }
+    section, article, dl {
+        padding: 0rem 1rem;
     }
 }
 #splash {

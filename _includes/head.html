@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Yangsy56302">
+<meta name="keywords" content="{{ page.keywords | default: 'Yangsy56302,Yangsy0xDBEE,Yangsy' }}">
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="color-scheme" content="light dark">
+<title>{{ page.title }}</title>
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+<link rel="stylesheet" type="text/css" href="{{ '/style/yangsy.css' | relative_url }}">
+{% if page.lang == 'zh' %}
+<link rel="stylesheet" type="text/css" href="{{ '/style/yangsy.zh.css' | relative_url }}">
+{% endif %}
+{% if page.adofai %}
+<link rel="stylesheet" type="text/css" href="{{ '/style/adofai.css' | relative_url }}">
+{% if page.lang == 'zh' %}
+<link rel="stylesheet" type="text/css" href="{{ '/style/adofai.zh.css' | relative_url }}">
+{% endif %}
+{% endif %}
+<base target="_self">
