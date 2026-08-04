@@ -13,6 +13,7 @@
 </head>
 <body{% if page.tutotile %} class="tutotile"{% endif %}>
     <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true" tabindex="-1">
+    <label for="navToggle" class="nav-backdrop" aria-hidden="true" tabindex="-1"></label>
     <aside>
         <nav>
             <h1 id="Index">{% if page.is_meta %}{{ page.index_label | default: t.meta_title }}{% else %}{{ t.index_title }}<sub>{{ t.meta_open }}<a target="_blank" href="{{ '/nav.html' | relative_url }}">{{ t.meta }}</a>{{ t.meta_close }}</sub>{% endif %}</h1>

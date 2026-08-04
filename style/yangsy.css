@@ -4,6 +4,8 @@
 html {
     font-family: "Consolas", "SimHei", "Microsoft YaHei", "Courier New", "NSimsun", "Simsun", monospace, sans-serif, serif;
     scroll-behavior: smooth;
+    height: 100dvh;
+    overflow: hidden;
 }
 @media (min-width: 768px) {
     html {
@@ -339,6 +341,9 @@ footer {
 .nav-toggle-label {
     display: none;
 }
+.nav-backdrop {
+    display: none;
+}
 @media (min-width: 768px) {
     body {
         flex-flow: row nowrap;
@@ -403,6 +408,23 @@ footer {
         transform: translateX(0%);
         box-shadow: 0rem 0rem 1rem #0008;
     }
+    .nav-backdrop {
+        display: block;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+        z-index: 5;
+        background-color: #0008;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+    }
+    #navToggle:checked ~ .nav-backdrop {
+        opacity: 1;
+        pointer-events: auto;
+    }
     nav {
         height: 72%;
         padding: 0rem 0rem 0rem 1rem;
@@ -432,6 +454,7 @@ footer {
     }
     footer {
         padding: 0.5rem 1rem;
+        width: stretch;
     }
     section, article, dl {
         padding: 0rem 1rem;
