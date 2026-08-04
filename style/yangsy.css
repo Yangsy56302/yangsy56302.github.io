@@ -16,7 +16,7 @@ html {
     }
 }
 /* global margin and padding */
-div, section, article, dl {
+section, article, dl {
     margin: 0.5rem 0rem;
     padding: 0rem 2rem;
     font-size: 1rem;
@@ -250,7 +250,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: auto;
-    padding: 0rem 0rem;
+    padding: 0rem;
     overflow: hidden;
     font-size: 1rem;
     background-color: light-dark(var(--monika-medium-color), color-mix(in srgb, var(--monika-dark-color), #000 50%));
@@ -258,6 +258,7 @@ body {
 }
 aside {
     margin: 0%;
+    padding: 0rem 2rem 0rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -288,17 +289,18 @@ nav ol, nav ul, nav dl {
 }
 aside>div {
     position: relative;
-    margin: 0%;
-    padding: 1rem 2rem;
     overflow: visible scroll;
+    margin: 0%;
+    padding: 1rem 0rem 0rem 0rem;
     font-size: 1rem;
     background-color: var(--bg-colors);
 }
 div.right {
-    margin: 0%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 0%;
+    padding: 0rem;
     font-size: 1rem;
 }
 header {
