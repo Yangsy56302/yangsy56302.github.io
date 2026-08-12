@@ -6,6 +6,7 @@
     <meta name="keywords" content="Yangsy56302,Yangsy0xDBEE,yangsy,ADOFAI,A Dance of Fire and Ice,crab,Firestix,curse,cursed">
     <meta name="description" content="Yangsy56302's Website">
     <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, height=device-height">
     <title>冰与火之舞魔改</title>
     <link rel="icon" href="https://yangsy56302.github.io/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../../style/yangsy.zh.css">
@@ -14,7 +15,7 @@
     <base target="_self">
 </head>
 <body class="tutotile">
-    <aside>
+    <aside id="aside" style="display: none;">
         <nav> <h1 id="Index">目录<sub>（<a target="_blank" href="https://yangsy56302.github.io/nav.zh.html">元</a>）</sub></h1> <ol>
             <li> <a href="#Links">外部链接</a> </li>
             <li> <a href="#Mechanism">魔改机制</a> <ol>
@@ -61,6 +62,8 @@
     </aside>
     <div class="right">
         <header> <h1>
+            <button id="toggleAside">≡</button>
+            <script src="../../aside.js"></script>
             <span style="color: var(--yellow-light-color);">冰</span>与<span style="color: var(--cyan-light-color);">火</span>之舞<span style="color: var(--magenta-light-color);">魔改</span>
         </h1> </header>
         <div class="content">
@@ -95,7 +98,7 @@
                         执行对应的某种变换<b>操作（<i>Action</i>）</b>的对象。
                     </p> <hr/> <p>
                         一个魔改通常会绑定于一个冰与火之舞关卡之上，并将其关卡标识符（稍作修改后）作为魔改的标识符。<br/>
-                        也存在不绑定于关卡的魔改效果，例如小绿君的颜色魔改系列。
+                        也存在不绑定于关卡的魔改效果，例如小绿君的颜色君魔改系列。
                     </p>
                 </article> <article id="But"> <h3>但式</h3>
                     <p>
