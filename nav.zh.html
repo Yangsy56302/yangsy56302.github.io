@@ -14,7 +14,7 @@
 </head>
 <body>
     <aside>
-        <nav> <h1 id="Index">元目录</h1> <ul>
+        <nav> <div> <h1 id="Index">元目录</h1> <ul>
             <li><a target="_blank" href="index.zh.html">主页</a></li>
             <li><a target="_blank" href="404.html"><em>404页</em></a></li>
             <li><a target="_blank" href="nav.html"><em>导航页</em></a></li>
@@ -44,8 +44,8 @@
                     <li><a target="_blank" href="adofai/cursed/carrot.md">主页（Markdown）</a></li>
                 </ul></li>
             </ul></li>
-        </ul> </nav>
-        <div> <dl>
+        </ul> </div> </nav>
+        <div id="lnk"> <div> <dl>
             <dt>本页相关操作：</dt> <dd><ul>
                 <li> <a href="#">回到顶部</a> </li>
                 <li> <a href>链接</a> </li>
@@ -66,19 +66,19 @@
                 <li><a href="index.html">English (Any)</a></li>
                 <li><strong>中文（简体）</strong></li>
             </ul></dd>
-        </dl> </div>
+        </dl> </div> </div>
     </aside>
-    <div class="right">
-        <header> <h1>
+    <div id="right">
+        <header> <div> <h1> <button id="toggleAside">≡</button>
             导航页
-        </h1> </header>
-        <div class="content">
+        </h1> </div> </header> <script src="https://yangsy56302.github.io/toggle_aside.js"></script>
+        <div id="content"> <div>
             <h2>←</h2>
-        </div>
-        <footer>
+        </div> </div>
+        <footer> <div>
             <button id="randomSplash">↻</button> <span id="splash">...!</span>
             <script src="splashes.js"></script>
-        </footer>
+        </div> </footer>
     </div>
 </body>
 </html>

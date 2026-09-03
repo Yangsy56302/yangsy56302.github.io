@@ -15,7 +15,7 @@
 </head>
 <body class="tutotile">
     <aside>
-        <nav> <h1 id="Index">目录<sub>（<a target="_blank" href="https://yangsy56302.github.io/nav.zh.html">元</a>）</sub></h1>
+        <nav> <div> <h1 id="Index">目录<sub>（<a target="_blank" href="https://yangsy56302.github.io/nav.zh.html">元</a>）</sub></h1>
             <a href="#1-X">1-X?</a> <a href="#7-X">7-X?</a><br/>
             <a href="#2-X">2-X?</a> <a href="#8-X">8-X?</a><br/>
             <a href="#3-X">3-X?</a> <a href="#9-X">9-X?</a><br/>
@@ -32,8 +32,8 @@
             B-X? <a href="#B-X">Please Stop Playing My Levels</a><br/>
             XT-X? <a href="#XT-X">Stoptions</a><br/>
             XO-X? <a href="#XO-X">One Forgotten Meme</a><br/><br/>
-        </nav>
-        <div> <dl>
+        </div> </nav>
+        <div id="lnk"> <div> <dl>
             <dt>本页相关操作：</dt> <dd><ul>
                 <li> <a href="#">回到顶部</a> </li>
                 <li> <a href>链接</a> </li>
@@ -54,14 +54,14 @@
                 <li><a href="index.html">English (Any)</a></li>
                 <li><strong>中文（简体）</strong></li>
             </ul></dd>
-        </dl> </div>
+        </dl> </div> </div>
     </aside>
-    <div class="right">
-        <header> <h1>
+    <div id="right">
+        <header> <div> <h1> <button id="toggleAside">≡</button>
             <span class="ice cursed">冰</span>与<span class="fire cursed">火</span>之舞，
             但关卡被<a class="light" target="_blank" href="https://steamcommunity.com/id/Firestix">Firestix</a>诅咒了
-        </h1> </header>
-        <div class="content">
+        </h1> </div> </header> <script src="https://yangsy56302.github.io/toggle_aside.js"></script>
+        <div id="content"> <div>
             <article id="Levels"> <h2>魔改关卡大全</h2> <dl>
                 <div class="bar">
                     注意：参数<strong>并不是</strong>官方设定的组成部分。
@@ -434,11 +434,11 @@
                     </div>
                 </dd>
             </dl> </article>
-        </div>
-        <footer>
+        </div> </div>
+        <footer> <div>
             <button id="randomSplash">↻</button> <span id="splash">...!</span>
             <script src="https://yangsy56302.github.io/splashes.js"></script>
-        </footer>
+        </div> </footer>
     </div>
 </body>
 </html>

@@ -15,8 +15,8 @@
     <base target="_self">
 </head>
 <body class="tutotile">
-    <aside id="aside" style="display: none;">
-        <nav> <h1 id="Index">目录<sub>（<a target="_blank" href="https://yangsy56302.github.io/nav.zh.html">元</a>）</sub></h1> <ol>
+    <aside>
+        <nav> <div> <h1 id="Index">目录<sub>（<a target="_blank" href="https://yangsy56302.github.io/nav.zh.html">元</a>）</sub></h1> <ol>
             <li> <a href="#Links">外部链接</a> </li>
             <li> <a href="#Mechanism">魔改机制</a> <ol>
                 <li> <a href="#Curse">魔改，条件，操作</a> </li>
@@ -36,8 +36,8 @@
                 <li> <a href="#^-1">逆魔改</a> </li>
                 <li> <a href="#Meta">元魔改</a> </li>
             </ol> </li>
-        </ol> </nav>
-        <div> <dl>
+        </ol> </div> </nav>
+        <div id="lnk"> <div> <dl>
             <dt>本页相关操作：</dt> <dd><ul>
                 <li> <a href="#">回到顶部</a> </li>
                 <li> <a href>链接</a> </li>
@@ -58,15 +58,15 @@
                 <li><a href="index.html">English (Any)</a></li>
                 <li><strong>中文（简体）</strong></li>
             </ul></dd>
-        </dl> </div>
+        </dl> </div> </div>
     </aside>
-    <div class="right">
-        <header> <h1>
+    <div id="right">
+        <header> <div> <h1> <button id="toggleAside">≡</button>
             <button id="toggleAside">≡</button>
             <script src="../../aside.js"></script>
             <span style="color: var(--yellow-light-color);">冰</span>与<span style="color: var(--cyan-light-color);">火</span>之舞<span style="color: var(--magenta-light-color);">魔改</span>
-        </h1> </header>
-        <div class="content">
+        </h1> </div> <header>
+        <div id="content"> <div>
             <section id="Links"> <h2>外部链接</h2> <dl>
                 <dt> <a target="_blank" href="https://sites.google.com/view/a-dance-of-fire-and-ice-curses/home">
                     ADOFAI Curses Webpage</a> by PyrotechnicTriforce
@@ -536,11 +536,11 @@
                     </dl>
                 </article>
             </article>
-        </div>
-        <footer>
+        </div> </div>
+        <footer> <div>    
             <button id="randomSplash">↻</button> <span id="splash">...!</span>
             <script src="https://yangsy56302.github.io/splashes.js"></script>
-        </footer>
+        </div> </footer>
     </div>
 </body>
 </html>

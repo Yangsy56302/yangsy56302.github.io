@@ -15,7 +15,7 @@
 </head>
 <body class="tutotile">
     <aside>
-        <nav> <h1 id="Index">目录<sub>（<a target="_blank" href="https://yangsy56302.github.io/nav.zh.html">元</a>）</sub></h1> <dl>
+        <nav> <div> <h1 id="Index">目录<sub>（<a target="_blank" href="https://yangsy56302.github.io/nav.zh.html">元</a>）</sub></h1> <dl>
             <dt>基础</dt> <dd>
                 <a href="#1-X">"1-X"</a> <a href="#7-X">"7-X"</a><br/>
                 <a href="#2-X">"2-X"</a> <a href="#8-X">"8-X"</a><br/>
@@ -78,8 +78,8 @@
                 <a href="#T4-X">"T4-X"</a> <a href="#T4EX-X">"T4EX-X"</a><br/>
                 <a href="#T5-X">"T5-X"</a><br/>
             </dd>
-        </dl> </nav>
-        <div> <dl>
+        </dl> </div> </nav>
+        <div id="lnk"> <div> <dl>
             <dt>本页相关操作：</dt> <dd><ul>
                 <li> <a href="#">回到顶部</a> </li>
                 <li> <a href>链接</a> </li>
@@ -100,15 +100,15 @@
                 <li><a href="e.html">English (Any)</a></li>
                 <li><strong>中文（简体）</strong></li>
             </ul></dd>
-        </dl> </div>
+        </dl> </div> </div>
     </aside>
-    <div class="right">
-        <header> <h1>
+    <div id="right">
+        <header> <div> <h1> <button id="toggleAside">≡</button>
             <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3127510524"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam 合集"/></a>
             <span class="ice cursed">冰</span>与<span class="fire cursed">火</span>之舞<span class="cursed">文字</span>魔改效果<br/>
             by <a class="light" target="_blank" href="https://steamcommunity.com/id/Yangsy56302">Yangsy56302</a>
-        </h1> </header>
-        <div class="content">
+        </h1> </div> </header> <script src="https://yangsy56302.github.io/toggle_aside.js"></script>
+        <div id="content"> <div>
             <section> <h2>基础</h2> <dl>
                 <dt id="1-X">
                     <a target="_blank" href="https://steamcommunity.com/workshop/filedetails/?id=3010939512"><img class="a icon" src="https://steamcommunity.com/favicon.ico" title="Steam 创意工坊"/></a>
@@ -946,11 +946,11 @@
                     返回值的具体效果基于对关键词替换后魔改但式的再分析，且必须与<var>{curse}</var>不同（即使但式相同）。
                 </dd>
             </dl> </section>
-        </div>
-        <footer>
+        </div> </div>
+        <footer> <div>
             <button id="randomSplash">↻</button> <span id="splash">...!</span>
             <script src="https://yangsy56302.github.io/splashes.js"></script>
-        </footer>
+        </div> </footer>
     </div>
 </body>
 </html>
